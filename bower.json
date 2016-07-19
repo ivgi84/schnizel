@@ -1,0 +1,23 @@
+{
+  "name": "schnizel",
+  "description": "Schnizel site",
+  "main": "index.js",
+  "authors": [
+    "Evgeny Smolovich"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/ivgi84/schnizel",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.7",
+    "angular-route": "^1.5.7"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "schnizel",
+  "version": "0.0.1",
+  "description": "Schnizel site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ivgi84/schnizel.git"
+  },
+  "author": "Evgeny Smolovich",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ivgi84/schnizel/issues"
+  },
+  "homepage": "https://github.com/ivgi84/schnizel#readme"
+}
