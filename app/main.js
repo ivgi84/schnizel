@@ -1,19 +1,21 @@
 requirejs.config({
     baseUrl: 'front-assets/js',
     paths: {
-        angular: 'lib/angular.min',
-        $route: 'lib/angular-route.min'
+        'angular': 'lib/angular.min',
+        'route': 'lib/angular-route.min'
     },
     shim: {
-        angular: {
+        'angular': {
             exports: 'angular'
         },
-        $route: {
-            exports: '$route'
+        'route': {
+            deps: ['angular']
         }
     }
 });
 
-require([
-    'schnizelApp'
-]);
+require(['angular','app'], function(){
+    angular.element(document).ready(function () {
+        angular.bootstrap(document, ['schnizelApp']);
+    });
+});

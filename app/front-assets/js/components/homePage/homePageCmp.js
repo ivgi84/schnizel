@@ -1,5 +1,5 @@
-define(['./homePageCmp'], function(homePageCmp) {
-    var module = angular
+define('homePageCmp',['angular'], function(angular) {
+    angular
         .module('schnizelApp')
         .component('homePage', {
             templateUrl: 'assets/components/homePage/homePage.view.html',
@@ -9,6 +9,4 @@ define(['./homePageCmp'], function(homePageCmp) {
     function HomePageCtrl() {
         console.log(111);
     }
-
-    return module;
 });
