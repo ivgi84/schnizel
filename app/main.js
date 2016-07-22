@@ -1,21 +1,19 @@
-requirejs.config({
+require.config({
     baseUrl: 'front-assets/js',
     paths: {
         'angular': 'lib/angular.min',
-        'route': 'lib/angular-route.min'
+        'ngRoute': 'lib/angular-route.min',
+        'hpCmp':'components/homePage/homePageCmp'
     },
     shim: {
-        'angular': {
-            exports: 'angular'
-        },
-        'route': {
-            deps: ['angular']
-        }
+        'angular': { exports: 'angular' },
+        'ngRoute': { exports: 'ngRoute', deps: ['angular'] },
+        'app':{ deps: ['angular', 'ngRoute'] },
     }
 });
 
-require(['angular','app'], function(){
-    angular.element(document).ready(function () {
+require(['app'], function(){
+    setTimeout(function(){
         angular.bootstrap(document, ['schnizelApp']);
-    });
+    },10);
 });

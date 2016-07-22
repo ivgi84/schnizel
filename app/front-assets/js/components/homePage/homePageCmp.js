@@ -1,12 +1,14 @@
-define('homePageCmp',['angular'], function(angular) {
+define(['angular', './components/components'], function(components) {
+
     angular
-        .module('schnizelApp')
+        .module('schnizelApp.components')
         .component('homePage', {
-            templateUrl: 'assets/components/homePage/homePage.view.html',
+            templateUrl: 'front-assets/js/components/homePage/homePage.view.html',
             controller: HomePageCtrl
         });
 
     function HomePageCtrl() {
         console.log(111);
     }
+
 });

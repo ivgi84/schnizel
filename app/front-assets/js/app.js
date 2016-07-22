@@ -1,14 +1,10 @@
-define(['angular', 'route', './components/homePage/homePageCmp'], function() {
+define(['angular', 'ngRoute', 'hpCmp'], function() {
 
-     var app = angular.module('schnizelApp', ['ngRoute']);
+     var app = angular.module('schnizelApp', ['ngRoute', 'schnizelApp.components']);
 
-     app.controller('main', function($scope){
-         $scope.test = 'test';
-     })
+      app.config(config);
 
-     app.config(['$routeProvider'], config);
-
-    function config($routeProvider) {
+    function config($routeProvider, $locationProvider) {
         $routeProvider
             .when('/', {
                 template: '<home-page>'
@@ -17,6 +13,5 @@ define(['angular', 'route', './components/homePage/homePageCmp'], function() {
             //     template: '<contact-page>'
             // });
     }
-    return app;
+     return app;
 });
-//http://plnkr.co/edit/3UkSd2UXhlzOWymhLkzK?p=preview
