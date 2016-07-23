@@ -3,7 +3,13 @@ require.config({
     paths: {
         'angular': 'lib/angular.min',
         'ngRoute': 'lib/angular-route.min',
-        'hpCmp':'components/homePage/homePageCmp'
+        //components
+        'hpCmp':'components/homePage/homePageCmp',
+        'contactCmp': 'components/contactPage/contactPageCmp',
+        'nutritionCmp':'components/nutritionPage/nutritionPageCmp',
+        'menuCmp': 'components/menuPage/menuPageCmp',
+        'storyCmp': 'components/storyPage/storyPageCmp',
+        'navCmp': 'components/siteNav/siteNavCmp'
     },
     shim: {
         'angular': { exports: 'angular' },
@@ -15,5 +21,5 @@ require.config({
 require(['app'], function(){
     setTimeout(function(){
         angular.bootstrap(document, ['schnizelApp']);
-    },10);
+    },0);
 });

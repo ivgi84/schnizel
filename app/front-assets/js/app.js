@@ -1,4 +1,4 @@
-define(['angular', 'ngRoute', 'hpCmp'], function() {
+define(['angular','ngRoute', 'hpCmp', 'menuCmp', 'nutritionCmp', 'storyCmp', 'contactCmp'], function() {
 
      var app = angular.module('schnizelApp', ['ngRoute', 'schnizelApp.components']);
 
@@ -8,10 +8,19 @@ define(['angular', 'ngRoute', 'hpCmp'], function() {
         $routeProvider
             .when('/', {
                 template: '<home-page>'
+            })
+            .when('/menu', {
+                template: '<menu-page>'
+            })
+            .when('/nutrition', {
+                template:'<nutrition-page>'
+            })
+            .when('/story', {
+                template: '<story-page>'
+            })
+            .when('/contact', {
+                template: '<contact-page>'
             });
-            // .when('/contact', {
-            //     template: '<contact-page>'
-            // });
     }
      return app;
 });
