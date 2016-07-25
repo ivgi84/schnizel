@@ -4,7 +4,8 @@ define(['angular', './components/components'], function() {
         .module('schnizelApp.components')
         .component('nutritionPage', {
             templateUrl: 'front-assets/js/components/nutritionPage/nutritionPageCmp.view.html',
-            controller: NutritionPageCtrl
+            controller: NutritionPageCtrl,
+            require : ['^siteNav','^siteFooter']
         });
 
     function NutritionPageCtrl () {

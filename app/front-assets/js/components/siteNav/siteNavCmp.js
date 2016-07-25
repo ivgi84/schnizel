@@ -7,7 +7,7 @@ define(['angular', './components/components'], function() {
             controller: SiteNavCtrl
         });
 
-    function siteNavCtrl () {
+    function SiteNavCtrl() {
         console.log('Site nav ');
     }
 

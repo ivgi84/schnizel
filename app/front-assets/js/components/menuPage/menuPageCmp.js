@@ -4,7 +4,8 @@ define(['angular', './components/components'], function() {
         .module('schnizelApp.components')
         .component('menuPage', {
             templateUrl: 'front-assets/js/components/menuPage/menuPageCmp.view.html',
-            controller: MenuPageCtrl
+            controller: MenuPageCtrl,
+            require : ['^siteNav','^siteFooter']
         });
 
     function MenuPageCtrl () {

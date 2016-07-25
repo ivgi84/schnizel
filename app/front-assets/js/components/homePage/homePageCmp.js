@@ -4,7 +4,8 @@ define(['angular', './components/components'], function(components) {
         .module('schnizelApp.components')
         .component('homePage', {
             templateUrl: 'front-assets/js/components/homePage/homePage.view.html',
-            controller: HomePageCtrl
+            controller: HomePageCtrl,
+            require : ['^siteNav','^siteFooter']
         });
 
     function HomePageCtrl() {

@@ -32,7 +32,6 @@ p {
   min-height: 100vh;
   width: 100vw;
   box-sizing: border-box;
-  box-shadow: 0 -1px 10px rgba(0, 0, 0, .7);
 	transform-style: inherit;
 }
 
@@ -46,7 +45,6 @@ img {
   padding: 10px;
   border-radius: 5px;
   background: rgba(240,230,220, .7);
-  box-shadow: 0 0 8px rgba(0, 0, 0, .7);
 }
 
 img:last-of-type {
@@ -67,7 +65,6 @@ img:last-of-type {
   padding: 5%;
   border-radius: 5px;
   background: rgba(240,230,220, .7);
-  box-shadow: 0 0 8px rgba(0, 0, 0, .7);
 }
 
 .slide:nth-child(2n) .title {
