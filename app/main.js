@@ -25,8 +25,7 @@ require.config({
         'contactCmp': pageDeps,
         'nutritionCmp': pageDeps,
         'menuCmp': pageDeps,
-        'storyCmp': pageDeps,
-
+        'storyCmp': pageDeps
     }
 });
 

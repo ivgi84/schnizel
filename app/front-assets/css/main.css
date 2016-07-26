@@ -1,0 +1,16 @@
+body {
+  font-family: sans-serif;
+}
+body p {
+  color: #ccc;
+}
+body p span {
+  color: #fafafa;
+}
+ul {
+  list-style: none;
+}
+ul li a {
+  color: blue;
+  text-decoration: none;
+}
