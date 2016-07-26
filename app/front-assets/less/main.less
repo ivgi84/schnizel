@@ -1,16 +1,80 @@
-body{
-  font-family: sans-serif;
-  p{
-    color:#ccc;
-    span{
-      color:#fafafa;
-    }
-  }
+@font-face {
+        font-family: 'assistant';
+        src: url('../fonts/Assistant-Regular.ttf');
+        font-weight: normal;
 }
-ul{
-  list-style: none;
-  li a{
-    color:blue;
-    text-decoration: none;
-  }
+@font-face {
+        font-family: 'assistant';
+        src: url('../fonts/Assistant-SemiBold.ttf');
+        font-weight: bolder;
+}
+
+//reset
+h1,h2,h3,h4,p,ul,a{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    direction: rtl;
+    margin: 0;
+    font-family: assistant;
+}
+.full-width {
+    width: 100%;
+    margin: 0 auto;
+}
+.wrap {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 0 20px;
+}
+.clearfix{
+    clear: both;
+}
+section:after{
+    content: '';
+    clear: both;
+}
+nav{
+    background: #fff;
+    margin-bottom: 80px;
+    border-bottom: 1px solid;
+    height: 80px;
+    position: fixed;
+    top: 0;
+}
+.navigation {
+    .logo {
+        float: right;
+        margin-left: 40px;
+    }
+    ul {
+        padding-top: 45px;
+        display: block;
+        list-style: none;
+        float: right;
+        li {
+            display: block;
+            float: right;
+            padding: 10px;
+            vertical-align: bottom;
+            a {
+                text-align:center;
+                text-decoration: none;
+                color: #010101;
+                vertical-align: bottom;
+            }
+            a.navBtn{
+                background: #d4d1cd;
+                padding: 10px 10px 3px 10px;
+            }
+        }
+    }
+}
+main{
+    display: block;
+    margin-top: 80px;
 }

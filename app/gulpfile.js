@@ -12,7 +12,6 @@ gulp.task('serve', ['less'], function() {
 
     gulp.watch("front-assets/less/*.less", ['less']);
     gulp.watch("front-assets/less/*").on('change', browserSync.reload);
-    gulp.watch("front-assets/components/*/*.").on('change', browserSync.reload);
 });
 
 // Compile sass into CSS & auto-inject into browsers

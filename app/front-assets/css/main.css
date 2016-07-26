@@ -1,16 +1,81 @@
+@font-face {
+  font-family: 'assistant';
+  src: url('../fonts/Assistant-Regular.ttf');
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'assistant';
+  src: url('../fonts/Assistant-SemiBold.ttf');
+  font-weight: bolder;
+}
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+a {
+  margin: 0;
+  padding: 0;
+}
 body {
-  font-family: sans-serif;
+  direction: rtl;
+  margin: 0;
+  font-family: assistant;
 }
-body p {
-  color: #ccc;
+.full-width {
+  width: 100%;
+  margin: 0 auto;
 }
-body p span {
-  color: #fafafa;
+.wrap {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 0 20px;
 }
-ul {
+.clearfix {
+  clear: both;
+}
+section:after {
+  content: '';
+  clear: both;
+}
+nav {
+  background: #fff;
+  margin-bottom: 80px;
+  border-bottom: 1px solid;
+  height: 80px;
+  position: fixed;
+  top: 0;
+}
+.navigation .logo {
+  float: right;
+  margin-left: 40px;
+}
+.navigation ul {
+  padding-top: 45px;
+  display: block;
   list-style: none;
+  float: right;
 }
-ul li a {
-  color: blue;
+.navigation ul li {
+  display: block;
+  float: right;
+  padding: 10px;
+  vertical-align: bottom;
+}
+.navigation ul li a {
+  text-align: center;
   text-decoration: none;
+  color: #010101;
+  vertical-align: bottom;
+}
+.navigation ul li a.navBtn {
+  background: #d4d1cd;
+  padding: 10px 10px 3px 10px;
+}
+main {
+  display: block;
+  margin-top: 80px;
 }
