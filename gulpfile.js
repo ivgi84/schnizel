@@ -7,18 +7,18 @@ var less        = require('gulp-less');
 gulp.task('serve', ['less'], function() {
 
     browserSync.init({
-        server: "./"
+        server: "./app"
     });
 
-    gulp.watch("front-assets/less/*.less", ['less']);
-    gulp.watch("front-assets/less/*").on('change', browserSync.reload);
+    gulp.watch("app/front-assets/less/*.less", ['less']);
+    gulp.watch("app/front-assets/less/*").on('change', browserSync.reload);
 });
 
 // Compile sass into CSS & auto-inject into browsers
 gulp.task('less', function() {
-    return gulp.src("front-assets/less/*.less")
+    return gulp.src("app/front-assets/less/*.less")
         .pipe(less())
-        .pipe(gulp.dest("front-assets/css"))
+        .pipe(gulp.dest("app/front-assets/css"))
         .pipe(browserSync.stream());
 });
 

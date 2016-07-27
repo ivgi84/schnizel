@@ -3,8 +3,17 @@ var pageDeps = { deps: ['navCmp','footerCmp'] };
 require.config({
     baseUrl: 'front-assets/js',
     paths: {
+        'jquery':'https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min',
         'angular': 'lib/angular.min',
         'ngRoute': 'lib/angular-route.min',
+
+        //slickSlider
+        'slickJs':'lib/vendor/slick.min',
+
+        //common
+        'navCmp': 'components/siteNav/siteNavCmp',
+        'footerCmp': 'components/siteFooter/siteFooterCmp',
+
         //components
         //pages
         'hpCmp':'components/homePage/homePageCmp',
@@ -13,13 +22,14 @@ require.config({
         'menuCmp': 'components/menuPage/menuPageCmp',
         'storyCmp': 'components/storyPage/storyPageCmp',
 
-        //common
-        'navCmp': 'components/siteNav/siteNavCmp',
-        'footerCmp': 'components/siteFooter/siteFooterCmp'
+        //directives
+        'slickDirective':'directives/slick/slickDirective'
     },
     shim: {
         'angular': { exports: 'angular' },
+        'jquery': { exports: 'jquery' },
         'ngRoute': { exports: 'ngRoute', deps: ['angular'] },
+        'slickjs': {exports: 'slickjs', deps: ['jquery'] },
         'app':{ deps: ['angular', 'ngRoute'] },
         'hpCmp': pageDeps,
         'contactCmp': pageDeps,

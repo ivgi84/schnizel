@@ -1,5 +1,4 @@
 .slider {
-  background: url(../images/home/slide_1.png) no-repeat;
   background-size: cover;
   width: 100%;
   height: 100vh;
@@ -7,10 +6,15 @@
 }
 .slider .sliderContent {
   width: 100%;
-  max-width: 800px;
+  height: 100vh;
   margin: 0 auto;
   text-align: center;
   color: #fff;
+}
+.slider .sliderContent .slide {
+  background: url('../images/home/slide_1.png') no-repeat;
+  background-size: cover;
+  height: 100vh;
 }
 .slider .sliderContent h3 {
   font-size: 50px;

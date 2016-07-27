@@ -17,11 +17,12 @@ ul,
 a {
   margin: 0;
   padding: 0;
+  direction: rtl;
 }
 body {
-  direction: rtl;
   margin: 0;
   font-family: assistant;
+  overflow-x: hidden;
 }
 .full-width {
   width: 100%;
@@ -48,6 +49,10 @@ nav {
   height: 80px;
   position: fixed;
   top: 0;
+  z-index: 99;
+}
+.navigation {
+  max-width: 940px;
 }
 .navigation .logo {
   float: right;

@@ -1,4 +1,4 @@
-define(['angular', './components/components'], function(components) {
+define(['angular','./directives/directives', './components/components', 'slickJs', 'slickDirective'], function() {
 
     angular
         .module('schnizelApp.components')
@@ -9,7 +9,14 @@ define(['angular', './components/components'], function(components) {
         });
 
     function HomePageCtrl() {
-        console.log(111);
+
+            console.log(111);
+
+        this.slides = [
+            { img:'slide_1' },
+            { img:'slide_1' },
+            { img:'slide_1' }
+        ];
     }
 
 });
