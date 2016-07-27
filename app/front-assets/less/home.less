@@ -1,61 +1,127 @@
-.slider{
-  background-size: cover;
-  width: 100%;
-  height: 100vh;
-  font-family: assistant;
-  .sliderContent{
+.slider {
+    background-size: cover;
     width: 100%;
     height: 100vh;
-    margin: 0 auto;
-    text-align: center;
-    color:#fff;
-    .slide{
-      background: url('../images/home/slide_1.png') no-repeat;
-      background-size: cover;
-      height: 100vh
+    font-family: assistant;
+    .sliderContent {
+        width: 100%;
+        height: 100vh;
+        margin: 0 auto;
+        text-align: center;
+        color: #fff;
+        .slide {
+            background: url('../images/home/slide_1.png') no-repeat;
+            background-size: cover;
+            height: 100vh;
+        }
+        h3 {
+            font-size: 50px;
+            vertical-align: middle;
+            padding-top: 30vh;
+            font-size: 90px;
+            line-height: 90px;
+            padding-bottom: 20px;
+        }
+        h4 {
+            opacity: 0.8;
+            font-size: 52px;
+        }
     }
-    h3{
-      font-size: 50px;
-      vertical-align: middle;
-      padding-top: 30vh;
-      font-size: 90px;
-      line-height: 90px;
-      padding-bottom: 20px;
-    }
-    h4{
-      opacity: 0.8;
-      font-size: 52px;
-    }
-  }
 }
-.ongoing{
-  h1{
-    text-align: center;
-    color:#54392d;
-    font-size: 43px;
-    margin: 20px 0;
-    font-weight: bolder;
-  }
-  .list{
-    list-style: none;
-    margin: 0 auto;
-    width: 100%;
-    max-width: 1020px;
-    li{
-      position: relative;
-      float: right;
-      display: block;
-      height: 320px;
-      width: 317px;
-      margin: 0 10px;
-      background: url(../images/home/pic1.png) no-repeat;
-      p{
-        position: absolute;
-        bottom: 0px;
-        height: 70px;
-        background: rgba(0,0,0,0.9);
-        color:#fff;
-      }
+.ongoing {
+    padding: 20px 0 100px;
+    h1 {
+        text-align: center;
+        color: #54392d;
+        font-size: 43px;
+        margin: 20px 0;
+        font-weight: bolder;
     }
-  }
+    .list {
+        list-style: none;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 1020px;
+        li {
+            position: relative;
+            float: left;
+            display: block;
+            height: 320px;
+            width: 317px;
+            margin: 0 10px;
+            &:nth-child(1) {
+                background: url("../images/home/pic1.png") no-repeat;
+            }
+            &:nth-child(2) {
+                background: url("../images/home/pic2.png") no-repeat;
+            }
+            &:nth-child(3) {
+                background: url("../images/home/pic3.jpg") no-repeat;
+            }
+            p {
+                position: absolute;
+                bottom: 0;
+                height: 70px;
+                width: 100%;
+                background: rgba(0,0,0,0.8);
+                color: #fff;
+                text-align: center;
+                font-size: 18px;
+                padding-top: 10px;
+                b {
+                    display: block;
+                    font-family: assistantSemiBold;
+                }
+            }
+        }
+    }
+}
+.geo {
+    background-image: url("../images/home/slide_1.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 250px;
+    .wrap {
+        .igeo {
+            display: block;
+            margin: 0 auto;
+            position: relative;
+            top: -25px;
+            z-index: 2;
+        }
+        h3 {
+            font-size: 43px;
+            color: #fff;
+            font-family: assistantSemiBold;
+            text-align: center;
+        }
+        .findCity {
+            display: block;
+            border: none;
+            margin: 20px auto;
+            width: 240px;
+            height: 15px;
+            padding: 5px;
+            direction: rtl;
+            color: #897267;
+            font-size: 14px;
+
+            &::-webkit-input-placeholder {
+                color: #897267;
+                text-align: center;
+            }
+            &::-moz-placeholder {
+                color: #897267;
+                text-align: center;
+            }
+            &:-ms-input-placeholder {
+                color: #897267;
+                text-align: center;
+            }
+            &:-moz-placeholder {
+                color: #897267;
+                text-align: center;
+            }
+        }
+    }
 }

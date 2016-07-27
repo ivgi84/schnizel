@@ -28,6 +28,9 @@
   opacity: 0.8;
   font-size: 52px;
 }
+.ongoing {
+  padding: 20px 0 100px;
+}
 .ongoing h1 {
   text-align: center;
   color: #54392d;
@@ -43,17 +46,79 @@
 }
 .ongoing .list li {
   position: relative;
-  float: right;
+  float: left;
   display: block;
   height: 320px;
   width: 317px;
   margin: 0 10px;
-  background: url(../images/home/pic1.png) no-repeat;
+}
+.ongoing .list li:nth-child(1) {
+  background: url("../images/home/pic1.png") no-repeat;
+}
+.ongoing .list li:nth-child(2) {
+  background: url("../images/home/pic2.png") no-repeat;
+}
+.ongoing .list li:nth-child(3) {
+  background: url("../images/home/pic3.jpg") no-repeat;
 }
 .ongoing .list li p {
   position: absolute;
-  bottom: 0px;
+  bottom: 0;
   height: 70px;
-  background: rgba(0, 0, 0, 0.9);
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
   color: #fff;
+  text-align: center;
+  font-size: 18px;
+  padding-top: 10px;
+}
+.ongoing .list li p b {
+  display: block;
+  font-family: assistantSemiBold;
+}
+.geo {
+  background-image: url("../images/home/slide_1.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 250px;
+}
+.geo .wrap .igeo {
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  top: -25px;
+  z-index: 2;
+}
+.geo .wrap h3 {
+  font-size: 43px;
+  color: #fff;
+  font-family: assistantSemiBold;
+  text-align: center;
+}
+.geo .wrap .findCity {
+  display: block;
+  border: none;
+  margin: 20px auto;
+  width: 240px;
+  height: 15px;
+  padding: 5px;
+  direction: rtl;
+  color: #897267;
+  font-size: 14px;
+}
+.geo .wrap .findCity::-webkit-input-placeholder {
+  color: #897267;
+  text-align: center;
+}
+.geo .wrap .findCity::-moz-placeholder {
+  color: #897267;
+  text-align: center;
+}
+.geo .wrap .findCity:-ms-input-placeholder {
+  color: #897267;
+  text-align: center;
+}
+.geo .wrap .findCity:-moz-placeholder {
+  color: #897267;
+  text-align: center;
 }

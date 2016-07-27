@@ -1,22 +1,34 @@
 @font-face {
-        font-family: 'assistant';
-        src: url('../fonts/Assistant-Regular.ttf');
-        font-weight: normal;
+    font-family: 'assistant';
+    src: url('../fonts/Assistant-Regular.ttf');
+    font-weight: normal;
 }
 @font-face {
-        font-family: 'assistant';
-        src: url('../fonts/Assistant-SemiBold.ttf');
-        font-weight: bolder;
+    font-family: 'assistantSemiBold';
+    src: url('../fonts/Assistant-SemiBold.ttf');
+    font-weight: bolder;
 }
-
+@font-face {
+    font-family: 'assistant-bold';
+    src: url('../fonts/Assistant-Bold.ttf');
+    font-weight: bold;
+}
 //reset
-h1,h2,h3,h4,p,ul,a{
+a,
+h1,
+h2,
+h3,
+h4,
+p,
+ul {
     margin: 0;
     padding: 0;
     direction: rtl;
 }
-
-body{
+input{
+    outline: none;
+}
+body {
     margin: 0;
     font-family: assistant;
     overflow-x: hidden;
@@ -32,14 +44,14 @@ body{
     box-sizing: border-box;
     padding: 0 20px;
 }
-.clearfix{
+.clearfix {
     clear: both;
 }
-section:after{
+section:after {
     content: '';
     clear: both;
 }
-nav{
+nav {
     background: #fff;
     margin-bottom: 80px;
     border-bottom: 1px solid;
@@ -49,7 +61,7 @@ nav{
     z-index: 99;
 }
 .navigation {
-  max-width: 940px;
+    max-width: 940px;
     .logo {
         float: right;
         margin-left: 40px;
@@ -65,19 +77,75 @@ nav{
             padding: 10px;
             vertical-align: bottom;
             a {
-                text-align:center;
+                text-align: center;
                 text-decoration: none;
                 color: #010101;
                 vertical-align: bottom;
             }
-            a.navBtn{
+            a.navBtn {
                 background: #d4d1cd;
-                padding: 10px 10px 3px 10px;
+                padding: 10px 10px 3px;
             }
         }
     }
 }
-main{
+main {
     display: block;
     margin-top: 80px;
+}
+footer {
+    padding: 20px 0;
+    background: #54392d;
+
+    .left, .right {
+        float: right;
+        width: 45%;
+        margin: 2.5%;
+        .subscribe {
+            label {
+                color: #fff;
+                font-size: 24px;
+            }
+            input {
+                display: block;
+                border: none;
+                background: transparent;
+                border-bottom: 1px solid #fff;
+                color:#fbb680;
+                position: relative;
+                &::-webkit-input-placeholder {
+                    color: #fbb680;
+                }
+                &::-moz-placeholder {
+                    color: #fbb680;
+                }
+                &:-ms-input-placeholder {
+                    color: #fbb680;
+                }
+                &:-moz-placeholder {
+                    color: #fbb680;
+                }
+            }
+            a{
+                position: absolute;
+                left:0;
+                text-decoration: none;
+                color:#fbb680;
+            }
+        }
+        .social{
+            p{
+                color:#fff;
+                font-size: 24px;
+                ul{
+                    list-style: none;
+                    li{
+                        display: block;
+                        float: right;
+                        margin: 10px;
+                    }
+                }
+            }
+        }
+    }
 }
