@@ -9,8 +9,13 @@
     font-weight: bolder;
 }
 @font-face {
-    font-family: 'assistant-bold';
+    font-family: 'assistantBold';
     src: url('../fonts/Assistant-Bold.ttf');
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'assistantLight';
+    src: url('../fonts/Assistant-Light.ttf');
     font-weight: bold;
 }
 //reset
@@ -98,54 +103,86 @@ footer {
     background: #54392d;
 
     .left, .right {
+        direction:rtl;
         float: right;
-        width: 45%;
-        margin: 2.5%;
+        width: 48%;
+        margin: 0.5%;
         .subscribe {
             label {
                 color: #fff;
                 font-size: 24px;
             }
-            input {
-                display: block;
-                border: none;
-                background: transparent;
-                border-bottom: 1px solid #fff;
-                color:#fbb680;
-                position: relative;
-                &::-webkit-input-placeholder {
-                    color: #fbb680;
+            .inputRow{
+                margin: 10px 0;
+                input {
+                    font-family: assistantLight;
+                    border: none;
+                    background: transparent;
+                    border-bottom: 1px solid #fff;
+                    color:#fbb680;
+                    width: 300px;
+                    float: right;
+                    font-size: 24px;
+
+                    &::-webkit-input-placeholder {
+                        color: #fbb680;
+                        font-size: 28px;
+                        font-family: assistantLight;
+                    }
+                    &::-moz-placeholder {
+                        color: #fbb680;
+                        font-size: 28px;
+                        font-family: assistantLight;
+                    }
+                    &:-ms-input-placeholder {
+                        color: #fbb680;
+                        font-size: 28px;
+                        font-family: assistantLight;
+                    }
+                    &:-moz-placeholder {
+                        color: #fbb680;
+                        font-size: 28px;
+                        font-family: assistantLight;
+                    }
                 }
-                &::-moz-placeholder {
-                    color: #fbb680;
+                a{
+                    display: block;
+                    float: right;
+                    text-decoration: none;
+                    color:#fbb680;
+                    font-size: 30px;
+                    font-family: assistantLight
                 }
-                &:-ms-input-placeholder {
-                    color: #fbb680;
-                }
-                &:-moz-placeholder {
-                    color: #fbb680;
-                }
-            }
-            a{
-                position: absolute;
-                left:0;
-                text-decoration: none;
-                color:#fbb680;
             }
         }
-        .social{
+        .list{
+            margin-top: 20px;
             p{
                 color:#fff;
                 font-size: 24px;
-                ul{
-                    list-style: none;
-                    li{
-                        display: block;
-                        float: right;
-                        margin: 10px;
+            }
+            .terms{
+                font-size: 21px;
+            }
+            ul{
+                list-style: none;
+                li{
+                    display: block;
+                    float: right;
+                    margin: 10px 15px;
+                    &:first-of-type{
+                        margin-right: 0;
+                    }
+                    a{
+                        font-size: 27px;
+                        text-decoration: none;
+                        color:#fff;
                     }
                 }
             }
         }
+    }
+    .left{
+        margin-left: 0;
     }
 }

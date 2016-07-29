@@ -9,8 +9,13 @@
   font-weight: bolder;
 }
 @font-face {
-  font-family: 'assistant-bold';
+  font-family: 'assistantBold';
   src: url('../fonts/Assistant-Bold.ttf');
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'assistantLight';
+  src: url('../fonts/Assistant-Light.ttf');
   font-weight: bold;
 }
 a,
@@ -23,6 +28,9 @@ ul {
   margin: 0;
   padding: 0;
   direction: rtl;
+}
+input {
+  outline: none;
 }
 body {
   margin: 0;
@@ -95,33 +103,97 @@ footer {
 }
 footer .left,
 footer .right {
+  direction: rtl;
   float: right;
-  width: 45%;
-  margin: 2.5%;
+  width: 48%;
+  margin: 0.5%;
 }
-footer .left label,
-footer .right label {
+footer .left .subscribe label,
+footer .right .subscribe label {
   color: #fff;
   font-size: 24px;
 }
-footer .left input,
-footer .right input {
+footer .left .subscribe .inputRow,
+footer .right .subscribe .inputRow {
+  margin: 10px 0;
+}
+footer .left .subscribe .inputRow input,
+footer .right .subscribe .inputRow input {
+  font-family: assistantLight;
   border: none;
   background: transparent;
-}
-footer .left input::-webkit-input-placeholder,
-footer .right input::-webkit-input-placeholder {
+  border-bottom: 1px solid #fff;
   color: #fbb680;
+  width: 300px;
+  float: right;
+  font-size: 24px;
 }
-footer .left input::-moz-placeholder,
-footer .right input::-moz-placeholder {
+footer .left .subscribe .inputRow input::-webkit-input-placeholder,
+footer .right .subscribe .inputRow input::-webkit-input-placeholder {
   color: #fbb680;
+  font-size: 28px;
+  font-family: assistantLight;
 }
-footer .left input:-ms-input-placeholder,
-footer .right input:-ms-input-placeholder {
+footer .left .subscribe .inputRow input::-moz-placeholder,
+footer .right .subscribe .inputRow input::-moz-placeholder {
   color: #fbb680;
+  font-size: 28px;
+  font-family: assistantLight;
 }
-footer .left input:-moz-placeholder,
-footer .right input:-moz-placeholder {
+footer .left .subscribe .inputRow input:-ms-input-placeholder,
+footer .right .subscribe .inputRow input:-ms-input-placeholder {
   color: #fbb680;
+  font-size: 28px;
+  font-family: assistantLight;
+}
+footer .left .subscribe .inputRow input:-moz-placeholder,
+footer .right .subscribe .inputRow input:-moz-placeholder {
+  color: #fbb680;
+  font-size: 28px;
+  font-family: assistantLight;
+}
+footer .left .subscribe .inputRow a,
+footer .right .subscribe .inputRow a {
+  display: block;
+  float: right;
+  text-decoration: none;
+  color: #fbb680;
+  font-size: 30px;
+  font-family: assistantLight;
+}
+footer .left .list,
+footer .right .list {
+  margin-top: 20px;
+}
+footer .left .list p,
+footer .right .list p {
+  color: #fff;
+  font-size: 24px;
+}
+footer .left .list .terms,
+footer .right .list .terms {
+  font-size: 21px;
+}
+footer .left .list ul,
+footer .right .list ul {
+  list-style: none;
+}
+footer .left .list ul li,
+footer .right .list ul li {
+  display: block;
+  float: right;
+  margin: 10px 15px;
+}
+footer .left .list ul li:first-of-type,
+footer .right .list ul li:first-of-type {
+  margin-right: 0;
+}
+footer .left .list ul li a,
+footer .right .list ul li a {
+  font-size: 27px;
+  text-decoration: none;
+  color: #fff;
+}
+footer .left {
+  margin-left: 0;
 }
