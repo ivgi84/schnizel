@@ -8,7 +8,24 @@ define(['angular', './components/components'], function() {
         });
 
     function SiteNavCtrl() {
-        console.log('Site nav ');
+        var vm = this;
+
+        vm.siteNav = {
+            navigation: [
+                {
+                    link:'#/menu',
+                    text:'תפריט',
+                    class:''
+                },
+                {
+                    link:'#/nutrition',
+                    text:'תזונה',
+                    class:''
+                }
+            ]
+        };
+
+
     }
 
 });

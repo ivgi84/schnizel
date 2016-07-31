@@ -87,10 +87,22 @@ nav {
                 color: #010101;
                 vertical-align: bottom;
             }
-            a.navBtn {
-                background: #d4d1cd;
-                padding: 10px 10px 3px;
+            &.navBtn{
+                a{
+                    background: #d4d1cd;
+                    padding: 10px 10px 3px;
+                }
             }
+        }
+    }
+    .hambuerger{
+        display: none;
+        span{
+            width:50px;
+            height: 2px;
+            background: #54392d;
+            display: block;
+            margin: 0 auto;
         }
     }
 }
@@ -185,4 +197,27 @@ footer {
     .left{
         margin-left: 0;
     }
+}
+@media(max-width:920px){
+    .navigation {
+        .logo{
+            margin-left: 15px;
+        }
+        ul {
+            padding-top:0;
+            li {
+                padding: 10px 5px;
+                &.navBtn {
+                    display: block;
+                    float: right;
+                }
+                &.navBtn:first-of-type{
+                    content: "";
+                    display: block;
+                    float: none;
+                }
+            }
+        }
+    }
+
 }
