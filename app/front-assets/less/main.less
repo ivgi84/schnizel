@@ -185,6 +185,9 @@ footer {
                     &:first-of-type{
                         margin-right: 0;
                     }
+                    &.breakLine{
+
+                    }
                     a{
                         font-size: 27px;
                         text-decoration: none;
@@ -198,7 +201,7 @@ footer {
         margin-left: 0;
     }
 }
-@media(max-width:920px){
+@media(max-width:940px){
     .navigation {
         .logo{
             margin-left: 15px;
@@ -206,15 +209,9 @@ footer {
         ul {
             padding-top:0;
             li {
-                padding: 10px 5px;
-                &.navBtn {
-                    display: block;
-                    float: right;
-                }
-                &.navBtn:first-of-type{
-                    content: "";
-                    display: block;
-                    float: none;
+                padding: 12px 5px 11px;
+                &.breakLine {
+                    clear: both;
                 }
             }
         }

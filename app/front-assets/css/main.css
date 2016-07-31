@@ -207,7 +207,7 @@ footer .right .list ul li a {
 footer .left {
   margin-left: 0;
 }
-@media (max-width: 920px) {
+@media (max-width: 940px) {
   .navigation .logo {
     margin-left: 15px;
   }
@@ -215,15 +215,9 @@ footer .left {
     padding-top: 0;
   }
   .navigation ul li {
-    padding: 10px 5px;
+    padding: 12px 5px 11px;
   }
-  .navigation ul li.navBtn {
-    display: block;
-    float: right;
-  }
-  .navigation ul li.navBtn:first-of-type {
-    content: "";
-    display: block;
-    float: none;
+  .navigation ul li.breakLine {
+    clear: both;
   }
 }

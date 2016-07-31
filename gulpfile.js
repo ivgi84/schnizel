@@ -2,24 +2,55 @@
 var gulp        = require('gulp');
 var browserSync = require('browser-sync').create();
 var less        = require('gulp-less');
+var livereload  = require('gulp-livereload');
 
 // Static Server + watching less/html files
-gulp.task('serve', ['less'], function() {
+gulp.task('serve', ['less','html'], function() {
 
     browserSync.init({
         server: "./app"
     });
 
-    gulp.watch("app/front-assets/less/*.less", ['less']);
-    gulp.watch("app/front-assets/less/*").on('change', browserSync.reload);
+    livereload.listen();
+    gulp.watch('app/front-assets/less/*.less', ['less']);
+    gulp.watch('app/front-assets/js/components/*/*.html', ['html']);
+
 });
 
-// Compile sass into CSS & auto-inject into browsers
 gulp.task('less', function() {
-    return gulp.src("app/front-assets/less/*.less")
-        .pipe(less())
-        .pipe(gulp.dest("app/front-assets/css"))
-        .pipe(browserSync.stream());
+  gulp.src('app/front-assets/less/*.less')
+    .pipe(less())
+    .pipe(gulp.dest('app/front-assets/css'))
+    .pipe(livereload({ start: true }));
+});
+
+gulp.task('html', function() {
+  gulp.src('app/front-assets/js/components/*/*.html')
+    .pipe(livereload());
 });
 
 gulp.task('default', ['serve']);
+
+
+
+// var gulp = require('gulp'),
+//     less = require('gulp-less'),
+//     livereload = require('gulp-livereload');
+//
+// gulp.task('less', function() {
+//   gulp.src('app/front-assets/less/*.less')
+//     .pipe(less())
+//     .pipe(gulp.dest('app/front-assets/css'))
+//     .pipe(livereload({ start: true }));
+// });
+//
+// gulp.task('html', function() {
+//   gulp.src('app/front-assets/js/components/*/*.html')
+//     .pipe(livereload());
+// });
+//
+// gulp.task('watch', function() {
+//   livereload.listen();
+//   gulp.watch('app/front-assets/less/*.less', ['less']);
+//   gulp.watch('app/front-assets/js/components/*/*.html', ['html']);
+// });

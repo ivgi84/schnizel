@@ -99,7 +99,7 @@
 .geo .wrap .findCity {
   display: block;
   border: none;
-  margin: 20px auto;
+  margin: 20px auto 0;
   width: 240px;
   height: 15px;
   padding: 5px;
