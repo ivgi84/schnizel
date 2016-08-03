@@ -59,10 +59,13 @@ nav {
   background: #fff;
   margin-bottom: 80px;
   border-bottom: 1px solid;
-  height: 80px;
+  max-height: 80px;
   position: fixed;
   top: 0;
   z-index: 99;
+  -webkit-transition: max-height 2s;
+  -moz-transition: max-height 2s;
+  transition: max-height 2s;
 }
 .navigation {
   max-width: 940px;
@@ -93,10 +96,10 @@ nav {
   background: #d4d1cd;
   padding: 10px 10px 3px;
 }
-.navigation .hambuerger {
+.navigation .hamburger {
   display: none;
 }
-.navigation .hambuerger span {
+.navigation .hamburger span {
   width: 50px;
   height: 2px;
   background: #54392d;
@@ -219,5 +222,46 @@ footer .left {
   }
   .navigation ul li.breakLine {
     clear: both;
+  }
+}
+@media (max-width: 740px) {
+  nav.mobileNavOpen {
+    max-height: 450px;
+  }
+  .navigation ul {
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: all .8s ease;
+    -moz-transition: all .8s ease;
+    transition: all .8s ease;
+  }
+  .navigation ul.mobileNavOpen {
+    clear: both;
+    margin-right: 20px;
+    visibility: visible;
+    opacity: 1;
+  }
+  .navigation ul.mobileNavOpen li {
+    float: none;
+    padding: 5px 0;
+  }
+  .navigation ul.mobileNavOpen li.navBtn {
+    margin: 5px 0;
+  }
+  .navigation .hamburger {
+    cursor: pointer;
+    width: 20px;
+    display: block;
+    border: 1px solid #000;
+    border-radius: 3px;
+    padding: 3px;
+    float: left;
+    margin-top: 25px;
+  }
+  .navigation .hamburger span {
+    width: 100%;
+    display: block;
+    background: #000;
+    margin: 2px 0;
   }
 }

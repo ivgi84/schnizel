@@ -1,10 +1,12 @@
-<nav class="full-width">
+<nav class="full-width" ng-class="{'mobileNavOpen':$ctrl.siteNav.mobileNavOpen}">
   <div class="navigation wrap">
     <a href="#/" class="logo"><img src="front-assets/images/home/logo.png" alt="" /></a>
-    <div class="hambuerger">
-      <span></span><span></span><span></span>
+    <div class="hamburger" ng-click="$ctrl.mobileNavToggle()">
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
-    <ul>
+    <ul ng-class="{'mobileNavOpen':$ctrl.siteNav.mobileNavOpen}">
       <li><a href="#/menu">תפריט</a></li>
       <li><a href="#/nutrition">תזונה</a></li>
       <li><a href="#/menu">שניצל בחברה טובה</a></li>

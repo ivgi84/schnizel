@@ -11,6 +11,7 @@ define(['angular', './components/components'], function() {
         var vm = this;
 
         vm.siteNav = {
+            mobileNavOpen: false,
             navigation: [
                 {
                     link:'#/menu',
@@ -24,8 +25,12 @@ define(['angular', './components/components'], function() {
                 }
             ]
         };
-
-
     }
+    SiteNavCtrl.prototype = {
+
+        mobileNavToggle: function mobileNavToggle(){
+            this.siteNav.mobileNavOpen =!this.siteNav.mobileNavOpen;
+        }
+    };
 
 });
