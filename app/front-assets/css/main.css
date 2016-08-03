@@ -58,14 +58,10 @@ section:after {
 nav {
   background: #fff;
   margin-bottom: 80px;
-  border-bottom: 1px solid;
-  max-height: 80px;
+  height: 80px;
   position: fixed;
   top: 0;
   z-index: 99;
-  -webkit-transition: max-height 2s;
-  -moz-transition: max-height 2s;
-  transition: max-height 2s;
 }
 .navigation {
   max-width: 940px;
@@ -137,9 +133,9 @@ footer .right .subscribe .inputRow input {
   background: transparent;
   border-bottom: 1px solid #fff;
   color: #fbb680;
-  width: 300px;
+  width: 260px;
   float: right;
-  font-size: 24px;
+  font-size: 22px;
 }
 footer .left .subscribe .inputRow input::-webkit-input-placeholder,
 footer .right .subscribe .inputRow input::-webkit-input-placeholder {
@@ -181,11 +177,11 @@ footer .right .list {
 footer .left .list p,
 footer .right .list p {
   color: #fff;
-  font-size: 24px;
+  font-size: 22px;
 }
 footer .left .list .terms,
 footer .right .list .terms {
-  font-size: 21px;
+  font-size: 18px;
 }
 footer .left .list ul,
 footer .right .list ul {
@@ -203,7 +199,7 @@ footer .right .list ul li:first-of-type {
 }
 footer .left .list ul li a,
 footer .right .list ul li a {
-  font-size: 27px;
+  font-size: 24px;
   text-decoration: none;
   color: #fff;
 }
@@ -223,23 +219,26 @@ footer .left {
   .navigation ul li.breakLine {
     clear: both;
   }
+  footer .left .subscribe label,
+  footer .right .subscribe label {
+    font-size: 20px;
+  }
+  footer .left .list ul li,
+  footer .right .list ul li {
+    margin: 10px;
+  }
 }
 @media (max-width: 740px) {
   nav.mobileNavOpen {
-    max-height: 450px;
+    height: auto;
   }
   .navigation ul {
-    visibility: hidden;
-    opacity: 0;
-    -webkit-transition: all .8s ease;
-    -moz-transition: all .8s ease;
-    transition: all .8s ease;
+    display: none;
   }
   .navigation ul.mobileNavOpen {
+    display: block;
     clear: both;
     margin-right: 20px;
-    visibility: visible;
-    opacity: 1;
   }
   .navigation ul.mobileNavOpen li {
     float: none;

@@ -59,14 +59,10 @@ section:after {
 nav {
     background: #fff;
     margin-bottom: 80px;
-    border-bottom: 1px solid;
-    max-height: 80px;
+    height: 80px;
     position: fixed;
     top: 0;
     z-index: 99;
-    -webkit-transition: max-height 2s;
-	-moz-transition: max-height 2s;
-	transition: max-height 2s;
 }
 .navigation {
     max-width: 940px;
@@ -135,9 +131,9 @@ footer {
                     background: transparent;
                     border-bottom: 1px solid #fff;
                     color:#fbb680;
-                    width: 300px;
+                    width: 260px;
                     float: right;
-                    font-size: 24px;
+                    font-size: 22px;
 
                     &::-webkit-input-placeholder {
                         color: #fbb680;
@@ -174,10 +170,10 @@ footer {
             margin-top: 20px;
             p{
                 color:#fff;
-                font-size: 24px;
+                font-size: 22px;
             }
             .terms{
-                font-size: 21px;
+                font-size: 18px;
             }
             ul{
                 list-style: none;
@@ -192,7 +188,7 @@ footer {
 
                     }
                     a{
-                        font-size: 27px;
+                        font-size: 24px;
                         text-decoration: none;
                         color:#fff;
                     }
@@ -219,27 +215,37 @@ footer {
             }
         }
     }
+    footer{
+        .left, .right{
+            .subscribe{
+                label{
+                    font-size: 20px;
+                }
+            }
+            .list{
+                ul{
+                    li{
+                        margin: 10px;
+                    }
+                }
+            }
+        }
+    }
 }
 @media (max-width:740px) {
     nav{
         &.mobileNavOpen{
-            max-height: 450px;
+            height: auto;
 
         }
     }
     .navigation{
         ul{
-            visibility: hidden;
-            opacity: 0;
-            -webkit-transition: all .8s ease;
-            -moz-transition: all .8s ease;
-            transition: all .8s ease;
+            display: none;
             &.mobileNavOpen{
+                display: block;
                 clear: both;
                 margin-right: 20px;
-                visibility: visible;
-                opacity: 1;
-
                 li{
                     float: none;
                     padding: 5px 0;
