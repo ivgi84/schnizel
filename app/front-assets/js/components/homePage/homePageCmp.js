@@ -1,4 +1,11 @@
-define(['angular', './directives/directives', './components/components', 'slickJs', 'slickDirective','./services/services'], function() {
+define([
+    'angular',
+    './directives/directives',
+    './components/components',
+    './services/services',
+    './services/affiliates.service',
+    'slickJs',
+    'slickDirective'], function() {
 'use strict';
     angular
         .module('schnizelApp.components')
@@ -12,6 +19,8 @@ define(['angular', './directives/directives', './components/components', 'slickJ
 
     function HomePageCtrl(affiliatesSvc) {
         var vm = this;
+
+        vm.affiliatesSvc = affiliatesSvc;
 
         vm.user = {
             city:''
@@ -30,7 +39,7 @@ define(['angular', './directives/directives', './components/components', 'slickJ
     HomePageCtrl.prototype = {
         findNearest: function findNearest(){
             if(this.user.city.length >= 2){
-
+                console.log(this.affiliatesSvc.getAffilates());
             }
         }
     }

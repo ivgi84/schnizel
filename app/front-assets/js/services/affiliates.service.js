@@ -3,27 +3,28 @@ define(['angular'], function(angular){
 
   angular
     .module('schnizelApp.services')
-    .service('affiliates', affiliatesSvc);
+    .service('affiliatesSvc', affiliatesSvc);
 
     function affiliatesSvc(){
+
       var model = {
         affiliates : {
             'תל אביב': [ { address:' בלה בלה'}, { address:' 2בלה בלה1'}, { address:' 3בלה בלה1'} ],
-            'רמת גן': [{address:'שדג דגכ'},{'address':'שדגכד2'}],
-            'בני ברק': [{address:'שדגכ'},{address:'׳קרדג'}]
+            'רמת גן': [ { address:'שדג דגכ'},{address:'שדגכד2'}],
+            'בני ברק': [ { address:'שדגכ'},{ address:'׳קרדג'}]
         }
       };
 
       var getAffilates= function(){
-          return JSON.parse(this.model.affiliates);
+          return model.affiliates;
       };
 
+      var service = {
+        getAffilates: getAffilates
+      };
+
+      return service;
+
     }
-
-    var service = {
-      getAffilates: getAffilates
-    };
-
-    return service;
 
 });
