@@ -12,7 +12,7 @@ define(['angular','./services/services', './components/components','./services/s
     function SiteFooterCtrl (subscribeSvc, $timeout) {
         var vm = this;
         vm.subscribeSvc = subscribeSvc;
-
+        vm.$timeout = $timeout;
         vm.model = {
             user: {
                 email: '',
@@ -32,9 +32,9 @@ define(['angular','./services/services', './components/components','./services/s
             vm.subscribeSvc.subscribe(vm.model.user).then(function(response){
                 console.log(response);
                 vm.subscribe.response = response.data;
-                $timeout(function () {
+                vm.$timeout(function () {
                     vm.subscribe.response = null;
-                }, 1000);
+                }, 4000);
             });
         }
     };

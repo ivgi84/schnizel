@@ -1,3 +1,78 @@
 <site-nav></site-nav>
-<h1>Contact Schnizel</h1>
+<main role="main">
+  <section class="main full-width p-contact">
+    <div class="contactUs" ng-form name="contactUsForm" novalidate>
+      <div class="wrap">
+        <h3>צור איתנו קשר</h3>
+        <input type="text" name="name" value="" ng-model="$ctrl.model.user.name" required>
+        <input type="tel" name="tel" value="" ng-model="$ctrl.model.user.tel" required>
+        <input type="email" name="name" value="" ng-model="$ctrl.model.user.tel" required>
+        <textarea name="message" rows="8" cols="40" ng-model="$ctrl.model.user.message"></textarea>
+        <input type="button" name="name" value="שלח" ng-click="$ctrl.sendMessage()">
+      </div>
+    </div>
+  </section>
+  <section class="full-width affiliatesList">
+    <div class="wrap">
+      <h3>שניצל קומפני - סניפים</h3>
+      <div class="list">
+        <ul>
+          <li>
+            <h4>שניצל קומפני רמת גן</h4>
+            <h4>03-6138281</h4>
+            <div class="row">
+              <div class="right">
+                פקס להזמנות ומשלוחים:
+              </div>
+              <div class="left">
+                  03-6139461
+              </div>
+            </div>
+            <div class="row">
+              <div class="right">
+                שעות עבודה:
+              </div>
+              <div class="left">
+                      ימים א-ה 10:30-17:00
+              </div>
+            </div>
+            <div class="row">
+              <div class="right">
+                כתובת:
+              </div>
+              <div class="left">
+                      רח’ אבא הלל 7, רמת גן
+              </div>
+            </div>
+            <div class="row">
+              <div class="right">
+                אזורי משלוחים:
+              </div>
+              <div class="left">
+                   הבורסה רמת גן
+              </div>
+            </div>
+            <div class="shipping">
+              משלוחים און ליין
+            </div>
+          </li>
+          <li></li>
+        </ul>
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section class="full-width faq">
+    <div class="wrap">
+      <h3>שאלות נפוצות</h3>
+      <div class="faqList">
+
+      </div>
+    </div>
+  </section>
+</main>
 <site-footer></site-footer>
