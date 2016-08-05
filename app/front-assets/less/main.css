@@ -116,31 +116,8 @@ main {
   margin-top: 80px;
 }
 footer {
-  position: relative;
   padding: 20px 0;
   background: #54392d;
-  overflow: hidden;
-}
-footer .subsribeResponse {
-  transition: all 1s ease;
-  -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  position: absolute;
-  bottom: -100px;
-  z-index: 999;
-  width: 100%;
-  max-width: 500px;
-  text-align: center;
-  direction: rtl;
-  padding: 10px;
-  left: 50%;
-  margin-left: -250px;
-  color: #000;
-  background: #ccc;
-  font-size: 20px;
-}
-footer .subsribeResponse.open {
-  bottom: 150px;
 }
 footer .left,
 footer .right {

@@ -29,6 +29,14 @@
         <img class="igeo" src="front-assets/images/home/igeo.png" alt="" />
           <h3>מצא סניף קרוב</h3>
           <input class="findCity" type="text" name="name" value="" ng-change="$ctrl.findNearest()" ng-model="$ctrl.user.city" ng-model-options="{debounce: 1000}" placeholder="הזן עיר">
+          <div class="affiliatesList" ng-class="{'open':$ctrl.affiliates.exist}">
+              <ul>
+                <li ng-repeat="affilate in $ctrl.affiliates.list" ng-animate="{enter: 'animate-enter', leave: 'animate-leave'}">
+                  {{affilate.address }}
+                </li>
+              </ul>
+              <div class="clearfix"></div>
+          </div>
       </div>
   </section>
 </main>

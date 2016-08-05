@@ -21,7 +21,10 @@ define([
         var vm = this;
 
         vm.affiliatesSvc = affiliatesSvc;
-
+        vm.affiliates = {
+            exist:false,
+            list:[]
+        };
         vm.user = {
             city:''
         };
@@ -38,8 +41,14 @@ define([
 
     HomePageCtrl.prototype = {
         findNearest: function findNearest(){
-            if(this.user.city.length >= 2){
-                console.log(this.affiliatesSvc.getAffilates());
+            var data = this.affiliatesSvc.getAffilates();
+            if(data[this.user.city]){
+                this.affiliates.exist = true;
+                this.affiliates.list = data[this.user.city];
+            }
+            else{
+                this.affiliates.exist = false;
+                this.affiliates.list = [];
             }
         }
     }

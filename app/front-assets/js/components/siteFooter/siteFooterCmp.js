@@ -1,5 +1,5 @@
-define(['angular', './components/components'], function() {
-
+define(['angular','./services/services', './components/components','./services/subscribe.service'], function() {
+'use strict';
     angular
         .module('schnizelApp.components')
         .component('siteFooter', {
@@ -7,8 +7,36 @@ define(['angular', './components/components'], function() {
             controller: SiteFooterCtrl
         });
 
-    function SiteFooterCtrl () {
-        console.log('siteFooterCtrl');
+        SiteFooterCtrl.$inject = ['subscribeSvc', '$timeout'];
+
+    function SiteFooterCtrl (subscribeSvc, $timeout) {
+        var vm = this;
+        vm.subscribeSvc = subscribeSvc;
+
+        vm.model = {
+            user: {
+                email: '',
+                tel:''
+            }
+        };
+
+        vm.subsribe = {
+            response:null
+        };
     }
+
+    SiteFooterCtrl.prototype = {
+        subscribe: function subsribe(e){
+            var vm = this;
+            e.preventDefault();
+            vm.subscribeSvc.subscribe(vm.model.user).then(function(response){
+                console.log(response);
+                vm.subscribe.response = response.data;
+                $timeout(function () {
+                    vm.subscribe.response = null;
+                }, 1000);
+            });
+        }
+    };
 
 });

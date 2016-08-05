@@ -6,6 +6,7 @@ require.config({
         'jquery':'https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min',
         'angular': 'lib/angular.min',
         'ngRoute': 'lib/angular-route.min',
+        'ngAnimate': 'lib/angular-animate.min',
 
         //slickSlider
         'slickJs':'lib/vendor/slick.min',
@@ -29,6 +30,7 @@ require.config({
         'angular': { exports: 'angular' },
         'jquery': { exports: 'jquery' },
         'ngRoute': { exports: 'ngRoute', deps: ['angular'] },
+        'ngAnimate': { exports: 'ngAnimate', deps: ['angular'] },
         'slickjs': {exports: 'slickjs', deps: ['jquery'] },
         'app':{ deps: ['angular', 'ngRoute'] },
         'hpCmp': pageDeps,
@@ -42,5 +44,5 @@ require.config({
 require(['app'], function(){
     setTimeout(function(){
         angular.bootstrap(document, ['schnizelApp']);
-    },0);
+    },100);
 });
