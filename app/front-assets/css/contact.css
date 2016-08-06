@@ -1,3 +1,146 @@
+.p-contact {
+  font-family: assistant;
+}
 .p-contact .contactUs {
   background: #f58220;
+}
+.p-contact .contactUs .wrap {
+  padding: 50px 0;
+  width: 800px;
+}
+.p-contact .contactUs .wrap h3 {
+  font-size: 31px;
+  line-height: 31px;
+  text-align: center;
+  color: #3d241a;
+  padding-bottom: 20px;
+  font-family: assistantSemiBold;
+}
+.p-contact .contactUs .wrap .row {
+  margin: 0 auto;
+}
+.p-contact .contactUs .wrap .row input[type="email"],
+.p-contact .contactUs .wrap .row input[type="tel"],
+.p-contact .contactUs .wrap .row input[type="text"] {
+  width: 31%;
+  box-sizing: border-box;
+  padding: 1%;
+  border: 0;
+  max-width: 200px;
+  height: 30px;
+  margin: 0 3%;
+  text-align: right;
+  font-family: assistantLight;
+}
+.p-contact .contactUs .wrap .row textarea {
+  margin: 5px 3%;
+  width: 702px;
+  border: 0;
+  padding: 1%;
+  box-sizing: border-box;
+  text-align: right;
+  font-family: assistantLight;
+}
+.p-contact .contactUs .wrap .row input[type="button"] {
+  border: none;
+  font-size: 24px;
+  background: #3c2319;
+  font-family: assistantSemiBold;
+  color: #fff;
+  text-align: center;
+  margin: 0 auto;
+  width: 200px;
+  display: block;
+  cursor: pointer;
+}
+.p-contact .affiliatesList {
+  background: #3c2319;
+  color: #fff;
+}
+.p-contact .affiliatesList .wrap {
+  padding: 50px 0;
+  max-width: 800px;
+}
+.p-contact .affiliatesList .wrap h3 {
+  text-align: center;
+  font-family: assistantSemiBold;
+  font-size: 30px;
+  letter-spacing: 1px;
+}
+.p-contact .affiliatesList .wrap ul {
+  list-style: none;
+  clear: both;
+}
+.p-contact .affiliatesList .wrap ul li.col-2 {
+  width: 46%;
+  max-width: 300px;
+  display: inline-block;
+  margin: 1.5%;
+  box-sizing: border-box;
+}
+.p-contact .affiliatesList .wrap ul li.col-2:nth-child(1) {
+  float: right;
+}
+.p-contact .affiliatesList .wrap ul li.col-2:nth-child(2) {
+  float: left;
+}
+.p-contact .affiliatesList .wrap ul li.col-2 h4 {
+  font-family: assistantSemiBold;
+  color: #f58220;
+  font-size: 24px;
+}
+.p-contact .affiliatesList .wrap ul li.col-2 .row {
+  clear: both;
+  padding: 2px 0;
+  direction: rtl;
+}
+.p-contact .affiliatesList .wrap ul li.col-2 .row:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.p-contact .affiliatesList .wrap ul li.col-2 .row .right {
+  float: right;
+  font-family: assistant;
+  font-size: 18px;
+}
+.p-contact .affiliatesList .wrap ul li.col-2 .row .left {
+  float: left;
+  font-family: assistant;
+  font-size: 18px;
+}
+.p-contact .affiliatesList .wrap ul li.col-2 .shipping {
+  clear: both;
+  background: #f58220;
+  font-family: assistantSemiBold;
+  font-size: 20px;
+  text-align: center;
+  margin: 15px 0;
+  padding: 7px 0;
+}
+.p-contact .affiliatesList .wrap ul li.col-2::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.p-contact .affiliatesList .wrap ul li.col-3 {
+  display: inline-block;
+  margin: 30px 22px;
+  width: 33%;
+  max-width: 220px;
+}
+.p-contact .affiliatesList .wrap ul li.col-3 h4 {
+  font-size: 22px;
+  text-align: center;
+  color: #f58220;
+  font-family: assistantSemiBold;
+}
+.p-contact .affiliatesList .wrap ul li.col-3 .row {
+  text-align: center;
+  font-size: 18px;
+  line-height: 24px;
+}
+.p-contact .affiliatesList .wrap ul li.col-3 .row span {
+  display: block;
+  font-family: assistantSemiBold;
 }

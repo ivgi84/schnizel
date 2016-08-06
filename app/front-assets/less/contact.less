@@ -1,5 +1,149 @@
-.p-contact{
-  .contactUs{
-    background: #f58220;
-  }
+.p-contact {
+    font-family: assistant;
+    .contactUs {
+        background: #f58220;
+        .wrap {
+            padding: 50px 0;
+            width: 800px;
+            h3 {
+                font-size: 31px;
+                line-height: 31px;
+                text-align: center;
+                color: #3d241a;
+                padding-bottom: 20px;
+                font-family: assistantSemiBold;
+            }
+            .row {
+                margin: 0 auto;
+                input[type="email"],
+                input[type="tel"],
+                input[type="text"] {
+                    width: 31%;
+                    box-sizing: border-box;
+                    padding: 1%;
+                    border: 0;
+                    max-width: 200px;
+                    height: 30px;
+                    margin: 0 3%;
+                    text-align: right;
+                    font-family: assistantLight;
+                }
+                textarea {
+                    margin: 5px 3%;
+                    width: 702px;
+                    border: 0;
+                    padding: 1%;
+                    box-sizing: border-box;
+                    text-align: right;
+                    font-family: assistantLight;
+                }
+                input[type="button"] {
+                    border: none;
+                    font-size: 24px;
+                    text-align: center;
+                    background: #3c2319;
+                    font-family: assistantSemiBold;
+                    color: #fff;
+                    text-align: center;
+                    margin: 0 auto;
+                    width: 200px;
+                    display: block;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    .affiliatesList {
+        background: #3c2319;
+        color: #fff;
+        .wrap {
+            padding: 50px 0;
+            max-width: 800px;
+            h3 {
+                text-align: center;
+                font-family: assistantSemiBold;
+                font-size: 30px;
+                letter-spacing: 1px;
+            }
+            ul {
+                list-style: none;
+                clear: both;
+                li {
+                    &.col-2 {
+                        width: 46%;
+                        max-width: 300px;
+                        display: inline-block;
+                        margin: 1.5%;
+                        box-sizing: border-box;
+                        &:nth-child(1) {
+                            float: right;
+                        }
+                        &:nth-child(2) {
+                            float: left;
+                        }
+                        h4 {
+                            font-family: assistantSemiBold;
+                            color: #f58220;
+                            font-size: 24px;
+                        }
+                        .row {
+                            clear: both;
+                            padding: 2px 0;
+                            direction: rtl;
+                            &:after {
+                                content: "";
+                                display: block;
+                                clear: both;
+                            }
+                            .right {
+                                float: right;
+                                font-family: assistant;
+                                font-size: 18px;
+                            }
+                            .left {
+                                float: left;
+                                font-family: assistant;
+                                font-size: 18px;
+                            }
+                        }
+                        .shipping {
+                            clear: both;
+                            background: #f58220;
+                            font-family: assistantSemiBold;
+                            font-size: 20px;
+                            text-align: center;
+                            margin: 15px 0;
+                            padding: 7px 0;
+                        }
+                        &::after {
+                            content: "";
+                            display: block;
+                            clear: both;
+                        }
+                    }
+                    &.col-3{
+                        display: inline-block;
+                        margin: 30px 22px;
+                        width: 33%;
+                        max-width: 220px;
+                        h4{
+                            font-size: 22px;
+                            text-align: center;
+                            color:#f58220;
+                            font-family: assistantSemiBold;
+                        }
+                        .row{
+                            span{
+                                display: block;
+                                font-family: assistantSemiBold;
+                            }
+                            text-align: center;
+                            font-size: 18px;
+                            line-height: 24px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

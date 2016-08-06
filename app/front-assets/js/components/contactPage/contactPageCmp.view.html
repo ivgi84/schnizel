@@ -1,13 +1,17 @@
 <site-nav></site-nav>
-<main role="main">
-  <section class="main full-width p-contact">
-    <div class="contactUs" ng-form name="contactUsForm" novalidate>
-      <div class="wrap">
-        <h3>צור איתנו קשר</h3>
-        <input type="text" name="name" value="" ng-model="$ctrl.model.user.name" required>
-        <input type="tel" name="tel" value="" ng-model="$ctrl.model.user.tel" required>
-        <input type="email" name="name" value="" ng-model="$ctrl.model.user.tel" required>
-        <textarea name="message" rows="8" cols="40" ng-model="$ctrl.model.user.message"></textarea>
+<main role="main" class="p-contact">
+  <section class="main full-width contactUs">
+    <div class="wrap" ng-form name="contactUsForm" novalidate>
+      <h3>צור איתנו קשר</h3>
+      <div class="row">
+        <input type="text" name="name" placeholder="שם" value="" ng-model="$ctrl.model.user.name" required>
+        <input type="tel" name="tel" placeholder="טלפון" value="" ng-model="$ctrl.model.user.tel" required>
+        <input type="email" name="name" placeholder="דוא״ל" value="" ng-model="$ctrl.model.user.tel" required>
+      </div>
+      <div class="row">
+        <textarea name="message" placeholder="הודעה" rows="8" cols="40" ng-model="$ctrl.model.user.message"></textarea>
+      </div>
+      <div class="row">
         <input type="button" name="name" value="שלח" ng-click="$ctrl.sendMessage()">
       </div>
     </div>
@@ -17,7 +21,7 @@
       <h3>שניצל קומפני - סניפים</h3>
       <div class="list">
         <ul>
-          <li>
+          <li class="col-2">
             <h4>שניצל קומפני רמת גן</h4>
             <h4>03-6138281</h4>
             <div class="row">
@@ -56,12 +60,86 @@
               משלוחים און ליין
             </div>
           </li>
-          <li></li>
+          <li class="col-2">
+            <h4>שניצל קומפני רמת גן</h4>
+            <h4>03-6138281</h4>
+            <div class="row">
+              <div class="right">
+                פקס להזמנות ומשלוחים:
+              </div>
+              <div class="left">
+                  03-6139461
+              </div>
+            </div>
+            <div class="row">
+              <div class="right">
+                שעות עבודה:
+              </div>
+              <div class="left">
+                      ימים א-ה 10:30-17:00
+              </div>
+            </div>
+            <div class="row">
+              <div class="right">
+                כתובת:
+              </div>
+              <div class="left">
+                      רח’ אבא הלל 7, רמת גן
+              </div>
+            </div>
+            <div class="row">
+              <div class="right">
+                אזורי משלוחים:
+              </div>
+              <div class="left">
+                   הבורסה רמת גן
+              </div>
+            </div>
+            <div class="shipping">
+              משלוחים און ליין
+            </div>
+          </li>
         </ul>
         <ul>
-          <li></li>
-          <li></li>
-          <li></li>
+          <li class="col-3">
+            <h4>
+              שניצל קומפני הרצליה
+              <br>
+              09-9589234
+            </h4>
+            <div class="row">
+              <span>פקס להזמנות:</span>
+                  09-9589235 <br>
+                  ימים א-ה 10:30-18:00 <br>
+                    המנופים 9, הרצליה פיתוח
+            </div>
+          </li>
+          <li class="col-3">
+            <h4>
+              שניצל קומפני ריב"ל
+              <br>
+              03-5379181
+            </h4>
+            <div class="row">
+              <span>פקס להזמנות ומשלוחים:</span>
+                  03-5379281<br>
+                  ימים א-ה 10:30-18:00 <br>
+                    ריב"ל 10, תל אביב
+            </div>
+          </li>
+          <li class="col-3">
+            <h4>
+              שניצל קומפני בני ברק
+              <br>
+              03-5781655
+            </h4>
+            <div class="row">
+              <span>פקס להזמנות:</span>
+                  03-5781635<br>
+                  ימים א-ה 11:00-18:00 <br>
+                    בן גוריון 1, בני ברק
+            </div>
+          </li>
         </ul>
       </div>
     </div>
