@@ -59,7 +59,36 @@ class User{
         return $types;
     }
 
+    function sendMessage(){
+
+        $data = $this->getData();
+
+        if(empty($data['name'])||empty($data['email'])){
+            echo "Please fill at list your name and email";
+        }
+        else{
+            $message = "<html><head></head><body><h3>Want to contact us:</h3>";
+            $message .= "<p>From:".$name."<br />Email:".$email."<br />Telephone: ".$tel."<br />Message:".$mess."</p></body></html>";
+
+            $headers = "From: Schnicel Company" . "\r\n";
+            $headers .= "MIME-Version: 1.0" . "\r\n";
+            $headers .= "Content-type: text/html; charset=utf-8" . "\r\n";
+            $headers .= "Sensitivity: Personal"."\r\n";
+
+            $sent=mail("ivgi84@gmail.com" ,"Schnizel Company Message",$message, $headers);
+            if($sent){
+                $this->response->setUserMsg('המייל נשלח בהצלחה');
+                $this->response->setResult(true);
+            }
+            else{
+                $this->response->setUserMsg('שליחת מייל נחשלה');
+                $this->response->setResult(false);
+                $this->response->sentMessage(true);
+            }
+
+    }
 }
+
 
 
 if (isset($_GET['action'])) {

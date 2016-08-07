@@ -8,7 +8,43 @@ define(['angular', './components/components'], function() {
         });
 
     function ContactPageCtrl() {
-        console.log(2222);
+
+        var vm = this;
+
+        vm.model= {
+            user:{
+                name:'',
+                tel:'',
+                email:'',
+                message:''
+            }
+        };
+
+        var faq = {
+            "title": "Title",
+            "gold": [{
+                "title": "What is the best way to trade",
+                "text": "answer answer answer answer answer "
+            }, {
+                "title": "What is the best way to trade",
+                "text": "answer answer answer answer answer "
+            }, {
+                "title": "What is the best way to trade",
+                "text": "answer answer answer answer answer "
+            }, {
+                "title": "What is the best way to trade",
+                "text": "answer answer answer answer answer "
+            }, {
+                "title": "What is the best way to trade",
+                "text": "answer answer answer answer answer "
+            }]
+        };
     }
+
+    ContactPageCtrl.prototype = {
+        sentMessage: function sendMessage(){
+            
+        }
+    };
 
 });
