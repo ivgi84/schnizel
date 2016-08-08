@@ -152,7 +152,7 @@
               <div class="accordion_box" ng-repeat="slide in $ctrl.faq track by $index">
                   <h4 class="accordion_title"
                       ng-click="$parent.slideOpened == $index ? $parent.slideOpened = -1 :$parent.slideOpened = $index"
-                      ng-class="{open: slideOpened == $index}">{{slide.title}}</h4>
+                      ng-class="{'open': slideOpened == $index, 'closed':slideOpened != $index}">{{slide.title}}</h4>
 
                   <div class="accordion_content">{{slide.text}}</div>
               </div>
