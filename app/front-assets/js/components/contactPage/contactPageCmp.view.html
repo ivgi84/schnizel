@@ -148,13 +148,13 @@
     <div class="wrap">
       <h3>שאלות נפוצות</h3>
       <div class="faqList">
-        <div class="accordion" ng-init="tools.screenSize() ? slideOpened = -1 : slideOpened = 0;">
-              <div class="accordion_box" ng-repeat="slide in content.s5[stockInfo.symbol] track by $index">
-                  <h3 class="accordion_title"
+        <div class="accordion" ng-init="$ctrl.isMobile.screenSize() ? slideOpened = -1 : slideOpened = 0;">
+              <div class="accordion_box" ng-repeat="slide in $ctrl.faq track by $index">
+                  <h4 class="accordion_title"
                       ng-click="$parent.slideOpened == $index ? $parent.slideOpened = -1 :$parent.slideOpened = $index"
-                      ng-class="{open: slideOpened == $index}">{{resolveContent(slide.title)}}</h3>
+                      ng-class="{open: slideOpened == $index}">{{slide.title}}</h4>
 
-                  <div class="accordion_content" ng-bind-html="resolveContent(slide.text)"></div>
+                  <div class="accordion_content">{{slide.text}}</div>
               </div>
           </div>
       </div>

@@ -1,10 +1,6 @@
 define(['angular'], function(angular){
   'use strict';
 
-  angular
-    .module('schnizelApp.services')
-    .service('affiliatesSvc', affiliatesSvc);
-
     function affiliatesSvc(){
 
       var model = {
@@ -26,5 +22,7 @@ define(['angular'], function(angular){
       return service;
 
     }
+
+    return affiliatesSvc;
 
 });

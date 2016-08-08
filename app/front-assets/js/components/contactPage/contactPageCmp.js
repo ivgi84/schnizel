@@ -1,4 +1,4 @@
-define(['angular', './components/components'], function() {
+define(['angular', './components/components', './services/services', './services/faq.service'], function() {
 
     angular
         .module('schnizelApp.components')
@@ -7,44 +7,50 @@ define(['angular', './components/components'], function() {
             controller: ContactPageCtrl
         });
 
-    function ContactPageCtrl() {
+    ContactPageCtrl.$inject = ['subscribeSvc', 'faqService'];
+
+    function ContactPageCtrl(subscribeSvc, faqService) {
 
         var vm = this;
+        vm.subscribeSvc = subscribeSvc;
+        vm.faqService = faqService;
 
-        vm.model= {
-            user:{
-                name:'',
-                tel:'',
-                email:'',
-                message:''
+        vm.model = {
+            user: {
+                name: '',
+                tel: '',
+                email: '',
+                message: ''
             }
         };
 
-        var faq = {
-            "title": "Title",
-            "gold": [{
-                "title": "What is the best way to trade",
-                "text": "answer answer answer answer answer "
-            }, {
-                "title": "What is the best way to trade",
-                "text": "answer answer answer answer answer "
-            }, {
-                "title": "What is the best way to trade",
-                "text": "answer answer answer answer answer "
-            }, {
-                "title": "What is the best way to trade",
-                "text": "answer answer answer answer answer "
-            }, {
-                "title": "What is the best way to trade",
-                "text": "answer answer answer answer answer "
-            }]
+        vm.faq = [];
+
+        vm.isMobile = {
+            screenSize: function() {
+                return window.innerWidth < 767;
+            }
         };
+
+        vm.$onInit = function $onInit() {
+            this.getFaqList();
+        };
+
+
+
     }
 
     ContactPageCtrl.prototype = {
-        sentMessage: function sendMessage(){
-            
+        sentMessage: function sendMessage() {
+            this.subscribeSvc.sentMessage();
+        },
+        getFaqList: function getFaqList() {
+            var self = this;
+            this.faqService.getFaqList().then(function(resposne) {
+                self.faq = resposne;
+            });
         }
+
     };
 
 });
