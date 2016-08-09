@@ -1,4 +1,4 @@
-define(['angular', './directives/directives'], function() {
+define(['angular', './directives/directives','slickJs'], function() {
 
     angular
         .module('schnizelApp.directives')
@@ -6,8 +6,11 @@ define(['angular', './directives/directives'], function() {
             return {
                 restrict: 'A',
                 link: function(scope, element, attrs) {
+                    var obj = scope.$eval(attrs.slickSlider)
+                    obj.customPaging = function (slider, i) { return '<button class="tab">' + $('.slick-thumbs li:nth-child(' + (i + 1) + ')').html() + '</button>'; }
+
                     $timeout(function() {
-                        $(element).slick(scope.$eval(attrs.slickSlider));
+                        $(element).slick(obj);
                     },200);
                 }
             };

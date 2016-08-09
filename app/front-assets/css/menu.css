@@ -1,0 +1,85 @@
+.p-menu .slider {
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+  font-family: assistant;
+}
+.p-menu .slider .sliderContent {
+  width: 100%;
+  height: 300px;
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+}
+.p-menu .slider .sliderContent .slide {
+  background: url('../images/home/slide_1.png') no-repeat;
+  background-size: cover;
+  height: 300px;
+}
+.p-menu .slider .sliderContent h3 {
+  font-size: 50px;
+  vertical-align: middle;
+  padding-top: 30vh;
+  font-size: 90px;
+  line-height: 90px;
+  padding-bottom: 20px;
+}
+.p-menu .slider .sliderContent h4 {
+  opacity: 0.8;
+  font-size: 52px;
+}
+.p-menu .slider .slick-thumbs,
+.p-menu .slider .slick-thumbs {
+  position: absolute;
+  left: -9999px;
+}
+.p-menu .slider .slick-dots {
+  bottom: 0;
+  top: auto;
+  left: auto;
+  right: auto;
+  position: absolute;
+  line-height: 0;
+  background: #000;
+}
+.p-menu .slider .slick-dots li {
+  margin: 5px;
+  border: 1px solid #ccc;
+  display: inline-block;
+  width: auto;
+  height: auto;
+}
+.p-menu .slider .slick-dots li button {
+  margin: 0;
+  height: auto;
+  width: 100%;
+  padding: 0;
+}
+.p-menu .slider .slick-dots li button::before {
+  content: '';
+  border: 1px solid #f00;
+  display: block;
+  max-width: 150px;
+  overflow: hidden;
+  float: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.p-menu .slider .slick-dots li button.tab {
+  clear: both;
+  display: block;
+}
+.p-menu .slider .slick-dots li button img {
+  width: 100%;
+  max-width: 80px;
+  height: auto;
+}
+.p-menu .slider .slick-dots li,
+.p-menu .slider .slick-dots li button:before {
+  margin: 0;
+  padding: 0;
+}
+.p-menu .slider .slick-slider .slick-track {
+  min-width: 100%;
+}

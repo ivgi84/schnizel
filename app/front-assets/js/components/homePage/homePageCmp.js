@@ -4,7 +4,6 @@ define([
     './components/components',
     './services/services',
     './services/affiliates.service',
-    'slickJs',
     'slickDirective'], function() {
 'use strict';
     angular

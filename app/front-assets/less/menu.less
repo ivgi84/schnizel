@@ -1,0 +1,89 @@
+.p-menu {
+    .slider {
+        background-size: cover;
+        width: 100%;
+        height: 300px;
+        font-family: assistant;
+        .sliderContent {
+            width: 100%;
+            height: 300px;
+            margin: 0 auto;
+            text-align: center;
+            color: #fff;
+            .slide {
+                background: url('../images/home/slide_1.png') no-repeat;
+                background-size: cover;
+                height: 300px;
+            }
+            h3 {
+                font-size: 50px;
+                vertical-align: middle;
+                padding-top: 30vh;
+                font-size: 90px;
+                line-height: 90px;
+                padding-bottom: 20px;
+            }
+            h4 {
+                opacity: 0.8;
+                font-size: 52px;
+            }
+        }
+        //slider-thumbs customization
+        .slick-thumbs,
+        .slick-thumbs {
+            position: absolute;
+            left: -9999px;
+        }
+        .slick-dots {
+            bottom: 0;
+            top: auto;
+            left: auto;
+            right: auto;
+            position: absolute;
+            line-height: 0;
+            background: #000;
+            li {
+                margin: 5px;
+                border: 1px solid #ccc;
+                display: inline-block;
+                width: auto;
+                height: auto;
+                button {
+                    margin: 0;
+                    height: auto;
+                    width: 100%;
+                    padding: 0;
+                    &::before {
+                        content: '';
+                        border: 1px solid #f00;
+                        display: block;
+                        width: 100%;
+                        max-width: 150px;
+                        overflow: hidden;
+                        float: none;
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                    }
+                    &.tab {
+                        clear: both;
+                        display: block;
+                    }
+                    img {
+                        width: 100%;
+                        max-width: 80px;
+                        height: auto;
+                    }
+                }
+            }
+        }
+        .slick-dots li,
+        .slick-dots li button:before {
+            margin: 0;
+            padding: 0;
+        }
+        .slick-slider .slick-track {
+            min-width: 100%;
+        }
+    }
+}
