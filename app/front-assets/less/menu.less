@@ -2,18 +2,18 @@
     .slider {
         background-size: cover;
         width: 100%;
-        height: 300px;
+        height: 600px;
         font-family: assistant;
+        margin: 0 0 120px 0;
         .sliderContent {
             width: 100%;
-            height: 300px;
+            height: 600px;
             margin: 0 auto;
             text-align: center;
             color: #fff;
             .slide {
-                background: url('../images/home/slide_1.png') no-repeat;
                 background-size: cover;
-                height: 300px;
+                height: 600px;
             }
             h3 {
                 font-size: 50px;
@@ -34,17 +34,23 @@
             position: absolute;
             left: -9999px;
         }
+        .slick-dots li,
+        .slick-dots li button:before {
+            margin: 0;
+            padding: 0;
+        }
+        .slick-slider .slick-track {
+            min-width: 100%;
+        }
         .slick-dots {
-            bottom: 0;
+            bottom: -80px;
             top: auto;
             left: auto;
             right: auto;
             position: absolute;
             line-height: 0;
-            background: #000;
             li {
-                margin: 5px;
-                border: 1px solid #ccc;
+                margin: 0 10px;
                 display: inline-block;
                 width: auto;
                 height: auto;
@@ -55,7 +61,6 @@
                     padding: 0;
                     &::before {
                         content: '';
-                        border: 1px solid #f00;
                         display: block;
                         width: 100%;
                         max-width: 150px;
@@ -76,14 +81,6 @@
                     }
                 }
             }
-        }
-        .slick-dots li,
-        .slick-dots li button:before {
-            margin: 0;
-            padding: 0;
-        }
-        .slick-slider .slick-track {
-            min-width: 100%;
         }
     }
 }

@@ -1,53 +1,76 @@
-<!-- <site-nav></site-nav> -->
+<site-nav></site-nav>
 <main role="main" class="p-menu">
     <section class="main full-width">
         <div class="slider">
-            <div class="sliderContent" slick-slider={{$ctrl.slider.settings}}>
-                <div class="slide" ng-repeat="slide in $ctrl.slider.slides" style="background:url(front-assets/images/home/{{slide.img}}.png)">
+            <div class="sliderContent" slick-slider={{$ctrl.sliders.settings}}>
+                <div class="slide" ng-repeat="slide in $ctrl.sliders.top.slides" style="background:url(front-assets/images/menu/{{slide.slide.img}})">
                     <h3>
-                        שעות של הכנות ...
-                        <br>
-                        שניות של הגשה
+                        {{slide.slide.text.title}}
                     </h3>
-                    <h4>בואו ראו איך מכינים הכל טרי! >>
-                    </h4>
+                    <p>
+                        {{slide.slide.text.describtion}}
+                    </p>
                 </div>
             </div>
             <div class="slick-thumbs">
                 <ul>
-                    <li>
-                        <img src="http://placehold.it/150x100/200"/>
-                    </li>
-                    <li>
-                        <img src="http://placehold.it/150x100/300"/>
-                    </li>
-                    <li>
-                        <img src="http://placehold.it/150x100/400"/>
+                    <li ng-repeat="slide in $ctrl.sliders.top.slides">
+                        <img ng-src="front-assets/images/menu/{{slide.thumb.img}}"/>
+                        <p>{{slide.thumb.title}}</p>
                     </li>
                 </ul>
             </div>
         </section>
         <section class="full-width menu">
             <div class="wrap">
-                <h3>כותרת ראשית</h1>
-
+                <div class="">
+                    some other content
+                </div>
+                <div class="">
+                    some other content
+                </div>
+                <div class="">
+                    some other content
+                </div>
+                <div class="">
+                    some other content
+                </div>
+                <div class="">
+                    some other content
+                </div>
+                <div class="">
+                    some other content
+                </div>
+                <div class="">
+                    some other content
+                </div>
+                <div class="">
+                    some other content
+                </div>
             </div>
         </section>
         <section class="main full-width">
             <div class="slider">
-                <div class="sliderContent" slick-slider="{{$ctrl.slider.settings}}">
-                    <div class="slide" ng-repeat="slide in $ctrl.slider.slides" style="background:url(front-assets/images/home/{{slide.img}}.png)">
+                <div class="sliderContent" slick-slider={{$ctrl.sliders.settings}}>
+                    <div class="slide" ng-repeat="slide in $ctrl.sliders.bottom.slides" style="background:url(front-assets/images/menu/{{slide.slide.img}})">
                         <h3>
-                            שעות של הכנות ...
-                            <br>
-                            שניות של הגשה
+                            {{slide.slide.text.title}}
                         </h3>
-                        <h4>בואו ראו איך מכינים הכל טרי! >>
-                        </h4>
+                        <p>
+                            {{slide.slide.text.describtion}}
+                        </p>
                     </div>
+                </div>
+                <div class="slick-thumbs">
+                    <ul>
+                        <li ng-repeat="slide in $ctrl.sliders.bottom.slides">
+                            <img ng-src="front-assets/images/menu/{{slide.thumb.img}}"/>
+                            <p>{{slide.thumb.title}}</p>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </section>
 
     </main>
-    <!-- <site-footer></site-footer> -->
+    <site-footer></site-footer>

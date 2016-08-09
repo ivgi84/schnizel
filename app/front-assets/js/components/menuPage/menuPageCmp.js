@@ -11,7 +11,7 @@ define(['angular', './components/components', 'slickDirective'], function() {
     function MenuPageCtrl() {
         var vm = this;
 
-        vm.slider = {
+        vm.sliders = {
             settings: {
                 dots: true,
                 arrows: true,
@@ -19,15 +19,89 @@ define(['angular', './components/components', 'slickDirective'], function() {
                 slidesToShow: 1,
                 infinite: true
             },
-            slides: [{
-                img: 'slide_1'
-            }, {
-                img: 'slide_1'
-            }, {
-                img: 'slide_1'
-            }]
-        }
-
+            top: {
+                slides: [{
+                    slide: {
+                        img: 'top-slider-1.jpg',
+                        text: {
+                            title: 'טייטל',
+                            describtion: 'איזה טקסט'
+                        }
+                    },
+                    thumb: {
+                        img: 'top-slider-thumb-1.jpg',
+                        title: 'שניצל'
+                    }
+                },
+                {
+                    slide: {
+                        img: 'top-slider-1.jpg',
+                        text: {
+                            title: 'טייטל',
+                            describtion: 'איזה טקסט'
+                        }
+                    },
+                    thumb: {
+                        img: 'top-slider-thumb-1.jpg',
+                        title: 'שניצל'
+                    }
+                },
+                {
+                    slide: {
+                        img: 'top-slider-1.jpg',
+                        text: {
+                            title: 'טייטל',
+                            describtion: 'איזה טקסט'
+                        }
+                    },
+                    thumb: {
+                        img: 'top-slider-thumb-1.jpg',
+                        title: 'שניצל'
+                    }
+                }]
+            },
+            bottom: {
+                slides: [{
+                    slide: {
+                        img: 'bottom-slider-1.jpg',
+                        text: {
+                            title: 'טייטל',
+                            describtion: 'איזה טקסט'
+                        }
+                    },
+                    thumb: {
+                        img: 'bottom-slider-thumb-1.png',
+                        title: 'שניצל'
+                    }
+                },
+                {
+                    slide: {
+                        img: 'bottom-slider-1.jpg',
+                        text: {
+                            title: 'טייטל',
+                            describtion: 'איזה טקסט'
+                        }
+                    },
+                    thumb: {
+                        img: 'bottom-slider-thumb-1.png',
+                        title: 'שניצל'
+                    }
+                },
+                {
+                    slide: {
+                        img: 'bottom-slider-1.jpg',
+                        text: {
+                            title: 'טייטל',
+                            describtion: 'איזה טקסט'
+                        }
+                    },
+                    thumb: {
+                        img: 'bottom-slider-thumb-1.png',
+                        title: 'שניצל'
+                    }
+                }]
+            },
+        };
     }
 
 });
