@@ -1,4 +1,4 @@
-define(['angular', './components/components', './services/services', './services/faq.service'], function() {
+define(['angular', './components/components', './services/services', './services/base.service'], function() {
 
     angular
         .module('schnizelApp.components')
@@ -7,13 +7,13 @@ define(['angular', './components/components', './services/services', './services
             controller: ContactPageCtrl
         });
 
-    ContactPageCtrl.$inject = ['subscribeSvc', 'faqService'];
+    ContactPageCtrl.$inject = ['subscribeSvc', 'baseService'];
 
-    function ContactPageCtrl(subscribeSvc, faqService) {
+    function ContactPageCtrl(subscribeSvc, baseService) {
 
         var vm = this;
         vm.subscribeSvc = subscribeSvc;
-        vm.faqService = faqService;
+        vm.baseService = baseService;
 
         vm.model = {
             user: {
@@ -46,7 +46,8 @@ define(['angular', './components/components', './services/services', './services
         },
         getFaqList: function getFaqList() {
             var self = this;
-            this.faqService.getFaqList().then(function(resposne) {
+            this.baseService.getJson('faq').then(function(resposne) {
+                console.log(resposne);
                 self.faq = resposne;
             });
         }

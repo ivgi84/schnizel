@@ -1,4 +1,8 @@
-define(['angular', './components/components', 'slickDirective'], function() {
+define(['angular',
+     './components/components',
+     'slickDirective',
+     './services/base.service',
+     './directives/toggleDescription.directive'], function() {
 
     angular
         .module('schnizelApp.components')
@@ -8,9 +12,13 @@ define(['angular', './components/components', 'slickDirective'], function() {
             require: ['^siteNav', '^siteFooter']
         });
 
-    function MenuPageCtrl() {
-        var vm = this;
+        MenuPageCtrl.$inject = ['baseService'];
 
+    function MenuPageCtrl(baseService) {
+        var vm = this;
+        vm.baseService = baseService;
+        vm.ingredients= [];
+        vm.isOpened = false;
         vm.sliders = {
             settings: {
                 dots: true,
@@ -84,7 +92,7 @@ define(['angular', './components/components', 'slickDirective'], function() {
                     },
                     thumb: {
                         img: 'bottom-slider-thumb-1.png',
-                        title: 'שניצל'
+                        title: 'שתיה'
                     }
                 },
                 {
@@ -97,11 +105,29 @@ define(['angular', './components/components', 'slickDirective'], function() {
                     },
                     thumb: {
                         img: 'bottom-slider-thumb-1.png',
-                        title: 'שניצל'
+                        title: 'שתיה'
                     }
                 }]
             },
         };
+
+        vm.init();
+
+    }
+
+    MenuPageCtrl.prototype = {
+
+        init: function init(){
+            this.getIngredients();
+        },
+
+        getIngredients: function getIngredients(){
+            var self = this;
+            this.baseService.getJson('ingredients').then(function(response){
+                console.log(response);
+                self.ingredients = response;
+            });
+        }
     }
 
 });

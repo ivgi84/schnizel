@@ -2,57 +2,9 @@
 <main role="main" class="p-menu">
     <section class="main full-width">
         <div class="slider">
-            <div class="sliderContent" slick-slider={{$ctrl.sliders.settings}}>
-                <div class="slide" ng-repeat="slide in $ctrl.sliders.top.slides" style="background:url(front-assets/images/menu/{{slide.slide.img}})">
-                    <h3>
-                        {{slide.slide.text.title}}
-                    </h3>
-                    <p>
-                        {{slide.slide.text.describtion}}
-                    </p>
-                </div>
-            </div>
-            <div class="slick-thumbs">
-                <ul>
-                    <li ng-repeat="slide in $ctrl.sliders.top.slides">
-                        <img ng-src="front-assets/images/menu/{{slide.thumb.img}}"/>
-                        <p>{{slide.thumb.title}}</p>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <section class="full-width menu">
-            <div class="wrap">
-                <div class="">
-                    some other content
-                </div>
-                <div class="">
-                    some other content
-                </div>
-                <div class="">
-                    some other content
-                </div>
-                <div class="">
-                    some other content
-                </div>
-                <div class="">
-                    some other content
-                </div>
-                <div class="">
-                    some other content
-                </div>
-                <div class="">
-                    some other content
-                </div>
-                <div class="">
-                    some other content
-                </div>
-            </div>
-        </section>
-        <section class="main full-width">
-            <div class="slider">
-                <div class="sliderContent" slick-slider={{$ctrl.sliders.settings}}>
-                    <div class="slide" ng-repeat="slide in $ctrl.sliders.bottom.slides" style="background:url(front-assets/images/menu/{{slide.slide.img}})">
+            <div class="sliderContent" id="topSlider" slick-slider={{$ctrl.sliders.settings}}>
+                <div class="slide" ng-repeat="slide in $ctrl.sliders.top.slides" style="background-image:url(front-assets/images/menu/{{slide.slide.img}})">
+                    <div class="slideText">
                         <h3>
                             {{slide.slide.text.title}}
                         </h3>
@@ -61,7 +13,66 @@
                         </p>
                     </div>
                 </div>
-                <div class="slick-thumbs">
+            </div>
+            <div class="slick-thumbs" id="top">
+                <ul>
+                    <li ng-repeat="slide in $ctrl.sliders.top.slides">
+                        <img ng-src="front-assets/images/menu/{{slide.thumb.img}}"/>
+                        <p>{{slide.thumb.title}}</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </section>
+        <section class="full-width ingredients">
+            <div class="wrap">
+                <div class="lists">
+                    <ul ng-repeat="lists in $ctrl.ingredients.lists">
+                        <li class="title">{{lists.title}}</li>
+                        <li ng-repeat="item in lists.list track by $index" class="col-size-{{lists.list.length}}">
+                            <div class="item" data-open-description>
+                                <img ng-src={{item.item.mainImg}} alt="" />
+                                <p>{{item.item.mainTitle}}</p>
+                            </div>
+                            <div class="description">
+                                <div class="close" data-close-description>X</div>
+                                <div class="right">
+                                    <img src="{{item.item.description.img}}" alt="" />
+                                </div>
+                                <div class="left">
+                                    <ul>
+                                        <li ng-repeat="step in item.item.description.process">
+                                            <h4>{{step.title}}</h4>
+                                            <p>{{step.text}}</p>
+                                        </li>
+                                    </ul>
+                                    <div class="clearfix"></div>
+                                    <div class="moreInfo">
+                                        <h4>{{item.item.description.process.more.title}}</h4>
+                                        <p>{{item.item.description.process.more.text}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="main full-width">
+            <div class="slider">
+                <div class="sliderContent" id="bottomSlider" slick-slider={{$ctrl.sliders.settings}}>
+                    <div class="slide" ng-repeat="slide in $ctrl.sliders.bottom.slides" style="background-image:url(front-assets/images/menu/{{slide.slide.img}})">
+                        <div class="slideText">
+                            <h3>
+                                {{slide.slide.text.title}}
+                            </h3>
+                            <p>
+                                {{slide.slide.text.describtion}}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slick-thumbs" id="bottom">
                     <ul>
                         <li ng-repeat="slide in $ctrl.sliders.bottom.slides">
                             <img ng-src="front-assets/images/menu/{{slide.thumb.img}}"/>
