@@ -119,46 +119,107 @@
   height: auto;
 }
 .p-menu .slider .slick-dots li button p {
-  color: #000;
-  font-size: 18px;
+  color: #3d241a;
+  font-size: 21px;
   font-family: assistantSemiBold;
   padding-top: 10px;
 }
 .p-menu .ingredients {
   background: #ccc;
+  padding: 30px;
 }
 .p-menu .ingredients .lists {
   text-align: center;
 }
-.p-menu .ingredients .lists ul {
+.p-menu .ingredients .lists > ul {
   list-style: none;
 }
-.p-menu .ingredients .lists ul li {
+.p-menu .ingredients .lists > ul li {
   display: inline-block;
 }
-.p-menu .ingredients .lists ul li.col-size-2 {
+.p-menu .ingredients .lists > ul li.col-size-2 {
   max-width: 48%;
 }
-.p-menu .ingredients .lists ul li.col-size-3 {
+.p-menu .ingredients .lists > ul li.col-size-3 {
   max-width: 31%;
 }
-.p-menu .ingredients .lists ul li.col-size-4 {
+.p-menu .ingredients .lists > ul li.col-size-4 {
   max-width: 22%;
 }
-.p-menu .ingredients .lists ul li.col-size-5 {
+.p-menu .ingredients .lists > ul li.col-size-5 {
   max-width: 18%;
 }
-.p-menu .ingredients .lists ul li.title {
+.p-menu .ingredients .lists > ul li.title {
   width: 100%;
   display: block;
-  font-size: 25px;
+  font-size: 32px;
   font-family: assistantSemiBold;
-  padding: 15px;
+  line-height: 30px;
+  padding: 40px 0 15px;
+  color: #3d241a;
 }
 .p-menu .ingredients .description {
   display: none;
   background: #fff;
   position: absolute;
+  z-index: 9;
+  left: 0;
+  margin-top: 30px;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.p-menu .ingredients .description .close {
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  font-weight: 300;
+  font-size: 50px;
+  line-height: 40px;
+}
+.p-menu .ingredients .description .descriptionTitle {
+  font-size: 28px;
+  padding: 10px 0 0;
+  color: #3d241a;
+  font-family: assistantSemiBold;
+}
+.p-menu .ingredients .description .right {
+  float: right;
+  width: 40%;
+}
+.p-menu .ingredients .description .left {
+  float: left;
+  text-align: center;
+  width: 60%;
+  padding-top: 50px;
+}
+.p-menu .ingredients .description .left ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+.p-menu .ingredients .description .left ul li h4 {
+  font-size: 18px;
+  color: #3d241a;
+}
+.p-menu .ingredients .description .left ul li p {
+  font-size: 16px;
+  color: #ccc;
+}
+.p-menu .ingredients .description .left .moreInfo {
+  max-width: 60%;
+  margin: 40px auto;
+  padding: 40px 0;
+  border-top: 2px dashed #d4d0cc;
+}
+.p-menu .ingredients .description .left .moreInfo h4 {
+  color: #3d241a;
+  font-size: 18px;
+  padding: 5px;
+}
+.p-menu .ingredients .description .left .moreInfo p {
+  color: #c08c19;
+  font-size: 16px;
 }
 .p-menu .ingredients .item {
   cursor: pointer;
@@ -167,15 +228,32 @@
   text-align: center;
   box-sizing: border-box;
 }
+.p-menu .ingredients .item:after {
+  opacity: 0;
+}
 .p-menu .ingredients .item img {
   width: 100%;
   height: auto;
 }
 .p-menu .ingredients .item p {
-  font-size: 16px;
-  color: #000;
-  font-family: assistant;
+  font-size: 18px;
+  color: #3d241a;
+  font-family: assistantSemiBold;
 }
-.p-menu .ingredients .item.opened + .description {
-  display: block;
+.p-menu .ingredients .item.opened:after {
+  opacity: 1;
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  margin-left: -25px;
+  z-index: 2;
+  content: '';
+  width: 0;
+  height: 0;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-bottom: 30px solid #fff;
+  -webkit-transition: 1s all ease;
+  -moz-transition: 1s all ease;
+  transition: 1s all ease;
 }

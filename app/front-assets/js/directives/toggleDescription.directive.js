@@ -7,8 +7,11 @@ define(['angular', './directives'], function() {
                 restrict: 'A',
                 link: function(scope, element, attrs) {
                     $(element).on('click', function(){
+                        $('.item').removeClass('opened');
                         $('.description').hide();
-                        $(this).next('.description').show();
+                        $(this).next('.description').fadeIn(400);
+                        $(element).addClass('opened');
+
                     })
                 }
             };
@@ -21,7 +24,8 @@ define(['angular', './directives'], function() {
                     restrict: 'A',
                     link: function(scope, element) {
                         $(element).on('click', function(){
-                            $('.description').hide();
+                            $('.item').removeClass('opened');
+                            $('.description').slideUp(400);
                         })
                     }
                 };

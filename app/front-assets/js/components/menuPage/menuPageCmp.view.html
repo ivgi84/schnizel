@@ -28,28 +28,30 @@
             <div class="wrap">
                 <div class="lists">
                     <ul ng-repeat="lists in $ctrl.ingredients.lists">
-                        <li class="title">{{lists.title}}</li>
+                        <li class="title"><h3>{{lists.title}}</h3></li>
                         <li ng-repeat="item in lists.list track by $index" class="col-size-{{lists.list.length}}">
                             <div class="item" data-open-description>
                                 <img ng-src={{item.item.mainImg}} alt="" />
                                 <p>{{item.item.mainTitle}}</p>
                             </div>
                             <div class="description">
-                                <div class="close" data-close-description>X</div>
-                                <div class="right">
-                                    <img src="{{item.item.description.img}}" alt="" />
-                                </div>
-                                <div class="left">
-                                    <ul>
-                                        <li ng-repeat="step in item.item.description.process">
-                                            <h4>{{step.title}}</h4>
-                                            <p>{{step.text}}</p>
-                                        </li>
-                                    </ul>
-                                    <div class="clearfix"></div>
-                                    <div class="moreInfo">
-                                        <h4>{{item.item.description.process.more.title}}</h4>
-                                        <p>{{item.item.description.process.more.text}}</p>
+                                <div class="wrap">
+                                    <div class="close" data-close-description>&#215;</div>
+                                    <h4 class="descriptionTitle">{{item.item.description.title}}</h4>
+                                    <div class="right">
+                                        <img src="{{item.item.description.img}}" alt="" />
+                                    </div>
+                                    <div class="left">
+                                        <ul>
+                                            <li ng-repeat="step in item.item.description.process">
+                                                <h4>{{step.title}}</h4>
+                                                <p>{{step.text}}</p>
+                                            </li>
+                                        </ul>
+                                        <div class="moreInfo">
+                                            <h4>{{item.item.description.more.title}}</h4>
+                                            <p>{{item.item.description.more.text}}</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
