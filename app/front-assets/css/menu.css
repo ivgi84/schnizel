@@ -3,7 +3,7 @@
   width: 100%;
   height: 600px;
   font-family: assistant;
-  margin: 0 0 120px;
+  margin: 0 0 200px;
 }
 .p-menu .slider .sliderContent {
   width: 100%;
@@ -96,7 +96,8 @@
 .p-menu .slider .slick-dots li button {
   margin: 0;
   height: auto;
-  width: 100%;
+  width: 100px;
+  height: 80px;
   padding: 0;
 }
 .p-menu .slider .slick-dots li button::before {
@@ -114,9 +115,8 @@
   display: block;
 }
 .p-menu .slider .slick-dots li button img {
-  width: 100%;
-  max-width: 100px;
-  height: auto;
+  width: auto;
+  height: 100%;
 }
 .p-menu .slider .slick-dots li button p {
   color: #3d241a;
@@ -127,6 +127,18 @@
 .p-menu .ingredients {
   background: #ccc;
   padding: 30px;
+  box-sizing: border-box;
+}
+.p-menu .ingredients .whats-indside {
+  background: url(../images/menu/i-whats_inside.png) no-repeat;
+  width: 219px;
+  height: 82px;
+  margin: -70px auto 0;
+  text-align: center;
+  font-family: assistantBold;
+  color: #fff;
+  font-size: 30px;
+  line-height: 60px;
 }
 .p-menu .ingredients .lists {
   text-align: center;
@@ -136,21 +148,12 @@
 }
 .p-menu .ingredients .lists > ul li {
   display: inline-block;
-}
-.p-menu .ingredients .lists > ul li.col-size-2 {
-  max-width: 48%;
-}
-.p-menu .ingredients .lists > ul li.col-size-3 {
-  max-width: 31%;
-}
-.p-menu .ingredients .lists > ul li.col-size-4 {
-  max-width: 22%;
-}
-.p-menu .ingredients .lists > ul li.col-size-5 {
-  max-width: 18%;
+  width: 18%;
+  min-width: 200px;
+  max-width: 190px;
 }
 .p-menu .ingredients .lists > ul li.title {
-  width: 100%;
+  margin: 0 auto;
   display: block;
   font-size: 32px;
   font-family: assistantSemiBold;
@@ -187,6 +190,10 @@
 .p-menu .ingredients .description .right {
   float: right;
   width: 40%;
+}
+.p-menu .ingredients .description .right img {
+  max-width: 320px;
+  height: auto;
 }
 .p-menu .ingredients .description .left {
   float: left;
