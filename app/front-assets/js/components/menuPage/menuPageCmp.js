@@ -118,12 +118,12 @@ define(['angular',
     MenuPageCtrl.prototype = {
 
         init: function init(){
-            this.getIngredients();
+            this.getMenu();
         },
 
-        getIngredients: function getIngredients(){
+        getMenu: function getMenu(){
             var self = this;
-            this.baseService.getJson('ingredients').then(function(response){
+            this.baseService.getJson('menu').then(function(response){
                 console.log(response);
                 self.ingredients = response;
             });

@@ -6,8 +6,9 @@ define(['angular'], function(angular) {
     function CommonService($http, $q) {
 
         var dataMap = {
-            ingredients : 'back-assets/data/ingredients.json',
-            faq : 'back-assets/data/faq.json'
+            menu : 'back-assets/data/menu.json',
+            faq : 'back-assets/data/faq.json',
+            ingredients: 'back-assets/data/ingredients.json'
         };
 
         var getJson = function getJson(data) {
