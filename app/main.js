@@ -3,7 +3,7 @@ var pageDeps = { deps: ['navCmp','footerCmp'] };
 require.config({
     baseUrl: 'front-assets/js',
     paths: {
-        '_':'lib/vendor/underscore-min'
+        '_':'lib/vendor/underscore-min',
         'jquery':'https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min',
         'angular': 'lib/angular.min',
         'ngRoute': 'lib/angular-route.min',

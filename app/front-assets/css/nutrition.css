@@ -1,0 +1,38 @@
+.p-nutrition .nutritionList .ingrid {
+  direction: rtl;
+}
+.p-nutrition .nutritionList .ingrid h4 {
+  display: inline-block;
+  width: 100px;
+}
+.p-nutrition .nutritionList .ingrid a {
+  text-decoration: none;
+  font-size: 22px;
+  color: blue;
+  padding: 10px;
+}
+.p-nutrition .nutritionList .ingrid ul {
+  list-style: none;
+  display: inline-block;
+}
+.p-nutrition .nutritionList .ingrid ul li {
+  display: inline-block;
+  width: 60px;
+  text-align: center;
+}
+.p-nutrition .calculated {
+  direction: rtl;
+}
+.p-nutrition .calculated h4 {
+  width: 130px;
+  display: inline-block;
+}
+.p-nutrition .calculated ul {
+  list-style: none;
+  display: inline-block;
+}
+.p-nutrition .calculated ul li {
+  width: 60px;
+  display: inline-block;
+  text-align: center;
+}

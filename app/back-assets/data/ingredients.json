@@ -1,7 +1,7 @@
 {
     "grilled_chicken": {
         "id": 1,
-        "type": "meat",
+        "type": "בשרים",
         "title": "עוף בגריל",
         "specials": {},
         "isSelected": false,
@@ -20,7 +20,7 @@
     },
     "spring_chicken": {
         "id": 2,
-        "type": "meat",
+        "type": "בשרים",
         "title": "פרגית",
         "specials": {},
         "isSelected": false,
@@ -39,7 +39,7 @@
     },
     "schnitzel": {
         "id": 3,
-        "type": "meat",
+        "type": "בשרים",
         "title": "שניצל",
         "specials": {},
         "isSelected": false,
@@ -58,7 +58,7 @@
     },
     "corn_schnitzel": {
         "id": 4,
-        "type": "meat",
+        "type": "בשרים",
         "title": "שניצל תירס",
         "specials": {},
         "isSelected": false,
@@ -77,7 +77,7 @@
     },
     "spinach_tofu": {
         "id": 5,
-        "type": "meat",
+        "type": "בשרים",
         "title": "קציצות טופו תרד וכרובית",
         "specials": {},
         "isSelected": false,
