@@ -18,9 +18,10 @@ define(['angular',
         var vm = this;
         vm.baseService = baseService;
 
+        vm.dishes = {};
+        vm.types = {};
         vm.ingredients = null;
-        vm.types = [];
-
+        
         vm.calculator= {
             toggle: this.toggle.bind(vm),
             result:{}
@@ -48,14 +49,17 @@ define(['angular',
 
             this.ingredients = data;
             this.calculator.result =_.mapObject(data.grilled_chicken.data, this.resetResult.bind(this));
-            this.types = this.setTypes(data);
+            this.types = this.setIngredientsByTypes(data);
+
         },
-        setTypes: function(data){
-            var types = [];
+        setIngredientsByTypes: function(data){
+            var types = {};
             for(var val in data){
-                types.push(data[val].type);
+                if(!types[data[val].type])
+                    types[data[val].type] = [];
+                types[data[val].type].push(data[val]);
             }
-            return _.uniq(types);
+            return types;
         },
         get calcResult(){
             return this.calculator.result;

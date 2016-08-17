@@ -1,31 +1,26 @@
-<!-- <site-nav></site-nav> -->
+<site-nav></site-nav>
 <main role="main" class="p-nutrition">
     <section class="main full-width">
-        <div class="innerNav">
-            <ul>
-                <li>nav1</li>
-                <li>nav2</li>
-                <li>nav3</li>
-                <li>nav4</li>
-            </ul>
-        </div>
       <div class="wrap">
           <div class="nutritionList">
-              <div class="ingrid" ng-repeat="(ind, val) in $ctrl.ingredients">
-                  <a href="#" class="toggle" ng-class="{'selected':val.isSelected}" ng-click="$ctrl.calculator.toggle($event, val)"></a>
-                  <h4>{{val.title}}</h4>
-                  <ul>
-                      <li>{{val.data.calories}}</li>
-                      <li>{{val.data.fat}}</li>
-                      <li>{{val.data.fiber}}</li>
-                      <li>{{val.data.cholesterol}}</li>
-                      <li>{{val.data.carbohydrates}}</li>
-                      <li>{{val.data.protein}}</li>
-                      <li>{{val.data.iron}}</li>
-                      <li>{{val.data.calcium }}</li>
-                      <li>{{val.data.vitamin_A}}</li>
-                      <li>{{val.data.vitamin_C}}</li>
-                  </ul>
+              <div class="ingrids" ng-repeat="(ind, type) in $ctrl.types">
+                  <h3>{{ind}}</h3>
+                  <div class="ingrid" ng-repeat="val in type">
+                      <a href="#" class="toggle" ng-class="{'selected':val.isSelected}" ng-click="$ctrl.calculator.toggle($event, val)"></a>
+                      <h4>{{val.title}}</h4>
+                      <ul>
+                          <li>{{val.data.calories}}</li>
+                          <li>{{val.data.fat}}</li>
+                          <li>{{val.data.fiber}}</li>
+                          <li>{{val.data.cholesterol}}</li>
+                          <li>{{val.data.carbohydrates}}</li>
+                          <li>{{val.data.protein}}</li>
+                          <li>{{val.data.iron}}</li>
+                          <li>{{val.data.calcium }}</li>
+                          <li>{{val.data.vitamin_A}}</li>
+                          <li>{{val.data.vitamin_C}}</li>
+                      </ul>
+                  </div>
               </div>
           </div>
 
@@ -38,4 +33,4 @@
       </div>
     </section>
     </main>
-<!-- <site-footer></site-footer> -->
+<site-footer></site-footer>

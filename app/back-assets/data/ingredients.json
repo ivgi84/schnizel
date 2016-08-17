@@ -3,7 +3,7 @@
         "id": 1,
         "type": "בשרים",
         "title": "עוף בגריל",
-        "specials": {},
+        "shownIn":["plate","baget","pita","salad","chips","drinks"],
         "isSelected": false,
         "data": {
             "calories": 328,
@@ -14,8 +14,8 @@
             "protein": 31,
             "iron": 1,
             "calcium": 0,
-            "vitamin_A": "",
-            "vitamin_C": ""
+            "vitamin_A": 0,
+            "vitamin_C": 0
         }
     },
     "spring_chicken": {
@@ -33,8 +33,8 @@
             "protein": 26,
             "iron": 1,
             "calcium": 0,
-            "vitamin_A": "",
-            "vitamin_C": ""
+            "vitamin_A": 0,
+            "vitamin_C": 0
         }
     },
     "schnitzel": {
@@ -52,8 +52,8 @@
             "protein": 33,
             "iron": 1,
             "calcium": 0,
-            "vitamin_A": "",
-            "vitamin_C": ""
+            "vitamin_A": 0,
+            "vitamin_C": 0
         }
     },
     "corn_schnitzel": {
@@ -71,8 +71,8 @@
             "protein": 8.5,
             "iron": 0,
             "calcium": 0,
-            "vitamin_A": "",
-            "vitamin_C": ""
+            "vitamin_A": 0,
+            "vitamin_C": 0
         }
     },
     "spinach_tofu": {
@@ -90,8 +90,65 @@
             "protein": 8.27,
             "iron": 3.1,
             "calcium": 152,
-            "vitamin_A": "",
-            "vitamin_C": ""
+            "vitamin_A": 0,
+            "vitamin_C": 0
+        }
+    },
+    "steamed_rice": {
+        "id": 6,
+        "type": "תוספות",
+        "title": "אורז מאודה",
+        "specials": {},
+        "isSelected": false,
+        "data": {
+            "calories": 121,
+            "fat": 0.2,
+            "fiber": 1.2,
+            "cholesterol": 2.7,
+            "carbohydrates": 27,
+            "protein": 2.8,
+            "iron": 0,
+            "calcium": 0,
+            "vitamin_A": 0,
+            "vitamin_C": 0
+        }
+    },
+    "puree": {
+        "id": 7,
+        "type": "תוספות",
+        "title": "פירה",
+        "specials": {},
+        "isSelected": false,
+        "data": {
+            "calories": 180,
+            "fat": 0,
+            "fiber": 0,
+            "cholesterol": 0,
+            "carbohydrates": 19,
+            "protein": 2,
+            "iron": 1.5,
+            "calcium": 15,
+            "vitamin_A": 0,
+            "vitamin_C": 0
+        }
+    },
+    "chips": {
+        "id": 8,
+        "type": "תוספות",
+        "title": "צ'יפס",
+        "specials": {},
+        "isSelected": false,
+        "data": {
+            "calories": 520,
+            "fat": 35.1,
+            "fiber": 0.9,
+            "cholesterol": 0,
+            "carbohydrates": 47,
+            "protein": 0,
+            "iron": 0,
+            "calcium": 0,
+            "vitamin_A": 0,
+            "vitamin_C": 0
         }
     }
 }

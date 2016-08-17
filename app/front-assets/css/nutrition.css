@@ -1,3 +1,6 @@
+.p-nutrition {
+  padding: 40px 0;
+}
 .p-nutrition .nutritionList .ingrid {
   direction: rtl;
   padding: 2px 0;
@@ -14,6 +17,7 @@
   width: 20px;
   display: inline-block;
   color: blue;
+  vertical-align: top;
 }
 .p-nutrition .nutritionList .ingrid .toggle:after {
   content: "+";
