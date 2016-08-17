@@ -1,4 +1,4 @@
-<site-nav></site-nav>
+<!-- <site-nav></site-nav> -->
 <main role="main" class="p-nutrition">
     <section class="main full-width">
         <div class="innerNav">
@@ -12,7 +12,7 @@
       <div class="wrap">
           <div class="nutritionList">
               <div class="ingrid" ng-repeat="(ind, val) in $ctrl.ingredients">
-                  <a href="#" class="add" ng-click="$ctrl.calculation.add($event, val.data)">+</a>
+                  <a href="#" class="toggle" ng-class="{'selected':val.isSelected}" ng-click="$ctrl.calculator.toggle($event, val)"></a>
                   <h4>{{val.title}}</h4>
                   <ul>
                       <li>{{val.data.calories}}</li>
@@ -22,7 +22,7 @@
                       <li>{{val.data.carbohydrates}}</li>
                       <li>{{val.data.protein}}</li>
                       <li>{{val.data.iron}}</li>
-                      <li>{{val.data.calcium}}</li>
+                      <li>{{val.data.calcium }}</li>
                       <li>{{val.data.vitamin_A}}</li>
                       <li>{{val.data.vitamin_C}}</li>
                   </ul>
@@ -32,10 +32,10 @@
           <div class="calculated">
               <h4>תוצעה</h4>
               <ul>
-                  <li ng-repeat="(ind, val) in $ctrl.calculation.calculatedResult">{{val}}</li>
+                  <li ng-repeat="(ind, val) in $ctrl.calculator.result">{{val | number:1}}</li>
               </ul>
           </div>
       </div>
     </section>
     </main>
-<site-footer></site-footer>
+<!-- <site-footer></site-footer> -->

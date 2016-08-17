@@ -1,15 +1,25 @@
 .p-nutrition .nutritionList .ingrid {
   direction: rtl;
+  padding: 2px 0;
+}
+.p-nutrition .nutritionList .ingrid:nth-child(even) {
+  background: #ccc;
 }
 .p-nutrition .nutritionList .ingrid h4 {
   display: inline-block;
   width: 100px;
 }
-.p-nutrition .nutritionList .ingrid a {
+.p-nutrition .nutritionList .ingrid .toggle {
   text-decoration: none;
-  font-size: 22px;
+  width: 20px;
+  display: inline-block;
   color: blue;
-  padding: 10px;
+}
+.p-nutrition .nutritionList .ingrid .toggle:after {
+  content: "+";
+}
+.p-nutrition .nutritionList .ingrid .toggle.selected:after {
+  content: "-";
 }
 .p-nutrition .nutritionList .ingrid ul {
   list-style: none;

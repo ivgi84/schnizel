@@ -19,22 +19,25 @@ define(['angular',
         vm.baseService = baseService;
 
         vm.ingredients = null;
+        vm.types = [];
 
-        vm.init();
-
-        vm.calculation= {
-            add: vm.add,
-            calculatedResult:{}
+        vm.calculator= {
+            toggle: this.toggle.bind(vm),
+            result:{}
         };
 
+        vm.init();
     }
 
     NutritionPageCtrl.prototype = {
         init: function init(){
             this.getData();
         },
-        setInitialResult: function setInitialResult(val, key){
-            return val = 0;
+        isNumeric: function isNumeric(val){
+            return !isNaN(parseFloat(val) && isFinite(val));
+        },
+        resetResult: function resetResult(val, key){
+            return (this.isNumeric(val)) ? 0 : val;
         },
         getData: function getData(){
             this.baseService.getJson('ingredients').then(this._proccessData.bind(this));
@@ -43,13 +46,42 @@ define(['angular',
             if(!data)
                 console.log('Error, no data recieved');
 
-                this.ingredients = data;
-                this.calculation.calculatedResult =_.mapObject(data.grilled_chicken.data, this.setInitialResult)
+            this.ingredients = data;
+            this.calculator.result =_.mapObject(data.grilled_chicken.data, this.resetResult.bind(this));
+            this.types = this.setTypes(data);
         },
-        add: function add($event, data){
-            debugger;
+        setTypes: function(data){
+            var types = [];
+            for(var val in data){
+                types.push(data[val].type);
+            }
+            return _.uniq(types);
+        },
+        get calcResult(){
+            return this.calculator.result;
+        },
+        set calcResult(val){
+            this.calculator.result = val;
+        },
+        _calculateChange: function _calculateChange(data){
+            var self = this;
+            var res = {};
+            if(!data.isSelected){
+                res =_.mapObject(data.data, function(val, key){
+                    return val += self.calcResult[key];
+                });
+            }
+            else{
+                res =_.mapObject(data.data, function(val, key){
+                    return self.calcResult[key] -= val;
+                });
+            }
+            return res;
+        },
+        toggle: function toggle($event, data){
             $event.preventDefault();
-
+            this.calcResult = this._calculateChange(data);
+            data.isSelected = !data.isSelected;
         }
     };
 
