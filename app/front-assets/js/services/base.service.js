@@ -1,36 +1,44 @@
 define(['angular'], function(angular) {
     'use strict';
 
-    CommonService.$inject = ['$http','$q'];
+    CommonService.$inject = ['$http', '$q'];
 
     function CommonService($http, $q) {
 
         var dataMap = {
-            menu : 'back-assets/data/menu.json',
-            faq : 'back-assets/data/faq.json',
-            ingredients: 'back-assets/data/ingredients.json'
+            menu: 'back-assets/data/menu.json',
+            faq: 'back-assets/data/faq.json',
+            ingredients: 'back-assets/data/ingredients.json',
+            dishes: 'back-assets/data/dishes.json'
         };
 
         var getJson = function getJson(data) {
-            if(dataMap[data]){
-                return $http.get(dataMap[data]).then(resolve, reject);
-            }
-            else{
-                reject();
-            }
+            if (data instanceof Array) {
 
+                var promises = data.map(function(data) {
+                    return $http.get(dataMap[data])
+                });
+                return $q.all(promises);
 
-            function resolve(response) {
-                return response.data;
-            }
+            } else {
+                if (dataMap[data]) {
+                    return $http.get(dataMap[data]).then(resolve, reject);
+                } else {
+                    reject();
+                }
 
-            function reject() {
-                console.log('error getting data');
+                function resolve(response) {
+                    return response.data;
+                }
+
+                function reject() {
+                    console.log('error getting data');
+                }
             }
         };
 
         return {
-            getJson : getJson
+            getJson: getJson
         };
     }
     return CommonService;

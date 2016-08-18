@@ -2,6 +2,11 @@
 <main role="main" class="p-nutrition">
     <section class="main full-width">
       <div class="wrap">
+          <div class="dishes">
+              <ul>
+                  <li ng-repeat="dish in $ctrl.dishes">{{::dish.title}}</li>
+              </ul>
+          </div>
           <div class="nutritionList">
               <div class="ingrids" ng-repeat="(ind, type) in $ctrl.types">
                   <h3>{{ind}}</h3>

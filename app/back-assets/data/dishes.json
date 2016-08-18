@@ -1,6 +1,27 @@
 {
-  "pita":{},
-  "schnizel":{},
-  "salad":{},
-  "children":{}
+  "plate":{
+    "title":"צלחת",
+    "types":[],
+    "ingredients":[]
+  },
+  "baget":{
+    "title":"בגת",
+    "types":[],
+    "ingredients":[]
+  },
+  "pita":{
+    "title":"פיתה",
+    "types":[],
+    "ingredients":[]
+  },
+  "salad":{
+    "title":"סלת",
+    "types":[],
+    "ingredients":[]
+  },
+  "drinks":{
+    "title":"שתיה",
+    "types":[],
+    "ingredients":[]
+  }
 }

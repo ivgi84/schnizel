@@ -21,7 +21,7 @@ define(['angular',
         vm.dishes = {};
         vm.types = {};
         vm.ingredients = null;
-        
+
         vm.calculator= {
             toggle: this.toggle.bind(vm),
             result:{}
@@ -41,15 +41,16 @@ define(['angular',
             return (this.isNumeric(val)) ? 0 : val;
         },
         getData: function getData(){
-            this.baseService.getJson('ingredients').then(this._proccessData.bind(this));
+            this.baseService.getJson(['ingredients','dishes']).then(this._proccessData.bind(this));
         },
         _proccessData: function _proccessData(data){
             if(!data)
                 console.log('Error, no data recieved');
 
-            this.ingredients = data;
-            this.calculator.result =_.mapObject(data.grilled_chicken.data, this.resetResult.bind(this));
-            this.types = this.setIngredientsByTypes(data);
+            this.ingredients = data[0].data;
+            this.dishes = data[1].data;
+            this.calculator.result =_.mapObject(this.ingredients.grilled_chicken.data, this.resetResult.bind(this));
+            this.types = this.setIngredientsByTypes(this.ingredients);
 
         },
         setIngredientsByTypes: function(data){
