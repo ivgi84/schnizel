@@ -50,17 +50,26 @@ define(['angular',
             this.ingredients = data[0].data;
             this.dishes = data[1].data;
             this.calculator.result =_.mapObject(this.ingredients.grilled_chicken.data, this.resetResult.bind(this));
-            this.types = this.setIngredientsByTypes(this.ingredients);
-
+            //this.types = this.setIngredientsByTypes(this.ingredients);
         },
-        setIngredientsByTypes: function(data){
+        setIngredientsByTypes: function setIngredientsByTypes(data){
             var types = {};
-            for(var val in data){
-                if(!types[data[val].type])
-                    types[data[val].type] = [];
-                types[data[val].type].push(data[val]);
-            }
+            _.each(data, function(ingred){
+                if(!types[ingred.type.title])
+                    types[ingred.type.title] = [];
+                types[ingred.type.title].push(ingred);
+            });
             return types;
+        },
+        getIngredsByDish: function getIngredsByDish(dishName, dish){
+            var ingredsToShow = [];
+            _.each(this.ingredients, function(ingred){
+                if(_.indexOf(ingred.shownIn, dishName) != -1  && _.indexOf(dish.types, ingred.type.name) != -1){
+                    debugger
+                    ingredsToShow.push(ingred);
+                }
+            });
+            this.types = this.setIngredientsByTypes(ingredsToShow);
         },
         get calcResult(){
             return this.calculator.result;

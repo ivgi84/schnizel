@@ -4,7 +4,7 @@
       <div class="wrap">
           <div class="dishes">
               <ul>
-                  <li ng-repeat="dish in $ctrl.dishes">{{::dish.title}}</li>
+                  <li ng-click="$ctrl.getIngredsByDish(dishName, dish);" ng-repeat="(dishName, dish) in $ctrl.dishes">{{::dish.title}}</li>
               </ul>
           </div>
           <div class="nutritionList">

@@ -1,6 +1,17 @@
 .p-nutrition {
   padding: 40px 0;
 }
+.p-nutrition .dishes ul {
+  list-style: none;
+}
+.p-nutrition .dishes ul li {
+  display: inline-block;
+  width: 18%;
+  max-width: 200px;
+  min-width: 100px;
+  text-align: center;
+  cursor: pointer;
+}
 .p-nutrition .nutritionList .ingrid {
   direction: rtl;
   padding: 2px 0;

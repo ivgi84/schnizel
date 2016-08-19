@@ -1,9 +1,12 @@
 {
     "grilled_chicken": {
         "id": 1,
-        "type": "בשרים",
+        "type": {
+            "name":"main",
+            "title":"עיקרית"
+        },
         "title": "עוף בגריל",
-        "shownIn":["plate","baget","pita","salad","chips","drinks"],
+        "shownIn":["baget","pita","salad","chips"],
         "isSelected": false,
         "data": {
             "calories": 328,
@@ -20,9 +23,12 @@
     },
     "spring_chicken": {
         "id": 2,
-        "type": "בשרים",
+        "type": {
+            "name":"main",
+            "title":"עיקרית"
+        },
         "title": "פרגית",
-        "specials": {},
+        "shownIn":["plate","baget","salad","chips"],
         "isSelected": false,
         "data": {
             "calories": 324,
@@ -39,9 +45,12 @@
     },
     "schnitzel": {
         "id": 3,
-        "type": "בשרים",
+        "type": {
+            "name":"main",
+            "title":"עיקרית"
+        },
         "title": "שניצל",
-        "specials": {},
+        "shownIn":["plate","baget","pita","chips"],
         "isSelected": false,
         "data": {
             "calories": 368,
@@ -58,9 +67,12 @@
     },
     "corn_schnitzel": {
         "id": 4,
-        "type": "בשרים",
+        "type": {
+            "name":"main",
+            "title":"עיקרית"
+        },
         "title": "שניצל תירס",
-        "specials": {},
+        "shownIn":["plate","pita","salad","chips"],
         "isSelected": false,
         "data": {
             "calories": 380,
@@ -77,9 +89,12 @@
     },
     "spinach_tofu": {
         "id": 5,
-        "type": "בשרים",
+        "type": {
+            "name":"main",
+            "title":"עיקרית"
+        },
         "title": "קציצות טופו תרד וכרובית",
-        "specials": {},
+        "shownIn":["baget","pita","salad"],
         "isSelected": false,
         "data": {
             "calories": 354,
@@ -96,9 +111,12 @@
     },
     "steamed_rice": {
         "id": 6,
-        "type": "תוספות",
+        "type": {
+            "name":"extras",
+            "title":"תוספות"
+        },
         "title": "אורז מאודה",
-        "specials": {},
+        "shownIn":["plate","baget","pita","salad","chips"],
         "isSelected": false,
         "data": {
             "calories": 121,
@@ -115,9 +133,12 @@
     },
     "puree": {
         "id": 7,
-        "type": "תוספות",
+        "type": {
+            "name":"extras",
+            "title":"תוספות"
+        },
         "title": "פירה",
-        "specials": {},
+        "shownIn":["plate","baget","pita","salad"],
         "isSelected": false,
         "data": {
             "calories": 180,
@@ -134,9 +155,12 @@
     },
     "chips": {
         "id": 8,
-        "type": "תוספות",
+        "type": {
+            "name":"extras",
+            "title":"תוספות"
+        },
         "title": "צ'יפס",
-        "specials": {},
+        "shownIn":["plate","baget","pita","chips"],
         "isSelected": false,
         "data": {
             "calories": 520,
