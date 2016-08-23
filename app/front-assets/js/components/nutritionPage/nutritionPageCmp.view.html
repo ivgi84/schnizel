@@ -13,7 +13,7 @@
                   <div class="ingrid" ng-repeat="val in type">
                       <a href="#" class="toggle" ng-class="{'selected':val.isSelected}" ng-click="$ctrl.calculator.toggle($event, val)"></a>
                       <h4>{{val.title}}</h4>
-                      <ul>
+                      <ul ng-show="val.isSelected">
                           <li>{{val.data.calories}}</li>
                           <li>{{val.data.fat}}</li>
                           <li>{{val.data.fiber}}</li>

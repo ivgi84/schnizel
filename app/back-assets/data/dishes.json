@@ -1,22 +1,18 @@
 {
   "plate":{
     "title":"צלחת",
-    "types":["main","extras","salad","souse","drinks"]
+    "types":["main","extras","salad","sauce"]
   },
   "baget":{
-    "title":"בגת",
-    "types":["main","salad","souse","drinks"]
+    "title":"באגט",
+    "types":["main","extras" ,"salad","sauce"]
   },
   "pita":{
     "title":"פיתה",
-    "types":["main","extras","salad","souse","drinks"]
+    "types":["main","extras","salad","sauce"]
   },
   "salad":{
-    "title":"סלת",
-    "types":["main","salad","drinks"]
-  },
-  "drinks":{
-    "title":"שתיה",
-    "types":["drinks"]
+    "title":"סלט",
+    "types":["main","salad", "sauce"]
   }
 }

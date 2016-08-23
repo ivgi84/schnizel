@@ -65,7 +65,6 @@ define(['angular',
             var ingredsToShow = [];
             _.each(this.ingredients, function(ingred){
                 if(_.indexOf(ingred.shownIn, dishName) != -1  && _.indexOf(dish.types, ingred.type.name) != -1){
-                    debugger
                     ingredsToShow.push(ingred);
                 }
             });

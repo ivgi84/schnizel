@@ -32,25 +32,7 @@ gulp.task('html', function() {
 gulp.task('default', ['serve']);
 
 
-
-// var gulp = require('gulp'),
-//     less = require('gulp-less'),
-//     livereload = require('gulp-livereload');
-//
-// gulp.task('less', function() {
-//   gulp.src('app/front-assets/less/*.less')
-//     .pipe(less())
-//     .pipe(gulp.dest('app/front-assets/css'))
-//     .pipe(livereload({ start: true }));
-// });
-//
-// gulp.task('html', function() {
-//   gulp.src('app/front-assets/js/components/*/*.html')
-//     .pipe(livereload());
-// });
-//
-// gulp.task('watch', function() {
-//   livereload.listen();
-//   gulp.watch('app/front-assets/less/*.less', ['less']);
-//   gulp.watch('app/front-assets/js/components/*/*.html', ['html']);
-// });
+gulp.task('deploy', function(){
+  gulp.src('app/front-assets/css/*.css')
+  .pipe(gulp.dest('prod/css'));
+});

@@ -174,5 +174,490 @@
             "vitamin_A": 0,
             "vitamin_C": 0
         }
+    },
+    "cooked_vegetables": {
+        "id": 9,
+        "type": {
+            "name":"extras",
+            "title":"תוספות"
+        },
+        "title": "ירק מבושל",
+        "shownIn":["plate","baget","pita","chips"],
+        "isSelected": false,
+        "data": {
+            "calories": 32,
+            "fat": 0.2,
+            "fiber": 0.9,
+            "cholesterol": 0,
+            "carbohydrates": 5.2,
+            "protein": 1.7,
+            "iron": 0,
+            "calcium": 0,
+            "vitamin_A": 0,
+            "vitamin_C": 0
+        }
+    },
+    "pasta": {
+        "id": 10,
+        "type": {
+            "name":"extras",
+            "title":"תוספות"
+        },
+        "title": "פסטה",
+        "shownIn":["plate","baget","pita","chips"],
+        "isSelected": false,
+        "data": {
+            "calories": 366,
+            "fat": 1.2,
+            "fiber": 2.3,
+            "cholesterol": 0,
+            "carbohydrates": 75,
+            "protein": 12.5,
+            "iron": 0,
+            "calcium": 0,
+            "vitamin_A": 0,
+            "vitamin_C": 0
+        }
+    },
+    "burgul_vegetables": {
+        "id": 11,
+        "type": {
+            "name":"extras",
+            "title":"תוספות"
+        },
+        "title": "בורגול עם ירקות",
+        "shownIn":["plate","baget","pita","chips"],
+        "isSelected": false,
+        "data": {
+            "calories": 320,
+            "fat": 2.1,
+            "fiber": 2.1,
+            "cholesterol": 0,
+            "carbohydrates": 102,
+            "protein": 17.5,
+            "iron": 0,
+            "calcium": 0,
+            "vitamin_A": 0,
+            "vitamin_C": 0
+        }
+    },
+    "humus": {
+        "id": 12,
+        "type": {
+            "name":"salad",
+            "title":"סלט"
+        },
+        "title": "חומוס",
+        "shownIn":["plate","baget","pita","chips"],
+        "isSelected": false,
+        "data": {
+            "calories": 320,
+            "fat": 28,
+            "fiber": 3,
+            "cholesterol": 0,
+            "carbohydrates": 8.5,
+            "protein": 6,
+            "iron": 0,
+            "calcium": 0,
+            "vitamin_A": 0,
+            "vitamin_C": 0
+        }
+    },
+    "eggs_salad": {
+        "id": 13,
+        "type": {
+            "name":"salad",
+            "title":"סלט"
+        },
+        "title": "סלט ביצים",
+        "shownIn":["plate","baget","pita","chips"],
+        "isSelected": false,
+        "data": {
+            "calories": 178,
+            "fat": 14.3,
+            "fiber": 0,
+            "cholesterol": 315,
+            "carbohydrates": 1.4,
+            "protein": 12,
+            "iron": 0,
+            "calcium": 0,
+            "vitamin_A": 0,
+            "vitamin_C": 0
+        }
+    },
+    "eggplant_salad_mayonnaise": {
+        "id": 14,
+        "type": {
+            "name":"salad",
+            "title":"סלט"
+        },
+        "title": "סלט חצילים מיונז",
+        "shownIn":["plate","baget","pita","chips"],
+        "isSelected": false,
+        "data": {
+            "calories": 231,
+            "fat": 24,
+            "fiber": 4,
+            "cholesterol": 15,
+            "carbohydrates": 3.8,
+            "protein": 0.9,
+            "iron": 0,
+            "calcium": 0,
+            "vitamin_A": 0,
+            "vitamin_C": 0
+        }
+    },
+    "eggplant_salad_peppers": {
+        "id": 15,
+        "type": {
+            "name":"salad",
+            "title":"סלט"
+        },
+        "title": "סלט חצילים עם גמבה",
+        "shownIn":["plate","baget","pita","chips"],
+        "isSelected": false,
+        "data": {
+            "calories": 108,
+            "fat": 9,
+            "fiber": 1,
+            "cholesterol": 0,
+            "carbohydrates": 5,
+            "protein": 1.5,
+            "iron": 0,
+            "calcium": 0,
+            "vitamin_A": 0,
+            "vitamin_C": 0
+        }
+    },
+    "zucchini_salad": {
+        "id": 16,
+        "type": {
+            "name":"salad",
+            "title":"סלט"
+        },
+        "title": "סלט קישואים",
+        "shownIn":["plate","baget","pita","chips"],
+        "isSelected": false,
+        "data": {
+            "calories": 55,
+            "fat": 2,
+            "fiber": 1.2,
+            "cholesterol": 0,
+            "carbohydrates": 6,
+            "protein": 1.4,
+            "iron": 0,
+            "calcium": 0,
+            "vitamin_A": 0,
+            "vitamin_C": 0
+        }
+    },
+    "tuna_salad": {
+        "id": 17,
+        "type": {
+            "name":"salad",
+            "title":"סלט"
+        },
+        "title": "סלט טונה",
+        "shownIn":["plate","baget","pita","chips"],
+        "isSelected": false,
+        "data": {
+            "calories": 310,
+            "fat": 3,
+            "fiber": 0,
+            "cholesterol": 0,
+            "carbohydrates": 1,
+            "protein": 8,
+            "iron": 0,
+            "calcium": 0,
+            "vitamin_A": 0,
+            "vitamin_C": 0
+        }
+    },
+    "cabbage_salad": {
+        "id": 18,
+        "type": {
+            "name":"salad",
+            "title":"סלט"
+        },
+        "title": "סלט כרוב",
+        "shownIn":["plate","baget","pita","chips"],
+        "isSelected": false,
+        "data": {
+            "calories": 312,
+            "fat": 11,
+            "fiber": 2,
+            "cholesterol": 0,
+            "carbohydrates": 51,
+            "protein": 4.9,
+            "iron": 0,
+            "calcium": 0,
+            "vitamin_A": 0,
+            "vitamin_C": 0
+        }
+    },
+    "salad_kolslo": {
+        "id": 19,
+        "type": {
+            "name":"salad",
+            "title":"סלט"
+        },
+        "title": "סלט קולסלו",
+        "shownIn":["plate","baget","pita","chips"],
+        "isSelected": false,
+        "data": {
+            "calories": 359,
+            "fat": 15,
+            "fiber": 2,
+            "cholesterol": 0,
+            "carbohydrates": 55,
+            "protein": 5,
+            "iron": 0,
+            "calcium": 0,
+            "vitamin_A": 0,
+            "vitamin_C": 0
+        }
+    },
+    "turkish_salad": {
+        "id": 20,
+        "type": {
+            "name":"salad",
+            "title":"סלט"
+        },
+        "title": "סלט תורכי",
+        "shownIn":["plate","baget","pita","chips"],
+        "isSelected": false,
+        "data": {
+            "calories": 75,
+            "fat": 2,
+            "fiber": 0.3,
+            "cholesterol": 0,
+            "carbohydrates": 5,
+            "protein": 1,
+            "iron": 0,
+            "calcium": 0,
+            "vitamin_A": 0,
+            "vitamin_C": 0
+        }
+    },
+    "shug": {
+        "id": 21,
+        "type": {
+            "name":"sauce",
+            "title":"ממרחים ורוטבים"
+        },
+        "title": "סחוג",
+        "shownIn":["plate","baget","pita","chips"],
+        "isSelected": false,
+        "data": {
+            "calories": 0,
+            "fat": 0,
+            "fiber": 0,
+            "cholesterol": 0,
+            "carbohydrates": 0,
+            "protein": 0,
+            "iron": 0,
+            "calcium": 0,
+            "vitamin_A": 0,
+            "vitamin_C": 0
+        }
+    },
+    "balsamic_vinaigrette": {
+        "id": 22,
+        "type": {
+            "name":"sauce",
+            "title":"ממרחים ורוטבים"
+        },
+        "title": "ויניגרט בלסמי",
+        "shownIn":["plate","baget","pita","chips"],
+        "isSelected": false,
+        "data": {
+            "calories": 0,
+            "fat": 0,
+            "fiber": 0,
+            "cholesterol": 0,
+            "carbohydrates": 0,
+            "protein": 0,
+            "iron": 0,
+            "calcium": 0,
+            "vitamin_A": 0,
+            "vitamin_C": 0
+        }
+    },
+    "elefaim_sauce": {
+        "id": 23,
+        "type": {
+            "name":"sauce",
+            "title":"ממרחים ורוטבים"
+        },
+        "title": "רוטב אלף האיים",
+        "shownIn":["plate","baget","pita","chips"],
+        "isSelected": false,
+        "data": {
+            "calories": 15.6,
+            "fat": 1.5,
+            "fiber": 0,
+            "cholesterol": 1,
+            "carbohydrates": 0.4,
+            "protein": 0.04,
+            "iron": 0,
+            "calcium": 0,
+            "vitamin_A": 0,
+            "vitamin_C": 0
+        }
+    },
+    "garlic_mayonnaise_sauce": {
+        "id": 24,
+        "type": {
+            "name":"sauce",
+            "title":"ממרחים ורוטבים"
+        },
+        "title": "רוטב מיונז שום",
+        "shownIn":["plate","baget","pita","chips"],
+        "isSelected": false,
+        "data": {
+            "calories": 32.4,
+            "fat": 3.6,
+            "fiber": 0,
+            "cholesterol": 2.7,
+            "carbohydrates": 0.1,
+            "protein": 0.1,
+            "iron": 0,
+            "calcium": 0,
+            "vitamin_A": 0,
+            "vitamin_C": 0
+        }
+    },
+    "tariaki_sauce": {
+        "id": 25,
+        "type": {
+            "name":"sauce",
+            "title":"ממרחים ורוטבים"
+        },
+        "title": "רוטב טריאקי",
+        "shownIn":["plate","baget","pita","chips"],
+        "isSelected": false,
+        "data": {
+            "calories": 42,
+            "fat": 3,
+            "fiber": 0,
+            "cholesterol": 1.2,
+            "carbohydrates": 0.1,
+            "protein": 0.1,
+            "iron": 0,
+            "calcium": 0,
+            "vitamin_A": 0,
+            "vitamin_C": 0
+        }
+    },
+    "pesto_sauce": {
+        "id": 26,
+        "type": {
+            "name":"sauce",
+            "title":"ממרחים ורוטבים"
+        },
+        "title": "רוטב פסטו",
+        "shownIn":["plate","baget","pita","chips"],
+        "isSelected": false,
+        "data": {
+            "calories": 35,
+            "fat": 4,
+            "fiber": 0,
+            "cholesterol": 1,
+            "carbohydrates": 0.1,
+            "protein": 0,
+            "iron": 0,
+            "calcium": 0,
+            "vitamin_A": 0,
+            "vitamin_C": 0
+        }
+    },
+    "honey_mustard_sauce": {
+        "id": 27,
+        "type": {
+            "name":"sauce",
+            "title":"ממרחים ורוטבים"
+        },
+        "title": "רוטב חרדל דבש",
+        "shownIn":["plate","baget","pita","chips"],
+        "isSelected": false,
+        "data": {
+            "calories": 38,
+            "fat": 2,
+            "fiber": 0,
+            "cholesterol": 1,
+            "carbohydrates": 0,
+            "protein": 0,
+            "iron": 0,
+            "calcium": 0,
+            "vitamin_A": 0,
+            "vitamin_C": 0
+        }
+    },
+    "mayonnaise": {
+        "id": 28,
+        "type": {
+            "name":"sauce",
+            "title":"ממרחים ורוטבים"
+        },
+        "title": "מיונז",
+        "shownIn":["plate","baget","pita","chips"],
+        "isSelected": false,
+        "data": {
+            "calories": 32,
+            "fat": 3.6,
+            "fiber": 0,
+            "cholesterol": 2.7,
+            "carbohydrates": 0.1,
+            "protein": 0.1,
+            "iron": 0,
+            "calcium": 0,
+            "vitamin_A": 0,
+            "vitamin_C": 0
+        }
+    },
+    "sweet_chili_sauce": {
+        "id": 29,
+        "type": {
+            "name":"sauce",
+            "title":"ממרחים ורוטבים"
+        },
+        "title": "רוטב צ'ילי מתוק",
+        "shownIn":["plate","baget","pita","chips"],
+        "isSelected": false,
+        "data": {
+            "calories": 39,
+            "fat": 2,
+            "fiber": 0,
+            "cholesterol": 2,
+            "carbohydrates": 0,
+            "protein": 2,
+            "iron": 0,
+            "calcium": 0,
+            "vitamin_A": 0,
+            "vitamin_C": 0
+        }
+    }
+    ,
+    "pickles": {
+        "id": 30,
+        "type": {
+            "name":"sauce",
+            "title":"ממרחים ורוטבים"
+        },
+        "title": "ירקות כבושים",
+        "shownIn":["plate","baget","pita","chips"],
+        "isSelected": false,
+        "data": {
+            "calories": 5,
+            "fat": 0,
+            "fiber": 0.3,
+            "cholesterol": 0,
+            "carbohydrates": 1,
+            "protein": 0,
+            "iron": 0,
+            "calcium": 0,
+            "vitamin_A": 0,
+            "vitamin_C": 0
+        }
     }
 }
