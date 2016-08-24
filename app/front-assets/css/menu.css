@@ -264,3 +264,21 @@
   -moz-transition: 1s all ease;
   transition: 1s all ease;
 }
+@media (max-width: 740px) {
+  .p-menu .ingredients .description {
+    position: fixed;
+    top: 0px;
+    left: 0;
+  }
+  .p-menu .ingredients .description .wrap {
+    padding-top: 70px;
+  }
+  .p-menu .ingredients .description .wrap .close {
+    top: 90px;
+  }
+  .p-menu .ingredients .description .right,
+  .p-menu .ingredients .description .left {
+    width: 100%;
+    float: none;
+  }
+}

@@ -2,9 +2,14 @@
 <main role="main" class="p-nutrition">
     <section class="main full-width">
       <div class="wrap">
+          <h1>משחבון תזונה</h1>
+          <h3>בחר ארוחה לחישוב</h3>
           <div class="dishes">
               <ul>
-                  <li ng-click="$ctrl.getIngredsByDish(dishName, dish);" ng-repeat="(dishName, dish) in $ctrl.dishes">{{::dish.title}}</li>
+                  <li ng-click="$ctrl.getIngredsByDish(dishName, dish);" ng-repeat="(dishName, dish) in $ctrl.dishes">
+                      <img src="{{::dish.img}}" alt="" />
+                      <p>{{::dish.title}}</p>
+                  </li>
               </ul>
           </div>
           <div class="nutritionList">

@@ -1,6 +1,15 @@
 .p-nutrition {
   padding: 40px 0;
 }
+.p-nutrition h1 {
+  font-size: 30px;
+  text-align: center;
+  color: #40221a;
+}
+.p-nutrition h3 {
+  font-size: 24px;
+  text-align: center;
+}
 .p-nutrition .dishes ul {
   list-style: none;
 }

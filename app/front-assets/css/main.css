@@ -32,14 +32,17 @@ ul {
 input {
   outline: none;
 }
+@font Bold: assistantBold
+@fontLight: assistantLight
+
 .animate-enter {
   -webkit-transition: 1s linear all;
   /* Chrome */
   transition: 1s linear all;
   opacity: 0;
-}
-.animate-enter.animate-enter-active {
-  opacity: 1;
+  .animate-enter-active {
+    opacity: 1;
+  }
 }
 body {
   margin: 0;
@@ -255,9 +258,43 @@ footer .left {
   footer .right .subscribe label {
     font-size: 20px;
   }
+  footer .left .subscribe .inputRow a,
+  footer .right .subscribe .inputRow a {
+    font-size: 24px;
+  }
+  footer .left .subscribe .inputRow input,
+  footer .right .subscribe .inputRow input {
+    width: 250px;
+    font-size: 18px;
+  }
+  footer .left .subscribe .inputRow input::-webkit-input-placeholder,
+  footer .right .subscribe .inputRow input::-webkit-input-placeholder {
+    font-size: 18px;
+  }
+  footer .left .subscribe .inputRow input::-moz-placeholder,
+  footer .right .subscribe .inputRow input::-moz-placeholder {
+    font-size: 18px;
+  }
+  footer .left .subscribe .inputRow input:-ms-input-placeholder,
+  footer .right .subscribe .inputRow input:-ms-input-placeholder {
+    font-size: 18px;
+  }
+  footer .left .list p,
+  footer .right .list p {
+    font-size: 20px;
+  }
   footer .left .list ul li,
   footer .right .list ul li {
     margin: 10px;
+  }
+  footer .left .list ul li a,
+  footer .right .list ul li a {
+    font-size: 18px;
+  }
+  footer .left .list ul li a img,
+  footer .right .list ul li a img {
+    width: 45px;
+    height: auto;
   }
 }
 @media (max-width: 740px) {
@@ -294,5 +331,60 @@ footer .left {
     display: block;
     background: #000;
     margin: 2px 0;
+  }
+  footer .left,
+  footer .right {
+    width: 98%;
+    float: none;
+    margin: 0 auto;
+    max-width: 280px;
+  }
+  footer .left:after,
+  footer .right:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  footer .left .subscribe label,
+  footer .right .subscribe label {
+    font-size: 16px;
+  }
+  footer .left .subscribe .inputRow a,
+  footer .right .subscribe .inputRow a {
+    font-size: 20px;
+  }
+  footer .left .subscribe .inputRow input,
+  footer .right .subscribe .inputRow input {
+    width: 250px;
+    font-size: 14px;
+  }
+  footer .left .subscribe .inputRow input::-webkit-input-placeholder,
+  footer .right .subscribe .inputRow input::-webkit-input-placeholder {
+    font-size: 14px;
+  }
+  footer .left .subscribe .inputRow input::-moz-placeholder,
+  footer .right .subscribe .inputRow input::-moz-placeholder {
+    font-size: 14px;
+  }
+  footer .left .subscribe .inputRow input:-ms-input-placeholder,
+  footer .right .subscribe .inputRow input:-ms-input-placeholder {
+    font-size: 14px;
+  }
+  footer .left .list p,
+  footer .right .list p {
+    font-size: 16px;
+  }
+  footer .left .list ul li,
+  footer .right .list ul li {
+    margin: 10px;
+  }
+  footer .left .list ul li a,
+  footer .right .list ul li a {
+    font-size: 14px;
+  }
+  footer .left .list ul li a img,
+  footer .right .list ul li a img {
+    width: 45px;
+    height: auto;
   }
 }

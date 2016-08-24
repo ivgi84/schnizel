@@ -35,6 +35,13 @@ input{
 }
 //reset*********
 //ngAnimations
+@h1Size: 36px;
+@textColor: #54392d;
+@fontRegular: assistant;
+@fontSemiBold: assistantSemiBold;
+@fontBold: assistantBold
+@fontLight: assistantLight
+
 .animate-enter {
 	-webkit-transition: 1s linear all; /* Chrome */
 	transition: 1s linear all;
@@ -254,11 +261,39 @@ footer {
                 label{
                     font-size: 20px;
                 }
+                .inputRow{
+                    a{
+                        font-size: 24px;
+                    }
+                    input{
+                        width: 250px;
+                        font-size: 18px;
+                        &::-webkit-input-placeholder {
+                            font-size: 18px;
+                        }
+                        &::-moz-placeholder {
+                            font-size: 18px;
+                        }
+                        &:-ms-input-placeholder {
+                            font-size: 18px;
+                        }
+                    }
+                }
             }
             .list{
+                p{
+                    font-size: 20px;
+                }
                 ul{
                     li{
                         margin: 10px;
+                        a{
+                            font-size: 18px;
+                            img{
+                                width: 45px;
+                                height: auto;
+                            }
+                        }
                     }
                 }
             }
@@ -302,6 +337,59 @@ footer {
                 display: block;
                 background: #000;
                 margin: 2px 0;
+            }
+        }
+    }
+    footer{
+        .left, .right{
+            width: 98%;
+            float: none;
+            margin: 0 auto;
+            max-width: 280px;
+            &:after{
+                content: "";
+                display: block;
+                clear: both;
+            }
+            .subscribe{
+                label{
+                    font-size: 16px;
+                }
+                .inputRow{
+                    a{
+                        font-size: 20px;
+                    }
+                    input{
+                        width: 250px;
+                        font-size: 14px;
+                        &::-webkit-input-placeholder {
+                            font-size: 14px;
+                        }
+                        &::-moz-placeholder {
+                            font-size: 14px;
+                        }
+                        &:-ms-input-placeholder {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+            .list{
+                p{
+                    font-size: 16px;
+                }
+                ul{
+                    li{
+                        margin: 10px;
+                        a{
+                            font-size: 14px;
+                            img{
+                                width: 45px;
+                                height: auto;
+                            }
+                        }
+                    }
+                }
             }
         }
     }

@@ -1,18 +1,22 @@
 {
   "plate":{
     "title":"צלחת",
+    "img":"http://drpma142ptgxf.cloudfront.net/nutrition-calculator/categories/burrito-bowl.png",
     "types":["main","extras","salad","sauce"]
   },
   "baget":{
     "title":"באגט",
+    "img":"http://drpma142ptgxf.cloudfront.net/nutrition-calculator/categories/burrito.png",
     "types":["main","extras" ,"salad","sauce"]
   },
   "pita":{
     "title":"פיתה",
+    "img":"http://drpma142ptgxf.cloudfront.net/nutrition-calculator/categories/tacos.png",
     "types":["main","extras","salad","sauce"]
   },
   "salad":{
     "title":"סלט",
+    "img":"http://drpma142ptgxf.cloudfront.net/nutrition-calculator/categories/salad.png",
     "types":["main","salad", "sauce"]
   }
 }
