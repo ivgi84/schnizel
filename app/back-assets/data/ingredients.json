@@ -6,6 +6,7 @@
             "title":"עיקרית"
         },
         "title": "עוף בגריל",
+        "img":"http://drpma142ptgxf.cloudfront.net/nutrition-calculator/ingredients/chicken.png",
         "shownIn":["baget","pita","salad","chips"],
         "isSelected": false,
         "data": {
@@ -28,6 +29,7 @@
             "title":"עיקרית"
         },
         "title": "פרגית",
+        "img":"http://drpma142ptgxf.cloudfront.net/nutrition-calculator/ingredients/chicken.png",
         "shownIn":["plate","baget","salad","chips"],
         "isSelected": false,
         "data": {
@@ -50,6 +52,7 @@
             "title":"עיקרית"
         },
         "title": "שניצל",
+        "img":"http://drpma142ptgxf.cloudfront.net/nutrition-calculator/ingredients/chicken.png",
         "shownIn":["plate","baget","pita","chips"],
         "isSelected": false,
         "data": {
@@ -72,6 +75,7 @@
             "title":"עיקרית"
         },
         "title": "שניצל תירס",
+        "img":"http://drpma142ptgxf.cloudfront.net/nutrition-calculator/ingredients/chicken.png",
         "shownIn":["plate","pita","salad","chips"],
         "isSelected": false,
         "data": {
@@ -94,6 +98,7 @@
             "title":"עיקרית"
         },
         "title": "קציצות טופו תרד וכרובית",
+        "img":"http://drpma142ptgxf.cloudfront.net/nutrition-calculator/ingredients/chicken.png",
         "shownIn":["baget","pita","salad"],
         "isSelected": false,
         "data": {
@@ -116,6 +121,7 @@
             "title":"תוספות"
         },
         "title": "אורז מאודה",
+        "img":"http://drpma142ptgxf.cloudfront.net/nutrition-calculator/ingredients/chicken.png",
         "shownIn":["plate","baget","pita","salad","chips"],
         "isSelected": false,
         "data": {

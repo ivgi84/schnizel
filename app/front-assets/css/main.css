@@ -32,17 +32,14 @@ ul {
 input {
   outline: none;
 }
-@font Bold: assistantBold
-@fontLight: assistantLight
-
 .animate-enter {
   -webkit-transition: 1s linear all;
   /* Chrome */
   transition: 1s linear all;
   opacity: 0;
-  .animate-enter-active {
-    opacity: 1;
-  }
+}
+.animate-enter.animate-enter-active {
+  opacity: 1;
 }
 body {
   margin: 0;
