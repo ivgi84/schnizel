@@ -1,60 +1,109 @@
 <site-nav></site-nav>
 <main role="main" class="p-nutrition">
     <section class="main full-width">
-      <div class="wrap">
-          <h1>משחבון תזונה</h1>
-          <h3>בחר ארוחה לחישוב</h3>
-          <div class="dishes">
-              <ul>
-                  <li ng-click="$ctrl.getIngredsByDish(dishName, dish);" ng-repeat="(dishName, dish) in $ctrl.dishes">
-                      <img src="{{::dish.img}}" alt="" />
-                      <p>{{::dish.title}}</p>
-                  </li>
-              </ul>
-          </div>
-          <div class="nutritionList">
-              <ul class="components calcList">
-                  <li><span>קלריות</span></li>
-                  <li><span>שומן</span></li>
-                  <li><span>סיבים</span></li>
-                  <li><span>כולסטרול</span></li>
-                  <li><span>פחמימות</span></li>
-                  <li><span>חלבון</span></li>
-                  <li><span>ברזל</span></li>
-                  <li><span>קלציום</span></li>
-                  <li><span>ויטמין A</span></li>
-                  <li><span>ויטמין B</span></li>
-              </ul>
-              <div class="ingrids" ng-repeat="(ind, type) in $ctrl.types">
-                  <h3>{{ind}}</h3>
-                  <div class="ingrid" ng-repeat="val in type">
-                      <div class="right">
-                          <a href="#" class="toggle" ng-class="{'selected':val.isSelected}" ng-click="$ctrl.calculator.toggle($event, val)"></a>
-                          <img ng-src="{{val.img}}" alt="" />
-                          <h4>{{val.title}}</h4>
-                      </div>
-                      <ul ng-show="val.isSelected" class="calcList">
-                          <li>{{val.data.calories}}</li>
-                          <li>{{val.data.fat}}</li>
-                          <li>{{val.data.fiber}}</li>
-                          <li>{{val.data.cholesterol}}</li>
-                          <li>{{val.data.carbohydrates}}</li>
-                          <li>{{val.data.protein}}</li>
-                          <li>{{val.data.iron}}</li>
-                          <li>{{val.data.calcium }}</li>
-                          <li>{{val.data.vitamin_A}}</li>
-                          <li>{{val.data.vitamin_C}}</li>
-                      </ul>
-                  </div>
-              </div>
-              <div class="calculated">
-                  <h4>תוצעה</h4>
-                  <ul class="calcList">
-                      <li ng-repeat="(ind, val) in $ctrl.calculator.result">{{val | number:1}}</li>
-                  </ul>
-              </div>
-          </div>
-      </div>
+        <div class="wrap">
+            <h1>משחבון תזונה</h1>
+            <h3>בחר ארוחה לחישוב</h3>
+            <div class="dishes">
+                <ul>
+                    <li ng-click="$ctrl.getIngredsByDish(dishName, dish);" ng-repeat="(dishName, dish) in $ctrl.dishes">
+                        <img src="{{::dish.img}}" alt=""/>
+                        <p>{{::dish.title}}</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="nutritionList">
+                <ul class="components calcList">
+                    <li>
+                        <span>קלריות</span>
+                    </li>
+                    <li>
+                        <span>שומן</span>
+                    </li>
+                    <li>
+                        <span>סיבים</span>
+                    </li>
+                    <li>
+                        <span>כולסטרול</span>
+                    </li>
+                    <li>
+                        <span>פחמימות</span>
+                    </li>
+                    <li>
+                        <span>חלבון</span>
+                    </li>
+                    <li>
+                        <span>ברזל</span>
+                    </li>
+                    <li>
+                        <span>קלציום</span>
+                    </li>
+                    <li>
+                        <span>ויטמין A</span>
+                    </li>
+                    <li>
+                        <span>ויטמין B</span>
+                    </li>
+                </ul>
+                <div class="ingrids" ng-repeat="(ind, type) in $ctrl.types">
+                    <h3>{{ind}}</h3>
+                    <div class="ingrid" ng-repeat="val in type" ng-click="$ctrl.calculator.toggle($event, val)" ng-class="{'selected':val.isSelected}">
+                        <div class="right">
+                            <a href="#" class="toggle" ng-class="{'selected':val.isSelected}"></a>
+                            <img ng-src="{{val.img}}" alt=""/>
+                            <h4>{{val.title}}</h4>
+                        </div>
+                        <ul ng-class="{'selected': val.isSelected}" class="calcList">
+                            <li ng-repeat="ingred in val.data">
+                                <span>{{ingred}}</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="full-width calculated-wrap">
+            <div class="calculated-result">
+                <div class="result-row">
+                    <h4>סה''כ</h4>
+                    <ul class="calcList result-data">
+                        <li ng-repeat="(ind, val) in $ctrl.calculator.result">{{val | number:1}}</li>
+                    </ul>
+                </div>
+                <ul class="components calcList">
+                    <li>
+                        <span>קלריות</span>
+                    </li>
+                    <li>
+                        <span>שומן</span>
+                    </li>
+                    <li>
+                        <span>סיבים</span>
+                    </li>
+                    <li>
+                        <span>כולסטרול</span>
+                    </li>
+                    <li>
+                        <span>פחמימות</span>
+                    </li>
+                    <li>
+                        <span>חלבון</span>
+                    </li>
+                    <li>
+                        <span>ברזל</span>
+                    </li>
+                    <li>
+                        <span>קלציום</span>
+                    </li>
+                    <li>
+                        <span>ויטמין A</span>
+                    </li>
+                    <li>
+                        <span>ויטמין B</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </section>
-    </main>
-<site-footer></site-footer>
+</main>
+<site-footer effect-if-in-view="calculated-wrap"></site-footer>

@@ -1,5 +1,5 @@
 .p-nutrition{
-  padding: 40px 0;
+  padding: 40px 0 0;
   h1{
     font-size: 30px;
     text-align: center;
@@ -58,18 +58,24 @@
       }
     }
   }
+  .components{
+    display: block;
+    li{
+      background: #fff;
+      height: 100px;
+      span{
+        transform: rotate(90deg);
+        transform-origin: 10px 30px 0;
+        float: left;
+        color: #766456;
+      }
+    }
+  }
   .nutritionList{
     position: relative;
     .components{
-      display: block;
       li{
         background: #fff;
-        height: 100px;
-        span{
-          transform: rotate(90deg);
-          transform-origin: 0px 35px 0;
-          float: left;
-        }
       }
     }
     .ingrid{
@@ -77,16 +83,38 @@
       border-bottom: 1px solid #b8b3af;
       border-top: 1px solid #ebe4de;
       height: 70px;
+      position: relative;
+      &:last-of-type{
+        border-bottom: none;
+      }
+      &.selected{
+        background: #ece3de;
+        // &:before{
+        //   content: "";
+        //   right:0;
+        //   top: 0;
+        //   width: 100%;
+        //   display: block;
+        //   position: absolute;
+        //   z-index: 2;
+        //   background: #e7d5c7;
+        //   height: 100%;
+        //   opacity: 0.3;
+        // }
+      }
       .right{
+        cursor: pointer;
         float: right;
         height: 70px;
         .toggle{
           text-decoration: none;
-          width: 20px;
+          width: 10px;
+          padding: 0 10px;
           display: inline-block;
           color: #493c34;
           vertical-align: top;
           font-size: 35px;
+          line-height: 60px;
           font-family: assistantLight;
           &:after{
             content:"+";
@@ -115,6 +143,17 @@
           height: 70px;
           line-height: 65px;
           font-family: assistantLight;
+          span{
+            opacity: 0;
+            transition: 0.5s all ease;
+          }
+        }
+        &.selected{
+          li{
+            span{
+              opacity: 1;
+            }
+          }
         }
       }
       &:after{
@@ -123,17 +162,40 @@
         display: block;
       }
     }
-    .calculated{
-      position: fixed;
-      bottom: 0;
-      direction: rtl;
-      z-index: 3;
-      width: 650px;
-      left:50%;
-      margin-left: -325px;
-      h4{
-        float: right;
+  }
+  .calculated-wrap{
+    background: #fef9f3;
+    width: 100%;
+    max-height: : 150px;
+    position: fixed;
+    bottom: 0;
+    direction: rtl;
+    z-index: 3;
+    transition: 1s all ease;
+    &.staticView{
+      position: static;
+    }
+  }
+  .calculated-result{
+    .result-row{
+      background: #d4cbc2
+    }
+    .result-data{
+      li{
+        padding: 15px 0 15px;
+        &:nth-child(odd){
+          background: #dbd1c8;
+        }
+        &:nth-child(even){
+          background: #bfada1;
+        }
       }
+    }
+    h4{
+      float: right;
+      font-size: 30px;
+      line-height: 50px;
+      font-family: assistantSemiBold;
     }
   }
 }

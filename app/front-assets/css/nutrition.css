@@ -1,5 +1,5 @@
 .p-nutrition {
-  padding: 40px 0;
+  padding: 40px 0 0;
 }
 .p-nutrition h1 {
   font-size: 30px;
@@ -59,38 +59,52 @@
   font-family: assistantSemiBold;
   padding-top: 20px;
 }
-.p-nutrition .nutritionList {
-  position: relative;
-}
-.p-nutrition .nutritionList .components {
+.p-nutrition .components {
   display: block;
 }
-.p-nutrition .nutritionList .components li {
+.p-nutrition .components li {
   background: #fff;
   height: 100px;
 }
-.p-nutrition .nutritionList .components li span {
+.p-nutrition .components li span {
   transform: rotate(90deg);
-  transform-origin: 0px 35px 0;
+  transform-origin: 10px 30px 0;
   float: left;
+  color: #766456;
+}
+.p-nutrition .nutritionList {
+  position: relative;
+}
+.p-nutrition .nutritionList .components li {
+  background: #fff;
 }
 .p-nutrition .nutritionList .ingrid {
   direction: rtl;
   border-bottom: 1px solid #b8b3af;
   border-top: 1px solid #ebe4de;
   height: 70px;
+  position: relative;
+}
+.p-nutrition .nutritionList .ingrid:last-of-type {
+  border-bottom: none;
+}
+.p-nutrition .nutritionList .ingrid.selected {
+  background: #ece3de;
 }
 .p-nutrition .nutritionList .ingrid .right {
+  cursor: pointer;
   float: right;
   height: 70px;
 }
 .p-nutrition .nutritionList .ingrid .right .toggle {
   text-decoration: none;
-  width: 20px;
+  width: 10px;
+  padding: 0 10px;
   display: inline-block;
   color: #493c34;
   vertical-align: top;
   font-size: 35px;
+  line-height: 60px;
   font-family: assistantLight;
 }
 .p-nutrition .nutritionList .ingrid .right .toggle:after {
@@ -116,20 +130,46 @@
   line-height: 65px;
   font-family: assistantLight;
 }
+.p-nutrition .nutritionList .ingrid ul li span {
+  opacity: 0;
+  transition: 0.5s all ease;
+}
+.p-nutrition .nutritionList .ingrid ul.selected li span {
+  opacity: 1;
+}
 .p-nutrition .nutritionList .ingrid:after {
   content: "";
   clear: both;
   display: block;
 }
-.p-nutrition .nutritionList .calculated {
+.p-nutrition .calculated-wrap {
+  background: #fef9f3;
+  width: 100%;
+  max-height: : 150px;
   position: fixed;
   bottom: 0;
   direction: rtl;
   z-index: 3;
-  width: 650px;
-  left: 50%;
-  margin-left: -325px;
+  transition: 1s all ease;
 }
-.p-nutrition .nutritionList .calculated h4 {
+.p-nutrition .calculated-wrap.staticView {
+  position: static;
+}
+.p-nutrition .calculated-result .result-row {
+  background: #d4cbc2;
+}
+.p-nutrition .calculated-result .result-data li {
+  padding: 15px 0 15px;
+}
+.p-nutrition .calculated-result .result-data li:nth-child(odd) {
+  background: #dbd1c8;
+}
+.p-nutrition .calculated-result .result-data li:nth-child(even) {
+  background: #bfada1;
+}
+.p-nutrition .calculated-result h4 {
   float: right;
+  font-size: 30px;
+  line-height: 50px;
+  font-family: assistantSemiBold;
 }
