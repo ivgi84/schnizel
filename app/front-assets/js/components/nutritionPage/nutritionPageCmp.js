@@ -22,7 +22,8 @@ define(['angular',
         vm.types = {};
         vm.ingredients = null;
 
-        vm.calculator= {
+        vm.calculator = {
+            isInit: false,
             toggle: this.toggle.bind(vm),
             result:{}
         };
@@ -69,6 +70,7 @@ define(['angular',
                 }
             });
             this.types = this.setIngredientsByTypes(ingredsToShow);
+            this.calculator.isInit = true;
         },
         get calcResult(){
             return this.calculator.result;

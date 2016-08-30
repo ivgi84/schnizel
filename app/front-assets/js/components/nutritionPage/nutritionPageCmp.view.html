@@ -13,7 +13,7 @@
                 </ul>
             </div>
             <div class="nutritionList">
-                <ul class="components calcList">
+                <ul class="components calcList" ng-class="{'hidden':!$ctrl.calculator.isInit}">
                     <li>
                         <span>קלריות</span>
                     </li>
@@ -62,7 +62,7 @@
                 </div>
             </div>
         </div>
-        <div class="full-width calculated-wrap">
+        <div class="full-width calculated-wrap" ng-class="{'hidden':!$ctrl.calculator.isInit}">
             <div class="calculated-result">
                 <div class="result-row">
                     <h4>סה''כ</h4>

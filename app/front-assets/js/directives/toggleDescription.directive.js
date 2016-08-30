@@ -43,7 +43,7 @@ define(['angular', './directives'], function() {
                         var elementTop = $(element).offset().top;
                         var elementBottom = elementTop + $(element).height();
 
-                        console.log(pageTop, elementTop, pageBottom, elementBottom);
+                        //console.log(pageTop, elementTop, pageBottom, elementBottom);
 
                         if((pageTop < elementTop) && (pageBottom > elementBottom)){
                             $('.'+attrs.effectIfInView).addClass('staticView');

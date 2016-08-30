@@ -60,6 +60,9 @@ body {
 .clearfix {
   clear: both;
 }
+.hidden {
+  display: none!important;
+}
 section:after {
   content: '';
   clear: both;
