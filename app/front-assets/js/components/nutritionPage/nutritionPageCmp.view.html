@@ -14,35 +14,8 @@
             </div>
             <div class="nutritionList">
                 <ul class="components calcList" ng-class="{'hidden':!$ctrl.calculator.isInit}">
-                    <li>
-                        <span>קלריות</span>
-                    </li>
-                    <li>
-                        <span>שומן</span>
-                    </li>
-                    <li>
-                        <span>סיבים</span>
-                    </li>
-                    <li>
-                        <span>כולסטרול</span>
-                    </li>
-                    <li>
-                        <span>פחמימות</span>
-                    </li>
-                    <li>
-                        <span>חלבון</span>
-                    </li>
-                    <li>
-                        <span>ברזל</span>
-                    </li>
-                    <li>
-                        <span>קלציום</span>
-                    </li>
-                    <li>
-                        <span>ויטמין A</span>
-                    </li>
-                    <li>
-                        <span>ויטמין B</span>
+                    <li ng-repeat="component in $ctrl.components">
+                        <span>{{::component}}</span>
                     </li>
                 </ul>
                 <div class="ingrids" ng-repeat="(ind, type) in $ctrl.types">
@@ -65,41 +38,15 @@
         <div class="full-width calculated-wrap" ng-class="{'hidden':!$ctrl.calculator.isInit}">
             <div class="calculated-result">
                 <div class="result-row">
-                    <h4>סה''כ</h4>
-                    <ul class="calcList result-data">
-                        <li ng-repeat="(ind, val) in $ctrl.calculator.result">{{val | number:1}}</li>
-                    </ul>
+                    <div class="inner">
+                        <ul class="calcList result-data">
+                            <li ng-repeat="(ind, val) in $ctrl.calculator.result">{{val | number:1}}</li>
+                        </ul>
+                    </div>
                 </div>
                 <ul class="components calcList">
-                    <li>
-                        <span>קלריות</span>
-                    </li>
-                    <li>
-                        <span>שומן</span>
-                    </li>
-                    <li>
-                        <span>סיבים</span>
-                    </li>
-                    <li>
-                        <span>כולסטרול</span>
-                    </li>
-                    <li>
-                        <span>פחמימות</span>
-                    </li>
-                    <li>
-                        <span>חלבון</span>
-                    </li>
-                    <li>
-                        <span>ברזל</span>
-                    </li>
-                    <li>
-                        <span>קלציום</span>
-                    </li>
-                    <li>
-                        <span>ויטמין A</span>
-                    </li>
-                    <li>
-                        <span>ויטמין B</span>
+                    <li ng-repeat="component in $ctrl.components">
+                        <span>{{::component}}</span>
                     </li>
                 </ul>
             </div>

@@ -106,6 +106,7 @@
         cursor: pointer;
         float: right;
         height: 70px;
+        width: 200px;
         .toggle{
           text-decoration: none;
           width: 10px;
@@ -132,7 +133,6 @@
         }
         h4{
           display: inline-block;
-          width: 100px;
           color:#3a2215;
           font-family: assistantSemiBold;
           line-height: 65px;
@@ -143,6 +143,11 @@
           height: 70px;
           line-height: 65px;
           font-family: assistantLight;
+          &:after{
+            content: "";
+            display: block;
+            clear: both;
+          }
           span{
             opacity: 0;
             transition: 0.5s all ease;
@@ -178,7 +183,11 @@
   }
   .calculated-result{
     .result-row{
-      background: #d4cbc2
+      background: #d4cbc2;
+      .inner{
+        margin: 0 auto;
+        box-sizing: border-box;
+      }
     }
     .result-data{
       li{
@@ -196,6 +205,22 @@
       font-size: 30px;
       line-height: 50px;
       font-family: assistantSemiBold;
+    }
+  }
+}
+@media(max-width:955px){
+  .p-nutrition {
+    .calcList{
+      li{
+        width: 45px;
+      }
+    }
+    .nutritionList{
+      .ingrid{
+        .right{
+          width: 160px;
+        }
+      }
     }
   }
 }

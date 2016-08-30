@@ -95,6 +95,7 @@
   cursor: pointer;
   float: right;
   height: 70px;
+  width: 200px;
 }
 .p-nutrition .nutritionList .ingrid .right .toggle {
   text-decoration: none;
@@ -120,7 +121,6 @@
 }
 .p-nutrition .nutritionList .ingrid .right h4 {
   display: inline-block;
-  width: 100px;
   color: #3a2215;
   font-family: assistantSemiBold;
   line-height: 65px;
@@ -129,6 +129,11 @@
   height: 70px;
   line-height: 65px;
   font-family: assistantLight;
+}
+.p-nutrition .nutritionList .ingrid ul li:after {
+  content: "";
+  display: block;
+  clear: both;
 }
 .p-nutrition .nutritionList .ingrid ul li span {
   opacity: 0;
@@ -158,6 +163,10 @@
 .p-nutrition .calculated-result .result-row {
   background: #d4cbc2;
 }
+.p-nutrition .calculated-result .result-row .inner {
+  margin: 0 auto;
+  box-sizing: border-box;
+}
 .p-nutrition .calculated-result .result-data li {
   padding: 15px 0 15px;
 }
@@ -172,4 +181,12 @@
   font-size: 30px;
   line-height: 50px;
   font-family: assistantSemiBold;
+}
+@media (max-width: 955px) {
+  .p-nutrition .calcList li {
+    width: 45px;
+  }
+  .p-nutrition .nutritionList .ingrid .right {
+    width: 160px;
+  }
 }

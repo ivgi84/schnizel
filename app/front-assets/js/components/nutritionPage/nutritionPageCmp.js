@@ -20,6 +20,18 @@ define(['angular',
 
         vm.dishes = {};
         vm.types = {};
+        vm.components = [
+            'קלריות',
+            'שומן',
+            'סיבים',
+            'כולסטרול',
+            'פחמימות',
+            'חלבון',
+            'ברזל',
+            'קלציום',
+            'ויטמין A',
+            'ויטמין B'
+        ];
         vm.ingredients = null;
 
         vm.calculator = {
