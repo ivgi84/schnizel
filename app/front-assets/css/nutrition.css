@@ -95,18 +95,22 @@
   cursor: pointer;
   float: right;
   height: 70px;
-  width: 200px;
+  min-width: 200px;
 }
 .p-nutrition .nutritionList .ingrid .right .toggle {
   text-decoration: none;
   width: 10px;
   padding: 0 10px;
-  display: inline-block;
+  display: block;
   color: #493c34;
   vertical-align: top;
   font-size: 35px;
   line-height: 60px;
   font-family: assistantLight;
+  float: right;
+  position: relative;
+  top: 50%;
+  transform: translateY(-55%);
 }
 .p-nutrition .nutritionList .ingrid .right .toggle:after {
   content: "+";
@@ -118,12 +122,17 @@
   max-height: 100%;
   width: auto;
   vertical-align: top;
+  float: right;
 }
 .p-nutrition .nutritionList .ingrid .right h4 {
-  display: inline-block;
+  display: block;
+  max-width: 100px;
   color: #3a2215;
   font-family: assistantSemiBold;
-  line-height: 65px;
+  float: right;
+  position: relative;
+  top: 50%;
+  transform: translateY(-55%);
 }
 .p-nutrition .nutritionList .ingrid ul li {
   height: 70px;
@@ -181,12 +190,24 @@
   font-size: 30px;
   line-height: 50px;
   font-family: assistantSemiBold;
+  margin-right: 1%;
+  color: #54392d;
 }
-@media (max-width: 955px) {
-  .p-nutrition .calcList li {
-    width: 45px;
-  }
-  .p-nutrition .nutritionList .ingrid .right {
-    width: 160px;
-  }
+.p-nutrition .calculated-result .arrow {
+  width: 0;
+  height: 0;
+  cursor: pointer;
+  float: right;
+  margin-top: 20px;
+  margin-right: 8%;
+}
+.p-nutrition .calculated-result .arrowUp {
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid #54392d;
+}
+.p-nutrition .calculated-result .arrowDown {
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #54392d;
 }
