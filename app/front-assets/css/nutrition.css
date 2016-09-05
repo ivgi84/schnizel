@@ -99,18 +99,27 @@
 }
 .p-nutrition .nutritionList .ingrid .right .toggle {
   text-decoration: none;
-  width: 10px;
-  padding: 0 10px;
+  width: 30px;
+  height: 30px;
   display: block;
   color: #493c34;
   vertical-align: top;
   font-size: 35px;
-  line-height: 60px;
+  line-height: 27px;
+  text-align: center;
   font-family: assistantLight;
   float: right;
   position: relative;
   top: 50%;
   transform: translateY(-55%);
+  border-radius: 50%;
+  transition: 0.3s all ease;
+  -webkit-transition: 0.3s all ease;
+  -moz-transition: 0.3s all ease;
+}
+.p-nutrition .nutritionList .ingrid .right .toggle:hover {
+  background: #493c34;
+  color: #fff;
 }
 .p-nutrition .nutritionList .ingrid .right .toggle:after {
   content: "+";
@@ -178,6 +187,7 @@
 }
 .p-nutrition .calculated-result .result-data li {
   padding: 15px 0 15px;
+  color: #4d3a2c;
 }
 .p-nutrition .calculated-result .result-data li:nth-child(odd) {
   background: #dbd1c8;
@@ -199,7 +209,7 @@
   cursor: pointer;
   float: right;
   margin-top: 20px;
-  margin-right: 8%;
+  margin-right: 10%;
 }
 .p-nutrition .calculated-result .arrowUp {
   border-left: 10px solid transparent;
@@ -210,4 +220,42 @@
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
   border-top: 10px solid #54392d;
+}
+@media (max-width: 940px) {
+  .p-nutrition .components {
+    display: none;
+  }
+  .p-nutrition .calcList li:nth-child(odd) {
+    background: transparent;
+  }
+  .p-nutrition .nutritionList .ingrid {
+    position: relative;
+  }
+  .p-nutrition .nutritionList .ingrid ul li {
+    display: none;
+  }
+  .p-nutrition .nutritionList .ingrid .i-icon {
+    position: absolute;
+    left: 40px;
+    width: 24px;
+    height: 24px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: url(../images/nutrition/i-info-48.png) no-repeat center;
+    background-size: contain;
+    cursor: pointer;
+  }
+  .p-nutrition .calculated-result .arrow {
+    display: none;
+  }
+  .p-nutrition .calculated-result h4 {
+    margin-right: 8%;
+  }
+  .p-nutrition .calculated-result .result-data li:not(:first-of-type) {
+    display: none;
+  }
+  .p-nutrition .calculated-result .result-data li:first-of-type {
+    float: left;
+    background: transparent;
+  }
 }

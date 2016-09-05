@@ -117,6 +117,9 @@ define(['angular',
             $event.preventDefault();
             this.calcResult = this._calculateChange(data);
             data.isSelected = !data.isSelected;
+        },
+        showCurrentIngrids: function showCurrentIngrids(ingred){
+            debugger;
         }
     };
 

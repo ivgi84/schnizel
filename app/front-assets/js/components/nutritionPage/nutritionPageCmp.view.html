@@ -31,6 +31,7 @@
                                 <span>{{ingred}}</span>
                             </li>
                         </ul>
+                        <span class="i-icon" ng-click="$ctrl.showCurrentIngrids(val)"></span>
                     </div>
                 </div>
             </div>
@@ -39,14 +40,14 @@
             <div class="calculated-result">
                 <div class="result-row">
                     <div class="inner">
-                        <div class="arrow" ng-class="{'arrowUp':!$ctrl.components.bottom.isShown, 'arrowDown':$ctrl.components.bottom.isShown}" ng-click="$ctrl.components.bottom.toggle();"></div>
+                        <div class="arrow" ng-class="$ctrl.components.bottom.isShown ? 'arrowDown' : 'arrowUp'" ng-click="$ctrl.components.bottom.toggle();"></div>
                         <h4>סה''כ</h4>
                         <ul class="calcList result-data">
                             <li ng-repeat="(ind, val) in $ctrl.calculator.result">{{val | number:1}}</li>
                         </ul>
                     </div>
                 </div>
-                <ul class="components calcList">
+                <ul class="components calcList" ng-class="$ctrl.components.bottom.isShown ? '' : 'hidden'">
                     <li ng-repeat="component in $ctrl.components.list">
                         <span>{{::component}}</span>
                     </li>

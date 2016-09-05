@@ -109,18 +109,27 @@
         min-width: 200px;
         .toggle{
           text-decoration: none;
-          width: 10px;
-          padding: 0 10px;
+          width: 30px;
+          height: 30px;
           display: block;
           color: #493c34;
           vertical-align: top;
           font-size: 35px;
-          line-height: 60px;
+          line-height: 27px;
+          text-align: center;
           font-family: assistantLight;
           float: right;
           position: relative;
           top: 50%;
           transform: translateY(-55%);
+          border-radius: 50%;
+          transition: 0.3s all ease;
+          -webkit-transition: 0.3s all ease;
+          -moz-transition: 0.3s all ease;
+          &:hover{
+            background: #493c34;
+            color:#fff;
+          }
           &:after{
             content:"+";
           }
@@ -201,6 +210,7 @@
     .result-data{
       li{
         padding: 15px 0 15px;
+        color:#4d3a2c;
         &:nth-child(odd){
           background: #dbd1c8;
         }
@@ -223,7 +233,7 @@
       cursor: pointer;
       float: right;
       margin-top: 20px;
-      margin-right: 8%;
+      margin-right: 10%;
     }
     .arrowUp{
       border-left: 10px solid transparent;
@@ -239,15 +249,49 @@
 }
 @media(max-width:940px){
   .p-nutrition {
+    .components{
+      display: none;
+    }
     .calcList{
       li{
-
+          &:nth-child(odd){
+            background: transparent;
+          }
       }
     }
     .nutritionList{
       .ingrid{
-        .right{
-
+        position: relative;
+        ul li{
+          display: none;
+        }
+        .i-icon{
+          position: absolute;
+          left:40px;
+          width: 24px;
+          height: 24px;
+          top:50%;
+          transform: translateY(-50%);
+          background: url(../images/nutrition/i-info-48.png) no-repeat center;
+          background-size: contain;
+          cursor: pointer;
+        }
+      }
+    }
+    .calculated-result{
+      .arrow{
+        display: none;
+      }
+      h4{
+        margin-right: 8%
+      }
+      .result-data{
+        li:not(:first-of-type){
+          display: none;
+        }
+        li:first-of-type{
+          float: left;
+          background: transparent;
         }
       }
     }
