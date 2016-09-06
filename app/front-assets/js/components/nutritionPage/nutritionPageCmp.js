@@ -20,18 +20,26 @@ define(['angular',
 
         vm.dishes = {};
         vm.types = {};
-        vm.components = [
-            'קלריות',
-            'שומן',
-            'סיבים',
-            'כולסטרול',
-            'פחמימות',
-            'חלבון',
-            'ברזל',
-            'קלציום',
-            'ויטמין A',
-            'ויטמין B'
-        ];
+        vm.components = {
+            list:[
+                'קלריות',
+                'שומן',
+                'סיבים',
+                'כולסטרול',
+                'פחמימות',
+                'חלבון',
+                'ברזל',
+                'קלציום',
+                'ויטמין A',
+                'ויטמין B'
+            ],
+            bottom:{
+                toggle: function(){
+                    this.isShown = !this.isShown;
+                },
+                isShown: true
+            }
+        };
         vm.ingredients = null;
 
         vm.calculator = {
@@ -109,6 +117,9 @@ define(['angular',
             $event.preventDefault();
             this.calcResult = this._calculateChange(data);
             data.isSelected = !data.isSelected;
+        },
+        showCurrentIngrids: function showCurrentIngrids(ingred){
+            debugger;
         }
     };
 
