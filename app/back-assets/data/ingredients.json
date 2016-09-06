@@ -2,12 +2,12 @@
     "grilled_chicken": {
         "id": 1,
         "type": {
-            "name":"main",
-            "title":"עיקרית"
+            "name": "main",
+            "title": "עיקרית"
         },
         "title": "עוף בגריל",
-        "img":"http://drpma142ptgxf.cloudfront.net/nutrition-calculator/ingredients/chicken.png",
-        "shownIn":["baget","pita","salad","chips"],
+        "img": "http://drpma142ptgxf.cloudfront.net/nutrition-calculator/ingredients/chicken.png",
+        "shownIn": ["baget", "pita", "salad", "chips"],
         "isSelected": false,
         "data": {
             "calories": 328,
@@ -25,12 +25,12 @@
     "spring_chicken": {
         "id": 2,
         "type": {
-            "name":"main",
-            "title":"עיקרית"
+            "name": "main",
+            "title": "עיקרית"
         },
         "title": "פרגית",
-        "img":"http://drpma142ptgxf.cloudfront.net/nutrition-calculator/ingredients/chicken.png",
-        "shownIn":["plate","baget","salad","chips"],
+        "img": "http://drpma142ptgxf.cloudfront.net/nutrition-calculator/ingredients/chicken.png",
+        "shownIn": ["plate", "baget", "salad", "chips"],
         "isSelected": false,
         "data": {
             "calories": 324,
@@ -48,12 +48,12 @@
     "schnitzel": {
         "id": 3,
         "type": {
-            "name":"main",
-            "title":"עיקרית"
+            "name": "main",
+            "title": "עיקרית"
         },
         "title": "שניצל",
-        "img":"http://drpma142ptgxf.cloudfront.net/nutrition-calculator/ingredients/chicken.png",
-        "shownIn":["plate","baget","pita","chips"],
+        "img": "http://drpma142ptgxf.cloudfront.net/nutrition-calculator/ingredients/chicken.png",
+        "shownIn": ["plate", "baget", "pita", "chips"],
         "isSelected": false,
         "data": {
             "calories": 368,
@@ -71,12 +71,12 @@
     "corn_schnitzel": {
         "id": 4,
         "type": {
-            "name":"main",
-            "title":"עיקרית"
+            "name": "main",
+            "title": "עיקרית"
         },
         "title": "שניצל תירס",
-        "img":"http://drpma142ptgxf.cloudfront.net/nutrition-calculator/ingredients/chicken.png",
-        "shownIn":["plate","pita","salad","chips"],
+        "img": "http://drpma142ptgxf.cloudfront.net/nutrition-calculator/ingredients/chicken.png",
+        "shownIn": ["plate", "pita", "salad", "chips"],
         "isSelected": false,
         "data": {
             "calories": 380,
@@ -94,12 +94,12 @@
     "spinach_tofu": {
         "id": 5,
         "type": {
-            "name":"main",
-            "title":"עיקרית"
+            "name": "main",
+            "title": "עיקרית"
         },
         "title": "קציצות טופו תרד וכרובית",
-        "img":"http://drpma142ptgxf.cloudfront.net/nutrition-calculator/ingredients/chicken.png",
-        "shownIn":["baget","pita","salad"],
+        "img": "http://drpma142ptgxf.cloudfront.net/nutrition-calculator/ingredients/chicken.png",
+        "shownIn": ["baget", "pita", "salad"],
         "isSelected": false,
         "data": {
             "calories": 354,
@@ -117,12 +117,12 @@
     "steamed_rice": {
         "id": 6,
         "type": {
-            "name":"extras",
-            "title":"תוספות"
+            "name": "extras",
+            "title": "תוספות"
         },
         "title": "אורז מאודה",
-        "img":"http://drpma142ptgxf.cloudfront.net/nutrition-calculator/ingredients/chicken.png",
-        "shownIn":["plate","baget","pita","salad","chips"],
+        "img": "http://drpma142ptgxf.cloudfront.net/nutrition-calculator/ingredients/chicken.png",
+        "shownIn": ["plate", "baget", "pita", "salad", "chips"],
         "isSelected": false,
         "data": {
             "calories": 121,
@@ -140,11 +140,12 @@
     "puree": {
         "id": 7,
         "type": {
-            "name":"extras",
-            "title":"תוספות"
+            "name": "extras",
+            "title": "תוספות"
         },
         "title": "פירה",
-        "shownIn":["plate","baget","pita","salad"],
+        "img": "http://drpma142ptgxf.cloudfront.net/nutrition-calculator/ingredients/chicken.png",
+        "shownIn": ["plate", "baget", "pita", "salad"],
         "isSelected": false,
         "data": {
             "calories": 180,
@@ -162,11 +163,12 @@
     "chips": {
         "id": 8,
         "type": {
-            "name":"extras",
-            "title":"תוספות"
+            "name": "extras",
+            "title": "תוספות"
         },
         "title": "צ'יפס",
-        "shownIn":["plate","baget","pita","chips"],
+        "img": "http://drpma142ptgxf.cloudfront.net/nutrition-calculator/ingredients/chicken.png",
+        "shownIn": ["plate", "baget", "pita", "chips"],
         "isSelected": false,
         "data": {
             "calories": 520,
@@ -184,11 +186,12 @@
     "cooked_vegetables": {
         "id": 9,
         "type": {
-            "name":"extras",
-            "title":"תוספות"
+            "name": "extras",
+            "title": "תוספות"
         },
         "title": "ירק מבושל",
-        "shownIn":["plate","baget","pita","chips"],
+        "img": "http://drpma142ptgxf.cloudfront.net/nutrition-calculator/ingredients/chicken.png",
+        "shownIn": ["plate", "baget", "pita", "chips"],
         "isSelected": false,
         "data": {
             "calories": 32,
@@ -206,11 +209,12 @@
     "pasta": {
         "id": 10,
         "type": {
-            "name":"extras",
-            "title":"תוספות"
+            "name": "extras",
+            "title": "תוספות"
         },
         "title": "פסטה",
-        "shownIn":["plate","baget","pita","chips"],
+        "img": "http://drpma142ptgxf.cloudfront.net/nutrition-calculator/ingredients/chicken.png",
+        "shownIn": ["plate", "baget", "pita", "chips"],
         "isSelected": false,
         "data": {
             "calories": 366,
@@ -228,11 +232,12 @@
     "burgul_vegetables": {
         "id": 11,
         "type": {
-            "name":"extras",
-            "title":"תוספות"
+            "name": "extras",
+            "title": "תוספות"
         },
         "title": "בורגול עם ירקות",
-        "shownIn":["plate","baget","pita","chips"],
+        "img": "http://drpma142ptgxf.cloudfront.net/nutrition-calculator/ingredients/chicken.png",
+        "shownIn": ["plate", "baget", "pita", "chips"],
         "isSelected": false,
         "data": {
             "calories": 320,
@@ -250,11 +255,12 @@
     "humus": {
         "id": 12,
         "type": {
-            "name":"salad",
-            "title":"סלט"
+            "name": "salad",
+            "title": "סלט"
         },
         "title": "חומוס",
-        "shownIn":["plate","baget","pita","chips"],
+        "img": "http://drpma142ptgxf.cloudfront.net/nutrition-calculator/ingredients/chicken.png",
+        "shownIn": ["plate", "baget", "pita", "chips"],
         "isSelected": false,
         "data": {
             "calories": 320,
@@ -272,11 +278,12 @@
     "eggs_salad": {
         "id": 13,
         "type": {
-            "name":"salad",
-            "title":"סלט"
+            "name": "salad",
+            "title": "סלט"
         },
         "title": "סלט ביצים",
-        "shownIn":["plate","baget","pita","chips"],
+        "img": "http://drpma142ptgxf.cloudfront.net/nutrition-calculator/ingredients/chicken.png",
+        "shownIn": ["plate", "baget", "pita", "chips"],
         "isSelected": false,
         "data": {
             "calories": 178,
@@ -294,11 +301,12 @@
     "eggplant_salad_mayonnaise": {
         "id": 14,
         "type": {
-            "name":"salad",
-            "title":"סלט"
+            "name": "salad",
+            "title": "סלט"
         },
         "title": "סלט חצילים מיונז",
-        "shownIn":["plate","baget","pita","chips"],
+        "img": "http://drpma142ptgxf.cloudfront.net/nutrition-calculator/ingredients/chicken.png",
+        "shownIn": ["plate", "baget", "pita", "chips"],
         "isSelected": false,
         "data": {
             "calories": 231,
@@ -316,11 +324,12 @@
     "eggplant_salad_peppers": {
         "id": 15,
         "type": {
-            "name":"salad",
-            "title":"סלט"
+            "name": "salad",
+            "title": "סלט"
         },
         "title": "סלט חצילים עם גמבה",
-        "shownIn":["plate","baget","pita","chips"],
+        "img": "http://drpma142ptgxf.cloudfront.net/nutrition-calculator/ingredients/chicken.png",
+        "shownIn": ["plate", "baget", "pita", "chips"],
         "isSelected": false,
         "data": {
             "calories": 108,
@@ -338,11 +347,12 @@
     "zucchini_salad": {
         "id": 16,
         "type": {
-            "name":"salad",
-            "title":"סלט"
+            "name": "salad",
+            "title": "סלט"
         },
         "title": "סלט קישואים",
-        "shownIn":["plate","baget","pita","chips"],
+        "img": "http://drpma142ptgxf.cloudfront.net/nutrition-calculator/ingredients/chicken.png",
+        "shownIn": ["plate", "baget", "pita", "chips"],
         "isSelected": false,
         "data": {
             "calories": 55,
@@ -360,11 +370,12 @@
     "tuna_salad": {
         "id": 17,
         "type": {
-            "name":"salad",
-            "title":"סלט"
+            "name": "salad",
+            "title": "סלט"
         },
         "title": "סלט טונה",
-        "shownIn":["plate","baget","pita","chips"],
+        "img": "http://drpma142ptgxf.cloudfront.net/nutrition-calculator/ingredients/chicken.png",
+        "shownIn": ["plate", "baget", "pita", "chips"],
         "isSelected": false,
         "data": {
             "calories": 310,
@@ -382,11 +393,12 @@
     "cabbage_salad": {
         "id": 18,
         "type": {
-            "name":"salad",
-            "title":"סלט"
+            "name": "salad",
+            "title": "סלט"
         },
         "title": "סלט כרוב",
-        "shownIn":["plate","baget","pita","chips"],
+        "img": "http://drpma142ptgxf.cloudfront.net/nutrition-calculator/ingredients/chicken.png",
+        "shownIn": ["plate", "baget", "pita", "chips"],
         "isSelected": false,
         "data": {
             "calories": 312,
@@ -404,11 +416,12 @@
     "salad_kolslo": {
         "id": 19,
         "type": {
-            "name":"salad",
-            "title":"סלט"
+            "name": "salad",
+            "title": "סלט"
         },
         "title": "סלט קולסלו",
-        "shownIn":["plate","baget","pita","chips"],
+        "img": "http://drpma142ptgxf.cloudfront.net/nutrition-calculator/ingredients/chicken.png",
+        "shownIn": ["plate", "baget", "pita", "chips"],
         "isSelected": false,
         "data": {
             "calories": 359,
@@ -426,11 +439,12 @@
     "turkish_salad": {
         "id": 20,
         "type": {
-            "name":"salad",
-            "title":"סלט"
+            "name": "salad",
+            "title": "סלט"
         },
         "title": "סלט תורכי",
-        "shownIn":["plate","baget","pita","chips"],
+        "img": "http://drpma142ptgxf.cloudfront.net/nutrition-calculator/ingredients/chicken.png",
+        "shownIn": ["plate", "baget", "pita", "chips"],
         "isSelected": false,
         "data": {
             "calories": 75,
@@ -448,11 +462,12 @@
     "shug": {
         "id": 21,
         "type": {
-            "name":"sauce",
-            "title":"ממרחים ורוטבים"
+            "name": "sauce",
+            "title": "ממרחים ורוטבים"
         },
         "title": "סחוג",
-        "shownIn":["plate","baget","pita","chips"],
+        "img": "http://drpma142ptgxf.cloudfront.net/nutrition-calculator/ingredients/chicken.png",
+        "shownIn": ["plate", "baget", "pita", "chips"],
         "isSelected": false,
         "data": {
             "calories": 0,
@@ -470,11 +485,12 @@
     "balsamic_vinaigrette": {
         "id": 22,
         "type": {
-            "name":"sauce",
-            "title":"ממרחים ורוטבים"
+            "name": "sauce",
+            "title": "ממרחים ורוטבים"
         },
         "title": "ויניגרט בלסמי",
-        "shownIn":["plate","baget","pita","chips"],
+        "img": "http://drpma142ptgxf.cloudfront.net/nutrition-calculator/ingredients/chicken.png",
+        "shownIn": ["plate", "baget", "pita", "chips"],
         "isSelected": false,
         "data": {
             "calories": 0,
@@ -492,11 +508,12 @@
     "elefaim_sauce": {
         "id": 23,
         "type": {
-            "name":"sauce",
-            "title":"ממרחים ורוטבים"
+            "name": "sauce",
+            "title": "ממרחים ורוטבים"
         },
         "title": "רוטב אלף האיים",
-        "shownIn":["plate","baget","pita","chips"],
+        "img": "http://drpma142ptgxf.cloudfront.net/nutrition-calculator/ingredients/chicken.png",
+        "shownIn": ["plate", "baget", "pita", "chips"],
         "isSelected": false,
         "data": {
             "calories": 15.6,
@@ -514,11 +531,12 @@
     "garlic_mayonnaise_sauce": {
         "id": 24,
         "type": {
-            "name":"sauce",
-            "title":"ממרחים ורוטבים"
+            "name": "sauce",
+            "title": "ממרחים ורוטבים"
         },
         "title": "רוטב מיונז שום",
-        "shownIn":["plate","baget","pita","chips"],
+        "img": "http://drpma142ptgxf.cloudfront.net/nutrition-calculator/ingredients/chicken.png",
+        "shownIn": ["plate", "baget", "pita", "chips"],
         "isSelected": false,
         "data": {
             "calories": 32.4,
@@ -536,11 +554,12 @@
     "tariaki_sauce": {
         "id": 25,
         "type": {
-            "name":"sauce",
-            "title":"ממרחים ורוטבים"
+            "name": "sauce",
+            "title": "ממרחים ורוטבים"
         },
         "title": "רוטב טריאקי",
-        "shownIn":["plate","baget","pita","chips"],
+        "img": "http://drpma142ptgxf.cloudfront.net/nutrition-calculator/ingredients/chicken.png",
+        "shownIn": ["plate", "baget", "pita", "chips"],
         "isSelected": false,
         "data": {
             "calories": 42,
@@ -558,11 +577,12 @@
     "pesto_sauce": {
         "id": 26,
         "type": {
-            "name":"sauce",
-            "title":"ממרחים ורוטבים"
+            "name": "sauce",
+            "title": "ממרחים ורוטבים"
         },
         "title": "רוטב פסטו",
-        "shownIn":["plate","baget","pita","chips"],
+        "img": "http://drpma142ptgxf.cloudfront.net/nutrition-calculator/ingredients/chicken.png",
+        "shownIn": ["plate", "baget", "pita", "chips"],
         "isSelected": false,
         "data": {
             "calories": 35,
@@ -580,11 +600,12 @@
     "honey_mustard_sauce": {
         "id": 27,
         "type": {
-            "name":"sauce",
-            "title":"ממרחים ורוטבים"
+            "name": "sauce",
+            "title": "ממרחים ורוטבים"
         },
         "title": "רוטב חרדל דבש",
-        "shownIn":["plate","baget","pita","chips"],
+        "img": "http://drpma142ptgxf.cloudfront.net/nutrition-calculator/ingredients/chicken.png",
+        "shownIn": ["plate", "baget", "pita", "chips"],
         "isSelected": false,
         "data": {
             "calories": 38,
@@ -602,11 +623,12 @@
     "mayonnaise": {
         "id": 28,
         "type": {
-            "name":"sauce",
-            "title":"ממרחים ורוטבים"
+            "name": "sauce",
+            "title": "ממרחים ורוטבים"
         },
         "title": "מיונז",
-        "shownIn":["plate","baget","pita","chips"],
+        "img": "http://drpma142ptgxf.cloudfront.net/nutrition-calculator/ingredients/chicken.png",
+        "shownIn": ["plate", "baget", "pita", "chips"],
         "isSelected": false,
         "data": {
             "calories": 32,
@@ -624,11 +646,12 @@
     "sweet_chili_sauce": {
         "id": 29,
         "type": {
-            "name":"sauce",
-            "title":"ממרחים ורוטבים"
+            "name": "sauce",
+            "title": "ממרחים ורוטבים"
         },
         "title": "רוטב צ'ילי מתוק",
-        "shownIn":["plate","baget","pita","chips"],
+        "img": "http://drpma142ptgxf.cloudfront.net/nutrition-calculator/ingredients/chicken.png",
+        "shownIn": ["plate", "baget", "pita", "chips"],
         "isSelected": false,
         "data": {
             "calories": 39,
@@ -642,16 +665,16 @@
             "vitamin_A": 0,
             "vitamin_C": 0
         }
-    }
-    ,
+    },
     "pickles": {
         "id": 30,
         "type": {
-            "name":"sauce",
-            "title":"ממרחים ורוטבים"
+            "name": "sauce",
+            "title": "ממרחים ורוטבים"
         },
         "title": "ירקות כבושים",
-        "shownIn":["plate","baget","pita","chips"],
+        "img": "http://drpma142ptgxf.cloudfront.net/nutrition-calculator/ingredients/chicken.png",
+        "shownIn": ["plate", "baget", "pita", "chips"],
         "isSelected": false,
         "data": {
             "calories": 5,
