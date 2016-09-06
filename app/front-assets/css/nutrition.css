@@ -95,7 +95,7 @@
   cursor: pointer;
   float: right;
   height: 70px;
-  min-width: 200px;
+  min-width: 150px;
 }
 .p-nutrition .nutritionList .ingrid .right .toggle {
   text-decoration: none;
@@ -221,7 +221,7 @@
   border-right: 10px solid transparent;
   border-top: 10px solid #54392d;
 }
-@media (max-width: 940px) {
+@media (max-width: 960px) {
   .p-nutrition .components {
     display: none;
   }

@@ -1,8 +1,9 @@
 define(['angular',
     '_',
     './components/components',
-    './services/base.service'
-], function(angular, _,components, baseService) {
+    './services/base.service',
+    'uiDialog'],
+     function(angular, _,components, baseService) {
 
     angular
         .module('schnizelApp.components')
@@ -120,6 +121,7 @@ define(['angular',
         },
         showCurrentIngrids: function showCurrentIngrids(ingred){
             debugger;
+            uiDialog.open();
         }
     };
 

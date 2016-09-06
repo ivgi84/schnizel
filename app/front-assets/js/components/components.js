@@ -1,3 +1,3 @@
-define(['angular'], function(angular){
+define(['angular'], function(){
   angular.module('schnizelApp.components',[]);
 });

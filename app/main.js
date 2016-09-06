@@ -25,7 +25,8 @@ require.config({
         'storyCmp': 'components/storyPage/storyPageCmp',
 
         //directives
-        'slickDirective':'directives/slick/slickDirective'
+        'slickDirective':'directives/slick/slickDirective',
+        'uiDialog':'directives/uiDialog/uiDialogDirective'
     },
     shim: {
         'angular': { exports: 'angular' },
