@@ -1,4 +1,4 @@
-<site-nav></site-nav>
+    <site-nav></site-nav>
 <main role="main" class="p-nutrition">
     <section class="main full-width">
         <div class="wrap">
@@ -20,7 +20,7 @@
                 </ul>
                 <div class="ingrids" ng-repeat="(ind, type) in $ctrl.types">
                     <h3>{{ind}}</h3>
-                    <div class="ingrid" ng-repeat="val in type" ng-click="$ctrl.calculator.toggle($event, val)" ng-class="{'selected':val.isSelected}">
+                    <div class="ingrid" ng-repeat="val in type track by $index" ng-click="$ctrl.calculator.toggle($event, val)" ng-class="{'selected':val.isSelected}">
                         <div class="right">
                             <a href="#" class="toggle" ng-class="{'selected':val.isSelected}"></a>
                             <img ng-src="{{val.img}}" alt=""/>
@@ -31,7 +31,12 @@
                                 <span>{{ingred}}</span>
                             </li>
                         </ul>
-                        <span class="i-icon" ng-click="$ctrl.showCurrentIngrids(val)"></span>
+                        <span class="i-icon"
+                         ng-init="diaogOpened = false;"
+                         ng-click="dialogOpened = true">
+                            <ui-dialog ingreds="val" components="$ctrl.components.list" toggle="$ctrl.calculator.toggle($event, val)"
+                                state="$parent.dialogOpened"></ui-dialog>
+                        </span>
                     </div>
                 </div>
             </div>
@@ -55,6 +60,5 @@
             </div>
         </div>
     </section>
-    <ui-dialog></ui-dialog>
 </main>
 <site-footer effect-if-in-view="calculated-wrap"></site-footer>

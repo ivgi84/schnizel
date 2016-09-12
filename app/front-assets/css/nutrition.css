@@ -245,6 +245,49 @@
     background-size: contain;
     cursor: pointer;
   }
+  .p-nutrition .nutritionList .ingrid .overlay {
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+  }
+  .p-nutrition .nutritionList .ingrid .ui-dialog {
+    display: none;
+    position: fixed;
+    top: 20px;
+    left: calc(50% - 145px);
+    padding: 30px;
+    width: 200px;
+    z-index: 101;
+    background: #fff;
+  }
+  .p-nutrition .nutritionList .ingrid .ui-dialog.open {
+    display: block;
+  }
+  .p-nutrition .nutritionList .ingrid .ui-dialog h4 {
+    text-align: center;
+    font-size: 24px;
+    color: #54392d;
+  }
+  .p-nutrition .nutritionList .ingrid .ui-dialog ul {
+    list-style: none;
+    display: block;
+    float: right;
+    width: 46%;
+    margin: 1%;
+  }
+  .p-nutrition .nutritionList .ingrid .ui-dialog ul li {
+    display: block;
+    padding: 5px 0;
+    line-height: 30px;
+    height: 30px;
+  }
+  .p-nutrition .nutritionList .ingrid .ui-dialog ul li p.cals {
+    text-align: left;
+  }
   .p-nutrition .calculated-result .arrow {
     display: none;
   }
