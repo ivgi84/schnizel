@@ -118,7 +118,7 @@ define(['angular',
                     },
                     thumb: {
                         img: 'bottom-slider-thumb-1.png',
-                        title: 'שניצל'
+                        title: 'משאקה 1'
                     }
                 },
                 {
@@ -131,7 +131,7 @@ define(['angular',
                     },
                     thumb: {
                         img: 'bottom-slider-thumb-1.png',
-                        title: 'שתיה'
+                        title: 'משאקה 2'
                     }
                 },
                 {
@@ -144,7 +144,7 @@ define(['angular',
                     },
                     thumb: {
                         img: 'bottom-slider-thumb-1.png',
-                        title: 'שתיה'
+                        title: 'משאקה 3'
                     }
                 }]
             },
@@ -163,7 +163,6 @@ define(['angular',
         getMenu: function getMenu(){
             var self = this;
             this.baseService.getJson('menu').then(function(response){
-                console.log(response);
                 self.ingredients = response;
             });
         }

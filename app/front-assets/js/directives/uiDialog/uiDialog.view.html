@@ -1,24 +1,25 @@
-
-<div class="overlay" ng-class="{isVisible ? 'opened' : ''}">
-    <div class="ui-dialog">
-        <h4>
-            {{::ingreds.title}}
-        </h4>
-        <ul>
-            <li ng-repeat="val in components">
-                <p>
-                    {{::val}}
-                </p>
-            </li>
-        </ul>
-        <ul>
-            <li ng-repeat="val in ingreds.data">
-                <p class="cals">
-                    {{::val}}
-                </p>
-            </li>
-        </ul>
-        <a href="#" ng-click="addIngrid($event, val)">Add</a>
+    <div class="ui-dialog" ng-class="isopened ? 'opened' : 'closed'">
+        <div class="ui-dialog-content">
+            <div class="closeDialog" ng-click="closedialog()">
+                x
+            </div>
+            <h4>
+                {{::ingreds.title}}
+            </h4>
+            <ul>
+                <li ng-repeat="val in components">
+                    <p>
+                        {{::val}}
+                    </p>
+                </li>
+            </ul>
+            <ul>
+                <li ng-repeat="val in dialogdata.data">
+                    <p class="cals">
+                        {{::val}}
+                    </p>
+                </li>
+            </ul>
+            <a href="#" ng-click="toggle($event, dialogdata.data)">Add</a>
+        </div>
     </div>
-
-</div>

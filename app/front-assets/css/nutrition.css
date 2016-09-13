@@ -1,6 +1,52 @@
 .p-nutrition {
   padding: 40px 0 0;
 }
+.p-nutrition .ui-dialog {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.85);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 9999;
+}
+.p-nutrition .ui-dialog .ui-dialog-content {
+  margin: 20px auto;
+  padding: 30px;
+  width: 200px;
+  z-index: 101;
+  background: #fff;
+}
+.p-nutrition .ui-dialog .ui-dialog-content.open {
+  display: block;
+}
+.p-nutrition .ui-dialog .ui-dialog-content h4 {
+  text-align: center;
+  font-size: 24px;
+  color: #54392d;
+}
+.p-nutrition .ui-dialog .ui-dialog-content ul {
+  list-style: none;
+  display: block;
+  float: right;
+  width: 46%;
+  margin: 1%;
+}
+.p-nutrition .ui-dialog .ui-dialog-content ul li {
+  display: block;
+  padding: 5px 0;
+  line-height: 30px;
+  height: 30px;
+}
+.p-nutrition .ui-dialog .ui-dialog-content ul li p.cals {
+  text-align: left;
+}
+.p-nutrition .ui-dialog.closed {
+  display: none;
+}
+.p-nutrition .ui-dialog.opened {
+  display: block;
+}
 .p-nutrition h1 {
   font-size: 30px;
   text-align: center;
@@ -253,9 +299,12 @@
     z-index: 100;
     top: 0;
     left: 0;
+    display: none;
+  }
+  .p-nutrition .nutritionList .ingrid .overlay.opened {
+    display: block;
   }
   .p-nutrition .nutritionList .ingrid .ui-dialog {
-    display: none;
     position: fixed;
     top: 20px;
     left: calc(50% - 145px);

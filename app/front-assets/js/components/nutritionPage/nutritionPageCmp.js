@@ -18,7 +18,8 @@ define(['angular',
     function NutritionPageCtrl(baseService) {
         var vm = this;
         vm.baseService = baseService;
-
+        vm.dialogData = {};
+        vm.isDialogOpened = false;
         vm.dishes = {};
         vm.types = {};
         vm.components = {
@@ -42,6 +43,11 @@ define(['angular',
             }
         };
         vm.ingredients = null;
+
+        vm.dialog = {
+            data:{},
+            isOpened : false
+        }
 
         vm.calculator = {
             isInit: false,
@@ -115,13 +121,23 @@ define(['angular',
             return res;
         },
         toggle: function toggle($event, data){
+            debugger;
             $event.preventDefault();
             this.calcResult = this._calculateChange(data);
             data.isSelected = !data.isSelected;
         },
-        showCurrentIngrids: function showCurrentIngrids(ingred){
+        openDialog: function openDialog(){
+            this.dialog.isOpened = true;
+        },
+        closeDialog: function closeDialog(){
+            this.dialog.isOpened = false;
+        },
+        showCurrentIngrids: function showCurrentIngrids($event, scope){
+            $event.stopImmediatePropagation();
             debugger;
-            uiDialog.open();
+            this.dialog.data = scope.val;
+            this.openDialog();
+
         }
     };
 

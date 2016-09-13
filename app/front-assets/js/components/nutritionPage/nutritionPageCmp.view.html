@@ -31,11 +31,7 @@
                                 <span>{{ingred}}</span>
                             </li>
                         </ul>
-                        <span class="i-icon"
-                         ng-init="diaogOpened = false;"
-                         ng-click="dialogOpened = true">
-                            <ui-dialog ingreds="val" components="$ctrl.components.list" toggle="$ctrl.calculator.toggle($event, val)"
-                                state="$parent.dialogOpened"></ui-dialog>
+                        <span class="i-icon" ng-click="$ctrl.showCurrentIngrids($event, this)">
                         </span>
                     </div>
                 </div>
@@ -60,5 +56,10 @@
             </div>
         </div>
     </section>
+    <ui-dialog dialogdata="$ctrl.dialog.data"
+        isopened="$ctrl.dialog.isOpened"
+        components="$ctrl.components.list"
+        toggle="$ctrl.calculator.toggle"
+        closedialog="$ctrl.closeDialog()"></ui-dialog>
 </main>
 <site-footer effect-if-in-view="calculated-wrap"></site-footer>

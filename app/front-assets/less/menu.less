@@ -1,8 +1,21 @@
 .p-menu {
+    .whats-indside{
+        background: url(../images/menu/i-whats_inside.png) no-repeat;
+        width: 219px;
+        height: 82px;
+        margin: -82px auto -40px;
+        position: relative;
+        z-index: 9;
+        text-align: center;
+        font-family: assistantBold;
+        color:#fff;
+        font-size: 30px;
+        line-height: 60px;
+    }
     .slider {
         background-size: cover;
         width: 100%;
-        height: 600px;
+        height: 650px;
         font-family: assistant;
         margin: 0 0 200px;
         .sliderContent {
@@ -132,21 +145,11 @@
     }
     .ingredients {
         background: #ccc;
-        padding: 30px;
+        padding: 30px 0 130px;
         box-sizing: border-box;
-        .whats-indside{
-            background: url(../images/menu/i-whats_inside.png) no-repeat;
-            width: 219px;
-            height: 82px;
-            margin: -70px auto 0;
-            text-align: center;
-            font-family: assistantBold;
-            color:#fff;
-            font-size: 30px;
-            line-height: 60px;
-        }
         .lists {
             text-align: center;
+            padding: 30px 0 0 0;
             & > ul {
                 list-style: none;
                 li {
@@ -154,6 +157,7 @@
                     width: 18%;
                     min-width: 200px;
                     max-width: 190px;
+                    vertical-align: top;
                     // &.col-size-2 {
                     //     max-width: 48%;
                     // }
@@ -173,7 +177,7 @@
                         display: block;
                         font-size: 32px;
                         font-family: assistantSemiBold;
-                        line-height: 30px;
+                        line-height: 40px;
                         padding: 40px 0 15px;
                         color: #3d241a;
                     }
@@ -266,6 +270,8 @@
                 font-size: 18px;
                 color: #3d241a;
                 font-family: assistantSemiBold;
+                text-align: center;
+                margin: 0 auto;
             }
             // &.opened + .description{
             //     display: block;
@@ -309,8 +315,38 @@
                 }
             }
         }
+        .slider{
+            height: 500px;
+        }
         .slider .slick-dots{
-            display: none!important;
+            bottom:-30px;
+            li{
+                margin: 0 5px;
+                &::before{
+                    display: none;
+                }
+                button{
+                    margin: inherit;
+                    height: inherit;
+                    width: inherit;
+                    padding: inherit;
+                    &:before{
+                        content: '•';
+                        font-size: 12px;
+                        color:#54392d;
+                        display: inherit;
+                        max-width: inherit;
+                        overflow: inherit;
+                        float: inherit;
+                        position: inherit;
+                        width: inherit;
+                        height: inherit;
+                    }
+                    img ,p{
+                        display: none;
+                    }
+                }
+            }
         }
     }
 }

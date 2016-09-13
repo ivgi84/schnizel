@@ -1,7 +1,20 @@
+.p-menu .whats-indside {
+  background: url(../images/menu/i-whats_inside.png) no-repeat;
+  width: 219px;
+  height: 82px;
+  margin: -82px auto -40px;
+  position: relative;
+  z-index: 9;
+  text-align: center;
+  font-family: assistantBold;
+  color: #fff;
+  font-size: 30px;
+  line-height: 60px;
+}
 .p-menu .slider {
   background-size: cover;
   width: 100%;
-  height: 600px;
+  height: 650px;
   font-family: assistant;
   margin: 0 0 200px;
 }
@@ -127,22 +140,12 @@
 }
 .p-menu .ingredients {
   background: #ccc;
-  padding: 30px;
+  padding: 30px 0 130px;
   box-sizing: border-box;
-}
-.p-menu .ingredients .whats-indside {
-  background: url(../images/menu/i-whats_inside.png) no-repeat;
-  width: 219px;
-  height: 82px;
-  margin: -70px auto 0;
-  text-align: center;
-  font-family: assistantBold;
-  color: #fff;
-  font-size: 30px;
-  line-height: 60px;
 }
 .p-menu .ingredients .lists {
   text-align: center;
+  padding: 30px 0 0 0;
 }
 .p-menu .ingredients .lists > ul {
   list-style: none;
@@ -152,6 +155,7 @@
   width: 18%;
   min-width: 200px;
   max-width: 190px;
+  vertical-align: top;
 }
 .p-menu .ingredients .lists > ul li.title {
   width: 90%;
@@ -160,7 +164,7 @@
   display: block;
   font-size: 32px;
   font-family: assistantSemiBold;
-  line-height: 30px;
+  line-height: 40px;
   padding: 40px 0 15px;
   color: #3d241a;
 }
@@ -249,6 +253,8 @@
   font-size: 18px;
   color: #3d241a;
   font-family: assistantSemiBold;
+  text-align: center;
+  margin: 0 auto;
 }
 .p-menu .ingredients .item.opened:after {
   opacity: 1;
@@ -284,7 +290,38 @@
     width: 100%;
     float: none;
   }
+  .p-menu .slider {
+    height: 500px;
+  }
   .p-menu .slider .slick-dots {
-    display: none!important;
+    bottom: -30px;
+  }
+  .p-menu .slider .slick-dots li {
+    margin: 0 5px;
+  }
+  .p-menu .slider .slick-dots li::before {
+    display: none;
+  }
+  .p-menu .slider .slick-dots li button {
+    margin: inherit;
+    height: inherit;
+    width: inherit;
+    padding: inherit;
+  }
+  .p-menu .slider .slick-dots li button:before {
+    content: '•';
+    font-size: 12px;
+    color: #54392d;
+    display: inherit;
+    max-width: inherit;
+    overflow: inherit;
+    float: inherit;
+    position: inherit;
+    width: inherit;
+    height: inherit;
+  }
+  .p-menu .slider .slick-dots li button img,
+  .p-menu .slider .slick-dots li button p {
+    display: none;
   }
 }

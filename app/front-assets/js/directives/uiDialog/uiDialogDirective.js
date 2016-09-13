@@ -8,13 +8,14 @@ define(['angular', './directives/directives'], function() {
                 replace:true,
                 templateUrl:'front-assets/js/directives/uiDialog/uiDialog.view.html',
                 scope:{
-                    isVisible:"<",
-                    ingreds:"<",
+                    isopened:'=',
+                    dialogdata:'=',
                     components:"<",
-                    toggle:"&"
+                    toggle:"&",
+                    closedialog:"&"
                 },
                 link: function(scope, element, attrs) {
-
+                    debugger;
                 }
             };
         });
