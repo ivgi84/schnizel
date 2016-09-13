@@ -29,11 +29,22 @@ define([
         };
 
         vm.slides = [{
-            img: 'slide_1'
+            img: 'slide_1',
+            title:'שעות של הכנות ... שניות של הגשה',
+            subTitle:'  בואו ראו איך מכינים הכל טרי! '
+
         }, {
-            img: 'slide_1'
+            img: 'slide_1',
+            title:'הנתחים שלנו...',
+            subTitle:'הציצו למטבח שלנו בפעולה'
         }, {
-            img: 'slide_1'
+            img: 'slide_1',
+            title:'בונים את הבגט שלך...',
+            subTitle:'בואו ראו מה נכנס לבגט.. תמונה של שניצל'
+        }, {
+            img: 'slide_1',
+            title:'אהבה מהטעימה הראשונה ...',
+            subTitle:'ארוחות קומבו'
         }];
     }
 

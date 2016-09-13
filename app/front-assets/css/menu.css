@@ -123,6 +123,7 @@
   font-size: 21px;
   font-family: assistantSemiBold;
   padding-top: 10px;
+  line-height: 20px;
 }
 .p-menu .ingredients {
   background: #ccc;
@@ -153,6 +154,8 @@
   max-width: 190px;
 }
 .p-menu .ingredients .lists > ul li.title {
+  width: 90%;
+  max-width: 500px;
   margin: 0 auto;
   display: block;
   font-size: 32px;
@@ -280,5 +283,8 @@
   .p-menu .ingredients .description .left {
     width: 100%;
     float: none;
+  }
+  .p-menu .slider .slick-dots {
+    display: none!important;
   }
 }

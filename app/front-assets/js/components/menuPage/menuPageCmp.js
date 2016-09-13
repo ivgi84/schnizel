@@ -32,39 +32,78 @@ define(['angular',
                     slide: {
                         img: 'top-slider-1.jpg',
                         text: {
-                            title: 'טייטל',
-                            describtion: 'איזה טקסט'
+                            title: 'ארוחה בצלחת',
+                            describtion: 'נתח לבקשתך, מוגש בצלחת עם מבחר של 3 תוספות חמות / סלטים טריים, רטבים לבקשתך, ירקות כבושים ופיתה חמה.'
                         }
                     },
                     thumb: {
                         img: 'top-slider-thumb-1.jpg',
-                        title: 'שניצל'
+                        title: 'ארוחה בצלחת'
                     }
                 },
                 {
                     slide: {
                         img: 'top-slider-1.jpg',
                         text: {
-                            title: 'טייטל',
-                            describtion: 'איזה טקסט'
+                            title: 'ארוחה בבגט',
+                            describtion: 'בגט טרי מחומם בתנור, בתוכו מוגש הנתח שביקשת, עם מבחר ממרחים וסלטים שהוכנו במקום, ירקות טריים.'
                         }
                     },
                     thumb: {
                         img: 'top-slider-thumb-1.jpg',
-                        title: 'שניצל'
+                        title: 'ארוחה בבגט'
                     }
                 },
                 {
                     slide: {
                         img: 'top-slider-1.jpg',
                         text: {
-                            title: 'טייטל',
-                            describtion: 'איזה טקסט'
+                            title: 'ארוחה בפיתה',
+                            describtion: 'פיתה מיוחדת בעבודת יד, בתוכה מוגש הנתח שביקשת, עם מבחר ממרחים וסלטים שהוכנו במקום, ירקות טריים.'
                         }
                     },
                     thumb: {
                         img: 'top-slider-thumb-1.jpg',
-                        title: 'שניצל'
+                        title: 'ארוחה בפיתה'
+                    }
+                },
+                {
+                    slide: {
+                        img: 'top-slider-1.jpg',
+                        text: {
+                            title: 'סלט',
+                            describtion: "סלט קצוץ או סלט חסות טרי, מעליו לבחירתך רצועות קריספי צ'יקן או פילה עוף בפלנצ'ה עם רטבים."
+                        }
+                    },
+                    thumb: {
+                        img: 'top-slider-thumb-1.jpg',
+                        title: 'סלט'
+                    }
+                },
+                {
+                    slide: {
+                        img: 'top-slider-1.jpg',
+                        text: {
+                            title: 'טורטייה',
+                            describtion: 'טורטייה מגולגלת עם עוף מעושן שהוכן במקום, עלי ארגולה עגבניות ומיונז.'
+                        }
+                    },
+                    thumb: {
+                        img: 'top-slider-thumb-1.jpg',
+                        title: 'טורטייה'
+                    }
+                },
+                {
+                    slide: {
+                        img: 'top-slider-1.jpg',
+                        text: {
+                            title: 'צמחוני',
+                            describtion: 'שניצל תירס צמחוני מיוחד תוצרת בית,  או קציצת טופו, כרובית ותרד  מוגש בצלחת עם מבחר של 3 תוספות חמות / סלטים טריים, רטבים לבקשתך, ירקות כבושים ופיתה חמה.'
+                        }
+                    },
+                    thumb: {
+                        img: 'top-slider-thumb-1.jpg',
+                        title: 'צמחוני'
                     }
                 }]
             },

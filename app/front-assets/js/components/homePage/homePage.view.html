@@ -4,11 +4,8 @@
       <div class="slider">
           <div class="sliderContent" slick-slider="{dots: false, arrows: true, draggable: true, slidesToShow:1, infinite:true}">
             <div class="slide" ng-repeat="slide in $ctrl.slides" style="background-image:url(front-assets/images/home/{{slide.img}}.png)">
-              <h3>
-                שעות של הכנות ... <br>
-          שניות של הגשה
-        </h3>
-              <h4>בואו ראו איך מכינים הכל טרי! >> </h4>
+              <h3>{{::slide.title}}</h3>
+              <h4>{{::slide.subTitle}}</h4>
             </div>
           </div>
       </div>
@@ -17,9 +14,9 @@
       <div class="wrap">
         <h1>כותרת ראשית</h1>
           <ul class="list">
-            <li><p>חלומות מתגשמים... <b>המשלוחים שלנו</b></p></li>
-            <li><p>איכות סביבה ורגישות חברתית...<b>ראו איך מייצרים את ההבדל</b></p></li>
-            <li><p>הנתחים שלנו...<b>הציצו למטבח שלנו בפעולה</b></p></li>
+            <li><p>הנתחים שלנו<b>הציצו למטבח שלנו בפעולה…</b></p></li>
+            <li><p>איכות סביבה ורגישות<b>ראו איך מייצרים את ההבדל</b></p></li>
+            <li><p>חלומות מתגשמים<b>המשלוחים שלנו</b></p></li>
           </ul>
       </div>
       <div class="clearfix"></div>
