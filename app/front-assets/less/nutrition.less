@@ -2,18 +2,33 @@
   padding: 40px 0 0;
   .ui-dialog{
     position: fixed;
-    background: rgba(0,0,0,0.85);
+    background: rgba(0,0,0,0.75);
     top:0;
     left:0;
     width: 100%;
     height: 100vh;
     z-index: 9999;
     .ui-dialog-content{
+      border-radius: 3px;
       margin: 20px auto;
-      padding: 30px;
-      width: 200px;
+      padding: 20px 30px;
+      width: 70%;
+      max-width: 500px;
       z-index: 101;
       background: #fff;
+      .closeDialogBtn{
+        text-align: right;
+        cursor: pointer;
+        padding-bottom: 10px;
+        font-size: 20px;
+      }
+      ul{
+        li{
+          &:nth-child(even){
+            background: #f7f5f5;
+          }
+        }
+      }
       &.open{
         display: block;
       }
@@ -26,17 +41,32 @@
         list-style: none;
         display: block;
         float: right;
-        width: 46%;
-        margin: 1%;
+        width: 50%;
+        margin: 0%;
         li{
           display: block;
-          padding: 5px 0;
-          line-height: 30px;
-          height: 30px;
+          padding: 5px 15px;
           p.cals{
             text-align: left;
           }
         }
+      }
+      button{
+        &:before{
+          content: "";
+          display: block;
+          clear: both;
+        }
+        background: #54392d;
+        border: none;
+        color:#fff;
+        padding: 5px 20px;
+        display: block;
+        margin: 10px auto;
+        font-size: 16px;
+        font-family: assistant;
+        cursor: pointer;
+        border-radius: 3px;
       }
     }
     &.closed{
@@ -298,6 +328,22 @@
     .components{
       display: none;
     }
+    .dishes{
+      ul{
+        li{
+          width: 50%;
+          margin: auto;
+          display: block;
+          img{
+            width: 100%;
+            height: auto;
+          }
+          p{
+            padding: 5px;
+          }
+        }
+      }
+    }
     .calcList{
       li{
           &:nth-child(odd){
@@ -321,52 +367,6 @@
           background: url(../images/nutrition/i-info-48.png) no-repeat center;
           background-size: contain;
           cursor: pointer;
-        }
-        .overlay{
-          background: rgba(0,0,0,0.6);
-          width: 100%;
-          height: 100vh;
-          position: fixed;
-          z-index: 100;
-          top: 0;
-          left:0;
-          display: none;
-          &.opened{
-            display: block;
-          }
-        }
-        .ui-dialog{
-          position: fixed;
-          top:20px;
-          left:~'calc(50% - 145px)';
-          padding: 30px;
-          width: 200px;
-          z-index: 101;
-          background: #fff;
-          &.open{
-            display: block;
-          }
-          h4{
-            text-align: center;
-            font-size: 24px;
-            color:#54392d;
-          }
-          ul{
-            list-style: none;
-            display: block;
-            float: right;
-            width: 46%;
-            margin: 1%;
-            li{
-              display: block;
-              padding: 5px 0;
-              line-height: 30px;
-              height: 30px;
-              p.cals{
-                text-align: left;
-              }
-            }
-          }
         }
       }
     }

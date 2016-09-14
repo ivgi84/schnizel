@@ -3,7 +3,7 @@
 }
 .p-nutrition .ui-dialog {
   position: fixed;
-  background: rgba(0, 0, 0, 0.85);
+  background: rgba(0, 0, 0, 0.75);
   top: 0;
   left: 0;
   width: 100%;
@@ -11,11 +11,22 @@
   z-index: 9999;
 }
 .p-nutrition .ui-dialog .ui-dialog-content {
+  border-radius: 3px;
   margin: 20px auto;
-  padding: 30px;
-  width: 200px;
+  padding: 20px 30px;
+  width: 70%;
+  max-width: 500px;
   z-index: 101;
   background: #fff;
+}
+.p-nutrition .ui-dialog .ui-dialog-content .closeDialogBtn {
+  text-align: right;
+  cursor: pointer;
+  padding-bottom: 10px;
+  font-size: 20px;
+}
+.p-nutrition .ui-dialog .ui-dialog-content ul li:nth-child(even) {
+  background: #f7f5f5;
 }
 .p-nutrition .ui-dialog .ui-dialog-content.open {
   display: block;
@@ -29,17 +40,32 @@
   list-style: none;
   display: block;
   float: right;
-  width: 46%;
-  margin: 1%;
+  width: 50%;
+  margin: 0%;
 }
 .p-nutrition .ui-dialog .ui-dialog-content ul li {
   display: block;
-  padding: 5px 0;
-  line-height: 30px;
-  height: 30px;
+  padding: 5px 15px;
 }
 .p-nutrition .ui-dialog .ui-dialog-content ul li p.cals {
   text-align: left;
+}
+.p-nutrition .ui-dialog .ui-dialog-content button {
+  background: #54392d;
+  border: none;
+  color: #fff;
+  padding: 5px 20px;
+  display: block;
+  margin: 10px auto;
+  font-size: 16px;
+  font-family: assistant;
+  cursor: pointer;
+  border-radius: 3px;
+}
+.p-nutrition .ui-dialog .ui-dialog-content button:before {
+  content: "";
+  display: block;
+  clear: both;
 }
 .p-nutrition .ui-dialog.closed {
   display: none;
@@ -271,6 +297,18 @@
   .p-nutrition .components {
     display: none;
   }
+  .p-nutrition .dishes ul li {
+    width: 50%;
+    margin: auto;
+    display: block;
+  }
+  .p-nutrition .dishes ul li img {
+    width: 100%;
+    height: auto;
+  }
+  .p-nutrition .dishes ul li p {
+    padding: 5px;
+  }
   .p-nutrition .calcList li:nth-child(odd) {
     background: transparent;
   }
@@ -290,52 +328,6 @@
     background: url(../images/nutrition/i-info-48.png) no-repeat center;
     background-size: contain;
     cursor: pointer;
-  }
-  .p-nutrition .nutritionList .ingrid .overlay {
-    background: rgba(0, 0, 0, 0.6);
-    width: 100%;
-    height: 100vh;
-    position: fixed;
-    z-index: 100;
-    top: 0;
-    left: 0;
-    display: none;
-  }
-  .p-nutrition .nutritionList .ingrid .overlay.opened {
-    display: block;
-  }
-  .p-nutrition .nutritionList .ingrid .ui-dialog {
-    position: fixed;
-    top: 20px;
-    left: calc(50% - 145px);
-    padding: 30px;
-    width: 200px;
-    z-index: 101;
-    background: #fff;
-  }
-  .p-nutrition .nutritionList .ingrid .ui-dialog.open {
-    display: block;
-  }
-  .p-nutrition .nutritionList .ingrid .ui-dialog h4 {
-    text-align: center;
-    font-size: 24px;
-    color: #54392d;
-  }
-  .p-nutrition .nutritionList .ingrid .ui-dialog ul {
-    list-style: none;
-    display: block;
-    float: right;
-    width: 46%;
-    margin: 1%;
-  }
-  .p-nutrition .nutritionList .ingrid .ui-dialog ul li {
-    display: block;
-    padding: 5px 0;
-    line-height: 30px;
-    height: 30px;
-  }
-  .p-nutrition .nutritionList .ingrid .ui-dialog ul li p.cals {
-    text-align: left;
   }
   .p-nutrition .calculated-result .arrow {
     display: none;

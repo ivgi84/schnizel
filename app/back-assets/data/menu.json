@@ -12,17 +12,20 @@
               "title": "חזה עוף",
               "process": [
                 {
-                  "title": "title process1 ",
-                  "text": "text "
+                  "title": "מתובל",
+                  "text": "רק 100% חזה עוף טרי טבול במרינדה משך הליילה טעמים חדישים והצעה יומית"
                 },
                 {
-                  "title": "title process2 ",
-                  "text": "text"
-                }
-              ],
+                  "title": "על האש",
+                  "text": "בגריל האמריקאי שלנו"
+                },
+                {
+                "title": "עשוי באופן מושלם",
+                "text": "לוהט, עסיסי ישר לצלחת"
+              }],
               "more": {
-                "title": "more Some Title ",
-                "text": "more some text "
+                "title": "",
+                "text": ""
               }
             }
           }
@@ -36,17 +39,20 @@
               "title": "פרגית",
               "process": [
                 {
-                  "title": "title process1 ",
-                  "text": "text "
+                  "title": "מתובל",
+                  "text": "רק 100% פרגית עוף טרי  טבול במרינדה משך הליילה"
                 },
                 {
-                  "title": "title process2 ",
-                  "text": "text"
-                }
-              ],
+                  "title": "על האש",
+                  "text": "בגריל האמריקאי שלנו"
+                },
+                {
+                "title": "עשוי באופן מושלם",
+                "text": "לוהט, עסיסי ישר לצלחת"
+              }],
               "more": {
-                "title": "more Some Title ",
-                "text": "more some text "
+                "title": "",
+                "text": ""
               }
             }
           }
@@ -60,17 +66,21 @@
               "title": "שניצל",
               "process": [
                 {
-                  "title": "title process1 ",
-                  "text": "text "
+                  "title": "מתובל",
+                  "text": "קמח, ביצה ופירורי לחם במתכון הסודי שלנו"
                 },
                 {
-                  "title": "title process2 ",
-                  "text": "text"
+                  "title": "מטוגן",
+                  "text": "בשמן סויה נקי ומשובח"
                 }
-              ],
+                ,
+                {
+                  "title": "עשוי באופן מושלם",
+                  "text": "קריספי  טרי ומתפוצץ בפה"
+                }],
               "more": {
-                "title": "more Some Title ",
-                "text": "more some text "
+                "title": "",
+                "text": ""
               }
             }
           }
@@ -81,20 +91,20 @@
             "mainTitle": "שניצל תירס",
             "description": {
               "img": "https://d5bzqyuki558t.cloudfront.net/cms-assets/system/asset_versions/attachments/000/000/377/original/_0004_Sofritas.png?1428679385",
-              "title": "title description",
+              "title": "שניצל תירס",
               "process": [
                 {
-                  "title": "title process1 ",
+                  "title": "מתובל",
                   "text": "text "
                 },
                 {
-                  "title": "title process2 ",
+                  "title": "על האש",
                   "text": "text"
                 }
               ],
               "more": {
-                "title": "more Some Title ",
-                "text": "more some text "
+                "title": "",
+                "text": ""
               }
             }
           }
@@ -105,20 +115,24 @@
             "mainTitle": "קציצות טופו כרובית ותרד  שורה מתחת",
             "description": {
               "img": "https://d5bzqyuki558t.cloudfront.net/cms-assets/system/asset_versions/attachments/000/000/377/original/_0004_Sofritas.png?1428679385",
-              "title": "title description",
+              "title": "קציצות טופו כרובית ותרד  שורה מתחת",
               "process": [
                 {
-                  "title": "title process1 ",
-                  "text": "text "
+                  "title": "מתובל",
+                  "text": " רק 100% טופו משובח ירקות טריים ותבלינים"
                 },
                 {
-                  "title": "title process2 ",
-                  "text": "text"
+                  "title": "בתנור",
+                  "text": "אפוי לשלמות"
+                },
+                {
+                  "title": "עשוי באופן מושלם",
+                  "text": "  100% בריאות רק חומרים טריים וטבעיים"
                 }
               ],
               "more": {
-                "title": "more Some Title ",
-                "text": "more some text "
+                "title": "",
+                "text": ""
               }
             }
           }
@@ -137,17 +151,21 @@
               "title": "אורז",
               "process": [
                 {
-                  "title": "title",
-                  "text": "text"
+                  "title": "האורז",
+                  "text": "רק 100% אורז תאילנדי מאודה, מטוגן, בתוספת ירקות אדום, צהוב, בעשבי תיבול"
                 },
                 {
-                  "title": "title",
-                  "text": "text"
+                  "title": "ההכנה",
+                  "text": "מידי יום טרי"
+                },
+                {
+                  "title": "עשוי באופן מושלם",
+                  "text": "בתיבול עדין, טעם מושלם"
                 }
               ],
               "more": {
-                "title": "Some Title",
-                "text": "some text"
+                "title": "",
+                "text": ""
               }
             }
           }
@@ -161,17 +179,21 @@
               "title": "פירה תפוחי אדמה",
               "process": [
                 {
-                  "title": "title",
-                  "text": "text"
+                  "title": "תפודים",
+                  "text": "רק 100% תפוחי אדמה טריים ומובחרים"
                 },
                 {
-                  "title": "title",
-                  "text": "text"
+                  "title": "ההכנה",
+                  "text": "מידי יום טרי"
+                },
+                {
+                  "title":"עשוי באופן מושלם",
+                  "text":"בתיבול עדין, טעם מושלם"
                 }
               ],
               "more": {
-                "title": "Some Title",
-                "text": "some text"
+                "title": "",
+                "text": ""
               }
             }
           }
@@ -185,17 +207,21 @@
               "title": " ירק היום טרי",
               "process": [
                 {
-                  "title": "title",
-                  "text": "text"
+                  "title": "הירקות",
+                  "text": "רק 100% ירקות מובחרים טריים ומובחרים "
                 },
                 {
-                  "title": "title",
-                  "text": "text"
+                  "title": "ההכנה",
+                  "text": "מידי יום טרי"
+                },
+                {
+                  "title":"עשוי באופן מושלם",
+                  "text":"בתיבול עדין, טעם מושלם"
                 }
               ],
               "more": {
-                "title": "Some Title",
-                "text": "some text"
+                "title": "",
+                "text": ""
               }
             }
           }
@@ -209,17 +235,17 @@
               "title": "בורגול גס עם ירקות",
               "process": [
                 {
-                  "title": "title",
-                  "text": "text"
+                  "title": "מתובל",
+                  "text": "text "
                 },
                 {
-                  "title": "title",
+                  "title": "על האש",
                   "text": "text"
                 }
               ],
               "more": {
-                "title": "Some Title",
-                "text": "some text"
+                "title": "",
+                "text": ""
               }
             }
           }
@@ -238,17 +264,21 @@
               "title": "צ'ילי",
               "process": [
                 {
-                  "title": "title",
-                  "text": "text"
+                  "title": "רטבים וומרחים ",
+                  "text": "פסטו, איולי, צ'ילי, דבש חרדל ויניגרט, טחינה, סחוג, טריאקי בלסמי, ועוד ועוד..."
                 },
                 {
-                  "title": "title",
-                  "text": "text"
+                  "title": "ההכנה",
+                  "text": "מידי יום טרי "
+                },
+                {
+                  "title": "עשוי באופן מושלם",
+                  "text": "בתיבול עדין, טעם מושלם"
                 }
               ],
               "more": {
-                "title": "Some Title",
-                "text": "some text"
+                "title": "",
+                "text": ""
               }
             }
           }
@@ -262,17 +292,17 @@
               "title": "סלסה",
               "process": [
                 {
-                  "title": "title",
-                  "text": "text"
+                  "title": "מתובל",
+                  "text": "text "
                 },
                 {
-                  "title": "title",
+                  "title": "על האש",
                   "text": "text"
                 }
               ],
               "more": {
-                "title": "Some Title",
-                "text": "some text"
+                "title": "",
+                "text": ""
               }
             }
           }
@@ -286,17 +316,17 @@
               "title": "בר בי קיו",
               "process": [
                 {
-                  "title": "title",
-                  "text": "text"
+                  "title": "מתובל",
+                  "text": "text "
                 },
                 {
-                  "title": "title",
+                  "title": "על האש",
                   "text": "text"
                 }
               ],
               "more": {
-                "title": "Some Title",
-                "text": "some text"
+                "title": "",
+                "text": ""
               }
             }
           }
@@ -310,17 +340,17 @@
               "title": " ויניגרט דבש",
               "process": [
                 {
-                  "title": "title",
-                  "text": "text"
+                  "title": "מתובל",
+                  "text": "text "
                 },
                 {
-                  "title": "title",
+                  "title": "על האש",
                   "text": "text"
                 }
               ],
               "more": {
-                "title": "Some Title",
-                "text": "some text"
+                "title": "",
+                "text": ""
               }
             }
           }
@@ -334,17 +364,17 @@
               "title": "חרדל ודבש",
               "process": [
                 {
-                  "title": "title",
-                  "text": "text"
+                  "title": "מתובל",
+                  "text": "text "
                 },
                 {
-                  "title": "title",
+                  "title": "על האש",
                   "text": "text"
                 }
               ],
               "more": {
-                "title": "Some Title",
-                "text": "some text"
+                "title": "",
+                "text": ""
               }
             }
           }
@@ -358,17 +388,17 @@
               "title": " וויסקי ודבש",
               "process": [
                 {
-                  "title": "title",
-                  "text": "text"
+                  "title": "מתובל",
+                  "text": "text "
                 },
                 {
-                  "title": "title",
+                  "title": "על האש",
                   "text": "text"
                 }
               ],
               "more": {
-                "title": "Some Title",
-                "text": "some text"
+                "title": "",
+                "text": ""
               }
             }
           }
@@ -382,17 +412,17 @@
               "title": "בלסמי מצומצם",
               "process": [
                 {
-                  "title": "title",
-                  "text": "text"
+                  "title": "מתובל",
+                  "text": "text "
                 },
                 {
-                  "title": "title",
+                  "title": "על האש",
                   "text": "text"
                 }
               ],
               "more": {
-                "title": "Some Title",
-                "text": "some text"
+                "title": "",
+                "text": ""
               }
             }
           }
@@ -406,17 +436,17 @@
               "title": "טחינה",
               "process": [
                 {
-                  "title": "title",
-                  "text": "text"
+                  "title": "מתובל",
+                  "text": "text "
                 },
                 {
-                  "title": "title",
+                  "title": "על האש",
                   "text": "text"
                 }
               ],
               "more": {
-                "title": "Some Title",
-                "text": "some text"
+                "title": "",
+                "text": ""
               }
             }
           }
@@ -430,17 +460,17 @@
               "title": "כרוב",
               "process": [
                 {
-                  "title": "title",
-                  "text": "text"
+                  "title": "מתובל",
+                  "text": "text "
                 },
                 {
-                  "title": "title",
+                  "title": "על האש",
                   "text": "text"
                 }
               ],
               "more": {
-                "title": "Some Title",
-                "text": "some text"
+                "title": "",
+                "text": ""
               }
             }
           }
@@ -454,17 +484,17 @@
               "title": "פרוסות ירקות טריים",
               "process": [
                 {
-                  "title": "title",
-                  "text": "text"
+                  "title": "מתובל",
+                  "text": "text "
                 },
                 {
-                  "title": "title",
+                  "title": "על האש",
                   "text": "text"
                 }
               ],
               "more": {
-                "title": "Some Title",
-                "text": "some text"
+                "title": "",
+                "text": ""
               }
             }
           }

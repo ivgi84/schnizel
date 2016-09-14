@@ -121,8 +121,7 @@ define(['angular',
             return res;
         },
         toggle: function toggle($event, data){
-            debugger;
-            $event.preventDefault();
+            if($event) $event.preventDefault();
             this.calcResult = this._calculateChange(data);
             data.isSelected = !data.isSelected;
         },
@@ -131,10 +130,10 @@ define(['angular',
         },
         closeDialog: function closeDialog(){
             this.dialog.isOpened = false;
+            this.dialog.data = {};
         },
         showCurrentIngrids: function showCurrentIngrids($event, scope){
             $event.stopImmediatePropagation();
-            debugger;
             this.dialog.data = scope.val;
             this.openDialog();
 

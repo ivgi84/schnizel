@@ -1,25 +1,27 @@
-    <div class="ui-dialog" ng-class="isopened ? 'opened' : 'closed'">
+    <div class="ui-dialog" ng-class="vm.isopened ? 'opened' : 'closed'">
         <div class="ui-dialog-content">
-            <div class="closeDialog" ng-click="closedialog()">
-                x
+            <div class="closeDialogBtn" ng-click="vm.closedialog()">
+                &#10005;
             </div>
             <h4>
-                {{::ingreds.title}}
+                {{vm.dialogdata.title}}
             </h4>
             <ul>
-                <li ng-repeat="val in components">
+                <li ng-repeat="val in vm.components">
                     <p>
-                        {{::val}}
+                        {{val}}
                     </p>
                 </li>
             </ul>
             <ul>
-                <li ng-repeat="val in dialogdata.data">
+                <li ng-repeat="val in vm.dialogdata.data">
                     <p class="cals">
-                        {{::val}}
+                        {{val}}
                     </p>
                 </li>
             </ul>
-            <a href="#" ng-click="toggle($event, dialogdata.data)">Add</a>
+            <div class="clearfix"></div>
+            <button ng-if="!dialogdata.isSelected" ng-click="vm.calcAndClose(dialogdata.data)">להוסיף לארוכה</button>
+            <button ng-if="dialogdata.isSelected" ng-click="vm.calcAndClose(dialogdata.data)">להוריד מארוכה</button>
         </div>
     </div>

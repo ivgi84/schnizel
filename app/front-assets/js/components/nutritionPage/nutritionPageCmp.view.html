@@ -59,7 +59,7 @@
     <ui-dialog dialogdata="$ctrl.dialog.data"
         isopened="$ctrl.dialog.isOpened"
         components="$ctrl.components.list"
-        toggle="$ctrl.calculator.toggle"
+        toggle="$ctrl.calculator.toggle($event, $ctrl.dialog.data)"
         closedialog="$ctrl.closeDialog()"></ui-dialog>
 </main>
 <site-footer effect-if-in-view="calculated-wrap"></site-footer>
