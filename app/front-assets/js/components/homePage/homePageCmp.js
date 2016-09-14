@@ -14,12 +14,13 @@ define([
             require: ['^siteNav', '^siteFooter']
         });
 
-        HomePageCtrl.$inject = ['affiliatesSvc'];
+        HomePageCtrl.$inject = ['$sce', 'baseService'];
 
-    function HomePageCtrl(affiliatesSvc) {
+    function HomePageCtrl($sce, baseService) {
         var vm = this;
 
-        vm.affiliatesSvc = affiliatesSvc;
+        vm.baseService = baseService;
+        vm.$sce = $sce;
         vm.affiliates = {
             exist:false,
             list:[]
@@ -51,15 +52,23 @@ define([
 
     HomePageCtrl.prototype = {
         findNearest: function findNearest(){
-            var data = this.affiliatesSvc.getAffilates();
-            if(data[this.user.city]){
-                this.affiliates.exist = true;
-                this.affiliates.list = data[this.user.city];
+            var self = this;
+            self.baseService.getJson('affiliates').then(function(response){
+            
+                if(response[self.user.city]){
+            
+                self.affiliates.exist = true;
+                self.affiliates.list = response[self.user.city];
+                for(var affiliate in self.affiliates.list){
+                    self.affiliates.list[affiliate].frameSrc = self.$sce.trustAsResourceUrl(self.affiliates.list[affiliate].frameSrc);
+                }
             }
             else{
-                this.affiliates.exist = false;
-                this.affiliates.list = [];
-            }
+                self.affiliates.exist = false;
+                self.affiliates.list = [];
+            }    
+            });
+            
         }
     }
 

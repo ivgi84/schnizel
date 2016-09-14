@@ -29,7 +29,11 @@
           <div class="affiliatesList" ng-class="{'open':$ctrl.affiliates.exist}">
               <ul>
                 <li ng-repeat="affilate in $ctrl.affiliates.list" ng-animate="{enter: 'animate-enter', leave: 'animate-leave'}">
-                  {{affilate.address }}
+                  <iframe src="{{affilate.frameSrc}}" frameborder="0" scrolling="no" ></iframe>
+                  <div>{{affilate.tel}}</div>
+                  <div>{{affilate.fax}}</div>
+                  <div>{{affilate.workHours}}</div>
+                  <div>{{affilate.address}}</div>
                 </li>
               </ul>
               <div class="clearfix"></div>

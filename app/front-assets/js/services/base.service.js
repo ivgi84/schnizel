@@ -9,7 +9,8 @@ define(['angular'], function(angular) {
             menu: 'back-assets/data/menu.json',
             faq: 'back-assets/data/faq.json',
             ingredients: 'back-assets/data/ingredients.json',
-            dishes: 'back-assets/data/dishes.json'
+            dishes: 'back-assets/data/dishes.json',
+            affiliates:'back-assets/data/affiliates.json'
         };
 
         var getJson = function getJson(data) {
