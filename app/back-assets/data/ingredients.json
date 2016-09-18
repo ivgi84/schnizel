@@ -711,5 +711,28 @@
             "vitamin_A": 0,
             "vitamin_C": 0
         }
+    },
+    "water": {
+        "id": 32,
+        "type": {
+            "name": "drinks",
+            "title": "משקאות"
+        },
+        "title": "מים",
+        "img": "http://drpma142ptgxf.cloudfront.net/nutrition-calculator/ingredients/chicken.png",
+        "shownIn": ["drinks","baget","pita","plate","salad","chips"],
+        "isSelected": false,
+        "data": {
+            "calories": 0,
+            "fat": 0,
+            "fiber": 0,
+            "cholesterol": 0,
+            "carbohydrates": 0,
+            "protein": 0,
+            "iron": 0,
+            "calcium": 0,
+            "vitamin_A": 0,
+            "vitamin_C": 0
+        }
     }
 }

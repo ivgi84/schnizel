@@ -119,11 +119,18 @@
 }
 .p-nutrition .dishes ul li {
   display: inline-block;
-  width: 25%;
+  width: 16%;
   max-width: 290px;
   min-width: 100px;
   text-align: center;
   cursor: pointer;
+  opacity: 0.4;
+}
+.p-nutrition .dishes ul li.selectedDish {
+  opacity: 1;
+}
+.p-nutrition .dishes ul li img {
+  max-width: 90%;
 }
 .p-nutrition .dishes ul li p {
   color: #54392d;

@@ -1,22 +1,38 @@
 {
   "plate":{
-    "title":"צלחת",
+    "title":"ארוחה בצלחת",
     "img":"http://drpma142ptgxf.cloudfront.net/nutrition-calculator/categories/burrito-bowl.png",
-    "types":["main","extras","salad","sauce"]
+    "types":["main","extras","salad","sauce","drinks"],
+    "isSelected":false
   },
   "baget":{
-    "title":"באגט",
+    "title":"ארוכה בבגט",
     "img":"http://drpma142ptgxf.cloudfront.net/nutrition-calculator/categories/burrito.png",
-    "types":["special","main","extras" ,"salad","sauce"]
+    "types":["special","main","extras" ,"salad","sauce","drinks"],
+    "isSelected":false
   },
   "pita":{
-    "title":"פיתה",
+    "title":"ארוכה בפיטה",
     "img":"http://drpma142ptgxf.cloudfront.net/nutrition-calculator/categories/tacos.png",
-    "types":["main","extras","salad","sauce"]
+    "types":["main","extras","salad","sauce","drinks"],
+    "isSelected":false
   },
   "salad":{
     "title":"סלט",
     "img":"http://drpma142ptgxf.cloudfront.net/nutrition-calculator/categories/salad.png",
-    "types":["main","salad", "sauce"]
+    "types":["main","salad", "sauce","drinks"],
+    "isSelected":false
+  },
+  "chips":{
+    "title":"צ׳יפס",
+    "img":"http://drpma142ptgxf.cloudfront.net/nutrition-calculator/categories/chips-and-drinks.png",
+    "types":["chips","drinks"],
+    "isSelected":false
+  },
+  "drinks":{
+    "title":"משקאות",
+    "img":"http://drpma142ptgxf.cloudfront.net/nutrition-calculator/categories/chips-and-drinks.png",
+    "types":["drinks"],
+    "isSelected":false
   }
 }

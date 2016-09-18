@@ -19,6 +19,7 @@ define(['angular',
         var vm = this;
         vm.baseService = baseService;
         vm.dialogData = {};
+        vm.selectedDish = {};
         vm.isDialogOpened = false;
         vm.dishes = {};
         vm.types = {};
@@ -89,6 +90,11 @@ define(['angular',
             return types;
         },
         getIngredsByDish: function getIngredsByDish(dishName, dish){
+            
+            this.selectedDish.isSelected = false;
+            dish.isSelected = true;
+            this.selectedDish = dish;
+
             var ingredsToShow = [];
 
             _.each(this.ingredients, function(ingred){
