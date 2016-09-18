@@ -1,20 +1,4 @@
 <main role="main" class="p-contact">
-  <section class="main full-width contactUs">
-    <div class="wrap" ng-form name="contactUsForm" novalidate>
-      <h3>צור איתנו קשר</h3>
-      <div class="row">
-        <input type="text" name="name" placeholder="שם" value="" ng-model="$ctrl.model.user.name" required>
-        <input type="tel" name="tel" placeholder="טלפון" value="" ng-model="$ctrl.model.user.tel" required>
-        <input type="email" name="name" placeholder="דוא״ל" value="" ng-model="$ctrl.model.user.tel" required>
-      </div>
-      <div class="row">
-        <textarea name="message" placeholder="הודעה" rows="8" cols="40" ng-model="$ctrl.model.user.message"></textarea>
-      </div>
-      <div class="row">
-        <input type="button" name="name" value="שלח" ng-click="$ctrl.sendMessage()">
-      </div>
-    </div>
-  </section>
   <section class="full-width affiliatesList">
     <div class="wrap">
       <h3>שניצל קומפני - סניפים</h3>
@@ -140,22 +124,6 @@
             </div>
           </li>
         </ul>
-      </div>
-    </div>
-  </section>
-  <section class="full-width faq">
-    <div class="wrap">
-      <h3>שאלות נפוצות</h3>
-      <div class="faqList">
-        <div class="accordion" ng-init="$ctrl.isMobile.screenSize() ? slideOpened = -1 : slideOpened = 0;">
-              <div class="accordion_box" ng-repeat="slide in $ctrl.faq track by $index">
-                  <h4 class="accordion_title"
-                      ng-click="$parent.slideOpened == $index ? $parent.slideOpened = -1 :$parent.slideOpened = $index"
-                      ng-class="{'open': slideOpened == $index, 'closed':slideOpened != $index}">{{slide.title}}</h4>
-
-                  <div class="accordion_content">{{slide.text}}</div>
-              </div>
-          </div>
       </div>
     </div>
   </section>

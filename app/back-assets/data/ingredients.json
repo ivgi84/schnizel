@@ -99,7 +99,7 @@
         },
         "title": "קציצות טופו תרד וכרובית",
         "img": "http://drpma142ptgxf.cloudfront.net/nutrition-calculator/ingredients/chicken.png",
-        "shownIn": ["baget", "pita", "salad"],
+        "shownIn": ["baget", "pita", "plate"],
         "isSelected": false,
         "data": {
             "calories": 354,
@@ -122,7 +122,7 @@
         },
         "title": "אורז מאודה",
         "img": "http://drpma142ptgxf.cloudfront.net/nutrition-calculator/ingredients/chicken.png",
-        "shownIn": ["plate", "baget", "pita", "salad", "chips"],
+        "shownIn": ["plate", "baget", "pita", "chips"],
         "isSelected": false,
         "data": {
             "calories": 121,
@@ -145,7 +145,7 @@
         },
         "title": "פירה",
         "img": "http://drpma142ptgxf.cloudfront.net/nutrition-calculator/ingredients/chicken.png",
-        "shownIn": ["plate", "baget", "pita", "salad"],
+        "shownIn": ["plate", "baget", "pita"],
         "isSelected": false,
         "data": {
             "calories": 180,
@@ -214,7 +214,7 @@
         },
         "title": "פסטה",
         "img": "http://drpma142ptgxf.cloudfront.net/nutrition-calculator/ingredients/chicken.png",
-        "shownIn": ["plate", "baget", "pita", "chips"],
+        "shownIn": ["plate"],
         "isSelected": false,
         "data": {
             "calories": 366,
@@ -237,7 +237,7 @@
         },
         "title": "בורגול עם ירקות",
         "img": "http://drpma142ptgxf.cloudfront.net/nutrition-calculator/ingredients/chicken.png",
-        "shownIn": ["plate", "baget", "pita", "chips"],
+        "shownIn": ["plate", "baget", "pita"],
         "isSelected": false,
         "data": {
             "calories": 320,
@@ -260,7 +260,7 @@
         },
         "title": "חומוס",
         "img": "http://drpma142ptgxf.cloudfront.net/nutrition-calculator/ingredients/chicken.png",
-        "shownIn": ["plate", "baget", "pita", "chips"],
+        "shownIn": ["salad", "baget", "pita", "plate"],
         "isSelected": false,
         "data": {
             "calories": 320,
@@ -283,7 +283,7 @@
         },
         "title": "סלט ביצים",
         "img": "http://drpma142ptgxf.cloudfront.net/nutrition-calculator/ingredients/chicken.png",
-        "shownIn": ["plate", "baget", "pita", "chips"],
+        "shownIn": ["plate", "baget", "pita", "salad"],
         "isSelected": false,
         "data": {
             "calories": 178,
@@ -306,7 +306,7 @@
         },
         "title": "סלט חצילים מיונז",
         "img": "http://drpma142ptgxf.cloudfront.net/nutrition-calculator/ingredients/chicken.png",
-        "shownIn": ["plate", "baget", "pita", "chips"],
+        "shownIn": ["plate", "baget", "pita"],
         "isSelected": false,
         "data": {
             "calories": 231,
@@ -329,7 +329,7 @@
         },
         "title": "סלט חצילים עם גמבה",
         "img": "http://drpma142ptgxf.cloudfront.net/nutrition-calculator/ingredients/chicken.png",
-        "shownIn": ["plate", "baget", "pita", "chips"],
+        "shownIn": ["plate", "baget", "pita"],
         "isSelected": false,
         "data": {
             "calories": 108,
@@ -352,7 +352,7 @@
         },
         "title": "סלט קישואים",
         "img": "http://drpma142ptgxf.cloudfront.net/nutrition-calculator/ingredients/chicken.png",
-        "shownIn": ["plate", "baget", "pita", "chips"],
+        "shownIn": ["plate", "baget", "pita"],
         "isSelected": false,
         "data": {
             "calories": 55,
@@ -375,7 +375,7 @@
         },
         "title": "סלט טונה",
         "img": "http://drpma142ptgxf.cloudfront.net/nutrition-calculator/ingredients/chicken.png",
-        "shownIn": ["plate", "baget", "pita", "chips"],
+        "shownIn": ["plate", "baget", "pita"],
         "isSelected": false,
         "data": {
             "calories": 310,
@@ -398,7 +398,7 @@
         },
         "title": "סלט כרוב",
         "img": "http://drpma142ptgxf.cloudfront.net/nutrition-calculator/ingredients/chicken.png",
-        "shownIn": ["plate", "baget", "pita", "chips"],
+        "shownIn": ["plate", "baget", "pita"],
         "isSelected": false,
         "data": {
             "calories": 312,
@@ -421,7 +421,7 @@
         },
         "title": "סלט קולסלו",
         "img": "http://drpma142ptgxf.cloudfront.net/nutrition-calculator/ingredients/chicken.png",
-        "shownIn": ["plate", "baget", "pita", "chips"],
+        "shownIn": ["plate", "baget", "pita"],
         "isSelected": false,
         "data": {
             "calories": 359,
@@ -444,7 +444,7 @@
         },
         "title": "סלט תורכי",
         "img": "http://drpma142ptgxf.cloudfront.net/nutrition-calculator/ingredients/chicken.png",
-        "shownIn": ["plate", "baget", "pita", "chips"],
+        "shownIn": ["plate", "baget", "pita"],
         "isSelected": false,
         "data": {
             "calories": 75,
@@ -467,7 +467,7 @@
         },
         "title": "סחוג",
         "img": "http://drpma142ptgxf.cloudfront.net/nutrition-calculator/ingredients/chicken.png",
-        "shownIn": ["plate", "baget", "pita", "chips"],
+        "shownIn": ["plate", "baget", "pita", "salad"],
         "isSelected": false,
         "data": {
             "calories": 0,
@@ -490,7 +490,7 @@
         },
         "title": "ויניגרט בלסמי",
         "img": "http://drpma142ptgxf.cloudfront.net/nutrition-calculator/ingredients/chicken.png",
-        "shownIn": ["plate", "baget", "pita", "chips"],
+        "shownIn": ["plate", "baget", "pita", "chips", "salad"],
         "isSelected": false,
         "data": {
             "calories": 0,
@@ -513,7 +513,7 @@
         },
         "title": "רוטב אלף האיים",
         "img": "http://drpma142ptgxf.cloudfront.net/nutrition-calculator/ingredients/chicken.png",
-        "shownIn": ["plate", "baget", "pita", "chips"],
+        "shownIn": ["plate", "baget", "pita", "chips", "salad"],
         "isSelected": false,
         "data": {
             "calories": 15.6,
@@ -559,7 +559,7 @@
         },
         "title": "רוטב טריאקי",
         "img": "http://drpma142ptgxf.cloudfront.net/nutrition-calculator/ingredients/chicken.png",
-        "shownIn": ["plate", "baget", "pita", "chips"],
+        "shownIn": ["plate", "baget", "pita", "salad"],
         "isSelected": false,
         "data": {
             "calories": 42,
@@ -582,7 +582,7 @@
         },
         "title": "רוטב פסטו",
         "img": "http://drpma142ptgxf.cloudfront.net/nutrition-calculator/ingredients/chicken.png",
-        "shownIn": ["plate", "baget", "pita", "chips"],
+        "shownIn": ["plate", "baget", "pita", "salad"],
         "isSelected": false,
         "data": {
             "calories": 35,
@@ -628,7 +628,7 @@
         },
         "title": "מיונז",
         "img": "http://drpma142ptgxf.cloudfront.net/nutrition-calculator/ingredients/chicken.png",
-        "shownIn": ["plate", "baget", "pita", "chips"],
+        "shownIn": ["plate", "baget", "pita", "salad"],
         "isSelected": false,
         "data": {
             "calories": 32,
@@ -651,7 +651,7 @@
         },
         "title": "רוטב צ'ילי מתוק",
         "img": "http://drpma142ptgxf.cloudfront.net/nutrition-calculator/ingredients/chicken.png",
-        "shownIn": ["plate", "baget", "pita", "chips"],
+        "shownIn": ["plate", "baget", "pita", "salad"],
         "isSelected": false,
         "data": {
             "calories": 39,
@@ -674,7 +674,7 @@
         },
         "title": "ירקות כבושים",
         "img": "http://drpma142ptgxf.cloudfront.net/nutrition-calculator/ingredients/chicken.png",
-        "shownIn": ["plate", "baget", "pita", "chips"],
+        "shownIn": ["plate", "baget", "pita", "salad"],
         "isSelected": false,
         "data": {
             "calories": 5,
@@ -683,6 +683,29 @@
             "cholesterol": 0,
             "carbohydrates": 1,
             "protein": 0,
+            "iron": 0,
+            "calcium": 0,
+            "vitamin_A": 0,
+            "vitamin_C": 0
+        }
+    },
+    "baget": {
+        "id": 31,
+        "type": {
+            "name": "special",
+            "title": "מיוחדים"
+        },
+        "title": "בגט",
+        "img": "http://drpma142ptgxf.cloudfront.net/nutrition-calculator/ingredients/chicken.png",
+        "shownIn": ["baget"],
+        "isSelected": false,
+        "data": {
+            "calories": 304,
+            "fat": 0.9,
+            "fiber": 1.9,
+            "cholesterol": 0,
+            "carbohydrates": 62,
+            "protein": 9.5,
             "iron": 0,
             "calcium": 0,
             "vitamin_A": 0,

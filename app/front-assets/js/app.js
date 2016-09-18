@@ -1,4 +1,4 @@
-define(['angular','ngRoute', './services/services', 'ngAnimate', 'hpCmp', 'menuCmp', 'nutritionCmp', 'storyCmp', 'contactCmp'], function() {
+define(['angular','ngRoute', './services/services', 'ngAnimate', 'hpCmp', 'menuCmp', 'nutritionCmp', 'storyCmp', 'contactCmp','branchesCmp'], function() {
 
      var app = angular.module('schnizelApp',
         ['ngRoute','ngAnimate', 'schnizelApp.components', 'schnizelApp.directives','schnizelApp.services']);
@@ -6,7 +6,7 @@ define(['angular','ngRoute', './services/services', 'ngAnimate', 'hpCmp', 'menuC
       app.config(config);
 
     function config($routeProvider, $locationProvider) {
-        $locationProvider.html5Mode({ enabled: true, requireBase: false });
+        //$locationProvider.html5Mode({ enabled: true, requireBase: false });
         $routeProvider
             .when('/', {
                 template: '<home-page>'
@@ -22,6 +22,9 @@ define(['angular','ngRoute', './services/services', 'ngAnimate', 'hpCmp', 'menuC
             })
             .when('/contact', {
                 template: '<contact-page>'
+            })
+            .when('/branches', {
+                template: '<branches-page>'
             });
     }
      return app;

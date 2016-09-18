@@ -78,7 +78,6 @@ define(['angular',
             this.ingredients = data[0].data;
             this.dishes = data[1].data;
             this.calculator.result =_.mapObject(this.ingredients.grilled_chicken.data, this.resetResult.bind(this));
-            //this.types = this.setIngredientsByTypes(this.ingredients);
         },
         setIngredientsByTypes: function setIngredientsByTypes(data){
             var types = {};
@@ -91,6 +90,7 @@ define(['angular',
         },
         getIngredsByDish: function getIngredsByDish(dishName, dish){
             var ingredsToShow = [];
+
             _.each(this.ingredients, function(ingred){
                 if(_.indexOf(ingred.shownIn, dishName) != -1  && _.indexOf(dish.types, ingred.type.name) != -1){
                     ingredsToShow.push(ingred);

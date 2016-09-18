@@ -7,8 +7,20 @@ define(['angular', './components/components'], function() {
             controller: SiteNavCtrl
         });
 
-    function SiteNavCtrl() {
+        SiteNavCtrl.$inject=['$location','$rootScope'];
+
+    function SiteNavCtrl($location, $rootScope) {
         var vm = this;
+        vm.$location = $location;
+        vm.$rootScope = $rootScope;
+        
+        vm.currentUrl = $location.path();
+
+        $rootScope.$on( "$routeChangeSuccess", function(event, next, current) {
+            vm.currentUrl = $location.path();
+        });
+
+
 
         vm.siteNav = {
             mobileNavOpen: false,
@@ -27,7 +39,9 @@ define(['angular', './components/components'], function() {
         };
     }
     SiteNavCtrl.prototype = {
+        setSelected: function setSelected(url){
 
+        },
         mobileNavToggle: function mobileNavToggle(){
             this.siteNav.mobileNavOpen =!this.siteNav.mobileNavOpen;
         }

@@ -7,7 +7,7 @@
   "baget":{
     "title":"באגט",
     "img":"http://drpma142ptgxf.cloudfront.net/nutrition-calculator/categories/burrito.png",
-    "types":["main","extras" ,"salad","sauce"]
+    "types":["special","main","extras" ,"salad","sauce"]
   },
   "pita":{
     "title":"פיתה",
