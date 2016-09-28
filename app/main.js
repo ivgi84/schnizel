@@ -12,13 +12,22 @@ require.config({
         //slickSlider
         'slickJs': 'lib/vendor/slick.min',
 
-        //TweenMax
-        'tweenMax': 'lib/vendor/TweenMax.min',
+        
+        // 'tweenMax': 'lib/vendor/TweenMax',
+        // 'timelineMax':'lib/vendor/TimelineMax',
+        // 'timelineLite':'lib/vendor/TimelineLite',
+        // 'tweenLite':'lib/vendor/TweenLite',
+        // 'animation':'lib/vendor/animation.gsap',
+        // 'gsap':'lib/vendor/jquery.gsap',
+
+        //test
+        'tweenMax': 'lib/vendor/test/TweenMax.min',
+        'ScrollMagic': 'lib/vendor/test/ScrollMagic',
+        'animationgsap': 'lib/vendor/test/animation.gsap',
+        'addIndicators': 'lib/vendor/test/debug.addIndicators',
 
         //ScrollMagic
         'scrollMagic': 'lib/vendor/ScrollMagic',
-        //scrollMagic debug
-        'scrollMagicDebug': 'lib/vendor/scrollmagic.debug',
 
         //common
         'navCmp': 'components/siteNav/siteNavCmp',
@@ -44,9 +53,22 @@ require.config({
         'ngRoute': { exports: 'ngRoute', deps: ['angular'] },
         'ngAnimate': { exports: 'ngAnimate', deps: ['angular'] },
         'slickjs': { exports: 'slickjs', deps: ['jquery'] },
-        'tweenMax': { exports: 'tweenMax' },
-        'scrollMagic': { exports: 'scrollMagic', deps: ['jquery', 'tweenMax'] },
-        'scrollMagicDebug': { exports: 'scrollMagicDebug', deps: ['scrollMagic'] },
+
+
+        'tweenMax': { exports: 'tweenMax'},
+        'ScrollMagic': { exports: 'ScrollMagic'},
+        'animationgsap': { exports: 'animationgsap'},
+        'addIndicators': { exports: 'addIndicators'},
+
+        // 'animation': { exports: 'animation', deps:['scrollMagic']},
+        // 'gsap': { exports: 'gsap', deps:['jquery']},
+        // 'tweenMax': { exports: 'tweenMax'},
+        // 'tweenLite': { exports: 'tweenLite', deps:['tweenMax']},
+        // 'timelineMax': { exports: 'timelineMax', deps:['tweenLite']},
+        // 'timelineLite': { exports: 'timelineLite', deps:['tweenLite']},
+        // 'scrollMagic': { exports: 'scrollMagic', deps:['gsap','tweenMax','timelineMax','timelineLite']},
+        
+    
         'app': { deps: ['angular', 'ngRoute'] },
         'hpCmp': pageDeps,
         'contactCmp': pageDeps,
