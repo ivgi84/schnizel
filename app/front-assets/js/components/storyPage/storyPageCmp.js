@@ -23,8 +23,8 @@ define(['angular', './components/components', 'tweenMax', 'ScrollMagic', 'animat
 								.addTo(controller);
 
   // build scenes
-  new ScrollMagic.Scene({triggerElement: "#parallax1", duration: 1000})
-          .setTween("#parallax1 > img", {top: window.innerHeight+'px'})
+  new ScrollMagic.Scene({triggerElement: "#parallax1", duration: 2000})
+          .setTween("#parallax1 > img", {top: window.innerHeight + 200 +'px'})
           .addIndicators({name: "set 1"})
           .addTo(controller);
   //

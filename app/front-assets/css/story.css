@@ -11,7 +11,7 @@ section {
   overflow: hidden;
 }
 .parallaxParent img {
-  position: absolute;
+  position: fixed;
   top: -100px;
 }
 .parallaxParent img:nth-child(1) {
