@@ -6,19 +6,70 @@ body {
 section {
   background: #d0c0b1;
 }
-.parallaxParent {
+.screenContent {
   height: 100vh;
   overflow: hidden;
 }
+.images {
+  position: fixed;
+  top: -2400px;
+}
+.images img {
+  position: relative;
+}
+.images img:nth-child(1) {
+  left: 7%;
+  top: 20px;
+}
+.images img:nth-child(2) {
+  left: 70%;
+  top: 30px;
+}
+.images img:nth-child(3) {
+  left: 6%;
+  top: 300px;
+}
+.images img:nth-child(4) {
+  left: 6%;
+  top: 500px;
+}
+.images img:nth-child(5) {
+  left: 70%;
+  top: 520px;
+}
+.images img:nth-child(6) {
+  left: 7%;
+  top: 740px;
+}
+.images img:nth-child(7) {
+  left: 6%;
+  top: 1500px;
+}
+.images img:nth-child(8) {
+  left: 60%;
+  top: 1510px;
+}
+.images img:nth-child(9) {
+  left: 7%;
+  top: 1970px;
+}
+.images img:nth-child(10) {
+  left: 70%;
+  top: 2000px;
+}
 .parallaxParent img {
   position: fixed;
-  top: -100px;
+  top: -350px;
 }
 .parallaxParent img:nth-child(1) {
-  left: 10%;
+  left: 7%;
 }
 .parallaxParent img:nth-child(2) {
-  right: 10%;
+  right: 7%;
+}
+.parallaxParent img:nth-child(3) {
+  left: 9%;
+  margin-top: 250px;
 }
 .screenContent h3 {
   text-align: center;
@@ -29,7 +80,7 @@ section {
 .screenContent .logo {
   display: block;
   margin: 0 auto;
-  padding: 150px 0;
+  padding: 150px 0 50px;
 }
 .screenContent #logo-trigger {
   position: absolute;

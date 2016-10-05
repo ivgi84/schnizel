@@ -11,6 +11,8 @@ define(['angular', './components/components', 'tweenMax', 'ScrollMagic', 'animat
     function StoryPageCtrl() {
         console.log('storyPageCtrl');
 
+        var duration = 2000;
+
         this.$postLink = function(){
 
             var controller = new ScrollMagic.Controller();
@@ -23,19 +25,32 @@ define(['angular', './components/components', 'tweenMax', 'ScrollMagic', 'animat
 								.addTo(controller);
 
   // build scenes
-  new ScrollMagic.Scene({triggerElement: "#parallax1", duration: 2000})
-          .setTween("#parallax1 > img", {top: window.innerHeight + 200 +'px'})
+
+  new ScrollMagic.Scene({triggerElement: ".s2", duration: duration})
+          .setTween("#images", {top: 2000 +'px'})
           .addIndicators({name: "set 1"})
           .addTo(controller);
-  //
-  // new ScrollMagic.Scene({triggerElement: "#parallax2"})
-  //         .setTween("#parallax2 > div", {y: "80%", ease: Linear.easeNone})
+
+  // new ScrollMagic.Scene({triggerElement: ".s1", duration: duration})
+  //         .setTween("#parallax1 > img", {top: window.innerHeight + 200 +'px'})
+  //         .addIndicators({name: "set 1"})
   //         .addTo(controller);
   //
-  // new ScrollMagic.Scene({triggerElement: "#parallax3"})
-  //         .setTween("#parallax3 > div", {y: "80%", ease: Linear.easeNone})
+  // new ScrollMagic.Scene({triggerElement: ".s2", duration: duration})
+  //         .setTween("#parallax2 > img", {top: window.innerHeight + 200 +'px'})
+  //         .addIndicators({name: "set 2"})
   //         .addTo(controller);
   //
+  // new ScrollMagic.Scene({triggerElement: ".s3", duration: duration})
+  //         .setTween("#parallax3 > img", {top: window.innerHeight + 200 +'px'})
+  //         .addIndicators({name: "set 3"})
+  //         .addTo(controller);
+  //
+  // new ScrollMagic.Scene({triggerElement: ".s1", duration: duration})
+  //         .setTween("#parallax4 > img", {top: window.innerHeight + 200 +'px'})
+  //         .addIndicators({name: "set 4"})
+  //         .addTo(controller);
+
 
 
         }

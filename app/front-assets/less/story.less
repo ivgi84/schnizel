@@ -5,19 +5,46 @@ html, body {
 section{
     background: #d0c0b1;
 }
-.parallaxParent {
+.screenContent {
     height: 100vh;
     overflow: hidden;
 }
+
+.images{
+    position: fixed;
+    top:-2400px;
+    img{
+        position: relative;
+
+        &:nth-child(1){left:7%; top:20px;}
+        &:nth-child(2){left:70%; top:30px;}
+        &:nth-child(3){left:6%; top:300px;}
+
+        &:nth-child(4){left:6%; top:500px}
+        &:nth-child(5){left:70%; top:520px;}
+        &:nth-child(6){left:7%; top:740px;}
+
+        &:nth-child(7){left:6%; top:1500px;}
+        &:nth-child(8){left:60%; top:1510px;}
+
+        &:nth-child(9){left:7%; top:1970px}
+        &:nth-child(10){left:70%; top:2000px;}
+    }
+}
+
 .parallaxParent {
     img{
         position: fixed;
-        top:-100px;
+        top: -350px;
         &:nth-child(1){
-            left:10%;
+            left:7%;
         }
         &:nth-child(2){
-            right:10%;
+            right:7%;
+        }
+        &:nth-child(3){
+            left:9%;
+            margin-top: 250px;
         }
     }
 }
@@ -31,7 +58,7 @@ section{
     .logo{
         display: block;
         margin: 0 auto;
-        padding: 150px 0;
+        padding: 150px 0 50px;
     }
     #logo-trigger{
         position: absolute;
