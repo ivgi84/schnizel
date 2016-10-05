@@ -1,40 +1,35 @@
-<style type="text/css">
-	.parallaxParent {
-		height: 100vh;
-		overflow: hidden;
-	}
-	.parallaxParent > * {
-		height: 200%;
-		position: relative;
-		top: -100%;
-	}
-</style>
-<div class="spacer s0"></div>
-<div id="parallax1" class="parallaxParent">
-	<div style="background-image: url(front-assets/images/story/example_parallax_bg1.png);"></div>
-</div>
-<div class="spacer s1">
-	<div class="box2 blue">
-		<p>Content 1</p>
-		<a href="#" class="viewsource">view source</a>
-	</div>
-</div>
-<div class="spacer s0"></div>
-<div id="parallax2" class="parallaxParent">
-	<div style="background-image: url(front-assets/images/story/example_parallax_bg2.png);"></div>
-</div>
-<div class="spacer s1">
-	<div class="box2 blue">
-		<p>Content 2</p>
-		<a href="#" class="viewsource">view source</a>
-	</div>
-</div>
-<div class="spacer s0"></div>
-<div id="parallax3" class="parallaxParent">
-	<div style="background-image: url(front-assets/images/story/example_parallax_bg3.png);"></div>
-</div>
-<div class="spacer s2"></div>
-<script>
-	// init controller
+<main role="main" class="p-story">
+	<section class="main full-width">
+		<div class="spacer s0">
+			<div class="screenContent">
+					<img id="s-logo" class="logo" src="front-assets/images/story/logo-big.jpg" alt="" />
+					<div id="logo-trigger"></div>
+					<h3>אנו מתחייבים בכל יום נתון...</h3>
+			</div>
+		</div>
+		<div id="parallax1" class="parallaxParent">
+			<img src="front-assets/images/story/pic-1.jpg" alt="" />
+			<img src="front-assets/images/story/pic-2.jpg" alt="" />
+		</div>
+		<div class="spacer s1">
+			<div>
+				<p>Content 1</p>
+			</div>
+		</div>
+		<div class="spacer s0"></div>
+		<div id="parallax2" class="parallaxParent">
+			<div></div>
+		</div>
+		<div class="spacer s1">
+			<div class="box2 blue">
+				<p>Content 2</p>
+			</div>
+		</div>
+		<div class="spacer s0"></div>
+		<div id="parallax3" class="parallaxParent">
+			<div></div>
+		</div>
+		<div class="spacer s2"></div>
 
-</script>
+	</section>
+</main>

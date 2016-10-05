@@ -1,10 +1,37 @@
-#container {
-  margin: 55vh 0;
-  padding: 50px;
-  outline: 1px dashed orange;
+html,
+body {
+  height: auto;
+  overflow: initial;
 }
-#block {
-  padding: 10px;
-  border: 1px solid black;
-  font-family: Helvetica;
+section {
+  background: #d0c0b1;
+}
+.parallaxParent {
+  height: 100vh;
+  overflow: hidden;
+}
+.parallaxParent img {
+  position: absolute;
+  top: -100px;
+}
+.parallaxParent img:nth-child(1) {
+  left: 10%;
+}
+.parallaxParent img:nth-child(2) {
+  right: 10%;
+}
+.screenContent h3 {
+  text-align: center;
+  color: #54392d;
+  font-size: 50px;
+  font-family: assistantSemiBold;
+}
+.screenContent .logo {
+  display: block;
+  margin: 0 auto;
+  padding: 150px 0;
+}
+.screenContent #logo-trigger {
+  position: absolute;
+  bottom: 47vh;
 }
