@@ -40,7 +40,7 @@ define(['angular',
                 toggle: function(){
                     this.isShown = !this.isShown;
                 },
-                isShown: true
+                isShown: false
             }
         };
         vm.ingredients = null;
@@ -90,7 +90,7 @@ define(['angular',
             return types;
         },
         getIngredsByDish: function getIngredsByDish(dishName, dish){
-            
+
             this.selectedDish.isSelected = false;
             dish.isSelected = true;
             this.selectedDish = dish;

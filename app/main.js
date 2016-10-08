@@ -11,20 +11,11 @@ require.config({
 
         //slickSlider
         'slickJs': 'lib/vendor/slick.min',
-
         
-        // 'tweenMax': 'lib/vendor/TweenMax',
-        // 'timelineMax':'lib/vendor/TimelineMax',
-        // 'timelineLite':'lib/vendor/TimelineLite',
-        // 'tweenLite':'lib/vendor/TweenLite',
-        // 'animation':'lib/vendor/animation.gsap',
-        // 'gsap':'lib/vendor/jquery.gsap',
-
         //test
-        'tweenMax': 'lib/vendor/test/TweenMax.min',
+        'TweenMax': 'lib/vendor/test/TweenMax.min',
         'ScrollMagic': 'lib/vendor/test/ScrollMagic',
         'animationgsap': 'lib/vendor/test/animation.gsap',
-        'addIndicators': 'lib/vendor/test/debug.addIndicators',
 
         //ScrollMagic
         'scrollMagic': 'lib/vendor/ScrollMagic',
@@ -55,20 +46,11 @@ require.config({
         'slickjs': { exports: 'slickjs', deps: ['jquery'] },
 
 
-        'tweenMax': { exports: 'tweenMax'},
+        'TweenMax': { exports: 'TweenMax'},
         'ScrollMagic': { exports: 'ScrollMagic'},
-        'animationgsap': { exports: 'animationgsap'},
-        'addIndicators': { exports: 'addIndicators'},
+        'animationgsap': { exports: 'animationgsap', deps:['TwennMax']},
 
-        // 'animation': { exports: 'animation', deps:['scrollMagic']},
-        // 'gsap': { exports: 'gsap', deps:['jquery']},
-        // 'tweenMax': { exports: 'tweenMax'},
-        // 'tweenLite': { exports: 'tweenLite', deps:['tweenMax']},
-        // 'timelineMax': { exports: 'timelineMax', deps:['tweenLite']},
-        // 'timelineLite': { exports: 'timelineLite', deps:['tweenLite']},
-        // 'scrollMagic': { exports: 'scrollMagic', deps:['gsap','tweenMax','timelineMax','timelineLite']},
-        
-    
+
         'app': { deps: ['angular', 'ngRoute'] },
         'hpCmp': pageDeps,
         'contactCmp': pageDeps,

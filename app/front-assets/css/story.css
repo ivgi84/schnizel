@@ -3,86 +3,114 @@ body {
   height: auto;
   overflow: initial;
 }
-section {
+.p-story section {
   background: #d0c0b1;
 }
-.screenContent {
-  height: 100vh;
+.p-story .screenContent {
+  height: 80vh;
   overflow: hidden;
 }
-.images {
+.p-story .images {
   position: fixed;
-  top: -2400px;
+  height: 2000px;
+  top: -2800px;
+  width: 100%;
 }
-.images img {
-  position: relative;
+.p-story .images img {
+  position: absolute;
 }
-.images img:nth-child(1) {
-  left: 7%;
-  top: 20px;
-}
-.images img:nth-child(2) {
+.p-story .images img:nth-child(1) {
+  top: -15%;
   left: 70%;
-  top: 30px;
 }
-.images img:nth-child(3) {
-  left: 6%;
-  top: 300px;
+.p-story .images img:nth-child(2) {
+  top: -15%;
 }
-.images img:nth-child(4) {
-  left: 6%;
-  top: 500px;
+.p-story .images img:nth-child(3) {
+  top: 20%;
+  left: 10%;
 }
-.images img:nth-child(5) {
-  left: 70%;
-  top: 520px;
+.p-story .images img:nth-child(4) {
+  top: 10%;
+  left: 80%;
 }
-.images img:nth-child(6) {
-  left: 7%;
-  top: 740px;
+.p-story .images img:nth-child(5) {
+  top: 2%;
+  left: 4%;
 }
-.images img:nth-child(7) {
-  left: 6%;
-  top: 1500px;
+.p-story .images img:nth-child(6) {
+  top: 80%;
+  left: 68%;
 }
-.images img:nth-child(8) {
-  left: 60%;
-  top: 1510px;
+.p-story .images img:nth-child(7) {
+  top: 82%;
+  left: 1%;
 }
-.images img:nth-child(9) {
-  left: 7%;
-  top: 1970px;
+.p-story .images img:nth-child(8) {
+  top: 74%;
+  left: 10%;
 }
-.images img:nth-child(10) {
-  left: 70%;
-  top: 2000px;
+.p-story .images img:nth-child(9) {
+  top: 61%;
 }
-.parallaxParent img {
+.p-story .images img:nth-child(10) {
+  top: 60%;
+  left: 80%;
+}
+.p-story .parallaxParent img {
   position: fixed;
   top: -350px;
 }
-.parallaxParent img:nth-child(1) {
+.p-story .parallaxParent img:nth-child(1) {
   left: 7%;
 }
-.parallaxParent img:nth-child(2) {
+.p-story .parallaxParent img:nth-child(2) {
   right: 7%;
 }
-.parallaxParent img:nth-child(3) {
+.p-story .parallaxParent img:nth-child(3) {
   left: 9%;
   margin-top: 250px;
 }
-.screenContent h3 {
+.p-story .screenContent h3 {
   text-align: center;
   color: #54392d;
   font-size: 50px;
   font-family: assistantSemiBold;
 }
-.screenContent .logo {
+.p-story .screenContent h4 {
+  text-align: center;
+  color: #54392d;
+  font-size: 30px;
+  font-family: assistantSemiBold;
+  position: relative;
+  z-index: 9;
+}
+.p-story .screenContent .logo {
   display: block;
   margin: 0 auto;
   padding: 150px 0 50px;
 }
-.screenContent #logo-trigger {
+.p-story .screenContent #logo-trigger {
   position: absolute;
   bottom: 47vh;
+}
+.p-story .videos .videoWrapper {
+  position: relative;
+  height: 100vh;
+}
+.p-story .videos .videoWrapper video.fullPage {
+  height: auto;
+  width: 100%;
+  position: absolute;
+}
+.p-story .videos .videoWrapper .videoText {
+  position: absolute;
+  top: calc(50vh - 100px);
+  left: calc(50% - 250px);
+  width: 100%;
+  max-width: 425px;
+  color: #fff;
+  font-size: 24px;
+  font-weight: assistantSemiBold;
+  text-align: center;
 }

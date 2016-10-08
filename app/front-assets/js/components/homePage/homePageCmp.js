@@ -10,8 +10,7 @@ define([
         .module('schnizelApp.components')
         .component('homePage', {
             templateUrl: 'front-assets/js/components/homePage/homePage.view.html',
-            controller: HomePageCtrl,
-            require: ['^siteNav', '^siteFooter']
+            controller: HomePageCtrl
         });
 
         HomePageCtrl.$inject = ['$sce', 'baseService'];
@@ -54,9 +53,9 @@ define([
         findNearest: function findNearest(){
             var self = this;
             self.baseService.getJson('affiliates').then(function(response){
-            
+
                 if(response[self.user.city]){
-            
+
                 self.affiliates.exist = true;
                 self.affiliates.list = response[self.user.city];
                 for(var affiliate in self.affiliates.list){
@@ -66,9 +65,9 @@ define([
             else{
                 self.affiliates.exist = false;
                 self.affiliates.list = [];
-            }    
+            }
             });
-            
+
         }
     }
 

@@ -2,67 +2,98 @@ html, body {
     height: auto;
     overflow: initial;
 }
-section{
-    background: #d0c0b1;
-}
-.screenContent {
-    height: 100vh;
-    overflow: hidden;
-}
-
-.images{
-    position: fixed;
-    top:-2400px;
-    img{
-        position: relative;
-
-        &:nth-child(1){left:7%; top:20px;}
-        &:nth-child(2){left:70%; top:30px;}
-        &:nth-child(3){left:6%; top:300px;}
-
-        &:nth-child(4){left:6%; top:500px}
-        &:nth-child(5){left:70%; top:520px;}
-        &:nth-child(6){left:7%; top:740px;}
-
-        &:nth-child(7){left:6%; top:1500px;}
-        &:nth-child(8){left:60%; top:1510px;}
-
-        &:nth-child(9){left:7%; top:1970px}
-        &:nth-child(10){left:70%; top:2000px;}
+.p-story{
+    section{
+        background: #d0c0b1;
     }
-}
+    .screenContent {
+        height: 80vh;
+        overflow: hidden;
+    }
 
-.parallaxParent {
-    img{
+    .images{
         position: fixed;
-        top: -350px;
-        &:nth-child(1){
-            left:7%;
+        height: 2000px;
+        top:-2800px;
+        width: 100%;
+        img{
+            position: absolute;
+
+            &:nth-child(1){top:-15%; left:70%}
+            &:nth-child(2){top:-15%;}
+            &:nth-child(3){top:20%; left: 10%;}
+            &:nth-child(4){top:10%; left:80%;}
+            &:nth-child(5){top:2%; left:4%;}
+            &:nth-child(6){top: 80%; left: 68%;}
+            &:nth-child(7){top:82%; left:1%}
+            &:nth-child(8){top:74%; left:10%;}
+            &:nth-child(9){top:61%;}
+            &:nth-child(10){top:60%; left:80%}
+
         }
-        &:nth-child(2){
-            right:7%;
-        }
-        &:nth-child(3){
-            left:9%;
-            margin-top: 250px;
-        }
-    }
-}
-.screenContent{
-    h3{
-        text-align: center;
-        color:#54392d;
-        font-size: 50px;
-        font-family: assistantSemiBold;
-    }
-    .logo{
-        display: block;
-        margin: 0 auto;
-        padding: 150px 0 50px;
-    }
-    #logo-trigger{
-        position: absolute;
-        bottom: 47vh;
     }
 
+    .parallaxParent {
+        img{
+            position: fixed;
+            top: -350px;
+            &:nth-child(1){
+                left:7%;
+            }
+            &:nth-child(2){
+                right:7%;
+            }
+            &:nth-child(3){
+                left:9%;
+                margin-top: 250px;
+            }
+        }
+    }
+    .screenContent{
+        h3{
+            text-align: center;
+            color:#54392d;
+            font-size: 50px;
+            font-family: assistantSemiBold;
+        }
+        h4{
+            text-align: center;
+            color:#54392d;
+            font-size: 30px;
+            font-family: assistantSemiBold;
+            position: relative;
+            z-index: 9;
+        }
+        .logo{
+            display: block;
+            margin: 0 auto;
+            padding: 150px 0 50px;
+        }
+        #logo-trigger{
+            position: absolute;
+            bottom: 47vh;
+        }
+    }
+    .videos{
+        .videoWrapper{
+            position: relative;
+            height: 100vh;
+            video.fullPage{
+                height: auto;
+                width: 100%;
+                position: absolute;
+            }
+            .videoText{
+                position: absolute;
+                top: ~"calc(50vh - 100px)";
+                left:~"calc(50% - 250px)";
+                width: 100%;
+                max-width: 425px;
+                color:#fff;
+                font-size: 24px;
+                font-weight: assistantSemiBold;
+                text-align: center;
+            }
+        }
+    }
 }
