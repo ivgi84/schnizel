@@ -11,7 +11,7 @@ require.config({
 
         //slickSlider
         'slickJs': 'lib/vendor/slick.min',
-        
+
         //test
         'TweenMax': 'lib/vendor/test/TweenMax.min',
         'ScrollMagic': 'lib/vendor/test/ScrollMagic',
@@ -48,7 +48,7 @@ require.config({
 
         'TweenMax': { exports: 'TweenMax'},
         'ScrollMagic': { exports: 'ScrollMagic'},
-        'animationgsap': { exports: 'animationgsap', deps:['TwennMax']},
+        'animationgsap': { exports: 'animationgsap', deps:['TweenMax']},
 
 
         'app': { deps: ['angular', 'ngRoute'] },
