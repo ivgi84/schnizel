@@ -698,7 +698,7 @@
         "title": "בגט",
         "img": "http://drpma142ptgxf.cloudfront.net/nutrition-calculator/ingredients/chicken.png",
         "shownIn": ["baget"],
-        "isSelected": false,
+        "isSelected": true,
         "data": {
             "calories": 304,
             "fat": 0.9,

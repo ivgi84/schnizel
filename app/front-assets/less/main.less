@@ -87,7 +87,7 @@ nav {
     z-index: 99;
 }
 .navigation {
-    max-width: 940px;
+    max-width: 700px;
     .logo {
         float: right;
         margin-left: 40px;
@@ -143,6 +143,15 @@ footer {
     padding: 20px 0;
     background: #54392d;
     overflow: hidden;
+    .wrap{
+        max-width: 890px;
+        &:after{
+            content: "";
+            clear: both;
+            display: block;
+            width: 100%;
+        }
+    }
     .subsribeResponse{
         transition: all 1s ease;
         -webkit-transition: all 1s ease;

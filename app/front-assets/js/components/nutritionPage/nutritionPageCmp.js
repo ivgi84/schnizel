@@ -82,18 +82,29 @@ define(['angular',
         },
         setIngredientsByTypes: function setIngredientsByTypes(data){
             var types = {};
+            var self = this;
             _.each(data, function(ingred){
                 if(!types[ingred.type.title])
                     types[ingred.type.title] = [];
                 types[ingred.type.title].push(ingred);
+
+                if(ingred.isSelected){
+                    ingred.isSelected = false;
+                    self.toggle(null,ingred);
+                }
+
+
             });
             return types;
         },
         getIngredsByDish: function getIngredsByDish(dishName, dish){
 
+            if(this.selectedDish.title == dish.title) return true;
+
             this.selectedDish.isSelected = false;
             dish.isSelected = true;
             this.selectedDish = dish;
+            this.resetCalc();
 
             var ingredsToShow = [];
 
@@ -110,6 +121,21 @@ define(['angular',
         },
         set calcResult(val){
             this.calculator.result = val;
+        },
+        resetCalc: function resetCalc(){
+            var reset = {
+                calcium: 0,
+                calories: 0,
+                carbohydrates: 0,
+                cholesterol: 0,
+                fat: 0,
+                fiber:0,
+                iron:0,
+                protein:0,
+                vitamin_A:0,
+                vitamin_C:0
+            };
+            this.calcResult = reset;
         },
         _calculateChange: function _calculateChange(data){
             var self = this;

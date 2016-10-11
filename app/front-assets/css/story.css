@@ -96,16 +96,15 @@ body {
 }
 .p-story .videos .videoWrapper {
   position: relative;
-  height: 100vh;
+  max-height: 800px;
 }
 .p-story .videos .videoWrapper video.fullPage {
   height: auto;
   width: 100%;
-  position: absolute;
 }
 .p-story .videos .videoWrapper .videoText {
   position: absolute;
-  top: calc(50vh - 100px);
+  top: calc(50vh - 160px);
   left: calc(50% - 250px);
   width: 100%;
   max-width: 425px;

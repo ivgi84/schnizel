@@ -10,18 +10,22 @@
     </head>
     <body>
         <div class="mainContainer">
+            <site-nav></site-nav>
             <div ng-view></div>
+            <site-footer></site-footer>
         </div>
-        <script src="https://www.gstatic.com/firebasejs/3.3.0/firebase.js"></script>
+
+        <script src="https://www.gstatic.com/firebasejs/3.4.1/firebase.js"></script>
         <script>
-            // Initialize Firebase
-            var config = {
-                apiKey: "AIzaSyArd9XXShFR135gafl9ahSngMt4GRTPyrM",
-                authDomain: "schnitzel-cc667.firebaseapp.com",
-                databaseURL: "https://schnitzel-cc667.firebaseio.com",
-                storageBucket: "schnitzel-cc667.appspot.com"
-            };
-            firebase.initializeApp(config);
+          // Initialize Firebase
+          var config = {
+            apiKey: "AIzaSyCT69rhVIdTfVqKEeBvxCYYCAiJU3RddqU",
+            authDomain: "newschnitzel-aa9f9.firebaseapp.com",
+            databaseURL: "https://newschnitzel-aa9f9.firebaseio.com",
+            storageBucket: "newschnitzel-aa9f9.appspot.com",
+            messagingSenderId: "1018563102212"
+          };
+          firebase.initializeApp(config);
         </script>
     </body>
 </html>
