@@ -36,10 +36,26 @@ gulp.task('default', ['serve']);
 
 gulp.task('deploy-front', function(){
   gulp.src('app/front-assets/css/**/*.*')
+  .pipe(replace('front-assets/',''))
   .pipe(gulp.dest('prod/css'));
-  gulp.src('app/front-assets/js/**/*.*').pipe(gulp.dest('prod/js'));
-  gulp.src('app/front-assets/fonts/*.*').pipe(gulp.dest('prod/fonts'));
-  gulp.src('app/front-assets/images/**/*.*').pipe(gulp.dest('prod/images'));
+
+  gulp.src('app/front-assets/js/**/*.*')
+  .pipe(replace('front-assets/',''))
+  // .pipe(minify({
+  //   ext:{
+  //     src:'-debug.js',
+  //     min:'.js'
+  //   },
+  //   exclude: ['lib'],
+  // }))
+  .pipe(gulp.dest('prod/js'));
+
+  gulp.src('app/front-assets/fonts/*.*')
+  .pipe(gulp.dest('prod/fonts'));
+
+  gulp.src('app/front-assets/images/**/*.*')
+  .pipe(gulp.dest('prod/images'));
+
   gulp.src('app/*.*')
   .pipe(replace('front-assets/',''))
   .pipe(gulp.dest('prod/'));

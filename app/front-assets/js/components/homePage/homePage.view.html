@@ -2,7 +2,7 @@
   <section class="main full-width">
       <div class="slider">
           <div class="sliderContent" slick-slider="{dots: false, arrows: true, draggable: true, slidesToShow:1, infinite:true}">
-            <div class="slide" ng-repeat="slide in $ctrl.slides" style="background-image:url(front-assets/images/home/{{slide.img}}.png)">
+            <div class="slide" ng-repeat="slide in $ctrl.slides" style="background-image:url(front-assets/images/home/{{slide.img}})">
               <h3>{{::slide.title}}</h3>
               <h4>{{::slide.subTitle}}</h4>
             </div>

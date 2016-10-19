@@ -12,7 +12,7 @@
   color: #fff;
 }
 .p-home .slider .sliderContent .slide {
-  background: url('../images/home/slide_1.png') no-repeat;
+  background: url('../images/home/slide_1.jpg') no-repeat;
   background-size: cover;
   height: 100vh;
 }
@@ -87,7 +87,7 @@
   font-family: assistantSemiBold;
 }
 .p-home .geo {
-  background-image: url("../images/home/slide_1.png");
+  background-image: url("../images/home/bg.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   min-height: 250px;
