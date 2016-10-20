@@ -95,4 +95,47 @@ html, body {
             }
         }
     }
+    .postVideoPics{
+        .picture{
+            float: right;
+            width: 50%;
+            position: relative;
+            overflow: hidden;
+            img{
+                display: block;
+                width: 100%;
+                height: auto;
+                &.grow { transition: all .5s ease-in-out; }
+                &.grow:hover { transform: scale(1.1); }
+            }
+            .pic-text{
+                transition: .8s opacity;
+                -webkit-transition: .8s opacity;
+                -moz-transition: .8s opacity;
+                opacity: 0;
+                font-size: 20px;
+                position: absolute;
+                left: 50%;
+                margin-left: -100px;
+                width: 200px;
+                top:50%;
+                color:#fff;
+                text-align: center;
+            }
+            &:hover{
+                .pic-text{
+                    opacity: 1;
+                }
+                img.grow{ transform: scale(1.1); }
+            }
+        }
+    }
+    .workers{
+        img{
+            width: 33.33%;
+            height: auto;
+            display: block;
+            float: right;
+        }
+    }
 }

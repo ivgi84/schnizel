@@ -95,14 +95,14 @@ define(['angular',
                 },
                 {
                     slide: {
-                        img: 'top-slider-1.jpg',
+                        img: 'slideVegetarian.jpg',
                         text: {
                             title: 'צמחוני',
                             describtion: 'שניצל תירס צמחוני מיוחד תוצרת בית,  או קציצת טופו, כרובית ותרד  מוגש בצלחת עם מבחר של 3 תוספות חמות / סלטים טריים, רטבים לבקשתך, ירקות כבושים ופיתה חמה.'
                         }
                     },
                     thumb: {
-                        img: 'top-slider-thumb-1.jpg',
+                        img: 'iconVegetarian.jpg',
                         title: 'צמחוני'
                     }
                 }]
@@ -110,41 +110,26 @@ define(['angular',
             bottom: {
                 slides: [{
                     slide: {
-                        img: 'bottom-slider-1.jpg',
-                        text: {
-                            title: '',
-                            describtion: ''
-                        }
+                        img: 'slide_drinks_01.jpg'
                     },
                     thumb: {
-                        img: 'bottom-slider-thumb-1.png',
-                        title: ''
+                        img: 'iconDrink_01.png'
                     }
                 },
                 {
                     slide: {
-                        img: 'bottom-slider-1.jpg',
-                        text: {
-                            title: '',
-                            describtion: ''
-                        }
+                        img: 'slide_drinks_02.jpg'
                     },
                     thumb: {
-                        img: 'bottom-slider-thumb-1.png',
-                        title: ''
+                        img: 'iconDrink_02.jpg'
                     }
                 },
                 {
                     slide: {
-                        img: 'bottom-slider-1.jpg',
-                        text: {
-                            title: '',
-                            describtion: ''
-                        }
+                        img: 'slide_drinks_03.jpg'
                     },
                     thumb: {
-                        img: 'bottom-slider-thumb-1.png',
-                        title: ''
+                        img: 'iconDrink_03.jpg'
                     }
                 }]
             },

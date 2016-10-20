@@ -70,21 +70,12 @@
             <div class="slider">
                 <div class="sliderContent" id="bottomSlider" slick-slider={{$ctrl.sliders.settings}}>
                     <div class="slide" ng-repeat="slide in $ctrl.sliders.bottom.slides" style="background-image:url(front-assets/images/menu/{{slide.slide.img}})">
-                        <div class="slideText">
-                            <h3>
-                                {{slide.slide.text.title}}
-                            </h3>
-                            <p>
-                                {{slide.slide.text.describtion}}
-                            </p>
-                        </div>
                     </div>
                 </div>
                 <div class="slick-thumbs" id="bottom">
                     <ul>
                         <li ng-repeat="slide in $ctrl.sliders.bottom.slides">
                             <img ng-src="front-assets/images/menu/{{slide.thumb.img}}"/>
-                            <p>{{slide.thumb.title}}</p>
                         </li>
                     </ul>
                 </div>

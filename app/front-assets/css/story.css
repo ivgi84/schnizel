@@ -113,3 +113,46 @@ body {
   font-weight: assistantSemiBold;
   text-align: center;
 }
+.p-story .postVideoPics .picture {
+  float: right;
+  width: 50%;
+  position: relative;
+  overflow: hidden;
+}
+.p-story .postVideoPics .picture img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.p-story .postVideoPics .picture img.grow {
+  transition: all 0.5s ease-in-out;
+}
+.p-story .postVideoPics .picture img.grow:hover {
+  transform: scale(1.1);
+}
+.p-story .postVideoPics .picture .pic-text {
+  transition: .8s opacity;
+  -webkit-transition: .8s opacity;
+  -moz-transition: .8s opacity;
+  opacity: 0;
+  font-size: 20px;
+  position: absolute;
+  left: 50%;
+  margin-left: -100px;
+  width: 200px;
+  top: 50%;
+  color: #fff;
+  text-align: center;
+}
+.p-story .postVideoPics .picture:hover .pic-text {
+  opacity: 1;
+}
+.p-story .postVideoPics .picture:hover img.grow {
+  transform: scale(1.1);
+}
+.p-story .workers img {
+  width: 33.33%;
+  height: auto;
+  display: block;
+  float: right;
+}
