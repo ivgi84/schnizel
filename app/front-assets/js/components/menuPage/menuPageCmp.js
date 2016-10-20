@@ -30,66 +30,66 @@ define(['angular',
             top: {
                 slides: [{
                     slide: {
-                        img: 'top-slider-1.jpg',
+                        img: 'slidePlate.jpg',
                         text: {
                             title: 'ארוחה בצלחת',
                             describtion: 'נתח לבקשתך, מוגש בצלחת עם מבחר של 3 תוספות חמות / סלטים טריים, רטבים לבקשתך, ירקות כבושים ופיתה חמה.'
                         }
                     },
                     thumb: {
-                        img: 'top-slider-thumb-1.jpg',
+                        img: 'iconPlate.jpg',
                         title: 'ארוחה בצלחת'
                     }
                 },
                 {
                     slide: {
-                        img: 'top-slider-1.jpg',
+                        img: 'slideBaget.jpg',
                         text: {
                             title: 'ארוחה בבגט',
                             describtion: 'בגט טרי מחומם בתנור, בתוכו מוגש הנתח שביקשת, עם מבחר ממרחים וסלטים שהוכנו במקום, ירקות טריים.'
                         }
                     },
                     thumb: {
-                        img: 'top-slider-thumb-1.jpg',
+                        img: 'iconBaget.jpg',
                         title: 'ארוחה בבגט'
                     }
                 },
                 {
                     slide: {
-                        img: 'top-slider-1.jpg',
+                        img: 'slidePita.jpg',
                         text: {
                             title: 'ארוחה בפיתה',
                             describtion: 'פיתה מיוחדת בעבודת יד, בתוכה מוגש הנתח שביקשת, עם מבחר ממרחים וסלטים שהוכנו במקום, ירקות טריים.'
                         }
                     },
                     thumb: {
-                        img: 'top-slider-thumb-1.jpg',
+                        img: 'iconPita.jpg',
                         title: 'ארוחה בפיתה'
                     }
                 },
                 {
                     slide: {
-                        img: 'top-slider-1.jpg',
+                        img: 'slideSalad.jpg',
                         text: {
                             title: 'סלט',
                             describtion: "סלט קצוץ או סלט חסות טרי, מעליו לבחירתך רצועות קריספי צ'יקן או פילה עוף בפלנצ'ה עם רטבים."
                         }
                     },
                     thumb: {
-                        img: 'top-slider-thumb-1.jpg',
+                        img: 'iconSalad.jpg',
                         title: 'סלט'
                     }
                 },
                 {
                     slide: {
-                        img: 'top-slider-1.jpg',
+                        img: 'slideTortilla.jpg',
                         text: {
                             title: 'טורטייה',
                             describtion: 'טורטייה מגולגלת עם עוף מעושן שהוכן במקום, עלי ארגולה עגבניות ומיונז.'
                         }
                     },
                     thumb: {
-                        img: 'top-slider-thumb-1.jpg',
+                        img: 'iconTortilla.jpg',
                         title: 'טורטייה'
                     }
                 },
@@ -112,39 +112,39 @@ define(['angular',
                     slide: {
                         img: 'bottom-slider-1.jpg',
                         text: {
-                            title: 'טייטל',
-                            describtion: 'איזה טקסט'
+                            title: '',
+                            describtion: ''
                         }
                     },
                     thumb: {
                         img: 'bottom-slider-thumb-1.png',
-                        title: 'משאקה 1'
+                        title: ''
                     }
                 },
                 {
                     slide: {
                         img: 'bottom-slider-1.jpg',
                         text: {
-                            title: 'טייטל',
-                            describtion: 'איזה טקסט'
+                            title: '',
+                            describtion: ''
                         }
                     },
                     thumb: {
                         img: 'bottom-slider-thumb-1.png',
-                        title: 'משאקה 2'
+                        title: ''
                     }
                 },
                 {
                     slide: {
                         img: 'bottom-slider-1.jpg',
                         text: {
-                            title: 'טייטל',
-                            describtion: 'איזה טקסט'
+                            title: '',
+                            describtion: ''
                         }
                     },
                     thumb: {
                         img: 'bottom-slider-thumb-1.png',
-                        title: 'משאקה 3'
+                        title: ''
                     }
                 }]
             },
