@@ -144,10 +144,10 @@
       "list": [
         {
           "item": {
-            "mainImg": "https://d5bzqyuki558t.cloudfront.net/cms-assets/system/asset_versions/attachments/000/000/377/original/_0004_Sofritas.png?1428679385",
+            "mainImg": "front-assets/images/menu/items/Orez.png",
             "mainTitle": "אורז",
             "description": {
-              "img": "https://d5bzqyuki558t.cloudfront.net/cms-assets/system/asset_versions/attachments/000/000/377/original/_0004_Sofritas.png?1428679385",
+              "img": "front-assets/images/menu/items/Orez.png",
               "title": "אורז",
               "process": [
                 {
@@ -172,10 +172,10 @@
         },
         {
           "item": {
-            "mainImg": "https://d5bzqyuki558t.cloudfront.net/cms-assets/system/asset_versions/attachments/000/000/377/original/_0004_Sofritas.png?1428679385",
+            "mainImg": "front-assets/images/menu/items/Pire.png",
             "mainTitle": "פירה תפוחי אדמה",
             "description": {
-              "img": "https://d5bzqyuki558t.cloudfront.net/cms-assets/system/asset_versions/attachments/000/000/377/original/_0004_Sofritas.png?1428679385",
+              "img": "front-assets/images/menu/items/Pire.png",
               "title": "פירה תפוחי אדמה",
               "process": [
                 {
@@ -257,10 +257,10 @@
       "list": [
         {
           "item": {
-            "mainImg": "https://d5bzqyuki558t.cloudfront.net/cms-assets/system/asset_versions/attachments/000/000/377/original/_0004_Sofritas.png?1428679385",
+            "mainImg": "front-assets/images/menu/items/Chili.png",
             "mainTitle": "צ'ילי",
             "description": {
-              "img": "https://d5bzqyuki558t.cloudfront.net/cms-assets/system/asset_versions/attachments/000/000/377/original/_0004_Sofritas.png?1428679385",
+              "img": "front-assets/images/menu/items/Chili.png",
               "title": "צ'ילי",
               "process": [
                 {
@@ -357,10 +357,10 @@
         },
         {
           "item": {
-            "mainImg": "https://d5bzqyuki558t.cloudfront.net/cms-assets/system/asset_versions/attachments/000/000/377/original/_0004_Sofritas.png?1428679385",
+            "mainImg": "front-assets/images/menu/items/HardalVeDvash.png",
             "mainTitle": "חרדל ודבש",
             "description": {
-              "img": "https://d5bzqyuki558t.cloudfront.net/cms-assets/system/asset_versions/attachments/000/000/377/original/_0004_Sofritas.png?1428679385",
+              "img": "front-assets/images/menu/items/HardalVeDvash.png",
               "title": "חרדל ודבש",
               "process": [
                 {
@@ -429,10 +429,10 @@
         },
         {
           "item": {
-            "mainImg": "https://d5bzqyuki558t.cloudfront.net/cms-assets/system/asset_versions/attachments/000/000/377/original/_0004_Sofritas.png?1428679385",
+            "mainImg": "front-assets/images/menu/items/Thina.png",
             "mainTitle": "טחינה",
             "description": {
-              "img": "https://d5bzqyuki558t.cloudfront.net/cms-assets/system/asset_versions/attachments/000/000/377/original/_0004_Sofritas.png?1428679385",
+              "img": "front-assets/images/menu/items/Thina.png",
               "title": "טחינה",
               "process": [
                 {
@@ -453,10 +453,10 @@
         },
         {
           "item": {
-            "mainImg": "https://d5bzqyuki558t.cloudfront.net/cms-assets/system/asset_versions/attachments/000/000/377/original/_0004_Sofritas.png?1428679385",
+            "mainImg": "front-assets/images/menu/items/SaladKruv.png",
             "mainTitle": "כרוב",
             "description": {
-              "img": "https://d5bzqyuki558t.cloudfront.net/cms-assets/system/asset_versions/attachments/000/000/377/original/_0004_Sofritas.png?1428679385",
+              "img": "front-assets/images/menu/items/SaladKruv.png",
               "title": "כרוב",
               "process": [
                 {

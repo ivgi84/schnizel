@@ -135,6 +135,7 @@
 }
 .p-home .geo .wrap .affiliatesList {
   width: 100%;
+  max-width: 720px;
   margin: 0 auto;
   opacity: 0;
   transition: all 1s ease;
@@ -153,8 +154,27 @@
   float: right;
   padding: 10px;
   margin: 1%;
-  width: 31%;
+  width: 48%;
   box-sizing: border-box;
+}
+.p-home .geo .wrap .affiliatesList ul li a img {
+  width: 100%;
+  display: block;
+}
+.p-home .geo .wrap .affiliatesList ul li .infoDetails {
+  width: 100%;
+  min-height: 25px;
+}
+.p-home .geo .wrap .affiliatesList ul li .infoDetails span:first-of-type {
+  float: right;
+}
+.p-home .geo .wrap .affiliatesList ul li .infoDetails span:last-of-type {
+  float: left;
+}
+.p-home .geo .wrap .affiliatesList ul li .infoDetails:after {
+  display: block;
+  width: 100%;
+  clear: both;
 }
 @media (max-width: 740px) {
   .p-home .slider .sliderContent h3 {

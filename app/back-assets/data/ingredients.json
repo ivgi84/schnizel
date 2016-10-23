@@ -121,7 +121,7 @@
             "title": "תוספות"
         },
         "title": "אורז מאודה",
-        "img": "http://drpma142ptgxf.cloudfront.net/nutrition-calculator/ingredients/chicken.png",
+        "img": "front-assets/images/menu/items/Orez.png",
         "shownIn": ["plate", "baget", "pita", "chips"],
         "isSelected": false,
         "data": {
@@ -144,7 +144,7 @@
             "title": "תוספות"
         },
         "title": "פירה",
-        "img": "http://drpma142ptgxf.cloudfront.net/nutrition-calculator/ingredients/chicken.png",
+        "img": "front-assets/images/menu/items/Pire.png",
         "shownIn": ["plate", "baget", "pita"],
         "isSelected": false,
         "data": {
@@ -167,7 +167,7 @@
             "title": "תוספות"
         },
         "title": "צ'יפס",
-        "img": "http://drpma142ptgxf.cloudfront.net/nutrition-calculator/ingredients/chicken.png",
+        "img": "front-assets/images/menu/items/Chips.png",
         "shownIn": ["plate", "baget", "pita", "chips"],
         "isSelected": false,
         "data": {
@@ -282,7 +282,7 @@
             "title": "סלט"
         },
         "title": "סלט ביצים",
-        "img": "http://drpma142ptgxf.cloudfront.net/nutrition-calculator/ingredients/chicken.png",
+        "img": "front-assets/images/menu/items/Salad.png",
         "shownIn": ["plate", "baget", "pita", "salad"],
         "isSelected": false,
         "data": {
@@ -305,7 +305,7 @@
             "title": "סלט"
         },
         "title": "סלט חצילים מיונז",
-        "img": "http://drpma142ptgxf.cloudfront.net/nutrition-calculator/ingredients/chicken.png",
+        "img": "front-assets/images/menu/items/Hatzilim.png",
         "shownIn": ["plate", "baget", "pita"],
         "isSelected": false,
         "data": {
@@ -374,7 +374,7 @@
             "title": "סלט"
         },
         "title": "סלט טונה",
-        "img": "http://drpma142ptgxf.cloudfront.net/nutrition-calculator/ingredients/chicken.png",
+        "img": "front-assets/images/menu/items/SaladTuna.png",
         "shownIn": ["plate", "baget", "pita"],
         "isSelected": false,
         "data": {
@@ -397,7 +397,7 @@
             "title": "סלט"
         },
         "title": "סלט כרוב",
-        "img": "http://drpma142ptgxf.cloudfront.net/nutrition-calculator/ingredients/chicken.png",
+        "img": "front-assets/images/menu/items/SaladKruv.png",
         "shownIn": ["plate", "baget", "pita"],
         "isSelected": false,
         "data": {
@@ -420,7 +420,7 @@
             "title": "סלט"
         },
         "title": "סלט קולסלו",
-        "img": "http://drpma142ptgxf.cloudfront.net/nutrition-calculator/ingredients/chicken.png",
+        "img": "front-assets/images/menu/items/Kolselo.png",
         "shownIn": ["plate", "baget", "pita"],
         "isSelected": false,
         "data": {
@@ -512,7 +512,7 @@
             "title": "ממרחים ורוטבים"
         },
         "title": "רוטב אלף האיים",
-        "img": "http://drpma142ptgxf.cloudfront.net/nutrition-calculator/ingredients/chicken.png",
+        "img": "front-assets/images/menu/items/1000Aim.png",
         "shownIn": ["plate", "baget", "pita", "chips", "salad"],
         "isSelected": false,
         "data": {
@@ -558,7 +558,7 @@
             "title": "ממרחים ורוטבים"
         },
         "title": "רוטב טריאקי",
-        "img": "http://drpma142ptgxf.cloudfront.net/nutrition-calculator/ingredients/chicken.png",
+        "img": "front-assets/images/menu/items/Tariaky.png",
         "shownIn": ["plate", "baget", "pita", "salad"],
         "isSelected": false,
         "data": {
@@ -581,7 +581,7 @@
             "title": "ממרחים ורוטבים"
         },
         "title": "רוטב פסטו",
-        "img": "http://drpma142ptgxf.cloudfront.net/nutrition-calculator/ingredients/chicken.png",
+        "img": "front-assets/images/menu/items/Pesto.png",
         "shownIn": ["plate", "baget", "pita", "salad"],
         "isSelected": false,
         "data": {
@@ -604,7 +604,7 @@
             "title": "ממרחים ורוטבים"
         },
         "title": "רוטב חרדל דבש",
-        "img": "http://drpma142ptgxf.cloudfront.net/nutrition-calculator/ingredients/chicken.png",
+        "img": "front-assets/images/menu/items/HardalVeDvash.png",
         "shownIn": ["plate", "baget", "pita", "chips"],
         "isSelected": false,
         "data": {
@@ -627,7 +627,7 @@
             "title": "ממרחים ורוטבים"
         },
         "title": "מיונז",
-        "img": "http://drpma142ptgxf.cloudfront.net/nutrition-calculator/ingredients/chicken.png",
+        "img": "front-assets/images/menu/items/Mayonez.png",
         "shownIn": ["plate", "baget", "pita", "salad"],
         "isSelected": false,
         "data": {
@@ -650,7 +650,7 @@
             "title": "ממרחים ורוטבים"
         },
         "title": "רוטב צ'ילי מתוק",
-        "img": "http://drpma142ptgxf.cloudfront.net/nutrition-calculator/ingredients/chicken.png",
+        "img": "front-assets/images/menu/items/chiliMatok.png",
         "shownIn": ["plate", "baget", "pita", "salad"],
         "isSelected": false,
         "data": {

@@ -1,14 +1,8 @@
 {
   "רמת גן": [
     {
-      "frameSrc":"https://goo.gl/maps/h2Ryyvig2nP2",
-      "tel": "03-6138281",
-      "fax": "03-6139461",
-      "workHours": "ימים א-ה 10:30-17:00",
-      "address": "רח’ אבא הלל 7, רמת גן",
-      "shipping": "הבורסה רמת גן"
-    },
-    {
+      "src": "front-assets/images/home/ramat-gan.jpg",
+      "link": "https://goo.gl/maps/q4ng4QMTmHo",
       "tel": "03-6138281",
       "fax": "03-6139461",
       "workHours": "ימים א-ה 10:30-17:00",
@@ -18,7 +12,8 @@
   ],
   "הרצליה": [
     {
-      "frameSrc":"https://goo.gl/maps/kGadopzxJVK2",
+      "src": "front-assets/images/home/herzlia.jpg",
+      "link": "https://goo.gl/maps/62oT96sYVZt",
       "tel": "09-9589234",
       "fax": "09-9589235 ",
       "workHours": "ימים א-ה 10:30-18:00 ",
@@ -28,17 +23,29 @@
   ],
   "תל אביב": [
     {
-        "frameSrc":"https://goo.gl/maps/qiVdWNv3i2n",
-      "tel": "03-5379181",
+      "src": "front-assets/images/home/t-a_rival.jpg",
+      "link": "https://goo.gl/maps/3uGrTt8Potq",
+      "tel": "09-5379281",
       "fax": "03-5379281",
       "workHours": "ימים א-ה 10:30-18:00 ",
       "address": "ריב\"ל 10, תל אביב",
       "shipping": ""
+    },
+    {
+      "src": "front-assets/images/home/t-a_lilien.jpg",
+      "link": "https://goo.gl/maps/ZD3Tk9vRhEC2",
+      "tel": "03-5169997",
+      "fax": "03-5169998",
+      "workHours": "ימים א-ה 10:30-18:00",
+      "address": "לילינבלום 29, תל אביב",
+      "shipping": "מרכז ודרום תל אביב"
     }
   ],
   "בני ברק": [
     {
-      "frameSrc":"https://goo.gl/maps/ZtcCBrqxuRz",
+      "src": "front-assets/images/home/bne-brak.jpg",
+      "link": "https://goo.gl/maps/8UtiLphQfrR2",
+      "frameSrc": "https://goo.gl/maps/ZtcCBrqxuRz",
       "tel": "03-5781655",
       "fax": "03-5781635",
       "workHours": "ימים א-ה 11:00-18:00 ",

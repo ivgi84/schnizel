@@ -26,16 +26,30 @@
   <section class="full-width geo">
       <div class="wrap">
         <img class="igeo" src="front-assets/images/home/igeo.png" alt="" />
-          <h3>מצא סניף קרוב</h3>
+          <h3>מצא סניף</h3>
           <input class="findCity" type="text" name="name" value="" ng-change="$ctrl.findNearest()" ng-model="$ctrl.user.city" ng-model-options="{debounce: 1000}" placeholder="הזן עיר">
           <div class="affiliatesList" ng-class="{'open':$ctrl.affiliates.exist}">
               <ul>
                 <li ng-repeat="affilate in $ctrl.affiliates.list" ng-animate="{enter: 'animate-enter', leave: 'animate-leave'}">
-                  <iframe src="{{affilate.frameSrc}}" frameborder="0" scrolling="no" ></iframe>
-                  <div>{{affilate.tel}}</div>
-                  <div>{{affilate.fax}}</div>
-                  <div>{{affilate.workHours}}</div>
-                  <div>{{affilate.address}}</div>
+                  <a ng-href="{{affilate.link}}">
+                    <img ng-src="{{affilate.src}}" alt="" />
+                  </a>
+                  <div class="infoDetails">
+                    <span>טלפון</span>
+                    <span>{{affilate.tel}}</span>
+                  </div>
+                  <div class="infoDetails">
+                    <span>פקס</span>
+                    <span>{{affilate.fax}}</span>
+                  </div>
+                  <div class="infoDetails">
+                    <span>שעות עבודה</span>
+                    <span>{{affilate.workHours}}</span>
+                  </div>
+                  <div class="infoDetails">
+                    <span>כתובת</span>
+                    <span>{{affilate.address}}</span>
+                  </div>
                 </li>
               </ul>
               <div class="clearfix"></div>

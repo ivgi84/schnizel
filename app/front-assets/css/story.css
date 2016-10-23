@@ -9,6 +9,7 @@ body {
 .p-story .screenContent {
   height: 80vh;
   overflow: hidden;
+  padding: 10px;
 }
 .p-story .images {
   position: fixed;
@@ -76,6 +77,8 @@ body {
   color: #54392d;
   font-size: 50px;
   font-family: assistantSemiBold;
+  position: relative;
+  z-index: 3;
 }
 .p-story .screenContent h4 {
   text-align: center;
@@ -89,6 +92,10 @@ body {
   display: block;
   margin: 0 auto;
   padding: 150px 0 50px;
+  position: relative;
+  z-index: 3!important;
+  width: 70%;
+  max-width: 375px;
 }
 .p-story .screenContent #logo-trigger {
   position: absolute;
@@ -101,6 +108,7 @@ body {
 .p-story .videos .videoWrapper video.fullPage {
   height: auto;
   width: 100%;
+  display: block;
 }
 .p-story .videos .videoWrapper .videoText {
   position: absolute;
@@ -155,4 +163,44 @@ body {
   height: auto;
   display: block;
   float: right;
+}
+@media (max-width: 1024px) {
+  .p-story .videos .videoWrapper .videoText {
+    top: calc(33vh - 160px);
+  }
+}
+@media (max-width: 740px) {
+  .p-story .screenContent h3 {
+    font-size: 30px;
+  }
+  .p-story .screenContent h4 {
+    font-size: 24px;
+  }
+  .p-story .videos .videoWrapper .videoText {
+    left: auto;
+    font-size: 16px;
+  }
+  .p-story .videos .videoWrapper .videoText h4 {
+    padding: 10px;
+  }
+  .p-story .postVideoPics .picture .pic-text {
+    font-size: 16px;
+    top: 44%;
+  }
+  .p-story .images img:nth-child(1) {
+    top: -30%;
+    left: 20%;
+  }
+  .p-story .images img:nth-child(4) {
+    top: 10%;
+    left: 50%;
+  }
+  .p-story .images img:nth-child(6) {
+    top: 95%;
+    left: 18%;
+  }
+  .p-story .images img:nth-child(10) {
+    top: 50%;
+    left: 40%;
+  }
 }

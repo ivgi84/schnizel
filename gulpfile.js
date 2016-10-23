@@ -62,7 +62,9 @@ gulp.task('deploy-front', function(){
 });
 
 gulp.task('deploy-back', function(){
-  gulp.src('app/back-assets/data/*.json').pipe(gulp.dest('prod/back-assets/data/'));
+  gulp.src('app/back-assets/data/*.json')
+  .pipe(replace('front-assets/',''))
+  .pipe(gulp.dest('prod/back-assets/data/'));
 });
 
 gulp.task('bundle', function() {

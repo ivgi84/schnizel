@@ -9,6 +9,7 @@ html, body {
     .screenContent {
         height: 80vh;
         overflow: hidden;
+        padding: 10px;
     }
 
     .images{
@@ -55,6 +56,8 @@ html, body {
             color:#54392d;
             font-size: 50px;
             font-family: assistantSemiBold;
+            position: relative;
+            z-index: 3;
         }
         h4{
             text-align: center;
@@ -68,6 +71,10 @@ html, body {
             display: block;
             margin: 0 auto;
             padding: 150px 0 50px;
+            position: relative;
+            z-index: 3!important;
+            width: 70%;
+            max-width: 375px;
         }
         #logo-trigger{
             position: absolute;
@@ -81,6 +88,7 @@ html, body {
             video.fullPage{
                 height: auto;
                 width: 100%;
+                display: block;
             }
             .videoText{
                 position: absolute;
@@ -137,5 +145,58 @@ html, body {
             display: block;
             float: right;
         }
+    }
+}
+
+@media(max-width:1024px){
+    .p-story{
+        .videos .videoWrapper .videoText{
+            top: ~"calc(33vh - 160px)";
+        }
+    }
+}
+
+@media(max-width:740px){
+    .p-story{
+        .screenContent{
+            h3{
+                font-size: 30px;
+            }
+            h4{
+                font-size: 24px;
+            }
+        }
+        .videos .videoWrapper .videoText{
+            left: auto;
+            font-size: 16px;
+            h4{
+                padding: 10px;
+            }
+        }
+        .postVideoPics{
+            .picture{
+                .pic-text{
+                    font-size: 16px;
+                    top:44%;
+                }
+            }
+        }
+        .images img:nth-child(1){
+            top:-30%;
+            left:20%;
+        }
+        .images img:nth-child(4) {
+            top: 10%;
+            left: 50%;
+        }
+        .images img:nth-child(6){
+            top:95%;
+            left:18%;
+        }
+        .images img:nth-child(10) {
+            top: 50%;
+            left: 40%;
+        }
+
     }
 }
