@@ -13,11 +13,14 @@ define(['angular', './components/components'], function() {
         var vm = this;
         vm.$location = $location;
         vm.$rootScope = $rootScope;
-        
+
         vm.currentUrl = $location.path();
 
         $rootScope.$on( "$routeChangeSuccess", function(event, next, current) {
             vm.currentUrl = $location.path();
+
+            if(vm.siteNav.mobileNavOpen)
+                vm.mobileNavToggle();
         });
 
 

@@ -159,7 +159,7 @@ body {
   transform: scale(1.1);
 }
 .p-story .workers img {
-  width: 33.33%;
+  width: 25%;
   height: auto;
   display: block;
   float: right;

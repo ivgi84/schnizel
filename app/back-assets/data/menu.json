@@ -5,10 +5,10 @@
       "list": [
         {
           "item": {
-            "mainImg": "https://d5bzqyuki558t.cloudfront.net/cms-assets/system/asset_versions/attachments/000/000/377/original/_0004_Sofritas.png?1428679385",
+            "mainImg": "front-assets/images/menu/items/HazeOf.png",
             "mainTitle": "חזה עוף",
             "description": {
-              "img": "https://d5bzqyuki558t.cloudfront.net/cms-assets/system/asset_versions/attachments/000/000/377/original/_0004_Sofritas.png?1428679385",
+              "img": "front-assets/images/menu/items/HazeOf.png",
               "title": "חזה עוף",
               "process": [
                 {
@@ -32,10 +32,10 @@
         },
         {
           "item": {
-            "mainImg": "https://d5bzqyuki558t.cloudfront.net/cms-assets/system/asset_versions/attachments/000/000/377/original/_0004_Sofritas.png?1428679385",
+            "mainImg": "front-assets/images/menu/items/Pargit.png",
             "mainTitle": "פרגית",
             "description": {
-              "img": "https://d5bzqyuki558t.cloudfront.net/cms-assets/system/asset_versions/attachments/000/000/377/original/_0004_Sofritas.png?1428679385",
+              "img": "front-assets/images/menu/items/Pargit.png",
               "title": "פרגית",
               "process": [
                 {
@@ -59,10 +59,10 @@
         },
         {
           "item": {
-            "mainImg": "https://d5bzqyuki558t.cloudfront.net/cms-assets/system/asset_versions/attachments/000/000/377/original/_0004_Sofritas.png?1428679385",
+            "mainImg": "front-assets/images/menu/items/shnitzel.png",
             "mainTitle": "שניצל ",
             "description": {
-              "img": "https://d5bzqyuki558t.cloudfront.net/cms-assets/system/asset_versions/attachments/000/000/377/original/_0004_Sofritas.png?1428679385",
+              "img": "front-assets/images/menu/items/shnitzel.png",
               "title": "שניצל",
               "process": [
                 {
@@ -87,10 +87,10 @@
         },
         {
           "item": {
-            "mainImg": "https://d5bzqyuki558t.cloudfront.net/cms-assets/system/asset_versions/attachments/000/000/377/original/_0004_Sofritas.png?1428679385",
+            "mainImg": "front-assets/images/menu/items/VegetarianSnitzel.png",
             "mainTitle": "שניצל תירס",
             "description": {
-              "img": "https://d5bzqyuki558t.cloudfront.net/cms-assets/system/asset_versions/attachments/000/000/377/original/_0004_Sofritas.png?1428679385",
+              "img": "front-assets/images/menu/items/VegetarianSnitzel.png",
               "title": "שניצל תירס",
               "process": [
                 {
