@@ -1,6 +1,6 @@
-define(['angular', 'ngRoute', './services/services', 'ngAnimate', 'hpCmp', 'menuCmp', 'nutritionCmp', 'storyCmp', 'contactCmp', 'branchesCmp'], function() {
+define(['angular', 'ngRoute', './services/services', 'hpCmp', 'menuCmp', 'nutritionCmp', 'storyCmp', 'contactCmp', 'branchesCmp'], function() {
 
-    var app = angular.module('schnizelApp', ['ngRoute', 'ngAnimate', 'schnizelApp.components', 'schnizelApp.directives', 'schnizelApp.services']);
+    var app = angular.module('schnizelApp', ['ngRoute', 'schnizelApp.components', 'schnizelApp.directives', 'schnizelApp.services']);
 
     app.config(config);
 

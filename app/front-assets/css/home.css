@@ -72,6 +72,11 @@
 .p-home .ongoing .list li:nth-child(3) {
   background-image: url("../images/home/pic3.jpg");
 }
+.p-home .ongoing .list li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
 .p-home .ongoing .list li p {
   position: absolute;
   bottom: 0;

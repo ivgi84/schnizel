@@ -5,7 +5,7 @@ require.config({
     paths: {
         '_': 'lib/vendor/underscore-min',
         'jquery': 'https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min',
-        'angular': 'lib/angular.min',
+        'angular': 'https://code.angularjs.org/1.5.7/angular.min',
         'ngRoute': 'lib/angular-route.min',
         'ngAnimate': 'lib/angular-animate.min',
 

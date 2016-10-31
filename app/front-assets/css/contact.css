@@ -144,6 +144,11 @@
   display: block;
   font-family: assistantSemiBold;
 }
+.p-contact .affiliatesList .wrap ul:after {
+  content: "";
+  display: block;
+  clear: both;
+}
 .p-contact .faq {
   max-width: 800px;
   padding: 0 10px;

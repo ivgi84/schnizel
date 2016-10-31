@@ -25,7 +25,9 @@ define(['angular',
                 arrows: true,
                 draggable: true,
                 slidesToShow: 1,
-                infinite: true
+                infinite: true,
+                autoplay: true,
+                autoplaySpeed: 6000
             },
             top: {
                 slides: [{
@@ -151,6 +153,6 @@ define(['angular',
                 self.ingredients = response;
             });
         }
-    }
+    };
 
 });

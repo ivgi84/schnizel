@@ -235,7 +235,6 @@
   clear: both;
 }
 .p-nutrition .nutritionList .ingrid ul li span {
-  opacity: 0;
   transition: 0.5s all ease;
 }
 .p-nutrition .nutritionList .ingrid ul.selected li span {

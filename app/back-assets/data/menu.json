@@ -1,505 +1,416 @@
 {
-  "lists": [
-    {
-      "title": "בחר בעוף מגידול ידידותי לסביבה או ירקות וטופו אורגני",
-      "list": [
-        {
-          "item": {
-            "mainImg": "front-assets/images/menu/items/HazeOf.png",
-            "mainTitle": "חזה עוף",
-            "description": {
-              "img": "front-assets/images/menu/items/HazeOf.png",
-              "title": "חזה עוף",
-              "process": [
-                {
-                  "title": "מתובל",
-                  "text": "רק 100% חזה עוף טרי טבול במרינדה משך הליילה טעמים חדישים והצעה יומית"
-                },
-                {
-                  "title": "על האש",
-                  "text": "בגריל האמריקאי שלנו"
-                },
-                {
-                "title": "עשוי באופן מושלם",
-                "text": "לוהט, עסיסי ישר לצלחת"
-              }],
-              "more": {
-                "title": "",
-                "text": ""
-              }
-            }
-          }
-        },
-        {
-          "item": {
-            "mainImg": "front-assets/images/menu/items/Pargit.png",
-            "mainTitle": "פרגית",
-            "description": {
-              "img": "front-assets/images/menu/items/Pargit.png",
-              "title": "פרגית",
-              "process": [
-                {
-                  "title": "מתובל",
-                  "text": "רק 100% פרגית עוף טרי  טבול במרינדה משך הליילה"
-                },
-                {
-                  "title": "על האש",
-                  "text": "בגריל האמריקאי שלנו"
-                },
-                {
-                "title": "עשוי באופן מושלם",
-                "text": "לוהט, עסיסי ישר לצלחת"
-              }],
-              "more": {
-                "title": "",
-                "text": ""
-              }
-            }
-          }
-        },
-        {
-          "item": {
-            "mainImg": "front-assets/images/menu/items/shnitzel.png",
-            "mainTitle": "שניצל ",
-            "description": {
-              "img": "front-assets/images/menu/items/shnitzel.png",
-              "title": "שניצל",
-              "process": [
-                {
-                  "title": "מתובל",
-                  "text": "קמח, ביצה ופירורי לחם במתכון הסודי שלנו"
-                },
-                {
-                  "title": "מטוגן",
-                  "text": "בשמן סויה נקי ומשובח"
+    "lists": [{
+        "title": "בחר בעוף מגידול ידידותי לסביבה או ירקות וטופו אורגני",
+        "list": [{
+            "item": {
+                "mainImg": "front-assets/images/menu/items/HazeOf.png",
+                "mainTitle": "חזה עוף",
+                "description": {
+                    "img": "front-assets/images/menu/items/HazeOf.png",
+                    "title": "חזה עוף",
+                    "process": [{
+                        "title": "מתובל",
+                        "text": "רק 100% חזה עוף טרי טבול במרינדה משך הליילה טעמים חדישים והצעה יומית"
+                    }, {
+                        "title": "על האש",
+                        "text": "בגריל האמריקאי שלנו"
+                    }, {
+                        "title": "עשוי באופן מושלם",
+                        "text": "לוהט, עסיסי ישר לצלחת"
+                    }],
+                    "more": {
+                        "title": "",
+                        "text": ""
+                    }
                 }
-                ,
-                {
-                  "title": "עשוי באופן מושלם",
-                  "text": "קריספי  טרי ומתפוצץ בפה"
-                }],
-              "more": {
-                "title": "",
-                "text": ""
-              }
             }
-          }
-        },
-        {
-          "item": {
-            "mainImg": "front-assets/images/menu/items/VegetarianSnitzel.png",
-            "mainTitle": "שניצל תירס",
-            "description": {
-              "img": "front-assets/images/menu/items/VegetarianSnitzel.png",
-              "title": "שניצל תירס",
-              "process": [
-                {
-                  "title": "מתובל",
-                  "text": "text "
-                },
-                {
-                  "title": "על האש",
-                  "text": "text"
+        }, {
+            "item": {
+                "mainImg": "front-assets/images/menu/items/Pargit.png",
+                "mainTitle": "פרגית",
+                "description": {
+                    "img": "front-assets/images/menu/items/Pargit.png",
+                    "title": "פרגית",
+                    "process": [{
+                        "title": "מתובל",
+                        "text": "רק 100% פרגית עוף טרי  טבול במרינדה משך הליילה"
+                    }, {
+                        "title": "על האש",
+                        "text": "בגריל האמריקאי שלנו"
+                    }, {
+                        "title": "עשוי באופן מושלם",
+                        "text": "לוהט, עסיסי ישר לצלחת"
+                    }],
+                    "more": {
+                        "title": "",
+                        "text": ""
+                    }
                 }
-              ],
-              "more": {
-                "title": "",
-                "text": ""
-              }
             }
-          }
-        },
-        {
-          "item": {
-            "mainImg": "https://d5bzqyuki558t.cloudfront.net/cms-assets/system/asset_versions/attachments/000/000/377/original/_0004_Sofritas.png?1428679385",
-            "mainTitle": "קציצות טופו כרובית ותרד",
-            "description": {
-              "img": "https://d5bzqyuki558t.cloudfront.net/cms-assets/system/asset_versions/attachments/000/000/377/original/_0004_Sofritas.png?1428679385",
-              "title": "קציצות טופו כרובית ותרד  שורה מתחת",
-              "process": [
-                {
-                  "title": "מתובל",
-                  "text": " רק 100% טופו משובח ירקות טריים ותבלינים"
-                },
-                {
-                  "title": "בתנור",
-                  "text": "אפוי לשלמות"
-                },
-                {
-                  "title": "עשוי באופן מושלם",
-                  "text": "  100% בריאות רק חומרים טריים וטבעיים"
+        }, {
+            "item": {
+                "mainImg": "front-assets/images/menu/items/shnitzel.png",
+                "mainTitle": "שניצל ",
+                "description": {
+                    "img": "front-assets/images/menu/items/shnitzel.png",
+                    "title": "שניצל",
+                    "process": [{
+                        "title": "מתובל",
+                        "text": "קמח, ביצה ופירורי לחם במתכון הסודי שלנו"
+                    }, {
+                        "title": "מטוגן",
+                        "text": "בשמן סויה נקי ומשובח"
+                    }, {
+                        "title": "עשוי באופן מושלם",
+                        "text": "קריספי  טרי ומתפוצץ בפה"
+                    }],
+                    "more": {
+                        "title": "",
+                        "text": ""
+                    }
                 }
-              ],
-              "more": {
-                "title": "",
-                "text": ""
-              }
             }
-          }
-        }
-      ]
-    },
-    {
-      "title": "אורז , תפוחי אדמה, ירקות מבושל, תבשיל בורגול, צ'יפס",
-      "list": [
-        {
-          "item": {
-            "mainImg": "front-assets/images/menu/items/Orez.png",
-            "mainTitle": "אורז",
-            "description": {
-              "img": "front-assets/images/menu/items/Orez.png",
-              "title": "אורז",
-              "process": [
-                {
-                  "title": "האורז",
-                  "text": "רק 100% אורז תאילנדי מאודה, מטוגן, בתוספת ירקות אדום, צהוב, בעשבי תיבול"
-                },
-                {
-                  "title": "ההכנה",
-                  "text": "מידי יום טרי"
-                },
-                {
-                  "title": "עשוי באופן מושלם",
-                  "text": "בתיבול עדין, טעם מושלם"
+        }, {
+            "item": {
+                "mainImg": "front-assets/images/menu/items/VegetarianSnitzel.png",
+                "mainTitle": "שניצל תירס",
+                "description": {
+                    "img": "front-assets/images/menu/items/VegetarianSnitzel.png",
+                    "title": "שניצל תירס",
+                    "process": [{
+                        "title": "מתובל",
+                        "text": "text "
+                    }, {
+                        "title": "על האש",
+                        "text": "text"
+                    }],
+                    "more": {
+                        "title": "",
+                        "text": ""
+                    }
                 }
-              ],
-              "more": {
-                "title": "",
-                "text": ""
-              }
             }
-          }
-        },
-        {
-          "item": {
-            "mainImg": "front-assets/images/menu/items/Pire.png",
-            "mainTitle": "פירה תפוחי אדמה",
-            "description": {
-              "img": "front-assets/images/menu/items/Pire.png",
-              "title": "פירה תפוחי אדמה",
-              "process": [
-                {
-                  "title": "תפודים",
-                  "text": "רק 100% תפוחי אדמה טריים ומובחרים"
-                },
-                {
-                  "title": "ההכנה",
-                  "text": "מידי יום טרי"
-                },
-                {
-                  "title":"עשוי באופן מושלם",
-                  "text":"בתיבול עדין, טעם מושלם"
+        }, {
+            "item": {
+                "mainImg": "https://d5bzqyuki558t.cloudfront.net/cms-assets/system/asset_versions/attachments/000/000/377/original/_0004_Sofritas.png?1428679385",
+                "mainTitle": "קציצות טופו כרובית ותרד",
+                "description": {
+                    "img": "https://d5bzqyuki558t.cloudfront.net/cms-assets/system/asset_versions/attachments/000/000/377/original/_0004_Sofritas.png?1428679385",
+                    "title": "קציצות טופו כרובית ותרד  שורה מתחת",
+                    "process": [{
+                        "title": "מתובל",
+                        "text": " רק 100% טופו משובח ירקות טריים ותבלינים"
+                    }, {
+                        "title": "בתנור",
+                        "text": "אפוי לשלמות"
+                    }, {
+                        "title": "עשוי באופן מושלם",
+                        "text": "  100% בריאות רק חומרים טריים וטבעיים"
+                    }],
+                    "more": {
+                        "title": "",
+                        "text": ""
+                    }
                 }
-              ],
-              "more": {
-                "title": "",
-                "text": ""
-              }
             }
-          }
-        },
-        {
-          "item": {
-            "mainImg": "https://d5bzqyuki558t.cloudfront.net/cms-assets/system/asset_versions/attachments/000/000/377/original/_0004_Sofritas.png?1428679385",
-            "mainTitle": " ירק היום טרי",
-            "description": {
-              "img": "https://d5bzqyuki558t.cloudfront.net/cms-assets/system/asset_versions/attachments/000/000/377/original/_0004_Sofritas.png?1428679385",
-              "title": " ירק היום טרי",
-              "process": [
-                {
-                  "title": "הירקות",
-                  "text": "רק 100% ירקות מובחרים טריים ומובחרים "
-                },
-                {
-                  "title": "ההכנה",
-                  "text": "מידי יום טרי"
-                },
-                {
-                  "title":"עשוי באופן מושלם",
-                  "text":"בתיבול עדין, טעם מושלם"
+        }]
+    }, {
+        "title": "אורז , תפוחי אדמה, ירקות מבושל, תבשיל בורגול, צ'יפס",
+        "list": [{
+            "item": {
+                "mainImg": "front-assets/images/menu/items/Orez.png",
+                "mainTitle": "אורז",
+                "description": {
+                    "img": "front-assets/images/menu/items/Orez.png",
+                    "title": "אורז",
+                    "process": [{
+                        "title": "האורז",
+                        "text": "רק 100% אורז תאילנדי מאודה, מטוגן, בתוספת ירקות אדום, צהוב, בעשבי תיבול"
+                    }, {
+                        "title": "ההכנה",
+                        "text": "מידי יום טרי"
+                    }, {
+                        "title": "עשוי באופן מושלם",
+                        "text": "בתיבול עדין, טעם מושלם"
+                    }],
+                    "more": {
+                        "title": "",
+                        "text": ""
+                    }
                 }
-              ],
-              "more": {
-                "title": "",
-                "text": ""
-              }
             }
-          }
-        },
-        {
-          "item": {
-            "mainImg": "https://d5bzqyuki558t.cloudfront.net/cms-assets/system/asset_versions/attachments/000/000/377/original/_0004_Sofritas.png?1428679385",
-            "mainTitle": "בורגול גס עם ירקות",
-            "description": {
-              "img": "https://d5bzqyuki558t.cloudfront.net/cms-assets/system/asset_versions/attachments/000/000/377/original/_0004_Sofritas.png?1428679385",
-              "title": "בורגול גס עם ירקות",
-              "process": [
-                {
-                  "title": "מתובל",
-                  "text": "text "
-                },
-                {
-                  "title": "על האש",
-                  "text": "text"
+        }, {
+            "item": {
+                "mainImg": "front-assets/images/menu/items/Pire.png",
+                "mainTitle": "פירה תפוחי אדמה",
+                "description": {
+                    "img": "front-assets/images/menu/items/Pire.png",
+                    "title": "פירה תפוחי אדמה",
+                    "process": [{
+                        "title": "תפודים",
+                        "text": "רק 100% תפוחי אדמה טריים ומובחרים"
+                    }, {
+                        "title": "ההכנה",
+                        "text": "מידי יום טרי"
+                    }, {
+                        "title": "עשוי באופן מושלם",
+                        "text": "בתיבול עדין, טעם מושלם"
+                    }],
+                    "more": {
+                        "title": "",
+                        "text": ""
+                    }
                 }
-              ],
-              "more": {
-                "title": "",
-                "text": ""
-              }
             }
-          }
-        }
-      ]
-    },
-    {
-      "title": "ממרחים ורטבים",
-      "list": [
-        {
-          "item": {
-            "mainImg": "front-assets/images/menu/items/Chili.png",
-            "mainTitle": "צ'ילי",
-            "description": {
-              "img": "front-assets/images/menu/items/Chili.png",
-              "title": "צ'ילי",
-              "process": [
-                {
-                  "title": "רטבים וומרחים ",
-                  "text": "פסטו, איולי, צ'ילי, דבש חרדל ויניגרט, טחינה, סחוג, טריאקי בלסמי, ועוד ועוד..."
-                },
-                {
-                  "title": "ההכנה",
-                  "text": "מידי יום טרי "
-                },
-                {
-                  "title": "עשוי באופן מושלם",
-                  "text": "בתיבול עדין, טעם מושלם"
+        }, {
+            "item": {
+                "mainImg": "https://d5bzqyuki558t.cloudfront.net/cms-assets/system/asset_versions/attachments/000/000/377/original/_0004_Sofritas.png?1428679385",
+                "mainTitle": " ירק היום טרי",
+                "description": {
+                    "img": "https://d5bzqyuki558t.cloudfront.net/cms-assets/system/asset_versions/attachments/000/000/377/original/_0004_Sofritas.png?1428679385",
+                    "title": " ירק היום טרי",
+                    "process": [{
+                        "title": "הירקות",
+                        "text": "רק 100% ירקות מובחרים טריים ומובחרים "
+                    }, {
+                        "title": "ההכנה",
+                        "text": "מידי יום טרי"
+                    }, {
+                        "title": "עשוי באופן מושלם",
+                        "text": "בתיבול עדין, טעם מושלם"
+                    }],
+                    "more": {
+                        "title": "",
+                        "text": ""
+                    }
                 }
-              ],
-              "more": {
-                "title": "",
-                "text": ""
-              }
             }
-          }
-        },
-        {
-          "item": {
-            "mainImg": "https://d5bzqyuki558t.cloudfront.net/cms-assets/system/asset_versions/attachments/000/000/377/original/_0004_Sofritas.png?1428679385",
-            "mainTitle": "סלסה",
-            "description": {
-              "img": "https://d5bzqyuki558t.cloudfront.net/cms-assets/system/asset_versions/attachments/000/000/377/original/_0004_Sofritas.png?1428679385",
-              "title": "סלסה",
-              "process": [
-                {
-                  "title": "מתובל",
-                  "text": "text "
-                },
-                {
-                  "title": "על האש",
-                  "text": "text"
+        }, {
+            "item": {
+                "mainImg": "https://d5bzqyuki558t.cloudfront.net/cms-assets/system/asset_versions/attachments/000/000/377/original/_0004_Sofritas.png?1428679385",
+                "mainTitle": "בורגול גס עם ירקות",
+                "description": {
+                    "img": "https://d5bzqyuki558t.cloudfront.net/cms-assets/system/asset_versions/attachments/000/000/377/original/_0004_Sofritas.png?1428679385",
+                    "title": "בורגול גס עם ירקות",
+                    "process": [{
+                        "title": "מתובל",
+                        "text": "text "
+                    }, {
+                        "title": "על האש",
+                        "text": "text"
+                    }],
+                    "more": {
+                        "title": "",
+                        "text": ""
+                    }
                 }
-              ],
-              "more": {
-                "title": "",
-                "text": ""
-              }
             }
-          }
-        },
-        {
-          "item": {
-            "mainImg": "https://d5bzqyuki558t.cloudfront.net/cms-assets/system/asset_versions/attachments/000/000/377/original/_0004_Sofritas.png?1428679385",
-            "mainTitle": "בר בי קיו",
-            "description": {
-              "img": "https://d5bzqyuki558t.cloudfront.net/cms-assets/system/asset_versions/attachments/000/000/377/original/_0004_Sofritas.png?1428679385",
-              "title": "בר בי קיו",
-              "process": [
-                {
-                  "title": "מתובל",
-                  "text": "text "
-                },
-                {
-                  "title": "על האש",
-                  "text": "text"
+        }]
+    }, {
+        "title": "ממרחים ורטבים",
+        "list": [{
+            "item": {
+                "mainImg": "front-assets/images/menu/items/Chili.png",
+                "mainTitle": "צ'ילי",
+                "description": {
+                    "img": "front-assets/images/menu/items/Chili.png",
+                    "title": "צ'ילי",
+                    "process": [{
+                        "title": "רטבים וומרחים ",
+                        "text": "פסטו, איולי, צ'ילי, דבש חרדל ויניגרט, טחינה, סחוג, טריאקי בלסמי, ועוד ועוד..."
+                    }, {
+                        "title": "ההכנה",
+                        "text": "מידי יום טרי "
+                    }, {
+                        "title": "עשוי באופן מושלם",
+                        "text": "בתיבול עדין, טעם מושלם"
+                    }],
+                    "more": {
+                        "title": "",
+                        "text": ""
+                    }
                 }
-              ],
-              "more": {
-                "title": "",
-                "text": ""
-              }
             }
-          }
-        },
-        {
-          "item": {
-            "mainImg": "https://d5bzqyuki558t.cloudfront.net/cms-assets/system/asset_versions/attachments/000/000/377/original/_0004_Sofritas.png?1428679385",
-            "mainTitle": " ויניגרט דבש",
-            "description": {
-              "img": "https://d5bzqyuki558t.cloudfront.net/cms-assets/system/asset_versions/attachments/000/000/377/original/_0004_Sofritas.png?1428679385",
-              "title": " ויניגרט דבש",
-              "process": [
-                {
-                  "title": "מתובל",
-                  "text": "text "
-                },
-                {
-                  "title": "על האש",
-                  "text": "text"
+        }, {
+            "item": {
+                "mainImg": "https://d5bzqyuki558t.cloudfront.net/cms-assets/system/asset_versions/attachments/000/000/377/original/_0004_Sofritas.png?1428679385",
+                "mainTitle": "סלסה",
+                "description": {
+                    "img": "https://d5bzqyuki558t.cloudfront.net/cms-assets/system/asset_versions/attachments/000/000/377/original/_0004_Sofritas.png?1428679385",
+                    "title": "סלסה",
+                    "process": [{
+                        "title": "מתובל",
+                        "text": "text "
+                    }, {
+                        "title": "על האש",
+                        "text": "text"
+                    }],
+                    "more": {
+                        "title": "",
+                        "text": ""
+                    }
                 }
-              ],
-              "more": {
-                "title": "",
-                "text": ""
-              }
             }
-          }
-        },
-        {
-          "item": {
-            "mainImg": "front-assets/images/menu/items/HardalVeDvash.png",
-            "mainTitle": "חרדל ודבש",
-            "description": {
-              "img": "front-assets/images/menu/items/HardalVeDvash.png",
-              "title": "חרדל ודבש",
-              "process": [
-                {
-                  "title": "מתובל",
-                  "text": "text "
-                },
-                {
-                  "title": "על האש",
-                  "text": "text"
+        }, {
+            "item": {
+                "mainImg": "https://d5bzqyuki558t.cloudfront.net/cms-assets/system/asset_versions/attachments/000/000/377/original/_0004_Sofritas.png?1428679385",
+                "mainTitle": "בר בי קיו",
+                "description": {
+                    "img": "https://d5bzqyuki558t.cloudfront.net/cms-assets/system/asset_versions/attachments/000/000/377/original/_0004_Sofritas.png?1428679385",
+                    "title": "בר בי קיו",
+                    "process": [{
+                        "title": "מתובל",
+                        "text": "text "
+                    }, {
+                        "title": "על האש",
+                        "text": "text"
+                    }],
+                    "more": {
+                        "title": "",
+                        "text": ""
+                    }
                 }
-              ],
-              "more": {
-                "title": "",
-                "text": ""
-              }
             }
-          }
-        },
-        {
-          "item": {
-            "mainImg": "https://d5bzqyuki558t.cloudfront.net/cms-assets/system/asset_versions/attachments/000/000/377/original/_0004_Sofritas.png?1428679385",
-            "mainTitle": " וויסקי ודבש",
-            "description": {
-              "img": "https://d5bzqyuki558t.cloudfront.net/cms-assets/system/asset_versions/attachments/000/000/377/original/_0004_Sofritas.png?1428679385",
-              "title": " וויסקי ודבש",
-              "process": [
-                {
-                  "title": "מתובל",
-                  "text": "text "
-                },
-                {
-                  "title": "על האש",
-                  "text": "text"
+        }, {
+            "item": {
+                "mainImg": "https://d5bzqyuki558t.cloudfront.net/cms-assets/system/asset_versions/attachments/000/000/377/original/_0004_Sofritas.png?1428679385",
+                "mainTitle": " ויניגרט דבש",
+                "description": {
+                    "img": "https://d5bzqyuki558t.cloudfront.net/cms-assets/system/asset_versions/attachments/000/000/377/original/_0004_Sofritas.png?1428679385",
+                    "title": " ויניגרט דבש",
+                    "process": [{
+                        "title": "מתובל",
+                        "text": "text "
+                    }, {
+                        "title": "על האש",
+                        "text": "text"
+                    }],
+                    "more": {
+                        "title": "",
+                        "text": ""
+                    }
                 }
-              ],
-              "more": {
-                "title": "",
-                "text": ""
-              }
             }
-          }
-        },
-        {
-          "item": {
-            "mainImg": "https://d5bzqyuki558t.cloudfront.net/cms-assets/system/asset_versions/attachments/000/000/377/original/_0004_Sofritas.png?1428679385",
-            "mainTitle": "בלסמי מצומצם",
-            "description": {
-              "img": "https://d5bzqyuki558t.cloudfront.net/cms-assets/system/asset_versions/attachments/000/000/377/original/_0004_Sofritas.png?1428679385",
-              "title": "בלסמי מצומצם",
-              "process": [
-                {
-                  "title": "מתובל",
-                  "text": "text "
-                },
-                {
-                  "title": "על האש",
-                  "text": "text"
+        }, {
+            "item": {
+                "mainImg": "front-assets/images/menu/items/HardalVeDvash.png",
+                "mainTitle": "חרדל ודבש",
+                "description": {
+                    "img": "front-assets/images/menu/items/HardalVeDvash.png",
+                    "title": "חרדל ודבש",
+                    "process": [{
+                        "title": "מתובל",
+                        "text": "text "
+                    }, {
+                        "title": "על האש",
+                        "text": "text"
+                    }],
+                    "more": {
+                        "title": "",
+                        "text": ""
+                    }
                 }
-              ],
-              "more": {
-                "title": "",
-                "text": ""
-              }
             }
-          }
-        },
-        {
-          "item": {
-            "mainImg": "front-assets/images/menu/items/Thina.png",
-            "mainTitle": "טחינה",
-            "description": {
-              "img": "front-assets/images/menu/items/Thina.png",
-              "title": "טחינה",
-              "process": [
-                {
-                  "title": "מתובל",
-                  "text": "text "
-                },
-                {
-                  "title": "על האש",
-                  "text": "text"
+        }, {
+            "item": {
+                "mainImg": "https://d5bzqyuki558t.cloudfront.net/cms-assets/system/asset_versions/attachments/000/000/377/original/_0004_Sofritas.png?1428679385",
+                "mainTitle": " וויסקי ודבש",
+                "description": {
+                    "img": "https://d5bzqyuki558t.cloudfront.net/cms-assets/system/asset_versions/attachments/000/000/377/original/_0004_Sofritas.png?1428679385",
+                    "title": " וויסקי ודבש",
+                    "process": [{
+                        "title": "מתובל",
+                        "text": "text "
+                    }, {
+                        "title": "על האש",
+                        "text": "text"
+                    }],
+                    "more": {
+                        "title": "",
+                        "text": ""
+                    }
                 }
-              ],
-              "more": {
-                "title": "",
-                "text": ""
-              }
             }
-          }
-        },
-        {
-          "item": {
-            "mainImg": "front-assets/images/menu/items/SaladKruv.png",
-            "mainTitle": "כרוב",
-            "description": {
-              "img": "front-assets/images/menu/items/SaladKruv.png",
-              "title": "כרוב",
-              "process": [
-                {
-                  "title": "מתובל",
-                  "text": "text "
-                },
-                {
-                  "title": "על האש",
-                  "text": "text"
+        }, {
+            "item": {
+                "mainImg": "front-assets/images/menu/items/Tariaky.png",
+                "mainTitle": "טריאקי",
+                "description": {
+                    "img": "front-assets/images/menu/items/Tariaky.png",
+                    "title": "טריאקי",
+                    "process": [{
+                        "title": "מתובל",
+                        "text": "text "
+                    }, {
+                        "title": "על האש",
+                        "text": "text"
+                    }],
+                    "more": {
+                        "title": "",
+                        "text": ""
+                    }
                 }
-              ],
-              "more": {
-                "title": "",
-                "text": ""
-              }
             }
-          }
-        },
-        {
-          "item": {
-            "mainImg": "https://d5bzqyuki558t.cloudfront.net/cms-assets/system/asset_versions/attachments/000/000/377/original/_0004_Sofritas.png?1428679385",
-            "mainTitle": "פרוסות ירקות טריים",
-            "description": {
-              "img": "https://d5bzqyuki558t.cloudfront.net/cms-assets/system/asset_versions/attachments/000/000/377/original/_0004_Sofritas.png?1428679385",
-              "title": "פרוסות ירקות טריים",
-              "process": [
-                {
-                  "title": "מתובל",
-                  "text": "text "
-                },
-                {
-                  "title": "על האש",
-                  "text": "text"
+        }, {
+            "item": {
+                "mainImg": "front-assets/images/menu/items/Thina.png",
+                "mainTitle": "טחינה",
+                "description": {
+                    "img": "front-assets/images/menu/items/Thina.png",
+                    "title": "טחינה",
+                    "process": [{
+                        "title": "מתובל",
+                        "text": "text "
+                    }, {
+                        "title": "על האש",
+                        "text": "text"
+                    }],
+                    "more": {
+                        "title": "",
+                        "text": ""
+                    }
                 }
-              ],
-              "more": {
-                "title": "",
-                "text": ""
-              }
             }
-          }
-        }
-      ]
-    }
-  ]
+        }, {
+            "item": {
+                "mainImg": "front-assets/images/menu/items/SaladKruv.png",
+                "mainTitle": "כרוב",
+                "description": {
+                    "img": "front-assets/images/menu/items/SaladKruv.png",
+                    "title": "כרוב",
+                    "process": [{
+                        "title": "מתובל",
+                        "text": "text "
+                    }, {
+                        "title": "על האש",
+                        "text": "text"
+                    }],
+                    "more": {
+                        "title": "",
+                        "text": ""
+                    }
+                }
+            }
+        }, {
+            "item": {
+                "mainImg": "https://d5bzqyuki558t.cloudfront.net/cms-assets/system/asset_versions/attachments/000/000/377/original/_0004_Sofritas.png?1428679385",
+                "mainTitle": "פרוסות ירקות טריים",
+                "description": {
+                    "img": "https://d5bzqyuki558t.cloudfront.net/cms-assets/system/asset_versions/attachments/000/000/377/original/_0004_Sofritas.png?1428679385",
+                    "title": "פרוסות ירקות טריים",
+                    "process": [{
+                        "title": "מתובל",
+                        "text": "text "
+                    }, {
+                        "title": "על האש",
+                        "text": "text"
+                    }],
+                    "more": {
+                        "title": "",
+                        "text": ""
+                    }
+                }
+            }
+        }]
+    }]
 }
