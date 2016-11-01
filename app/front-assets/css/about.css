@@ -1,0 +1,22 @@
+.p-about .wrap {
+  max-width: 740px;
+  width: 95%;
+}
+.p-about .wrap .content {
+  padding: 100px 0;
+}
+.p-about .wrap .content h2 {
+  color: #54392d;
+  font-size: 45px;
+  text-align: center;
+  font-family: assistantBold;
+}
+.p-about .wrap .content p {
+  font-size: 18px;
+  padding: 10px 0;
+  color: #54392d;
+  font-family: assistant;
+}
+.p-about .wrap .content p strong {
+  font-family: assistantBold;
+}

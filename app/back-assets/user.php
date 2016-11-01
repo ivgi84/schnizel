@@ -1,46 +1,51 @@
 <?php
 include('response.php');
 
-class User{
+class User
+{
     private $response;
     private $email;
     private $tel;
 
     private $usersData;
 
-    function __construct(){
+    function __construct()
+    {
         $this->response = new Response();
-        $this->usersData = __DIR__.'/data/users.json';
+        $this->usersData = __DIR__ . '/data/users.json';
     }
 
-    function getData(){
+    function getData()
+    {
         $postdata = file_get_contents("php://input");
         return json_decode($postdata);
     }
 
-    function subscribe(){
-        $users = (array) json_decode($this->getUsers());// converting object to array
+    function subscribe()
+    {
+        $users = (array)json_decode($this->getUsers());// converting object to array
         $types = $this->getSubscriptionData();
 
         array_push($users, $types);
 
 
-        if($this->setUsers($users)){
+        if ($this->setUsers($users)) {
             $this->response->setUserMsg('פרטים נשמרו בהצלחה');
             $this->response->setResult(10);
         }
         $this->response->setAjaxResponce();
     }
 
-    function getUsers(){
+    function getUsers()
+    {
         return file_get_contents($this->usersData);
     }
 
-    function setUsers($data){
-        if(file_put_contents($this->usersData,json_encode($data))){
+    function setUsers($data)
+    {
+        if (file_put_contents($this->usersData, json_encode($data))) {
             return true;
-        }
-        else{
+        } else {
             $this->response->setError(true);
             $this->response->setErrorMsg('Unable to save users');
             return false;
@@ -48,44 +53,45 @@ class User{
         }
     }
 
-    function getSubscriptionData(){
+    function getSubscriptionData()
+    {
         $data = $this->getData();
-        $types = ['dateTime'=>date('d.m.Y;h:i:sa')];
-        foreach ($data as $key=>$val){
-            if($val!=''){
-                array_push($types, array($key=>$val));
+        $types = ['dateTime' => date('d.m.Y;h:i:sa')];
+        foreach ($data as $key => $val) {
+            if ($val != '') {
+                array_push($types, array($key => $val));
             }
         }
         return $types;
     }
 
-    function sendMessage(){
+    function sendMessage()
+    {
 
         $data = $this->getData();
 
-        if(empty($data['name'])||empty($data['email'])){
+        if (empty($data['name']) || empty($data['email'])) {
             echo "Please fill at list your name and email";
-        }
-        else{
+        } else {
             $message = "<html><head></head><body><h3>Want to contact us:</h3>";
-            $message .= "<p>From:".$name."<br />Email:".$email."<br />Telephone: ".$tel."<br />Message:".$mess."</p></body></html>";
+            $message .= "<p>From:" . $name . "<br />Email:" . $email . "<br />Telephone: " . $tel . "<br />Message:" . $mess . "</p></body></html>";
 
             $headers = "From: Schnicel Company" . "\r\n";
             $headers .= "MIME-Version: 1.0" . "\r\n";
             $headers .= "Content-type: text/html; charset=utf-8" . "\r\n";
-            $headers .= "Sensitivity: Personal"."\r\n";
+            $headers .= "Sensitivity: Personal" . "\r\n";
 
-            $sent=mail("ivgi84@gmail.com" ,"Schnizel Company Message",$message, $headers);
-            if($sent){
+            $sent = mail("ivgi84@gmail.com", "Schnizel Company Message", $message, $headers);
+            if ($sent) {
                 $this->response->setUserMsg('המייל נשלח בהצלחה');
                 $this->response->setResult(true);
-            }
-            else{
+            } else {
                 $this->response->setUserMsg('שליחת מייל נחשלה');
                 $this->response->setResult(false);
                 $this->response->sentMessage(true);
             }
 
+        }
     }
 }
 

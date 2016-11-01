@@ -32,6 +32,7 @@ require.config({
         'menuCmp': 'components/menuPage/menuPageCmp',
         'storyCmp': 'components/storyPage/storyPageCmp',
         'branchesCmp': 'components/branchesPage/branchesPageCmp',
+        'aboutCmp': 'components/aboutPage/aboutPageCmp',
 
         //directives
         'slickDirective': 'directives/slick/slickDirective',
@@ -57,7 +58,8 @@ require.config({
         'nutritionCmp': pageDeps,
         'menuCmp': pageDeps,
         'storyCmp': pageDeps,
-        'branchesCmp': pageDeps
+        'branchesCmp': pageDeps,
+        'aboutCmp': pageDeps
     }
 });
 
