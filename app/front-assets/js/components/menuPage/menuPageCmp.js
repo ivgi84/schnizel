@@ -1,16 +1,7 @@
 define(['angular',
-     './components/components',
      'slickDirective',
-     './services/base.service',
-     './directives/toggleDescription.directive'], function() {
-
-    angular
-        .module('schnizelApp.components')
-        .component('menuPage', {
-            templateUrl: 'front-assets/js/components/menuPage/menuPageCmp.view.html',
-            controller: MenuPageCtrl,
-            require: ['^siteNav', '^siteFooter']
-        });
+     '../../services/base.service',
+     '../../directives/toggleDescription.directive'], function() {
 
         MenuPageCtrl.$inject = ['baseService'];
 
@@ -153,6 +144,11 @@ define(['angular',
                 self.ingredients = response;
             });
         }
+    };
+
+    return {
+        templateUrl: 'front-assets/js/components/menuPage/menuPageCmp.view.html',
+        controller: MenuPageCtrl
     };
 
 });

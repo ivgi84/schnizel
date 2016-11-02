@@ -1,20 +1,9 @@
-define(['angular', './components/components'], function() {
+define(['angular'], function() {
 
-    angular
-        .module('schnizelApp.components')
-        .component('branchesPage', {
-            templateUrl: 'front-assets/js/components/branchesPage/branchesPageCmp.view.html',
-            controller: BranchesPageCtrl
-        });
+    function BranchesPageCtrl() {}
 
-    BranchesPageCtrl.$inject = [];
-
-    function BranchesPageCtrl() {
-    
-    }
-
-    BranchesPageCtrl.prototype = {
-
+    return{
+        templateUrl: 'front-assets/js/components/branchesPage/branchesPageCmp.view.html',
+        controller: BranchesPageCtrl
     };
-
 });

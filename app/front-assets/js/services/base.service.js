@@ -17,7 +17,7 @@ define(['angular'], function(angular) {
             if (data instanceof Array) {
 
                 var promises = data.map(function(data) {
-                    return $http.get(dataMap[data])
+                    return $http.get(dataMap[data]);
                 });
                 return $q.all(promises);
 

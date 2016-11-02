@@ -1,11 +1,4 @@
-define(['angular', './components/components'], function() {
-
-    angular
-        .module('schnizelApp.components')
-        .component('aboutPage', {
-            templateUrl: 'front-assets/js/components/aboutPage/aboutPageCmp.view.html',
-            controller: AboutPageCtrl
-        });
+define(['angular'], function() {
 
     AboutPageCtrl.$inject = [];
 
@@ -13,8 +6,9 @@ define(['angular', './components/components'], function() {
 
     }
 
-    AboutPageCtrl.prototype = {
-
+    return {
+        templateUrl: 'front-assets/js/components/aboutPage/aboutPageCmp.view.html',
+        controller: AboutPageCtrl
     };
 
 });

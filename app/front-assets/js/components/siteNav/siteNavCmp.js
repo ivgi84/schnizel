@@ -1,11 +1,4 @@
-define(['angular', './components/components'], function() {
-
-    angular
-        .module('schnizelApp.components')
-        .component('siteNav', {
-            templateUrl: 'front-assets/js/components/siteNav/siteNavCmp.view.html',
-            controller: SiteNavCtrl
-        });
+define(['angular'], function() {
 
         SiteNavCtrl.$inject=['$location','$rootScope'];
 
@@ -48,6 +41,11 @@ define(['angular', './components/components'], function() {
         mobileNavToggle: function mobileNavToggle(){
             this.siteNav.mobileNavOpen =!this.siteNav.mobileNavOpen;
         }
+    };
+
+    return {
+        templateUrl: 'front-assets/js/components/siteNav/siteNavCmp.view.html',
+        controller: SiteNavCtrl
     };
 
 });

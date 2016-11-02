@@ -1,4 +1,4 @@
-define(['angular', 'ngRoute', './services/services', 'hpCmp', 'menuCmp', 'nutritionCmp', 'storyCmp', 'contactCmp', 'branchesCmp', 'aboutCmp'], function() {
+define(['./components/components'], function() {
 
     var app = angular.module('schnizelApp', ['ngRoute', 'schnizelApp.components', 'schnizelApp.directives', 'schnizelApp.services']);
 

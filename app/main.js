@@ -66,5 +66,6 @@ require.config({
 require(['app'], function() {
     setTimeout(function() {
         angular.bootstrap(document, ['schnizelApp']);
-    }, 100);
+        document.getElementById('siteWrapper').classList.remove('mainLoader');
+    }, 10);
 });

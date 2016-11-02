@@ -1,19 +1,12 @@
 define([
     'angular',
-    './directives/directives',
-    './components/components',
-    './services/services',
-    './services/affiliates.service',
+    '../../directives/directives',
+    '../../services/services',
+    '../../services/affiliates.service',
     'slickDirective'], function() {
 'use strict';
-    angular
-        .module('schnizelApp.components')
-        .component('homePage', {
-            templateUrl: 'front-assets/js/components/homePage/homePage.view.html',
-            controller: HomePageCtrl
-        });
 
-        HomePageCtrl.$inject = ['$sce', 'baseService'];
+    HomePageCtrl.$inject = ['$sce', 'baseService'];
 
     function HomePageCtrl($sce, baseService) {
         var vm = this;
@@ -69,6 +62,11 @@ define([
             });
 
         }
-    }
+    };
+
+    return {
+        templateUrl: 'front-assets/js/components/homePage/homePage.view.html',
+        controller: HomePageCtrl
+    };
 
 });

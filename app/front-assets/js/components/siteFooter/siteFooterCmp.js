@@ -1,11 +1,7 @@
-define(['angular','./services/services', './components/components','./services/subscribe.service'], function() {
-'use strict';
-    angular
-        .module('schnizelApp.components')
-        .component('siteFooter', {
-            templateUrl: 'front-assets/js/components/siteFooter/siteFooterCmp.view.html',
-            controller: SiteFooterCtrl
-        });
+define(['angular',
+    '../../services/services',
+     '../../services/subscribe.service'], function() {
+    'use strict';
 
         SiteFooterCtrl.$inject = ['subscribeSvc', '$timeout'];
 
@@ -37,6 +33,11 @@ define(['angular','./services/services', './components/components','./services/s
                 }, 4000);
             });
         }
+    };
+
+    return {
+        templateUrl: 'front-assets/js/components/siteFooter/siteFooterCmp.view.html',
+        controller: SiteFooterCtrl
     };
 
 });

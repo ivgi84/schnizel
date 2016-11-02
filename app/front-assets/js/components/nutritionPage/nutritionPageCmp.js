@@ -1,17 +1,8 @@
 define(['angular',
     '_',
-    './components/components',
-    './services/base.service',
+    '../../services/base.service',
     'uiDialog'],
-     function(angular, _,components, baseService) {
-
-    angular
-        .module('schnizelApp.components')
-        .component('nutritionPage', {
-            templateUrl: 'front-assets/js/components/nutritionPage/nutritionPageCmp.view.html',
-            controller: NutritionPageCtrl,
-            require: ['^siteNav', '^siteFooter']
-        });
+     function(angular, _, baseService) {
 
     NutritionPageCtrl.$inject = ['baseService'];
 
@@ -48,7 +39,7 @@ define(['angular',
         vm.dialog = {
             data:{},
             isOpened : false
-        }
+        };
 
         vm.calculator = {
             isInit: false,
@@ -170,6 +161,11 @@ define(['angular',
             this.openDialog();
 
         }
+    };
+
+    return {
+        templateUrl: 'front-assets/js/components/nutritionPage/nutritionPageCmp.view.html',
+        controller: NutritionPageCtrl
     };
 
 });

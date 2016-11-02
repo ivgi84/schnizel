@@ -1,11 +1,6 @@
-define(['angular', './components/components', './services/services', './services/base.service'], function() {
-
-    angular
-        .module('schnizelApp.components')
-        .component('contactPage', {
-            templateUrl: 'front-assets/js/components/contactPage/contactPageCmp.view.html',
-            controller: ContactPageCtrl
-        });
+define(['angular',
+    '../../services/services',
+    '../../services/base.service'], function() {
 
     ContactPageCtrl.$inject = ['subscribeSvc', 'baseService'];
 
@@ -35,9 +30,6 @@ define(['angular', './components/components', './services/services', './services
         vm.$onInit = function $onInit() {
             this.getFaqList();
         };
-
-
-
     }
 
     ContactPageCtrl.prototype = {
@@ -52,6 +44,11 @@ define(['angular', './components/components', './services/services', './services
             });
         }
 
+    };
+
+    return {
+        templateUrl: 'front-assets/js/components/contactPage/contactPageCmp.view.html',
+        controller: ContactPageCtrl
     };
 
 });
