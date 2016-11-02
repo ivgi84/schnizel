@@ -1,4 +1,4 @@
-define(['angular', 'ngRoute', './services/services', 'hpCmp', 'menuCmp', 'nutritionCmp', 'storyCmp', 'contactCmp', 'branchesCmp'], function() {
+define(['angular', 'ngRoute', './services/services', 'hpCmp', 'menuCmp', 'nutritionCmp', 'storyCmp', 'contactCmp', 'branchesCmp', 'aboutCmp'], function() {
 
     var app = angular.module('schnizelApp', ['ngRoute', 'schnizelApp.components', 'schnizelApp.directives', 'schnizelApp.services']);
 
@@ -24,6 +24,9 @@ define(['angular', 'ngRoute', './services/services', 'hpCmp', 'menuCmp', 'nutrit
             })
             .when('/branches', {
                 template: '<branches-page>'
+            })
+            .when('/about', {
+                template: '<about-page>'
             });
     }
     return app;
