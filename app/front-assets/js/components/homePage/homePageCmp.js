@@ -3,8 +3,9 @@ define([
     '../../directives/directives',
     '../../services/services',
     '../../services/affiliates.service',
-    'slickDirective'], function() {
-'use strict';
+    'slickDirective'
+], function() {
+    'use strict';
 
     HomePageCtrl.$inject = ['$sce', 'baseService'];
 
@@ -14,51 +15,50 @@ define([
         vm.baseService = baseService;
         vm.$sce = $sce;
         vm.affiliates = {
-            exist:false,
-            list:[]
+            exist: false,
+            list: []
         };
         vm.user = {
-            city:''
+            city: ''
         };
 
         vm.slides = [{
+            img: 'slide_4.jpg',
+            title: 'אהבה מהטעימה הראשונה ...',
+            subTitle: 'ארוחות קומבו'
+        }, {
             img: 'slide_1.jpg',
-            title:'שעות של הכנות ... שניות של הגשה',
-            subTitle:'  בואו ראו איך מכינים הכל טרי! '
+            title: 'שעות של הכנות ... שניות של הגשה',
+            subTitle: '  בואו ראו איך מכינים הכל טרי! '
 
         }, {
             img: 'slide_2.jpg',
-            title:'הנתחים שלנו...',
-            subTitle:'הציצו למטבח שלנו בפעולה'
+            title: 'הנתחים שלנו...',
+            subTitle: 'הציצו למטבח שלנו בפעולה'
         }, {
             img: 'slide_3.jpg',
-            title:'בונים את הבגט שלך...',
-            subTitle:'בואו ראו מה נכנס לבגט.. תמונה של שניצל'
-        }, {
-            img: 'slide_4.jpg',
-            title:'אהבה מהטעימה הראשונה ...',
-            subTitle:'ארוחות קומבו'
+            title: 'בונים את הבגט שלך...',
+            subTitle: 'בואו ראו מה נכנס לבגט.. תמונה של שניצל'
         }];
     }
 
 
     HomePageCtrl.prototype = {
-        findNearest: function findNearest(){
+        findNearest: function findNearest() {
             var self = this;
-            self.baseService.getJson('affiliates').then(function(response){
+            self.baseService.getJson('affiliates').then(function(response) {
 
-                if(response[self.user.city]){
+                if (response[self.user.city]) {
 
-                self.affiliates.exist = true;
-                self.affiliates.list = response[self.user.city];
-                for(var affiliate in self.affiliates.list){
-                    self.affiliates.list[affiliate].frameSrc = self.$sce.trustAsResourceUrl(self.affiliates.list[affiliate].frameSrc);
+                    self.affiliates.exist = true;
+                    self.affiliates.list = response[self.user.city];
+                    for (var affiliate in self.affiliates.list) {
+                        self.affiliates.list[affiliate].frameSrc = self.$sce.trustAsResourceUrl(self.affiliates.list[affiliate].frameSrc);
+                    }
+                } else {
+                    self.affiliates.exist = false;
+                    self.affiliates.list = [];
                 }
-            }
-            else{
-                self.affiliates.exist = false;
-                self.affiliates.list = [];
-            }
             });
 
         }

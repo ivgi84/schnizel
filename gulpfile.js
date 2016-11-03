@@ -5,7 +5,9 @@ var gulp        = require('gulp'),
     livereload  = require('gulp-livereload'),
     replace  = require('gulp-replace'),
     minify  = require('gulp-minify'),
-    uglify = require('gulp-uglify');
+    uglify = require('gulp-uglify'),
+    concatCSS = require('gulp-concat-css'),
+    cleanCss = require('gulp-clean-css');
 
 // Static Server + watching less/html files
 gulp.task('serve', ['less','html'], function() {
@@ -35,8 +37,9 @@ gulp.task('html', function() {
 gulp.task('default', ['serve']);
 
 gulp.task('deploy-front', function(){
-    gulp.src('app/front-assets/css/**/*.css') //css
+    gulp.src('app/front-assets/css/**/*.*') //css
     .pipe(replace('front-assets/',''))
+    //.pipe(cleanCss())
     .pipe(gulp.dest('prod/css'));
 
     gulp.src(['app/front-assets/js/**/*.js', '!app/front-assets/js/lib/**/*.js'])
