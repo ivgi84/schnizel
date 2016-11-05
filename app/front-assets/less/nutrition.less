@@ -127,6 +127,12 @@
         text-align: center;
         cursor: pointer;
         opacity: 0.4;
+        transition: 0.5s all ease;
+        -webkit-transition: 0.5s all ease;
+        -moz-transition: 0.5s all ease;
+        &:hover{
+        opacity: 0.8;
+        }
         &.selectedDish{
           opacity: 1;
         }
@@ -168,23 +174,14 @@
       border-top: 1px solid #ebe4de;
       height: 70px;
       position: relative;
+      transition: 0.5s all ease;
+      -webkit-transition: 0.5s all ease;
+      -moz-transition: 0.5s all ease;
       &:last-of-type{
         border-bottom: none;
       }
       &.selected{
         background: #ece3de;
-        // &:before{
-        //   content: "";
-        //   right:0;
-        //   top: 0;
-        //   width: 100%;
-        //   display: block;
-        //   position: absolute;
-        //   z-index: 2;
-        //   background: #e7d5c7;
-        //   height: 100%;
-        //   opacity: 0.3;
-        // }
       }
       .right{
         cursor: pointer;

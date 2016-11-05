@@ -1,11 +1,11 @@
 define(['./components/components'], function() {
 
-    var app = angular.module('schnizelApp', ['ngRoute', 'schnizelApp.components', 'schnizelApp.directives', 'schnizelApp.services']);
+    var app = angular.module('schnizelApp', ['ngRoute', 'ngAnimate', 'schnizelApp.components', 'schnizelApp.directives', 'schnizelApp.services']);
 
     app.config(config);
 
     function config($routeProvider, $locationProvider) {
-        //$locationProvider.html5Mode({ enabled: true, requireBase: false });
+        $locationProvider.html5Mode({ enabled: true, requireBase: false });
         $routeProvider
             .when('/', {
                 template: '<home-page>'

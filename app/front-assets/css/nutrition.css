@@ -126,6 +126,12 @@
   text-align: center;
   cursor: pointer;
   opacity: 0.4;
+  transition: 0.5s all ease;
+  -webkit-transition: 0.5s all ease;
+  -moz-transition: 0.5s all ease;
+}
+.p-nutrition .dishes ul li:hover {
+  opacity: 0.8;
 }
 .p-nutrition .dishes ul li.selectedDish {
   opacity: 1;
@@ -164,6 +170,9 @@
   border-top: 1px solid #ebe4de;
   height: 70px;
   position: relative;
+  transition: 0.5s all ease;
+  -webkit-transition: 0.5s all ease;
+  -moz-transition: 0.5s all ease;
 }
 .p-nutrition .nutritionList .ingrid:last-of-type {
   border-bottom: none;

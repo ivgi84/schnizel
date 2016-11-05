@@ -52,7 +52,7 @@ require.config({
         'animationgsap': { exports: 'animationgsap', deps:['TweenMax']},
 
 
-        'app': { deps: ['angular', 'ngRoute'] },
+        'app': { deps: ['angular', 'ngRoute', 'ngAnimate'] },
         'hpCmp': pageDeps,
         'contactCmp': pageDeps,
         'nutritionCmp': pageDeps,

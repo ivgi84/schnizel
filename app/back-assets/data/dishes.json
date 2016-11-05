@@ -6,13 +6,13 @@
     "isSelected":false
   },
   "baget":{
-    "title":"ארוכה בבגט",
+    "title":"ארוחה בבגט",
     "img":"front-assets/images/menu/iconBaget.jpg",
     "types":["special","main","extras","salad","sauce"],
     "isSelected":false
   },
   "pita":{
-    "title":"ארוכה בפיטה",
+    "title":"ארוחה בפיטה",
     "img":"front-assets/images/menu/iconPita.jpg",
     "types":["main","extras","salad","sauce"],
     "isSelected":false

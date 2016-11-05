@@ -1,18 +1,18 @@
 <nav class="full-width" ng-class="{'mobileNavOpen':$ctrl.siteNav.mobileNavOpen}">
     <div class="navigation wrap">
-        <a href="#/" class="logo"><img src="front-assets/images/home/logo.png" alt="" /></a>
+        <a href="/" class="logo"><img src="front-assets/images/home/logo.png" alt="" /></a>
         <div class="hamburger" ng-click="$ctrl.mobileNavToggle()">
             <span></span>
             <span></span>
             <span></span>
         </div>
         <ul ng-class="{'mobileNavOpen':$ctrl.siteNav.mobileNavOpen}">
-            <li><a ng-class="$ctrl.currentUrl == '/menu' ? 'selected' : '' " href="#/menu">תפריט</a></li>
-            <li><a ng-class="$ctrl.currentUrl == '/nutrition' ? 'selected' : '' " href="#/nutrition">תזונה</a></li>
-            <li><a ng-class="$ctrl.currentUrl == '/story' ? 'selected' : '' " href="#/story">מה קורה</a></li>
-            <li><a ng-class="$ctrl.currentUrl == '/contact' ? 'selected' : '' " href="#/contact">צור קשר</a></li>
-            <li><a ng-class="$ctrl.currentUrl == '/branches' ? 'selected' : '' " href="#/branches">סניפים</a></li>
-            <li><a ng-class="$ctrl.currentUrl == '/about' ? 'selected' : '' " href="#/about">אודות</a></li>
+            <li><a ng-class="$ctrl.currentUrl == '/menu' ? 'selected' : '' " href="/menu">תפריט</a></li>
+            <li><a ng-class="$ctrl.currentUrl == '/nutrition' ? 'selected' : '' " href="/nutrition">תזונה</a></li>
+            <li><a ng-class="$ctrl.currentUrl == '/story' ? 'selected' : '' " href="/story">מה קורה</a></li>
+            <li><a ng-class="$ctrl.currentUrl == '/contact' ? 'selected' : '' " href="/contact">צור קשר</a></li>
+            <li><a ng-class="$ctrl.currentUrl == '/branches' ? 'selected' : '' " href="/branches">סניפים</a></li>
+            <li><a ng-class="$ctrl.currentUrl == '/about' ? 'selected' : '' " href="/about">אודות</a></li>
             <li><a href="http://tedkovits.wixsite.com/shnitzelcom">זכיינות</a></li>
             <li class="navBtn breakLine"><a href="#/contact">הזמן עכשיו</a></li>
         </ul>
