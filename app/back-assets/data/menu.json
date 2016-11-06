@@ -1,535 +1,626 @@
 {
-  "lists": [
-    {
-      "title": "בחר בעוף מגידול ידידותי לסביבה או ירקות וטופו אורגני",
-      "list": [
-        {
-          "item": {
-            "mainImg": "front-assets/images/menu/items/HazeOf.png",
-            "mainTitle": "חזה עוף",
-            "description": {
-              "img": "front-assets/images/menu/items/HazeOf.png",
-              "title": "חזה עוף",
-              "process": [
-                {
-                  "title": "מתובל",
-                  "text": "רק 100% חזה עוף טרי טבול במרינדה משך הליילה טעמים חדישים והצעה יומית"
-                },
-                {
-                  "title": "על האש",
-                  "text": "בגריל האמריקאי שלנו"
-                },
-                {
-                  "title": "עשוי באופן מושלם",
-                  "text": "לוהט, עסיסי ישר לצלחת"
+    "lists": [{
+        "title": "בחר בעוף מגידול ידידותי לסביבה או ירקות וטופו אורגני",
+        "list": [{
+            "item": {
+                "mainImg": "front-assets/images/menu/items/HazeOf.png",
+                "mainTitle": "חזה עוף",
+                "description": {
+                    "img": "front-assets/images/menu/items/HazeOf.png",
+                    "title": "חזה עוף",
+                    "process": [{
+                        "title": "מתובל",
+                        "text": "רק 100% חזה עוף טרי טבול במרינדה משך הליילה טעמים חדישים והצעה יומית"
+                    }, {
+                        "title": "על האש",
+                        "text": "בגריל האמריקאי שלנו"
+                    }, {
+                        "title": "עשוי באופן מושלם",
+                        "text": "לוהט, עסיסי ישר לצלחת"
+                    }],
+                    "more": {
+                        "title": "",
+                        "text": ""
+                    }
                 }
-              ],
-              "more": {
-                "title": "",
-                "text": ""
-              }
             }
-          }
-        },
-        {
-          "item": {
-            "mainImg": "front-assets/images/menu/items/Pargit.png",
-            "mainTitle": "פרגית",
-            "description": {
-              "img": "front-assets/images/menu/items/Pargit.png",
-              "title": "פרגית",
-              "process": [
-                {
-                  "title": "מתובל",
-                  "text": "רק 100% פרגית עוף טרי  טבול במרינדה משך הליילה"
-                },
-                {
-                  "title": "על האש",
-                  "text": "בגריל האמריקאי שלנו"
-                },
-                {
-                  "title": "עשוי באופן מושלם",
-                  "text": "לוהט, עסיסי ישר לצלחת"
+        }, {
+            "item": {
+                "mainImg": "front-assets/images/menu/items/Pargit.png",
+                "mainTitle": "פרגית",
+                "description": {
+                    "img": "front-assets/images/menu/items/Pargit.png",
+                    "title": "פרגית",
+                    "process": [{
+                        "title": "מתובל",
+                        "text": "רק 100% פרגית עוף טרי  טבול במרינדה משך הליילה"
+                    }, {
+                        "title": "על האש",
+                        "text": "בגריל האמריקאי שלנו"
+                    }, {
+                        "title": "עשוי באופן מושלם",
+                        "text": "לוהט, עסיסי ישר לצלחת"
+                    }],
+                    "more": {
+                        "title": "",
+                        "text": ""
+                    }
                 }
-              ],
-              "more": {
-                "title": "",
-                "text": ""
-              }
             }
-          }
-        },
-        {
-          "item": {
-            "mainImg": "front-assets/images/menu/items/shnitzel.png",
-            "mainTitle": "שניצל ",
-            "description": {
-              "img": "front-assets/images/menu/items/shnitzel.png",
-              "title": "שניצל",
-              "process": [
-                {
-                  "title": "מתובל",
-                  "text": "קמח, ביצה ופירורי לחם במתכון הסודי שלנו"
-                },
-                {
-                  "title": "מטוגן",
-                  "text": "בשמן סויה נקי ומשובח"
-                },
-                {
-                  "title": "עשוי באופן מושלם",
-                  "text": "קריספי  טרי ומתפוצץ בפה"
+        }, {
+            "item": {
+                "mainImg": "front-assets/images/menu/items/shnitzel.png",
+                "mainTitle": "שניצל ",
+                "description": {
+                    "img": "front-assets/images/menu/items/shnitzel.png",
+                    "title": "שניצל",
+                    "process": [{
+                        "title": "מתובל",
+                        "text": "קמח, ביצה ופירורי לחם במתכון הסודי שלנו"
+                    }, {
+                        "title": "מטוגן",
+                        "text": "בשמן סויה נקי ומשובח"
+                    }, {
+                        "title": "עשוי באופן מושלם",
+                        "text": "קריספי  טרי ומתפוצץ בפה"
+                    }],
+                    "more": {
+                        "title": "",
+                        "text": ""
+                    }
                 }
-              ],
-              "more": {
-                "title": "",
-                "text": ""
-              }
             }
-          }
-        },
-        {
-          "item": {
-            "mainImg": "front-assets/images/menu/items/VegetarianSnitzel.png",
-            "mainTitle": "שניצל תירס",
-            "description": {
-              "img": "front-assets/images/menu/items/VegetarianSnitzel.png",
-              "title": "שניצל תירס",
-              "process": [
-                {
-                  "title": "מתובל",
-                  "text": "טופו אורגני, תירס טרי ותבלינים"
-                },
-                {
-                  "title": "על האש",
-                  "text": "מטוגן בשמן נקי וטרי"
-                },
-                {
-                  "title": "עשוי באופן מושלם",
-                  "text": "100% בריאות רק חומרים צמחוניים"
+        }, {
+            "item": {
+                "mainImg": "front-assets/images/menu/items/VegetarianSnitzel.png",
+                "mainTitle": "שניצל תירס",
+                "description": {
+                    "img": "front-assets/images/menu/items/VegetarianSnitzel.png",
+                    "title": "שניצל תירס",
+                    "process": [{
+                        "title": "מתובל",
+                        "text": "טופו אורגני, תירס טרי ותבלינים"
+                    }, {
+                        "title": "על האש",
+                        "text": "מטוגן בשמן נקי וטרי"
+                    }, {
+                        "title": "עשוי באופן מושלם",
+                        "text": "100% בריאות רק חומרים צמחוניים"
+                    }],
+                    "more": {
+                        "title": "",
+                        "text": ""
+                    }
                 }
-              ],
-              "more": {
-                "title": "",
-                "text": ""
-              }
             }
-          }
-        },
-        {
-          "item": {
-            "mainImg": "https://d5bzqyuki558t.cloudfront.net/cms-assets/system/asset_versions/attachments/000/000/377/original/_0004_Sofritas.png?1428679385",
-            "mainTitle": "קציצות טופו כרובית ותרד",
-            "description": {
-              "img": "https://d5bzqyuki558t.cloudfront.net/cms-assets/system/asset_versions/attachments/000/000/377/original/_0004_Sofritas.png?1428679385",
-              "title": "קציצות טופו כרובית ותרד  שורה מתחת",
-              "process": [
-                {
-                  "title": "מתובל",
-                  "text": "תרד בייבי טרי, טופו רך אורגני כרובית מגורדת ותלינים"
-                },
-                {
-                  "title": "בתנור",
-                  "text": "אפוי בתנור"
-                },
-                {
-                  "title": "עשוי באופן מושלם",
-                  "text": "100% בריאות רק חומרים צמחוניים"
+        }, {
+            "item": {
+                "mainImg": "https://d5bzqyuki558t.cloudfront.net/cms-assets/system/asset_versions/attachments/000/000/377/original/_0004_Sofritas.png?1428679385",
+                "mainTitle": "קציצות טופו כרובית ותרד",
+                "description": {
+                    "img": "https://d5bzqyuki558t.cloudfront.net/cms-assets/system/asset_versions/attachments/000/000/377/original/_0004_Sofritas.png?1428679385",
+                    "title": "קציצות טופו כרובית ותרד  שורה מתחת",
+                    "process": [{
+                        "title": "מתובל",
+                        "text": "תרד בייבי טרי, טופו רך אורגני כרובית מגורדת ותלינים"
+                    }, {
+                        "title": "בתנור",
+                        "text": "אפוי בתנור"
+                    }, {
+                        "title": "עשוי באופן מושלם",
+                        "text": "100% בריאות רק חומרים צמחוניים"
+                    }],
+                    "more": {
+                        "title": "",
+                        "text": ""
+                    }
                 }
-              ],
-              "more": {
-                "title": "",
-                "text": ""
-              }
             }
-          }
-        }
-      ]
-    },
-    {
-      "title": "אורז , תפוחי אדמה, ירקות מבושלים, תבשיל בורגול, צ'יפס",
-      "list": [
-        {
-          "item": {
-            "mainImg": "front-assets/images/menu/items/Orez.png",
-            "mainTitle": "אורז",
-            "description": {
-              "img": "front-assets/images/menu/items/Orez.png",
-              "title": "אורז",
-              "process": [
-                {
-                  "title": "האורז",
-                  "text": "רק 100% אורז תאילנדי מאודה, מטוגן, בתוספת ירקות אדום, צהוב, בעשבי תיבול"
-                },
-                {
-                  "title": "ההכנה",
-                  "text": "מידי יום טרי"
-                },
-                {
-                  "title": "עשוי באופן מושלם",
-                  "text": "בתיבול עדין, טעם מושלם"
+        }]
+    }, {
+        "title": "אורז , תפוחי אדמה, ירקות מבושלים, תבשיל בורגול, צ'יפס",
+        "list": [{
+            "item": {
+                "mainImg": "front-assets/images/menu/items/Orez.png",
+                "mainTitle": "אורז",
+                "description": {
+                    "img": "front-assets/images/menu/items/Orez.png",
+                    "title": "אורז",
+                    "process": [{
+                        "title": "האורז",
+                        "text": "רק 100% אורז תאילנדי מאודה, מטוגן, בתוספת ירקות אדום, צהוב, בעשבי תיבול"
+                    }, {
+                        "title": "ההכנה",
+                        "text": "מידי יום טרי"
+                    }, {
+                        "title": "עשוי באופן מושלם",
+                        "text": "בתיבול עדין, טעם מושלם"
+                    }],
+                    "more": {
+                        "title": "",
+                        "text": ""
+                    }
                 }
-              ],
-              "more": {
-                "title": "",
-                "text": ""
-              }
             }
-          }
-        },
-        {
-          "item": {
-            "mainImg": "front-assets/images/menu/items/Pire.png",
-            "mainTitle": "פירה בטטה",
-            "description": {
-              "img": "front-assets/images/menu/items/Pire.png",
-              "title": "פירה תפוחי אדמה",
-              "process": [
-                {
-                  "title": "תפודים",
-                  "text": "תפוחי אדמה ובטטה מוכנים טרי מידי יום"
-                },
-                {
-                  "title": "ההכנה",
-                  "text": "מידי יום טרי"
-                },
-                {
-                  "title": "עשוי באופן מושלם",
-                  "text": "בתיבול עדין, טעם מושלם"
+        }, {
+            "item": {
+                "mainImg": "front-assets/images/menu/items/Pire.png",
+                "mainTitle": "פירה בטטה",
+                "description": {
+                    "img": "front-assets/images/menu/items/Pire.png",
+                    "title": "פירה תפוחי אדמה",
+                    "process": [{
+                        "title": "תפודים",
+                        "text": "תפוחי אדמה ובטטה מוכנים טרי מידי יום"
+                    }, {
+                        "title": "ההכנה",
+                        "text": "מידי יום טרי"
+                    }, {
+                        "title": "עשוי באופן מושלם",
+                        "text": "בתיבול עדין, טעם מושלם"
+                    }],
+                    "more": {
+                        "title": "",
+                        "text": ""
+                    }
                 }
-              ],
-              "more": {
-                "title": "",
-                "text": ""
-              }
             }
-          }
-        },
-        {
-          "item": {
-            "mainImg": "https://d5bzqyuki558t.cloudfront.net/cms-assets/system/asset_versions/attachments/000/000/377/original/_0004_Sofritas.png?1428679385",
-            "mainTitle": " ירק היום טרי",
-            "description": {
-              "img": "https://d5bzqyuki558t.cloudfront.net/cms-assets/system/asset_versions/attachments/000/000/377/original/_0004_Sofritas.png?1428679385",
-              "title": " ירק היום טרי",
-              "process": [
-                {
-                  "title": "הירקות",
-                  "text": "בישול יומי של ירקות טריים בתיבולים שונים"
-                },
-                {
-                  "title": "ההכנה",
-                  "text": "מידי יום טרי"
-                },
-                {
-                  "title": "עשוי באופן מושלם",
-                  "text": "בתיבול עדין, טעם מושלם"
+        }, {
+            "item": {
+                "mainImg": "https://d5bzqyuki558t.cloudfront.net/cms-assets/system/asset_versions/attachments/000/000/377/original/_0004_Sofritas.png?1428679385",
+                "mainTitle": " ירק היום טרי",
+                "description": {
+                    "img": "https://d5bzqyuki558t.cloudfront.net/cms-assets/system/asset_versions/attachments/000/000/377/original/_0004_Sofritas.png?1428679385",
+                    "title": " ירק היום טרי",
+                    "process": [{
+                        "title": "הירקות",
+                        "text": "בישול יומי של ירקות טריים בתיבולים שונים"
+                    }, {
+                        "title": "ההכנה",
+                        "text": "מידי יום טרי"
+                    }, {
+                        "title": "עשוי באופן מושלם",
+                        "text": "בתיבול עדין, טעם מושלם"
+                    }],
+                    "more": {
+                        "title": "",
+                        "text": ""
+                    }
                 }
-              ],
-              "more": {
-                "title": "",
-                "text": ""
-              }
             }
-          }
-        },
-        {
-          "item": {
-            "mainImg": "https://d5bzqyuki558t.cloudfront.net/cms-assets/system/asset_versions/attachments/000/000/377/original/_0004_Sofritas.png?1428679385",
-            "mainTitle": "בורגול גס עם ירקות",
-            "description": {
-              "img": "https://d5bzqyuki558t.cloudfront.net/cms-assets/system/asset_versions/attachments/000/000/377/original/_0004_Sofritas.png?1428679385",
-              "title": "בורגול גס עם ירקות",
-              "process": [
-                {
-                  "title": "מתובל",
-                  "text": "הבורגול המיוחד שלנו עם כרוב ובצל"
-                },
-                {
-                  "title": "",
-                  "text": ""
+        }, {
+            "item": {
+                "mainImg": "https://d5bzqyuki558t.cloudfront.net/cms-assets/system/asset_versions/attachments/000/000/377/original/_0004_Sofritas.png?1428679385",
+                "mainTitle": "בורגול גס עם ירקות",
+                "description": {
+                    "img": "https://d5bzqyuki558t.cloudfront.net/cms-assets/system/asset_versions/attachments/000/000/377/original/_0004_Sofritas.png?1428679385",
+                    "title": "בורגול גס עם ירקות",
+                    "process": [{
+                        "title": "מתובל",
+                        "text": "הבורגול המיוחד שלנו עם כרוב ובצל"
+                    }, {
+                        "title": "",
+                        "text": ""
+                    }],
+                    "more": {
+                        "title": "",
+                        "text": ""
+                    }
                 }
-              ],
-              "more": {
-                "title": "",
-                "text": ""
-              }
             }
-          }
-        },
-        {
-          "item": {
-            "mainImg": "front-assets/images/menu/items/Chips.png",
-            "mainTitle": "צ׳יפס",
-            "description": {
-              "img": "front-assets/images/menu/items/Chips.png",
-              "title": "צ׳יפס",
-              "process": [
-                {
-                  "title": "מתובל",
-                  "text": "text "
-                },
-                {
-                  "title": "על האש",
-                  "text": "text"
+        }, {
+            "item": {
+                "mainImg": "front-assets/images/menu/items/Chips.png",
+                "mainTitle": "צ׳יפס",
+                "description": {
+                    "img": "front-assets/images/menu/items/Chips.png",
+                    "title": "צ׳יפס",
+                    "process": [{
+                        "title": "מתובל",
+                        "text": "text "
+                    }, {
+                        "title": "על האש",
+                        "text": "text"
+                    }],
+                    "more": {
+                        "title": "",
+                        "text": ""
+                    }
                 }
-              ],
-              "more": {
-                "title": "",
-                "text": ""
-              }
             }
-          }
-        }
-      ]
-    },
-    {
-      "title": "ממרחים ורטבים",
-      "list": [
-        {
-          "item": {
-            "mainImg": "front-assets/images/menu/items/Chili.png",
-            "mainTitle": "צ'ילי",
-            "description": {
-              "img": "front-assets/images/menu/items/Chili.png",
-              "title": "צ'ילי",
-              "process": [
-                {
-                  "title": "רטבים וומרחים ",
-                  "text": "פסטו, איולי, צ'ילי, דבש חרדל ויניגרט, טחינה, סחוג, טריאקי בלסמי, ועוד ועוד..."
-                },
-                {
-                  "title": "ההכנה",
-                  "text": "מידי יום טרי "
-                },
-                {
-                  "title": "עשוי באופן מושלם",
-                  "text": "בתיבול עדין, טעם מושלם"
+        }]
+    }, {
+        "title": "ממרחים ורטבים",
+        "list": [{
+            "item": {
+                "mainImg": "front-assets/images/menu/items/Chili.png",
+                "mainTitle": "צ'ילי",
+                "description": {
+                    "img": "front-assets/images/menu/items/Chili.png",
+                    "title": "צ'ילי",
+                    "process": [{
+                        "title": "רטבים וומרחים ",
+                        "text": "פסטו, איולי, צ'ילי, דבש חרדל ויניגרט, טחינה, סחוג, טריאקי בלסמי, ועוד ועוד..."
+                    }, {
+                        "title": "ההכנה",
+                        "text": "מידי יום טרי "
+                    }, {
+                        "title": "עשוי באופן מושלם",
+                        "text": "בתיבול עדין, טעם מושלם"
+                    }],
+                    "more": {
+                        "title": "",
+                        "text": ""
+                    }
                 }
-              ],
-              "more": {
-                "title": "",
-                "text": ""
-              }
             }
-          }
-        },
-        {
-          "item": {
-            "mainImg": "https://d5bzqyuki558t.cloudfront.net/cms-assets/system/asset_versions/attachments/000/000/377/original/_0004_Sofritas.png?1428679385",
-            "mainTitle": "סלסה",
-            "description": {
-              "img": "https://d5bzqyuki558t.cloudfront.net/cms-assets/system/asset_versions/attachments/000/000/377/original/_0004_Sofritas.png?1428679385",
-              "title": "סלסה",
-              "process": [
-                {
-                  "title": "מתובל",
-                  "text": "עגבניות טריות מרוסקות, צ'ילי כוסברה ותבלינים"
-                },
-                {
-                  "title": "",
-                  "text": ""
+        }, {
+            "item": {
+                "mainImg": "https://d5bzqyuki558t.cloudfront.net/cms-assets/system/asset_versions/attachments/000/000/377/original/_0004_Sofritas.png?1428679385",
+                "mainTitle": "סלסה",
+                "description": {
+                    "img": "https://d5bzqyuki558t.cloudfront.net/cms-assets/system/asset_versions/attachments/000/000/377/original/_0004_Sofritas.png?1428679385",
+                    "title": "סלסה",
+                    "process": [{
+                        "title": "מתובל",
+                        "text": "עגבניות טריות מרוסקות, צ'ילי כוסברה ותבלינים"
+                    }, {
+                        "title": "",
+                        "text": ""
+                    }],
+                    "more": {
+                        "title": "",
+                        "text": ""
+                    }
                 }
-              ],
-              "more": {
-                "title": "",
-                "text": ""
-              }
             }
-          }
-        },
-        {
-          "item": {
-            "mainImg": "https://d5bzqyuki558t.cloudfront.net/cms-assets/system/asset_versions/attachments/000/000/377/original/_0004_Sofritas.png?1428679385",
-            "mainTitle": "בר בי קיו",
-            "description": {
-              "img": "https://d5bzqyuki558t.cloudfront.net/cms-assets/system/asset_versions/attachments/000/000/377/original/_0004_Sofritas.png?1428679385",
-              "title": "בר בי קיו",
-              "process": [
-                {
-                  "title": "מתובל",
-                  "text": "טעם מעושן קלות, חמוץ מתוק"
-                },
-                {
-                  "title": "",
-                  "text": ""
+        }, {
+            "item": {
+                "mainImg": "https://d5bzqyuki558t.cloudfront.net/cms-assets/system/asset_versions/attachments/000/000/377/original/_0004_Sofritas.png?1428679385",
+                "mainTitle": "בר בי קיו",
+                "description": {
+                    "img": "https://d5bzqyuki558t.cloudfront.net/cms-assets/system/asset_versions/attachments/000/000/377/original/_0004_Sofritas.png?1428679385",
+                    "title": "בר בי קיו",
+                    "process": [{
+                        "title": "מתובל",
+                        "text": "טעם מעושן קלות, חמוץ מתוק"
+                    }, {
+                        "title": "",
+                        "text": ""
+                    }],
+                    "more": {
+                        "title": "",
+                        "text": ""
+                    }
                 }
-              ],
-              "more": {
-                "title": "",
-                "text": ""
-              }
             }
-          }
-        },
-        {
-          "item": {
-            "mainImg": "https://d5bzqyuki558t.cloudfront.net/cms-assets/system/asset_versions/attachments/000/000/377/original/_0004_Sofritas.png?1428679385",
-            "mainTitle": " ויניגרט דבש",
-            "description": {
-              "img": "https://d5bzqyuki558t.cloudfront.net/cms-assets/system/asset_versions/attachments/000/000/377/original/_0004_Sofritas.png?1428679385",
-              "title": " ויניגרט דבש",
-              "process": [
-                {
-                  "title": "מתובל",
-                  "text": "דבש דבורים טהור, חומץ, שמן זית וחרדל"
-                },
-                {
-                  "title": "",
-                  "text": ""
+        }, {
+            "item": {
+                "mainImg": "https://d5bzqyuki558t.cloudfront.net/cms-assets/system/asset_versions/attachments/000/000/377/original/_0004_Sofritas.png?1428679385",
+                "mainTitle": " ויניגרט דבש",
+                "description": {
+                    "img": "https://d5bzqyuki558t.cloudfront.net/cms-assets/system/asset_versions/attachments/000/000/377/original/_0004_Sofritas.png?1428679385",
+                    "title": " ויניגרט דבש",
+                    "process": [{
+                        "title": "מתובל",
+                        "text": "דבש דבורים טהור, חומץ, שמן זית וחרדל"
+                    }, {
+                        "title": "",
+                        "text": ""
+                    }],
+                    "more": {
+                        "title": "",
+                        "text": ""
+                    }
                 }
-              ],
-              "more": {
-                "title": "",
-                "text": ""
-              }
             }
-          }
-        },
-        {
-          "item": {
-            "mainImg": "front-assets/images/menu/items/HardalVeDvash.png",
-            "mainTitle": "חרדל ודבש",
-            "description": {
-              "img": "front-assets/images/menu/items/HardalVeDvash.png",
-              "title": "חרדל ודבש",
-              "process": [
-                {
-                  "title": "מתובל",
-                  "text": "חרדל גרגירים דיז'ון ,דבש דבורים טהור "
-                },
-                {
-                  "title": "",
-                  "text": ""
+        }, {
+            "item": {
+                "mainImg": "front-assets/images/menu/items/HardalVeDvash.png",
+                "mainTitle": "חרדל ודבש",
+                "description": {
+                    "img": "front-assets/images/menu/items/HardalVeDvash.png",
+                    "title": "חרדל ודבש",
+                    "process": [{
+                        "title": "מתובל",
+                        "text": "חרדל גרגירים דיז'ון ,דבש דבורים טהור "
+                    }, {
+                        "title": "",
+                        "text": ""
+                    }],
+                    "more": {
+                        "title": "",
+                        "text": ""
+                    }
                 }
-              ],
-              "more": {
-                "title": "",
-                "text": ""
-              }
             }
-          }
-        },
-        {
-          "item": {
-            "mainImg": "https://d5bzqyuki558t.cloudfront.net/cms-assets/system/asset_versions/attachments/000/000/377/original/_0004_Sofritas.png?1428679385",
-            "mainTitle": " וויסקי ודבש",
-            "description": {
-              "img": "https://d5bzqyuki558t.cloudfront.net/cms-assets/system/asset_versions/attachments/000/000/377/original/_0004_Sofritas.png?1428679385",
-              "title": " וויסקי ודבש",
-              "process": [
-                {
-                  "title": "מתובל",
-                  "text": "וויסקי שהובער במחבת, דבש דבורים טהור"
-                },
-                {
-                  "title": "",
-                  "text": ""
+        }, {
+            "item": {
+                "mainImg": "https://d5bzqyuki558t.cloudfront.net/cms-assets/system/asset_versions/attachments/000/000/377/original/_0004_Sofritas.png?1428679385",
+                "mainTitle": " וויסקי ודבש",
+                "description": {
+                    "img": "https://d5bzqyuki558t.cloudfront.net/cms-assets/system/asset_versions/attachments/000/000/377/original/_0004_Sofritas.png?1428679385",
+                    "title": " וויסקי ודבש",
+                    "process": [{
+                        "title": "מתובל",
+                        "text": "וויסקי שהובער במחבת, דבש דבורים טהור"
+                    }, {
+                        "title": "",
+                        "text": ""
+                    }],
+                    "more": {
+                        "title": "",
+                        "text": ""
+                    }
                 }
-              ],
-              "more": {
-                "title": "",
-                "text": ""
-              }
             }
-          }
-        },
-        {
-          "item": {
-            "mainImg": "front-assets/images/menu/items/Tariaky.png",
-            "mainTitle": "טריאקי",
-            "description": {
-              "img": "front-assets/images/menu/items/Tariaky.png",
-              "title": "טריאקי",
-              "process": [
-                {
-                  "title": "מתובל",
-                  "text": "רוטב סויה, ג'ינג'ר, שום,סוכר וחומץ"
-                },
-                {
-                  "title": "",
-                  "text": ""
+        }, {
+            "item": {
+                "mainImg": "front-assets/images/menu/items/Tariaky.png",
+                "mainTitle": "טריאקי",
+                "description": {
+                    "img": "front-assets/images/menu/items/Tariaky.png",
+                    "title": "טריאקי",
+                    "process": [{
+                        "title": "מתובל",
+                        "text": "רוטב סויה, ג'ינג'ר, שום,סוכר וחומץ"
+                    }, {
+                        "title": "",
+                        "text": ""
+                    }],
+                    "more": {
+                        "title": "",
+                        "text": ""
+                    }
                 }
-              ],
-              "more": {
-                "title": "",
-                "text": ""
-              }
             }
-          }
-        },
-        {
-          "item": {
-            "mainImg": "front-assets/images/menu/items/Thina.png",
-            "mainTitle": "טחינה",
-            "description": {
-              "img": "front-assets/images/menu/items/Thina.png",
-              "title": "טחינה",
-              "process": [
-                {
-                  "title": "מתובל",
-                  "text": "100% טחינת שומשום משובחת, מיץ לימון סחוט ושום"
-                },
-                {
-                  "title": "",
-                  "text": ""
+        }, {
+            "item": {
+                "mainImg": "front-assets/images/menu/items/Thina.png",
+                "mainTitle": "טחינה",
+                "description": {
+                    "img": "front-assets/images/menu/items/Thina.png",
+                    "title": "טחינה",
+                    "process": [{
+                        "title": "מתובל",
+                        "text": "100% טחינת שומשום משובחת, מיץ לימון סחוט ושום"
+                    }, {
+                        "title": "",
+                        "text": ""
+                    }],
+                    "more": {
+                        "title": "",
+                        "text": ""
+                    }
                 }
-              ],
-              "more": {
-                "title": "",
-                "text": ""
-              }
             }
-          }
-        },
-        {
-          "item": {
-            "mainImg": "front-assets/images/menu/items/SaladKruv.png",
-            "mainTitle": "כרוב",
-            "description": {
-              "img": "front-assets/images/menu/items/SaladKruv.png",
-              "title": "כרוב",
-              "process": [
-                {
-                  "title": "מתובל",
-                  "text": "כרוב לבן קצוץ ומתובל"
-                },
-                {
-                  "title": "",
-                  "text": ""
+        }, {
+            "item": {
+                "mainImg": "front-assets/images/menu/items/SaladKruv.png",
+                "mainTitle": "כרוב",
+                "description": {
+                    "img": "front-assets/images/menu/items/SaladKruv.png",
+                    "title": "כרוב",
+                    "process": [{
+                        "title": "מתובל",
+                        "text": "כרוב לבן קצוץ ומתובל"
+                    }, {
+                        "title": "",
+                        "text": ""
+                    }],
+                    "more": {
+                        "title": "",
+                        "text": ""
+                    }
                 }
-              ],
-              "more": {
-                "title": "",
-                "text": ""
-              }
             }
-          }
-        },
-        {
-          "item": {
-            "mainImg": "https://d5bzqyuki558t.cloudfront.net/cms-assets/system/asset_versions/attachments/000/000/377/original/_0004_Sofritas.png?1428679385",
-            "mainTitle": "פרוסות ירקות טריים",
-            "description": {
-              "img": "https://d5bzqyuki558t.cloudfront.net/cms-assets/system/asset_versions/attachments/000/000/377/original/_0004_Sofritas.png?1428679385",
-              "title": "פרוסות ירקות טריים",
-              "process": [
-                {
-                  "title": "מתובל",
-                  "text": "חסה, עגבניות, מלפפונים ובצל."
-                },
-                {
-                  "title": "",
-                  "text": ""
+        }, {
+            "item": {
+                "mainImg": "https://d5bzqyuki558t.cloudfront.net/cms-assets/system/asset_versions/attachments/000/000/377/original/_0004_Sofritas.png?1428679385",
+                "mainTitle": "פרוסות ירקות טריים",
+                "description": {
+                    "img": "https://d5bzqyuki558t.cloudfront.net/cms-assets/system/asset_versions/attachments/000/000/377/original/_0004_Sofritas.png?1428679385",
+                    "title": "פרוסות ירקות טריים",
+                    "process": [{
+                        "title": "מתובל",
+                        "text": "חסה, עגבניות, מלפפונים ובצל."
+                    }, {
+                        "title": "",
+                        "text": ""
+                    }],
+                    "more": {
+                        "title": "",
+                        "text": ""
+                    }
                 }
-              ],
-              "more": {
-                "title": "",
-                "text": ""
-              }
             }
-          }
-        }
-      ]
-    }
-  ]
+        }]
+    }, {
+        "title": "הסלטים",
+        "list": [{
+            "item": {
+                "mainImg": "front-assets/images/menu/items/Salad.png",
+                "mainTitle": "סלט ישראלי",
+                "description": {
+                    "img": "front-assets/images/menu/items/Salad.png",
+                    "title": "סלט ישראלי",
+                    "process": [{
+                        "title": "",
+                        "text": ""
+                    }, {
+                        "title": "",
+                        "text": ""
+                    }, {
+                        "title": "עשוי באופן מושלם",
+                        "text": "לוהט, עסיסי ישר לצלחת"
+                    }],
+                    "more": {
+                        "title": "",
+                        "text": ""
+                    }
+                }
+            }
+        }, {
+            "item": {
+                "mainImg": "front-assets/images/menu/items/Salad.png",
+                "mainTitle": "סלט קישואים בשמיר",
+                "description": {
+                    "img": "front-assets/images/menu/items/Salad.png",
+                    "title": "סלט קישואים בשמיר",
+                    "process": [{
+                        "title": "",
+                        "text": ""
+                    }, {
+                        "title": "",
+                        "text": ""
+                    }, {
+                        "title": "עשוי באופן מושלם",
+                        "text": "לוהט, עסיסי ישר לצלחת"
+                    }],
+                    "more": {
+                        "title": "",
+                        "text": ""
+                    }
+                }
+            }
+        }, {
+            "item": {
+                "mainImg": "front-assets/images/menu/items/saladTurky.png",
+                "mainTitle": "סלט תורכי",
+                "description": {
+                    "img": "front-assets/images/menu/items/saladTurky.png",
+                    "title": "סלט תורכי",
+                    "process": [{
+                        "title": "",
+                        "text": ""
+                    }, {
+                        "title": "",
+                        "text": ""
+                    }, {
+                        "title": "עשוי באופן מושלם",
+                        "text": "לוהט, עסיסי ישר לצלחת"
+                    }],
+                    "more": {
+                        "title": "",
+                        "text": ""
+                    }
+                }
+            }
+        }, {
+            "item": {
+                "mainImg": "front-assets/images/menu/items/SaladKruv.png",
+                "mainTitle": "סלט כרוב לבן",
+                "description": {
+                    "img": "front-assets/images/menu/items/SaladKruv.png",
+                    "title": "סלט כרוב לבן",
+                    "process": [{
+                        "title": "",
+                        "text": ""
+                    }, {
+                        "title": "",
+                        "text": ""
+                    }, {
+                        "title": "עשוי באופן מושלם",
+                        "text": "לוהט, עסיסי ישר לצלחת"
+                    }],
+                    "more": {
+                        "title": "",
+                        "text": ""
+                    }
+                }
+            }
+        }, {
+            "item": {
+                "mainImg": "front-assets/images/menu/items/SaladTuna.png",
+                "mainTitle": "סלט טונה",
+                "description": {
+                    "img": "front-assets/images/menu/items/SaladTuna.png",
+                    "title": "סלט טונה",
+                    "process": [{
+                        "title": "",
+                        "text": ""
+                    }, {
+                        "title": "",
+                        "text": ""
+                    }, {
+                        "title": "עשוי באופן מושלם",
+                        "text": "לוהט, עסיסי ישר לצלחת"
+                    }],
+                    "more": {
+                        "title": "",
+                        "text": ""
+                    }
+                }
+            }
+        }, {
+            "item": {
+                "mainImg": "front-assets/images/menu/items/saladXatcilim.png",
+                "mainTitle": "סלט חציל מיונז",
+                "description": {
+                    "img": "front-assets/images/menu/items/saladXatcilim.png",
+                    "title": "סלט חציל מיונז",
+                    "process": [{
+                        "title": "",
+                        "text": ""
+                    }, {
+                        "title": "",
+                        "text": ""
+                    }, {
+                        "title": "עשוי באופן מושלם",
+                        "text": "לוהט, עסיסי ישר לצלחת"
+                    }],
+                    "more": {
+                        "title": "",
+                        "text": ""
+                    }
+                }
+            }
+        }, {
+            "item": {
+                "mainImg": "front-assets/images/menu/items/Hatzilim.png",
+                "mainTitle": "סלט חציל גמבה",
+                "description": {
+                    "img": "front-assets/images/menu/items/Hatzilim.png",
+                    "title": "סלט חציל גמבה",
+                    "process": [{
+                        "title": "",
+                        "text": ""
+                    }, {
+                        "title": "",
+                        "text": ""
+                    }, {
+                        "title": "עשוי באופן מושלם",
+                        "text": "לוהט, עסיסי ישר לצלחת"
+                    }],
+                    "more": {
+                        "title": "",
+                        "text": ""
+                    }
+                }
+            }
+        }, {
+            "item": {
+                "mainImg": "front-assets/images/menu/items/Humus.png",
+                "mainTitle": "חומוס",
+                "description": {
+                    "img": "front-assets/images/menu/items/Humus.png",
+                    "title": "חומוס",
+                    "process": [{
+                        "title": "",
+                        "text": ""
+                    }, {
+                        "title": "",
+                        "text": ""
+                    }, {
+                        "title": "עשוי באופן מושלם",
+                        "text": "לוהט, עסיסי ישר לצלחת"
+                    }],
+                    "more": {
+                        "title": "",
+                        "text": ""
+                    }
+                }
+            }
+        }]
+    }]
 }
