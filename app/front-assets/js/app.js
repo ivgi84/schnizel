@@ -4,29 +4,40 @@ define(['./components/components'], function() {
 
     app.config(config);
 
+    app.run(['$route', '$rootScope', '$location', function($route, $rootScope, $location)  {
+        $rootScope.title = $route.routes[$location.path()].title;
+    }]);
+
     function config($routeProvider, $locationProvider) {
         $locationProvider.html5Mode({ enabled: true, requireBase: false });
         $routeProvider
             .when('/', {
-                template: '<home-page>'
+                template: '<home-page>',
+                title:'שניצל קומפני'
             })
             .when('/menu', {
-                template: '<menu-page>'
+                template: '<menu-page>',
+                title:'שניצל קומפני - תפריט'
             })
             .when('/nutrition', {
-                template: '<nutrition-page>'
+                template: '<nutrition-page>',
+                title:'שניצל קומפני - תזונה'
             })
             .when('/story', {
-                template: '<story-page>'
+                template: '<story-page>',
+                title:'שניצל קומפני - מה קורה'
             })
             .when('/contact', {
-                template: '<contact-page>'
+                template: '<contact-page>',
+                title:'שניצל קומפני - צור קשר'
             })
             .when('/branches', {
-                template: '<branches-page>'
+                template: '<branches-page>',
+                title:'שניצל קומפני - סניפים'
             })
             .when('/about', {
-                template: '<about-page>'
+                template: '<about-page>',
+                title:'שניצל קומפני - עלינו'
             });
     }
     return app;

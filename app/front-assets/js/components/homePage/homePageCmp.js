@@ -11,7 +11,7 @@ define([
 
     function HomePageCtrl($sce, baseService) {
         var vm = this;
-
+        vm.pageTitle = 'שניצל קומפני';
         vm.baseService = baseService;
         vm.$sce = $sce;
         vm.affiliates = {

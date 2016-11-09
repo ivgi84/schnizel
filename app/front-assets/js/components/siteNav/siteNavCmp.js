@@ -9,33 +9,23 @@ define(['angular'], function() {
 
         vm.currentUrl = $location.path();
 
-        $rootScope.$on( "$routeChangeSuccess", function(event, next, current) {
+        $rootScope.$on( "$routeChangeSuccess", function(event, current, previous) {
             vm.currentUrl = $location.path();
 
             if(vm.siteNav.mobileNavOpen)
                 vm.mobileNavToggle();
 
             scrollTo(document.body, 0 , 600);
+
+             $rootScope.title = current.$$route.title;
+        
         });
 
-
-
         vm.siteNav = {
-            mobileNavOpen: false,
-            navigation: [
-                {
-                    link:'#/menu',
-                    text:'תפריט',
-                    class:''
-                },
-                {
-                    link:'#/nutrition',
-                    text:'תזונה',
-                    class:''
-                }
-            ]
+            mobileNavOpen: false
         };
     }
+
     SiteNavCtrl.prototype = {
         setSelected: function setSelected(url){
 
@@ -44,7 +34,6 @@ define(['angular'], function() {
             this.siteNav.mobileNavOpen =!this.siteNav.mobileNavOpen;
         },
         scrollTo: function(elm, to, duration){
-            debugger;
             if(duration <= 0) return;
 
             var diff = to - elm.scrollTop;
