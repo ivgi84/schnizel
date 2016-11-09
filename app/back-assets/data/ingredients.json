@@ -328,7 +328,7 @@
             "title": "סלט"
         },
         "title": "סלט חצילים עם גמבה",
-        "img": "front-assets/images/menu/items/Hatzilim.png",
+        "img": "front-assets/images/menu/items/Salad.png",
         "shownIn": ["plate", "baget", "pita"],
         "isSelected": false,
         "data": {
@@ -351,7 +351,7 @@
             "title": "סלט"
         },
         "title": "סלט קישואים",
-        "img": "http://drpma142ptgxf.cloudfront.net/nutrition-calculator/ingredients/chicken.png",
+        "img": "front-assets/images/menu/items/Kishuim.png",
         "shownIn": ["plate", "baget", "pita"],
         "isSelected": false,
         "data": {

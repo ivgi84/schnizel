@@ -14,6 +14,8 @@ define(['angular'], function() {
 
             if(vm.siteNav.mobileNavOpen)
                 vm.mobileNavToggle();
+
+            scrollTo(document.body, 0 , 600);
         });
 
 
@@ -40,6 +42,19 @@ define(['angular'], function() {
         },
         mobileNavToggle: function mobileNavToggle(){
             this.siteNav.mobileNavOpen =!this.siteNav.mobileNavOpen;
+        },
+        scrollTo: function(elm, to, duration){
+            debugger;
+            if(duration <= 0) return;
+
+            var diff = to - elm.scrollTop;
+            var perTick = diff / duration * 10;
+
+            setTimeout(function(){
+                elm.scrollTop = elm.scrollTop + perTick;
+                if(elm.scrollTop === to) return
+                this.scrollTo(elm, to, duration - 10);
+            },10);
         }
     };
 

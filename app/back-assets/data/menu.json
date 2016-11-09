@@ -276,10 +276,10 @@
             }
         }, {
             "item": {
-                "mainImg": "https://d5bzqyuki558t.cloudfront.net/cms-assets/system/asset_versions/attachments/000/000/377/original/_0004_Sofritas.png?1428679385",
+                "mainImg": "front-assets/images/menu/items/Tariaky.png",
                 "mainTitle": "בר בי קיו",
                 "description": {
-                    "img": "https://d5bzqyuki558t.cloudfront.net/cms-assets/system/asset_versions/attachments/000/000/377/original/_0004_Sofritas.png?1428679385",
+                    "img": "front-assets/images/menu/items/Tariaky.png",
                     "title": "בר בי קיו",
                     "process": [{
                         "title": "מתובל",
@@ -336,14 +336,14 @@
             }
         }, {
             "item": {
-                "mainImg": "https://d5bzqyuki558t.cloudfront.net/cms-assets/system/asset_versions/attachments/000/000/377/original/_0004_Sofritas.png?1428679385",
-                "mainTitle": " וויסקי ודבש",
+                "mainImg": "front-assets/images/menu/items/Pesto.png",
+                "mainTitle": "פסטו",
                 "description": {
-                    "img": "https://d5bzqyuki558t.cloudfront.net/cms-assets/system/asset_versions/attachments/000/000/377/original/_0004_Sofritas.png?1428679385",
-                    "title": " וויסקי ודבש",
+                    "img": "front-assets/images/menu/items/Pesto.png",
+                    "title": "פסטו",
                     "process": [{
-                        "title": "מתובל",
-                        "text": "וויסקי שהובער במחבת, דבש דבורים טהור"
+                        "title": "",
+                        "text": ""
                     }, {
                         "title": "",
                         "text": ""
@@ -462,10 +462,10 @@
             }
         }, {
             "item": {
-                "mainImg": "front-assets/images/menu/items/Salad.png",
+                "mainImg": "front-assets/images/menu/items/Kishuim.png",
                 "mainTitle": "סלט קישואים בשמיר",
                 "description": {
-                    "img": "front-assets/images/menu/items/Salad.png",
+                    "img": "front-assets/images/menu/items/Kishuim.png",
                     "title": "סלט קישואים בשמיר",
                     "process": [{
                         "title": "",
@@ -577,10 +577,10 @@
             }
         }, {
             "item": {
-                "mainImg": "front-assets/images/menu/items/Hatzilim.png",
+                "mainImg": "front-assets/images/menu/items/saladXatcilim.png",
                 "mainTitle": "סלט חציל גמבה",
                 "description": {
-                    "img": "front-assets/images/menu/items/Hatzilim.png",
+                    "img": "front-assets/images/menu/items/saladXatcilim.png",
                     "title": "סלט חציל גמבה",
                     "process": [{
                         "title": "",

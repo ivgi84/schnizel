@@ -31,7 +31,7 @@ define(['angular',
                 toggle: function(){
                     this.isShown = !this.isShown;
                 },
-                isShown: false
+                isShown: true
             }
         };
         vm.ingredients = null;

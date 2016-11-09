@@ -257,12 +257,13 @@
 .p-nutrition .calculated-wrap {
   background: #fef9f3;
   width: 100%;
-  max-height: : 150px;
+  max-height: 150px;
   position: fixed;
   bottom: 0;
   direction: rtl;
   z-index: 3;
-  transition: 1s all ease;
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
 }
 .p-nutrition .calculated-wrap.staticView {
   position: static;

@@ -12,7 +12,7 @@
     "isSelected":false
   },
   "pita":{
-    "title":"ארוחה בפיטה",
+    "title":"ארוחה בפיתה",
     "img":"front-assets/images/menu/iconPita.jpg",
     "types":["main","extras","salad","sauce"],
     "isSelected":false
