@@ -3,9 +3,9 @@
     <div class="wrap" ng-form name="contactUsForm" novalidate>
       <h3>צור איתנו קשר</h3>
       <div class="row">
-        <input type="text" name="name" placeholder="שם" value="" ng-model="$ctrl.model.user.name" required>
         <input type="tel" name="tel" placeholder="טלפון" value="" ng-model="$ctrl.model.user.tel" required>
-        <input type="email" name="name" placeholder="דוא״ל" value="" ng-model="$ctrl.model.user.tel" required>
+        <input type="email" name="name" placeholder="דוא״ל" value="" ng-model="$ctrl.model.user.email" required>
+        <input type="text" name="name" placeholder="שם" value="" ng-model="$ctrl.model.user.name" required>
       </div>
       <div class="row">
         <textarea name="message" placeholder="הודעה" rows="8" cols="40" ng-model="$ctrl.model.user.message"></textarea>

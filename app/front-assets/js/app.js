@@ -9,7 +9,7 @@ define(['./components/components'], function() {
     }]);
 
     function config($routeProvider, $locationProvider) {
-        $locationProvider.html5Mode({ enabled: true, requireBase: false });
+        //$locationProvider.html5Mode({ enabled: true, requireBase: false });
         $routeProvider
             .when('/', {
                 template: '<home-page>',
@@ -38,6 +38,10 @@ define(['./components/components'], function() {
             .when('/about', {
                 template: '<about-page>',
                 title:'שניצל קומפני - עלינו'
+            })
+            .when('/career', {
+                template: '<career-page>',
+                title:'שניצל קומפני - קריירה'
             });
     }
     return app;

@@ -248,26 +248,11 @@ main {
   display: block;
   margin-top: 80px;
 }
-footer {
-  position: relative;
-  padding: 20px 0;
-  background: #54392d;
-  overflow: hidden;
-}
-footer .wrap {
-  max-width: 890px;
-}
-footer .wrap:after {
-  content: "";
-  clear: both;
-  display: block;
-  width: 100%;
-}
-footer .subsribeResponse {
+.subsribeResponse {
   transition: all 1s ease;
   -webkit-transition: all 1s ease;
   -moz-transition: all 1s ease;
-  position: absolute;
+  position: fixed;
   bottom: -100px;
   z-index: 999;
   width: 100%;
@@ -281,8 +266,23 @@ footer .subsribeResponse {
   background: #ccc;
   font-size: 20px;
 }
-footer .subsribeResponse.open {
+.subsribeResponse.open {
   bottom: 150px;
+}
+footer {
+  position: relative;
+  padding: 20px 0;
+  background: #54392d;
+  overflow: hidden;
+}
+footer .wrap {
+  max-width: 910px;
+}
+footer .wrap:after {
+  content: "";
+  clear: both;
+  display: block;
+  width: 100%;
 }
 footer .left,
 footer .right {
@@ -365,7 +365,7 @@ footer .left .list ul li,
 footer .right .list ul li {
   display: block;
   float: right;
-  margin: 10px 15px;
+  margin: 10px;
 }
 footer .left .list ul li:first-of-type,
 footer .right .list ul li:first-of-type {

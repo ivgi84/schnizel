@@ -6,9 +6,20 @@ define(['angular',
     './menuPage/menuPageCmp',
     './nutritionPage/nutritionPageCmp',
     './storyPage/storyPageCmp',
+    './careerPage/careerPageCmp',
     './siteNav/siteNavCmp',
     './siteFooter/siteFooterCmp',
-  ], function(angular, homePageCmp, aboutPageCmp, branchesPageCmp, contactPageCmp, menuPageCmp, nutritionPageCmp, storyPageCmp, siteNavCmp, siteFooterCmp){
+], function(angular,
+  homePageCmp,
+   aboutPageCmp,
+    branchesPageCmp,
+    contactPageCmp,
+    menuPageCmp,
+    nutritionPageCmp,
+    storyPageCmp,
+    careerPage,
+    siteNavCmp,
+    siteFooterCmp){
   var module = angular.module('schnizelApp.components',[]);
 
     module.component('homePage', homePageCmp);
@@ -18,6 +29,7 @@ define(['angular',
     module.component('menuPage', menuPageCmp);
     module.component('nutritionPage', nutritionPageCmp);
     module.component('storyPage', storyPageCmp);
+    module.component('careerPage', careerPage);
     module.component('siteNav', siteNavCmp);
     module.component('siteFooter', siteFooterCmp);
 

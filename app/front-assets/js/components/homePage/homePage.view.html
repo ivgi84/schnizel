@@ -1,20 +1,21 @@
 <main role="main" class="p-home">
   <section class="main full-width">
       <div class="slider">
-          <div class="sliderContent" slick-slider="{dots: false, arrows: true, draggable: true, slidesToShow:1, infinite:true, autoplay: true, autoplaySpeed: 5000, pauseOnHover:false}">
+          <div class="sliderContent" slick-slider="{dots: false, arrows: true, draggable: true, slidesToShow:1, infinite:true, autoplay: true, autoplaySpeed: 4000, pauseOnHover:false}">
             <div class="slide" ng-repeat="slide in $ctrl.slides"
             style="background:-webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(front-assets/images/home/{{slide.img}});
                    background:-moz-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(front-assets/images/home/{{slide.img}});
                    background:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(front-assets/images/home/{{slide.img}}); background-size:cover">
               <h3>{{::slide.title}}</h3>
               <h4>{{::slide.subTitle}}</h4>
+              <a ng-href="{{::slide.link}}"></a>
             </div>
           </div>
       </div>
   </section>
   <section class="full-width ongoing">
       <div class="wrap">
-        <h1>כותרת ראשית</h1>
+        <h1>שניצל בחברה טובה!</h1>
           <ul class="list">
             <li><a href="/story"><p>הנתחים שלנו<b>הציצו למטבח שלנו בפעולה…</b></p></a></li>
             <li><a href="/story"><p>איכות סביבה ורגישות<b>ראו איך מייצרים את ההבדל</b></p></a></li>

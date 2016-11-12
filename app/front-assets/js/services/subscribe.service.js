@@ -11,12 +11,17 @@ define(['angular'], function(angular) {
             return $http.post(usersAPI+'?action=subscribe', user);
         };
 
+        var careerApply = function careerApply(user){
+            return $http.post(usersAPI+ '?action=newApplicant', user);
+        };
+
         var sendMessage = function sendMessage(user){
             return $http.post(usersAPI+'aciton=sendMessage', user);
         };
 
         var service = {
-            subscribe : subscribe
+            subscribe : subscribe,
+            careerApply: careerApply
         };
 
         return service;

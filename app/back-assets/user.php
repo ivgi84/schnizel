@@ -13,6 +13,7 @@ class User
     {
         $this->response = new Response();
         $this->usersData = __DIR__ . '/data/users.json';
+        $this->applicantsData = __DIR__ . '/data/applicants.json';
     }
 
     function getData()
@@ -21,13 +22,11 @@ class User
         return json_decode($postdata);
     }
 
-    function subscribe()
-    {
+    function subscribe(){
         $users = (array)json_decode($this->getUsers());// converting object to array
         $types = $this->getSubscriptionData();
 
         array_push($users, $types);
-
 
         if ($this->setUsers($users)) {
             $this->response->setUserMsg('פרטים נשמרו בהצלחה');
@@ -36,47 +35,27 @@ class User
         $this->response->setAjaxResponce();
     }
 
-    function getUsers()
-    {
-        return file_get_contents($this->usersData);
-    }
+    function newApplicant(){
 
-    function setUsers($data)
-    {
-        if (file_put_contents($this->usersData, json_encode($data))) {
-            return true;
-        } else {
-            $this->response->setError(true);
-            $this->response->setErrorMsg('Unable to save users');
-            return false;
+        $data = (array)$this->getData();
 
+        $existingApplicants = $this->getApplicats();
+
+        array_push($existingApplicants, $data);
+
+        if($this->setApplicants($existingApplicants)){
+            $this->response->setUserMsg('פרטים נשמרו בהצלחה');
+            $this->response->setResult(true);
         }
-    }
-
-    function getSubscriptionData()
-    {
-        $data = $this->getData();
-        $types = ['dateTime' => date('d.m.Y;h:i:sa')];
-        foreach ($data as $key => $val) {
-            if ($val != '') {
-                array_push($types, array($key => $val));
-            }
-        }
-        return $types;
-    }
-
-    function sendMessage()
-    {
-
-        $data = $this->getData();
 
         if (empty($data['name']) || empty($data['email'])) {
-            echo "Please fill at list your name and email";
+            $this->response->setUserMsg('נא להזין לפחות שם ואימייל');
+            $this->response->setResult(false);
         } else {
-            $message = "<html><head></head><body><h3>Want to contact us:</h3>";
-            $message .= "<p>From:" . $name . "<br />Email:" . $email . "<br />Telephone: " . $tel . "<br />Message:" . $mess . "</p></body></html>";
+            $message = "<html><head></head><body><h3>בקשת עבודה</h3>";
+            $message .= "<p>מעת:" . $data['name'] . "<br />אימייל:" . $data['email'] . "<br />טלפון: " . $data['tel'] . "<br />הודעה:" . $data['message'] . "</p></body></html>";
 
-            $headers = "From: Schnicel Company" . "\r\n";
+            $headers = "From: Schnitzel Company" . "\r\n";
             $headers .= "MIME-Version: 1.0" . "\r\n";
             $headers .= "Content-type: text/html; charset=utf-8" . "\r\n";
             $headers .= "Sensitivity: Personal" . "\r\n";
@@ -88,10 +67,78 @@ class User
             } else {
                 $this->response->setUserMsg('שליחת מייל נחשלה');
                 $this->response->setResult(false);
-                $this->response->sentMessage(true);
+                $this->response->setError(true);
+            }
+        }
+        $this->response->setAjaxResponce();
+    }
+
+    function getUsers(){
+        return file_get_contents($this->usersData);
+    }
+
+    function getApplicats(){
+        return json_decode(file_get_contents($this->applicantsData));
+    }
+
+    function setUsers($data){
+        if (file_put_contents($this->usersData, json_encode($data))) {
+            return true;
+        } else {
+            $this->response->setError(true);
+            $this->response->setErrorMsg('Unable to save users');
+            return false;
+        }
+    }
+
+    function setApplicants($data){
+        if (file_put_contents($this->applicantsData, json_encode($data))) {
+            return true;
+        } else {
+            $this->response->setError(true);
+            $this->response->setErrorMsg('Unable to save users');
+            return false;
+        }
+    }
+
+    function getSubscriptionData(){
+        $data = $this->getData();
+        $types = ['dateTime' => date('d.m.Y;h:i:sa')];
+        foreach ($data as $key => $val) {
+            if ($val != '') {
+                array_push($types, array($key => $val));
+            }
+        }
+        return $types;
+    }
+
+    function sendMessage(){
+
+        $data = $this->getData();
+
+        if (empty($data['name']) || empty($data['email'])) {
+            echo "Please fill at list your name and email";
+        } else {
+            $message = "<html><head></head><body><h3>בקשת יצירת קשר</h3>";
+            $message .= "<p>מעת:" . $data['name'] . "<br />אימייל:" . $data['email'] . "<br />טלפון: " . $data['tel'] . "<br />הודעה:" . $data['message'] . "</p></body></html>";
+
+            $headers = "From: Schnitzel Company" . "\r\n";
+            $headers .= "MIME-Version: 1.0" . "\r\n";
+            $headers .= "Content-type: text/html; charset=utf-8" . "\r\n";
+            $headers .= "Sensitivity: Personal" . "\r\n";
+
+            $sent = mail("ivgi84@gmail.com", "Schnizel Company Message", $message, $headers);
+            if ($sent) {
+                $this->response->setUserMsg('המייל נשלח בהצלחה');
+                $this->response->setResult(true);
+            } else {
+                $this->response->setUserMsg('שליחת מייל נחשלה');
+                $this->response->setResult(false);
+                $this->response->setError(true);
             }
 
         }
+        $this->response->setAjaxResponce();
     }
 }
 
@@ -105,5 +152,7 @@ if (isset($_GET['action'])) {
         case 'subscribe':
             $User->subscribe();
             break;
+        case 'newApplicant':
+            $User->newApplicant();
     }
 }
