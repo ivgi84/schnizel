@@ -17,10 +17,10 @@ define(['angular',
 
         vm.model = {
             user: {
-                name: 'test',
-                tel: '1231312',
-                email: 'asdasd@asd.com',
-                message: 'asda asd asd asd asd asd asd asd'
+                name: '',
+                tel: '',
+                email: '',
+                message: ''
             }
         };
 
@@ -35,13 +35,20 @@ define(['angular',
     CareerPageCtrl.prototype = {
         careerApply: function careerApply() {
             var self = this;
-            self.subscribeSvc.careerApply(this.model.user).then(function(response){
-                console.log(response);
-                self.subscribe.response = response.data;
-                self.$timeout(function () {
-                    self.subscribe.response = null;
-                }.bind(this), 4000);
-            }.bind(this));
+            debugger;
+            if(self.careerForm.$valid){
+                self.subscribeSvc.careerApply(this.model.user).then(function(response){
+                    console.log(response);
+                    self.subscribe.response = response.data;
+                    self.$timeout(function () {
+                        self.subscribe.response = null;
+                    }, 4000);
+                });
+            }
+            else{
+                console.log('Form is not valid');
+            }
+
         }
     };
 
