@@ -98,7 +98,7 @@
             "title": "עיקרית"
         },
         "title": "קציצות טופו תרד וכרובית",
-        "img": "http://drpma142ptgxf.cloudfront.net/nutrition-calculator/ingredients/chicken.png",
+        "img": "front-assets/images/menu/items/Tofu.png",
         "shownIn": ["plate", "baget", "pita", "plate"],
         "isSelected": false,
         "data": {
@@ -190,7 +190,7 @@
             "title": "תוספות"
         },
         "title": "ירק מבושל",
-        "img": "http://drpma142ptgxf.cloudfront.net/nutrition-calculator/ingredients/chicken.png",
+        "img": "front-assets/images/menu/items/Erakot.png",
         "shownIn": ["plate", "baget", "pita", "chips"],
         "isSelected": false,
         "data": {
@@ -236,7 +236,7 @@
             "title": "תוספות"
         },
         "title": "בורגול עם ירקות",
-        "img": "http://drpma142ptgxf.cloudfront.net/nutrition-calculator/ingredients/chicken.png",
+        "img": "front-assets/images/menu/items/burgul.png",
         "shownIn": ["plate", "baget", "pita"],
         "isSelected": false,
         "data": {
@@ -466,7 +466,7 @@
             "title": "ממרחים ורוטבים"
         },
         "title": "סחוג",
-        "img": "http://drpma142ptgxf.cloudfront.net/nutrition-calculator/ingredients/chicken.png",
+        "img": "front-assets/images/menu/items/Sxug.png",
         "shownIn": ["plate", "baget", "pita", "salad"],
         "isSelected": false,
         "data": {
@@ -489,7 +489,7 @@
             "title": "ממרחים ורוטבים"
         },
         "title": "ויניגרט בלסמי",
-        "img": "http://drpma142ptgxf.cloudfront.net/nutrition-calculator/ingredients/chicken.png",
+        "img": "front-assets/images/menu/items/VinigretDvash.png",
         "shownIn": ["plate", "baget", "pita", "chips", "salad"],
         "isSelected": false,
         "data": {
@@ -535,7 +535,7 @@
             "title": "ממרחים ורוטבים"
         },
         "title": "רוטב מיונז שום",
-        "img": "http://drpma142ptgxf.cloudfront.net/nutrition-calculator/ingredients/chicken.png",
+        "img": "front-assets/images/menu/items/Mayonez.png",
         "shownIn": ["plate", "baget", "pita", "chips"],
         "isSelected": false,
         "data": {
@@ -673,7 +673,7 @@
             "title": "ממרחים ורוטבים"
         },
         "title": "ירקות כבושים",
-        "img": "http://drpma142ptgxf.cloudfront.net/nutrition-calculator/ingredients/chicken.png",
+        "img": "front-assets/images/menu/items/Pickles.png",
         "shownIn": ["plate", "baget", "pita", "salad"],
         "isSelected": false,
         "data": {

@@ -95,10 +95,10 @@
             }
         }, {
             "item": {
-                "mainImg": "https://d5bzqyuki558t.cloudfront.net/cms-assets/system/asset_versions/attachments/000/000/377/original/_0004_Sofritas.png?1428679385",
+                "mainImg": "front-assets/images/menu/items/Tofu.png",
                 "mainTitle": "קציצות טופו כרובית ותרד",
                 "description": {
-                    "img": "https://d5bzqyuki558t.cloudfront.net/cms-assets/system/asset_versions/attachments/000/000/377/original/_0004_Sofritas.png?1428679385",
+                    "img": "front-assets/images/menu/items/Tofu.png",
                     "title": "קציצות טופו כרובית ותרד  שורה מתחת",
                     "process": [{
                         "title": "מתובל",
@@ -167,10 +167,10 @@
             }
         }, {
             "item": {
-                "mainImg": "https://d5bzqyuki558t.cloudfront.net/cms-assets/system/asset_versions/attachments/000/000/377/original/_0004_Sofritas.png?1428679385",
+                "mainImg": "front-assets/images/menu/items/Erakot.png",
                 "mainTitle": " ירק היום טרי",
                 "description": {
-                    "img": "https://d5bzqyuki558t.cloudfront.net/cms-assets/system/asset_versions/attachments/000/000/377/original/_0004_Sofritas.png?1428679385",
+                    "img": "front-assets/images/menu/items/Erakot.png",
                     "title": " ירק היום טרי",
                     "process": [{
                         "title": "הירקות",
@@ -190,10 +190,10 @@
             }
         }, {
             "item": {
-                "mainImg": "https://d5bzqyuki558t.cloudfront.net/cms-assets/system/asset_versions/attachments/000/000/377/original/_0004_Sofritas.png?1428679385",
+                "mainImg": "front-assets/images/menu/items/burgul.png",
                 "mainTitle": "בורגול גס עם ירקות",
                 "description": {
-                    "img": "https://d5bzqyuki558t.cloudfront.net/cms-assets/system/asset_versions/attachments/000/000/377/original/_0004_Sofritas.png?1428679385",
+                    "img": "front-assets/images/menu/items/burgul.png",
                     "title": "בורגול גס עם ירקות",
                     "process": [{
                         "title": "מתובל",
@@ -256,10 +256,10 @@
             }
         }, {
             "item": {
-                "mainImg": "https://d5bzqyuki558t.cloudfront.net/cms-assets/system/asset_versions/attachments/000/000/377/original/_0004_Sofritas.png?1428679385",
+                "mainImg": "front-assets/images/menu/items/Salsa.png",
                 "mainTitle": "סלסה",
                 "description": {
-                    "img": "https://d5bzqyuki558t.cloudfront.net/cms-assets/system/asset_versions/attachments/000/000/377/original/_0004_Sofritas.png?1428679385",
+                    "img": "front-assets/images/menu/items/Salsa.png",
                     "title": "סלסה",
                     "process": [{
                         "title": "מתובל",
@@ -276,10 +276,10 @@
             }
         }, {
             "item": {
-                "mainImg": "front-assets/images/menu/items/Tariaky.png",
+                "mainImg": "front-assets/images/menu/items/BBQ.png",
                 "mainTitle": "בר בי קיו",
                 "description": {
-                    "img": "front-assets/images/menu/items/Tariaky.png",
+                    "img": "front-assets/images/menu/items/BBQ.png",
                     "title": "בר בי קיו",
                     "process": [{
                         "title": "מתובל",
@@ -296,10 +296,10 @@
             }
         }, {
             "item": {
-                "mainImg": "https://d5bzqyuki558t.cloudfront.net/cms-assets/system/asset_versions/attachments/000/000/377/original/_0004_Sofritas.png?1428679385",
+                "mainImg": "front-assets/images/menu/items/VinigretDvash.png",
                 "mainTitle": " ויניגרט דבש",
                 "description": {
-                    "img": "https://d5bzqyuki558t.cloudfront.net/cms-assets/system/asset_versions/attachments/000/000/377/original/_0004_Sofritas.png?1428679385",
+                    "img": "front-assets/images/menu/items/VinigretDvash.png",
                     "title": " ויניגרט דבש",
                     "process": [{
                         "title": "מתובל",
@@ -416,10 +416,10 @@
             }
         }, {
             "item": {
-                "mainImg": "https://d5bzqyuki558t.cloudfront.net/cms-assets/system/asset_versions/attachments/000/000/377/original/_0004_Sofritas.png?1428679385",
+                "mainImg": "front-assets/images/menu/items/erekTari.png",
                 "mainTitle": "פרוסות ירקות טריים",
                 "description": {
-                    "img": "https://d5bzqyuki558t.cloudfront.net/cms-assets/system/asset_versions/attachments/000/000/377/original/_0004_Sofritas.png?1428679385",
+                    "img": "ront-assets/images/menu/items/erekTari.png",
                     "title": "פרוסות ירקות טריים",
                     "process": [{
                         "title": "מתובל",
@@ -577,10 +577,10 @@
             }
         }, {
             "item": {
-                "mainImg": "front-assets/images/menu/items/saladXatcilim.png",
+                "mainImg": "front-assets/images/menu/items/HatsilGamba.png",
                 "mainTitle": "סלט חציל גמבה",
                 "description": {
-                    "img": "front-assets/images/menu/items/saladXatcilim.png",
+                    "img": "front-assets/images/menu/items/HatsilGamba.png",
                     "title": "סלט חציל גמבה",
                     "process": [{
                         "title": "",
