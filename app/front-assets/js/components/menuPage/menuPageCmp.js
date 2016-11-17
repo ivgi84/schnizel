@@ -3,9 +3,9 @@ define(['angular',
      '../../services/base.service',
      '../../directives/toggleDescription.directive'], function() {
 
-        MenuPageCtrl.$inject = ['baseService'];
+        MenuPageCtrl.$inject = ['baseService', '$routeParams'];
 
-    function MenuPageCtrl(baseService) {
+    function MenuPageCtrl(baseService, $routeParams) {
         var vm = this;
         vm.baseService = baseService;
         vm.ingredients= [];
@@ -18,7 +18,9 @@ define(['angular',
                 slidesToShow: 1,
                 infinite: true,
                 autoplay: true,
-                autoplaySpeed: 6000
+                autoplaySpeed: 6000,
+                pauseOnHover:false,
+                initialSlide: !!$routeParams.slide ? +$routeParams.slide : 0
             },
             top: {
                 slides: [{

@@ -42,7 +42,7 @@ define([
             img: 'slide_3.jpg',
             title: 'בונים את הבגט שלך...',
             subTitle: 'בואו ראו מה נכנס לבגט...',
-            link:'/menu'
+            link:'/menu/?slide=1'
         }];
     }
 
