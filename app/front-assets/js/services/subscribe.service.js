@@ -8,20 +8,21 @@ define(['angular'], function(angular) {
         var usersAPI = 'back-assets/user.php';
 
         var subscribe = function subscribe(user) {
-            return $http.post(usersAPI+'?action=subscribe', user);
+            return $http.post(usersAPI +'?action=subscribe', user);
         };
 
         var careerApply = function careerApply(user){
-            return $http.post(usersAPI+ '?action=newApplicant', user);
+            return $http.post(usersAPI + '?action=newApplicant', user);
         };
 
         var sendMessage = function sendMessage(user){
-            return $http.post(usersAPI+'aciton=sendMessage', user);
+            return $http.post(usersAPI + '?action=sendMessage', user);
         };
 
         var service = {
             subscribe : subscribe,
-            careerApply: careerApply
+            careerApply: careerApply,
+            sendMessage:sendMessage
         };
 
         return service;

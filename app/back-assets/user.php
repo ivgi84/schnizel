@@ -60,7 +60,7 @@ class User
             $headers .= "Content-type: text/html; charset=utf-8" . "\r\n";
             $headers .= "Sensitivity: Personal" . "\r\n";
 
-            $sent = mail("ivgi84@gmail.com", "Schnizel Company Message", $message, $headers);
+            $sent = mail("tedkovits@gmail.com", "Schnizel Company Message", $message, $headers);
             if ($sent) {
                 $this->response->setUserMsg('המייל נשלח בהצלחה');
                 $this->response->setResult(true);
@@ -114,10 +114,12 @@ class User
 
     function sendMessage(){
 
-        $data = $this->getData();
+        $data = (array)$this->getData();
 
         if (empty($data['name']) || empty($data['email'])) {
-            echo "Please fill at list your name and email";
+            $this->response->setUserMsg('אנא, מלא שם ואימייל');
+            $this->response->setResult(false);
+            $this->response->setError(true);
         } else {
             $message = "<html><head></head><body><h3>בקשת יצירת קשר</h3>";
             $message .= "<p>מעת:" . $data['name'] . "<br />אימייל:" . $data['email'] . "<br />טלפון: " . $data['tel'] . "<br />הודעה:" . $data['message'] . "</p></body></html>";
@@ -127,7 +129,7 @@ class User
             $headers .= "Content-type: text/html; charset=utf-8" . "\r\n";
             $headers .= "Sensitivity: Personal" . "\r\n";
 
-            $sent = mail("ivgi84@gmail.com", "Schnizel Company Message", $message, $headers);
+            $sent = mail("tedkovits@gmail.com", "הודעה מאתר שניצל קומני", $message, $headers);
             if ($sent) {
                 $this->response->setUserMsg('המייל נשלח בהצלחה');
                 $this->response->setResult(true);
@@ -154,5 +156,9 @@ if (isset($_GET['action'])) {
             break;
         case 'newApplicant':
             $User->newApplicant();
+            break;
+        case 'sendMessage':
+            $User->sendMessage();
+            break;
     }
 }

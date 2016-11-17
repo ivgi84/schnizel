@@ -59,7 +59,7 @@
   background-color: #ccc;
 }
 .p-contact .contactUs .wrap .row input.error {
-  border: 1px solid red;
+  border: 2px solid red;
 }
 .p-contact .affiliatesList {
   background: #3c2319;

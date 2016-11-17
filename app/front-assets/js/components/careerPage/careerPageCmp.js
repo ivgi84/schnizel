@@ -35,7 +35,6 @@ define(['angular',
     CareerPageCtrl.prototype = {
         careerApply: function careerApply() {
             var self = this;
-            debugger;
             if(self.careerForm.$valid){
                 self.subscribeSvc.careerApply(this.model.user).then(function(response){
                     console.log(response);
