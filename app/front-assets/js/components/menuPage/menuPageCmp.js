@@ -74,33 +74,34 @@ define(['angular',
                         img: 'iconSalad.jpg',
                         title: 'סלט'
                     }
-                },
-                {
-                    slide: {
-                        img: 'slideTortilla.jpg',
-                        text: {
-                            title: 'טורטייה',
-                            describtion: 'טורטייה מגולגלת עם עוף מעושן שהוכן במקום, עלי ארגולה עגבניות ומיונז.'
-                        }
-                    },
-                    thumb: {
-                        img: 'iconTortilla.jpg',
-                        title: 'טורטייה'
-                    }
-                },
-                {
-                    slide: {
-                        img: 'slideVegetarian.jpg',
-                        text: {
-                            title: 'צמחוני',
-                            describtion: 'שניצל תירס צמחוני מיוחד תוצרת בית,  או קציצת טופו, כרובית ותרד  מוגש בצלחת עם מבחר של 3 תוספות חמות / סלטים טריים, רטבים לבקשתך, ירקות כבושים ופיתה חמה.'
-                        }
-                    },
-                    thumb: {
-                        img: 'iconVegetarian.jpg',
-                        title: 'צמחוני'
-                    }
-                }]
+                }
+                // ,{
+                //     slide: {
+                //         img: 'slideTortilla.jpg',
+                //         text: {
+                //             title: 'טורטייה',
+                //             describtion: 'טורטייה מגולגלת עם עוף מעושן שהוכן במקום, עלי ארגולה עגבניות ומיונז.'
+                //         }
+                //     },
+                //     thumb: {
+                //         img: 'iconTortilla.jpg',
+                //         title: 'טורטייה'
+                //     }
+                // }
+                // ,{
+                //     slide: {
+                //         img: 'slideVegetarian.jpg',
+                //         text: {
+                //             title: 'צמחוני',
+                //             describtion: 'שניצל תירס צמחוני מיוחד תוצרת בית,  או קציצת טופו, כרובית ותרד  מוגש בצלחת עם מבחר של 3 תוספות חמות / סלטים טריים, רטבים לבקשתך, ירקות כבושים ופיתה חמה.'
+                //         }
+                //     },
+                //     thumb: {
+                //         img: 'iconVegetarian.jpg',
+                //         title: 'צמחוני'
+                //     }
+                // }
+            ]
             },
             bottom: {
                 slides: [{

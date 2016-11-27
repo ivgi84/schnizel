@@ -70,6 +70,7 @@
     },
     "corn_schnitzel": {
         "id": 4,
+        "toHide":true,
         "type": {
             "name": "main",
             "title": "עיקרית"
@@ -93,6 +94,7 @@
     },
     "spinach_tofu": {
         "id": 5,
+        "toHide":true,
         "type": {
             "name": "main",
             "title": "עיקרית"

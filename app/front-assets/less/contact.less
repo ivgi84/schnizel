@@ -4,7 +4,8 @@
         background: #f58220;
         .wrap {
             padding: 50px 0;
-            width: 800px;
+            max-width: 800px;
+            width: 100%;
             h3 {
                 font-size: 31px;
                 line-height: 31px;
@@ -18,7 +19,7 @@
                 input[type="email"],
                 input[type="tel"],
                 input[type="text"] {
-                    width: 31%;
+                    width: 29%;
                     box-sizing: border-box;
                     padding: 1%;
                     border: 0;
@@ -30,7 +31,8 @@
                 }
                 textarea {
                     margin: 5px 2%;
-                    width: 760px;
+                    max-width: 760px;
+                    width: 96%;
                     border: 0;
                     padding: 1%;
                     box-sizing: border-box;
@@ -235,6 +237,23 @@
                     text-indent: -5px;
                     padding-left: 10px;
                     line-height: 28px;
+                }
+            }
+        }
+    }
+}
+@media (max-width:740px){
+    .p-contact{
+        .contactUs{
+            .wrap{
+                .row{
+                    input[type="email"],
+                    input[type="tel"],
+                    input[type="text"] {
+                            width: 100%;
+                            max-width: 96%;
+                            margin: 5px 2%;
+                    }
                 }
             }
         }

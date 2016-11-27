@@ -32,8 +32,8 @@
                 <div class="lists">
                     <ul ng-repeat="lists in $ctrl.ingredients.lists">
                         <li class="title"><h3>{{lists.title}}</h3></li>
-                        <li ng-repeat="item in lists.list track by $index" class="col-size-{{lists.list.length}}">
-                            <div class="item" data-open-description>
+                        <li ng-repeat="item in lists.list track by $index" class="col-size-{{lists.list.length}}" ng-if="!item.item.toHide">
+                            <div class="item"  data-open-description>
                                 <img ng-src={{item.item.mainImg}} alt="" />
                                 <p>{{item.item.mainTitle}}</p>
                             </div>

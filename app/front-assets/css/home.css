@@ -62,6 +62,7 @@
 }
 .p-home .ongoing .list li {
   position: relative;
+  overflow: hidden;
   float: left;
   display: block;
   height: 320px;
@@ -99,6 +100,29 @@
 .p-home .ongoing .list li p b {
   display: block;
   font-family: assistantSemiBold;
+}
+.p-home .ongoing .list li .hiddenLinks {
+  transition: 0.5s all ease;
+  -webkit-transition: 0.5s all ease;
+  -moz-transition: 0.5s all ease;
+  position: absolute;
+  top: -120px;
+  left: 5%;
+  width: 90%;
+}
+.p-home .ongoing .list li .hiddenLinks a {
+  display: block;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.9);
+  text-align: center;
+  padding: 10px 0;
+  margin: 10px auto;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  text-decoration: none;
+}
+.p-home .ongoing .list:hover .hiddenLinks {
+  top: 0;
 }
 .p-home .geo {
   background-image: url("../images/home/bg.jpg");

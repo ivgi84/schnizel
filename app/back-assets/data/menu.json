@@ -1,6 +1,6 @@
 {
     "lists": [{
-        "title": "בחר בעוף מגידול ידידותי לסביבה או ירקות וטופו אורגני",
+        "title": "בחר בעוף מגידול ידידותי לסביבה",
         "list": [{
             "item": {
                 "mainImg": "front-assets/images/menu/items/HazeOf.png",
@@ -91,7 +91,8 @@
                         "title": "",
                         "text": ""
                     }
-                }
+                },
+                "toHide":true
             }
         }, {
             "item": {
@@ -114,7 +115,8 @@
                         "title": "",
                         "text": ""
                     }
-                }
+                },
+                "toHide":true
             }
         }]
     }, {
@@ -396,11 +398,11 @@
             }
         }, {
             "item": {
-                "mainImg": "front-assets/images/menu/items/SaladKruv.png",
-                "mainTitle": "כרוב",
+                "mainImg": "front-assets/images/menu/items/sxug.png",
+                "mainTitle": "סחוג",
                 "description": {
-                    "img": "front-assets/images/menu/items/SaladKruv.png",
-                    "title": "כרוב",
+                    "img": "front-assets/images/menu/items/sxug.png",
+                    "title": "סחוג",
                     "process": [{
                         "title": "מתובל",
                         "text": "כרוב לבן קצוץ ומתובל"

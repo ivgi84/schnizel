@@ -61,6 +61,7 @@
             }
             li {
                 position: relative;
+                overflow: hidden;
                 float: left;
                 display: block;
                 height: 320px;
@@ -97,6 +98,31 @@
                         display: block;
                         font-family: assistantSemiBold;
                     }
+                }
+                .hiddenLinks{
+                    transition: 0.5s all ease;
+                    -webkit-transition: 0.5s all ease;
+                    -moz-transition: 0.5s all ease;
+                    position: absolute;
+                    top:-120px;
+                    left: 5%;
+                    width: 90%;
+                    a{
+                        display: block;
+                        color:#fff;
+                        background: rgba(0, 0, 0, 0.90);
+                        text-align: center;
+                        padding: 10px 0;
+                        margin: 10px auto;
+                        border: 1px solid #fff;
+                        border-radius: 3px;
+                        text-decoration: none;
+                    }
+                }
+            }
+            &:hover{
+                .hiddenLinks{
+                    top:0;
                 }
             }
         }

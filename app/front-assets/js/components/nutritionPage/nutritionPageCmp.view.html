@@ -19,7 +19,7 @@
                 </ul>
                 <div class="ingrids" ng-repeat="(ind, type) in $ctrl.types">
                     <h3>{{ind}}</h3>
-                    <div class="ingrid" ng-repeat="val in type track by $index" ng-click="$ctrl.calculator.toggle($event, val)" ng-class="{'selected':val.isSelected}">
+                    <div class="ingrid" ng-if="!val.toHide" ng-repeat="val in type track by $index" ng-click="$ctrl.calculator.toggle($event, val)" ng-class="{'selected':val.isSelected}">
                         <div class="right">
                             <a href="#" class="toggle" ng-class="{'selected':val.isSelected}"></a>
                             <img ng-src="{{val.img}}" alt=""/>
