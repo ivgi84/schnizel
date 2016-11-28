@@ -121,7 +121,7 @@
   border-radius: 3px;
   text-decoration: none;
 }
-.p-home .ongoing .list:hover .hiddenLinks {
+.p-home .ongoing .list li.shippings:hover .hiddenLinks {
   top: 0;
 }
 .p-home .geo {
