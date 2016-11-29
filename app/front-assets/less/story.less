@@ -113,7 +113,7 @@ html, body {
             .videoText{
                 position: absolute;
                 top: ~"calc(50vh - 160px)";
-                left:~"calc(50% - 250px)";
+                left:~"calc(50% - 212px)";
                 width: 100%;
                 max-width: 425px;
                 color:#fff;
@@ -232,7 +232,7 @@ html, body {
 @media(max-width:1024px){
     .p-story{
         .videos .videoWrapper .videoText{
-            top: ~"calc(33vh - 160px)";
+            top: ~"calc(45vh - 160px)";
         }
     }
 }
@@ -248,8 +248,10 @@ html, body {
             }
         }
         .videos .videoWrapper .videoText{
-            left: auto;
+            max-width: 350px;
             font-size: 16px;
+            top: ~"calc(50% - 55px)";
+            left: ~"calc(50% - 175px)";
             h4{
                 padding: 10px;
             }
@@ -279,5 +281,10 @@ html, body {
             left: 40%;
         }
 
+    }
+}
+@media (device-width: 740px) and (orientation: landscape) {
+    .p-story .videos .videoWrapper .videoTe{
+            top: ~"calc(70vh - 160px)";
     }
 }
