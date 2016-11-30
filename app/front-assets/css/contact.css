@@ -128,6 +128,13 @@
   margin: 15px 0;
   padding: 7px 0;
 }
+.p-contact .affiliatesList .wrap ul li.col-2 .shipping a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
 .p-contact .affiliatesList .wrap ul li.col-2::after {
   content: "";
   display: block;

@@ -218,11 +218,11 @@
                     "img": "front-assets/images/menu/items/Chips.png",
                     "title": "צ׳יפס",
                     "process": [{
-                        "title": "מתובל",
-                        "text": "text "
+                        "title": "עשוי באופן מושלם",
+                        "text": "לוהט עסיסי ישר לצלחת "
                     }, {
-                        "title": "על האש",
-                        "text": "text"
+                        "title": "",
+                        "text": ""
                     }],
                     "more": {
                         "title": "",
@@ -405,7 +405,7 @@
                     "title": "סחוג",
                     "process": [{
                         "title": "מתובל",
-                        "text": "כרוב לבן קצוץ ומתובל"
+                        "text": ""
                     }, {
                         "title": "",
                         "text": ""

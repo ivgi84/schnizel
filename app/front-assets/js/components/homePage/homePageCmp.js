@@ -7,13 +7,14 @@ define([
 ], function() {
     'use strict';
 
-    HomePageCtrl.$inject = ['$sce', 'baseService'];
+    HomePageCtrl.$inject = ['$sce', 'baseService','$location'];
 
-    function HomePageCtrl($sce, baseService) {
+    function HomePageCtrl($sce, baseService, $location) {
         var vm = this;
         vm.pageTitle = 'שניצל קומפני';
         vm.baseService = baseService;
         vm.$sce = $sce;
+        vm.$location = $location;
         vm.affiliates = {
             exist: false,
             list: []
@@ -48,8 +49,12 @@ define([
 
 
     HomePageCtrl.prototype = {
-        findNearest: function findNearest() {
+        findNearest: function findNearest(event) {
+            event.preventDefault ? event.preventDefault() : (event.returnValue = false)
             var self = this;
+            if(self.user.city.length < 3)
+                return;
+
             self.baseService.getJson('affiliates').then(function(response) {
 
                 if (response[self.user.city]) {
@@ -62,6 +67,7 @@ define([
                 } else {
                     self.affiliates.exist = false;
                     self.affiliates.list = [];
+                    self.$location.url('/branches');
                 }
             });
 

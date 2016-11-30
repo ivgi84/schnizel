@@ -5,13 +5,12 @@ define(['angular', 'TweenMax', 'ScrollMagic', 'animationgsap'],
 
             this.$postLink = function() {
 
-                var videoTags = document.getElementsByTagName('video') || [];
-                angular.forEach(videoTags, function(video, ind){
-                    video.play();
+                var videoWrappers = document.getElementsByClassName('videoWrapper') || [];
+                angular.forEach(videoWrappers, function(video, ind){
                     video.addEventListener('click', function() {
-                        video.play();
+                        video.children[0].play();
                     }, false);
-                })
+                });
 
                 var screenContents = $('.screenContent');
 

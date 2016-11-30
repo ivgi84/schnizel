@@ -143,10 +143,15 @@
   font-family: assistantSemiBold;
   text-align: center;
 }
-.p-home .geo .wrap .findCity {
+.p-home .geo .wrap .search {
+  margin-top: 20px;
+  width: 290px;
+  margin: 0 auto;
+}
+.p-home .geo .wrap .search .findCity {
   display: block;
+  float: right;
   border: none;
-  margin: 20px auto 0;
   width: 240px;
   height: 15px;
   padding: 5px;
@@ -154,21 +159,38 @@
   color: #897267;
   font-size: 14px;
 }
-.p-home .geo .wrap .findCity::-webkit-input-placeholder {
+.p-home .geo .wrap .search .findCity::-webkit-input-placeholder {
   color: #897267;
   text-align: center;
 }
-.p-home .geo .wrap .findCity::-moz-placeholder {
+.p-home .geo .wrap .search .findCity::-moz-placeholder {
   color: #897267;
   text-align: center;
 }
-.p-home .geo .wrap .findCity:-ms-input-placeholder {
+.p-home .geo .wrap .search .findCity:-ms-input-placeholder {
   color: #897267;
   text-align: center;
 }
-.p-home .geo .wrap .findCity:-moz-placeholder {
+.p-home .geo .wrap .search .findCity:-moz-placeholder {
   color: #897267;
   text-align: center;
+}
+.p-home .geo .wrap .search .findCity + a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 19px;
+  line-height: 26px;
+  border-radius: 2px;
+  border: 1px solid #fff;
+  background: rgba(255, 255, 255, 0.3);
+  padding: 0 7px;
+  transition: .5s all ease;
+  -webkit-transition: .5s all ease;
+  -moz-transition: .5s all ease;
+}
+.p-home .geo .wrap .search .findCity + a:hover {
+  background: rgba(255, 255, 255, 0.9);
+  color: #897267;
 }
 .p-home .geo .wrap .affiliatesList {
   width: 100%;
