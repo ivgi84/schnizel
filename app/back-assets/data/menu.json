@@ -92,7 +92,7 @@
                         "text": ""
                     }
                 },
-                "toHide":true
+                "toHide": true
             }
         }, {
             "item": {
@@ -116,7 +116,7 @@
                         "text": ""
                     }
                 },
-                "toHide":true
+                "toHide": true
             }
         }]
     }, {
@@ -607,6 +607,52 @@
                 "description": {
                     "img": "front-assets/images/menu/items/Humus.png",
                     "title": "חומוס",
+                    "process": [{
+                        "title": "",
+                        "text": ""
+                    }, {
+                        "title": "",
+                        "text": ""
+                    }, {
+                        "title": "עשוי באופן מושלם",
+                        "text": "לוהט, עסיסי ישר לצלחת"
+                    }],
+                    "more": {
+                        "title": "",
+                        "text": ""
+                    }
+                }
+            }
+        }, {
+            "item": {
+                "mainImg": "front-assets/images/menu/items/Kolselo.png",
+                "mainTitle": "סלט קולסלו",
+                "description": {
+                    "img": "front-assets/images/menu/items/Kolselo.png",
+                    "title": "סלט קולסלו",
+                    "process": [{
+                        "title": "",
+                        "text": ""
+                    }, {
+                        "title": "",
+                        "text": ""
+                    }, {
+                        "title": "עשוי באופן מושלם",
+                        "text": "לוהט, עסיסי ישר לצלחת"
+                    }],
+                    "more": {
+                        "title": "",
+                        "text": ""
+                    }
+                }
+            }
+        }, {
+            "item": {
+                "mainImg": "front-assets/images/menu/items/SaladBeizim.png",
+                "mainTitle": "סלט ביצים",
+                "description": {
+                    "img": "front-assets/images/menu/items/SaladBeizim.png",
+                    "title": "סלט ביצים",
                     "process": [{
                         "title": "",
                         "text": ""

@@ -7,7 +7,7 @@
         },
         "title": "עוף בגריל",
         "img": "front-assets/images/menu/items/HazeOf.png",
-        "shownIn": ["plate","baget", "pita", "salad", "chips"],
+        "shownIn": ["plate", "baget", "pita", "salad", "chips"],
         "isSelected": false,
         "data": {
             "calories": 328,
@@ -70,7 +70,7 @@
     },
     "corn_schnitzel": {
         "id": 4,
-        "toHide":true,
+        "toHide": true,
         "type": {
             "name": "main",
             "title": "עיקרית"
@@ -94,7 +94,7 @@
     },
     "spinach_tofu": {
         "id": 5,
-        "toHide":true,
+        "toHide": true,
         "type": {
             "name": "main",
             "title": "עיקרית"
@@ -323,13 +323,13 @@
             "vitamin_C": 0
         }
     },
-    "eggplant_salad_peppers": {
+    "salad_israeli": {
         "id": 15,
         "type": {
             "name": "salad",
             "title": "סלט"
         },
-        "title": "סלט חצילים עם גמבה",
+        "title": "סלט ישראלי",
         "img": "front-assets/images/menu/items/Salad.png",
         "shownIn": ["plate", "baget", "pita"],
         "isSelected": false,
@@ -708,6 +708,29 @@
             "cholesterol": 0,
             "carbohydrates": 62,
             "protein": 9.5,
+            "iron": 0,
+            "calcium": 0,
+            "vitamin_A": 0,
+            "vitamin_C": 0
+        }
+    },
+    "eggplant_salad_peppers": {
+        "id": 32,
+        "type": {
+            "name": "salad",
+            "title": "סלט"
+        },
+        "title": "סלט חצילים עם גמבה",
+        "img": "front-assets/images/menu/items/HatsilGamba.png",
+        "shownIn": ["plate", "baget", "pita"],
+        "isSelected": false,
+        "data": {
+            "calories": 209,
+            "fat": 12,
+            "fiber": 1,
+            "cholesterol": 0,
+            "carbohydrates": 27,
+            "protein": 3,
             "iron": 0,
             "calcium": 0,
             "vitamin_A": 0,
